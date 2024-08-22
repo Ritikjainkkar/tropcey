@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./Navigation.module.css";
-import Image from "next/image";
 import Link from "next/link";
 
 const Navigation = () => {
@@ -67,7 +66,7 @@ const Navigation = () => {
         {/* Left */}
         <div className={`${styles.navLeft}`}>
           <Link href="/">
-            <Image
+            <img
               src="/images/navbar/logo.png"
               width={100}
               height={100}
@@ -91,7 +90,7 @@ const Navigation = () => {
                   required
                 />
                 {!searchActive && (
-                  <Image
+                  <img
                     src="/images/navbar/search-icon.png"
                     width={40}
                     height={40}
@@ -101,7 +100,7 @@ const Navigation = () => {
                   />
                 )}
                 {searchActive && (
-                  <Image
+                  <img
                     src="/images/navbar/close.png"
                     width={40}
                     height={40}
@@ -116,7 +115,7 @@ const Navigation = () => {
             {/* Burger and Close buttons */}
             <div className="relative flex gap-2">
               {!active && (
-                <Image
+                <img
                   src="/images/navbar/burger.png"
                   width={70}
                   height={70}
@@ -126,7 +125,7 @@ const Navigation = () => {
                 />
               )}
               {active && (
-                <Image
+                <img
                   src="/images/navbar/close.png"
                   width={40}
                   height={40}
@@ -136,7 +135,7 @@ const Navigation = () => {
                 />
               )}
               {active && (
-                <Image
+                <img
                   src="/images/navbar/angle-burger.png"
                   width={40}
                   height={40}

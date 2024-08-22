@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import styles from "./our-values.module.css";
 
@@ -11,7 +10,7 @@ const OurValues = () => {
       >
         {/* left */}
         <div className="basis-1/2 flex justify-center items-center">
-          <Image
+          <img
             src="/images/our-values/value-coconut.png"
             alt="Our Values"
             width={800}
@@ -64,7 +63,7 @@ const OurValues = () => {
 
           {/* right */}
           <div className="basis-1/3 flex order-1 lg:order-2 lg:justify-normal justify-center items-center">
-            <Image
+            <img
               src={"/images/our-values/heart.png"}
               alt="heart"
               width={300}
@@ -80,7 +79,7 @@ const OurValues = () => {
         <div className="value-container bg-[url('/images/our-values/value-second-bg.png')] min-h-screen bg-cover bg-no-repeat flex gap-4 lg:flex-row flex-col justify-center items-center">
           {/* left */}
           <div className="basis-1/3 flex lg:justify-end justify-center items-center">
-            <Image
+            <img
               src={"/images/our-values/commynity.png"}
               alt="heart"
               width={300}
@@ -131,7 +130,7 @@ const OurValues = () => {
 
           {/* right */}
           <div className="basis-1/3 flex order-1 lg:order-2 lg:justify-normal justify-center items-center">
-            <Image
+            <img
               src={"/images/our-values/environment.png"}
               alt="heart"
               width={300}
@@ -147,7 +146,7 @@ const OurValues = () => {
         <div className="value-container bg-[url('/images/our-values/value-second-bg.png')] min-h-screen bg-cover bg-no-repeat flex gap-4 lg:flex-row flex-col justify-center items-center">
           {/* left */}
           <div className="basis-1/3 flex lg:justify-end justify-center items-center">
-            <Image
+            <img
               src={"/images/our-values/sustain.png"}
               alt="heart"
               width={300}
@@ -198,7 +197,7 @@ const OurValues = () => {
 
           {/* right */}
           <div className="basis-1/3 flex order-1 lg:order-2 lg:justify-normal justify-center items-center">
-            <Image
+            <img
               src={"/images/our-values/tropical.png"}
               alt="heart"
               width={300}

@@ -187,7 +187,17 @@ const Home: React.FC = () => {
               <img className="absolute" style={{ bottom: '-33%', left: '-5%' }} width="100%" src="/images/home1/About us Pages-05.png" alt="Descriptive Alt Text" />
               <img className="absolute" style={{ bottom: '-35%', left: '55%', transform: 'scale(0.65)' }} width="100%" src="/images/home1/About us Pages-07.png" alt="Descriptive Alt Text" />
             </div>
-            
+            <div className="fixed inset-0 flex items-end justify-center z-50">
+              <button
+                className="text-white py-2 px-6 rounded-full shadow-lg animate-bounce relative"
+                style={{
+                  animation: "bounce 1s infinite",
+                  background: "linear-gradient(90deg, rgba(255,94,0,1) 0%, rgba(255,154,0,1) 50%, rgba(255,203,0,1) 100%)", // Gradient color
+                }}
+              >
+                <marquee scrollamount="3" behavior="scroll">Click here for instructions!</marquee>
+              </button>
+            </div>
           </div>
         </div>
         <div className="landing-right flex justify-center items-center">

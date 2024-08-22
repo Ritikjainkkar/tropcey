@@ -2,6 +2,7 @@
 import Background from '@/components/Background'
 import LeftContainer from '@/components/LeftContainer';
 import RightTextBox from '@/components/RightTextBox';
+import SideBarNavigation from '@/components/SideBarNavigation';
 import { data } from '@/data/pages';
 import React, { useEffect, useRef } from 'react'
 
@@ -25,12 +26,13 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
   const vinegar = data?.vinegar;
 
   return (
-    <div>
+    <div className='relative'>
       <Background leftSrc={vinegar.background.left} RightSrc={vinegar.background.right}/>
       <div className='relative text-white flex justify-between h-[100vh] w-[100%] items-center z-10'>
         <LeftContainer imgSrc={vinegar.imgUri} width={vinegar.mainImage.sizeW}/>
         <RightTextBox details={vinegar}/>
       </div>
+      <SideBarNavigation searchParams={undefined} />
     </div>
   )
 }

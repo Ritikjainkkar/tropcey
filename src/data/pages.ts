@@ -989,3 +989,52 @@ export const order = [
  "flour",
  "⁠vineagar",
 ]
+
+
+export const products = [
+  {
+    "name": "Coconut Milk",
+    "image": "/images/coconut-milk.png",
+    "href": "/products/coconut-milk"
+  },
+  {
+    "name": "Coconut Spread",
+    "image": "/images/coconut-spread.png",
+    "href": "/products/coconut-spread"
+  },
+  {
+    "name": "Desiccated Coconut",
+    "image": "/images/desiccated-coconut.png",
+    "href": "/products/desiccated-coconut"
+  },
+  {
+    "name": "Coconut Chips",
+    "image": "/images/coconut-chips.png",
+    "href": "/products/coconut-chips"
+  },
+  {
+    "name": "Coconut Water",
+    "image": "/images/coconut-water.png",
+    "href": "/products/coconut-water"
+  },
+  {
+    "name": "Coconut Flour",
+    "image": "/images/coconut-flour.png",
+    "href": "/products/coconut-flour"
+  },
+  {
+    "name": "Coconut Vinegar",
+    "image": "/images/coconut-vinegar.png",
+    "href": "/products/coconut-vinegar"
+  },
+  {
+    "name": "Coconut Treacle",
+    "image": "/images/coconut-treacle.png",
+    "href": "/products/coconut-treacle"
+  },
+  {
+    "name": "Coconut Sugar",
+    "image": "/images/coconut-sugar.png",
+    "href": "/products/coconut-sugar"
+  }
+]

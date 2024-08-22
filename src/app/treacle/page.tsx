@@ -2,6 +2,7 @@
 import Background from '@/components/Background'
 import LeftContainer from '@/components/LeftContainer';
 import RightTextBox from '@/components/RightTextBox';
+import SideBarNavigation from '@/components/SideBarNavigation';
 import { data } from '@/data/pages';
 import Link from 'next/link';
 import React from 'react'
@@ -45,6 +46,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
             onClick={() => console.log('Close button clicked')} 
           />
         </Link>
+        <SideBarNavigation searchParams={undefined} />
       </div>
     </div>
   )

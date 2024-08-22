@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./contact.module.css";
-import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -9,7 +8,7 @@ const Contact = () => {
       <div className="flex gap-4 justify-center items-center flex-col lg:flex-row min-h-screen">
         {/* left */}
         <div className="basis-1/2">
-          <Image
+          <img
             src="/images/contact/contact-iland.png"
             alt="Iland"
             width={600}
@@ -69,7 +68,7 @@ const Contact = () => {
       <div className="min-h-screen  flex gap-4 py-5 flex-col lg:flex-row">
         {/* Left section */}
         <div className="flex justify-center items-center basis-1/2">
-          <Image
+          <img
             src="/images/contact/contact-mic.png"
             alt="Map"
             width={400}

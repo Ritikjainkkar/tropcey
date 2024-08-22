@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import styles from "./about.module.css";
 
@@ -8,7 +7,7 @@ const About = () => {
       {/* First Section */}
       <div className="about md:pt-0 pt-[120px] bg-[url('/images/about/about-bg.jpg')] lg:min-h-screen gap-14 bg-cover flex lg:gap-4 justify-between items-center flex-col lg:flex-row py-10 lg:py-0">
         <div className="about-left basis-1/2 justify-center items-center flex">
-          <Image
+          <img
             src="/images/about/Aboutus1-05.png"
             alt="about image"
             width={500}
@@ -64,7 +63,7 @@ const About = () => {
 
         {/* Right */}
         <div className="about-sec-right basis-1/2">
-          <Image
+          <img
             src="/images/about/about-island.png"
             alt="about image"
             width={500}
