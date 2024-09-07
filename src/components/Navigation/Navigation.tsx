@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import styles from "./Navigation.module.css";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navigation = () => {
   const [active, setActive] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
+  const route = useRouter()
 
   const toggleActive = () => {
     setActive(!active);
@@ -14,6 +16,8 @@ const Navigation = () => {
   const toggleSearchActive = () => {
     setSearchActive(!searchActive);
   };
+
+  const pathname = usePathname();
 
   return (
     <div>
@@ -109,6 +113,7 @@ const Navigation = () => {
                     className="cursor-pointer"
                   />
                 )}
+                
               </div>
             </form>
 
@@ -144,11 +149,24 @@ const Navigation = () => {
                   className="cursor-pointer"
                 />
               )}
+              
+            </div>
+
+            <div>
+            { pathname !== "/" && (
+                  <Link href="/?back=true" className=' cursor-pointer'>
+                  <img 
+                    src="/images/Close Icon/Black icons (1)-02/new icons (1)-03.png" 
+                    alt="Close" 
+                    width={170}
+                    onClick={() => console.log('Close button clicked')} 
+                  />
+                </Link>
+                ) }
             </div>
           </div>
         </div>
       </div>
-
       {/* extra */}
     </div>
   );

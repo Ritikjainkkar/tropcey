@@ -146,7 +146,7 @@ body {
   transition: transform 1s ease-out, 
               opacity 1s ease-out 1s, 
               filter 1s ease-out 1s; */
-  animation: smallToBig 1s ease-in forwards;
+  animation: smallToBig 0.7s ease-in forwards;
 }
 
 @keyframes welcome {
@@ -200,7 +200,7 @@ body {
   transition: transform 1s ease-out; /* Animation to bring it into position */
 }
 .to-normal-position {
-  animation: fadeInBlurOut 1s ease-in forwards;
+  animation: fadeInBlurOut 0.7s ease-in forwards;
 }
 
 @keyframes fadeInZoomOut {
@@ -276,7 +276,7 @@ body {
 }
 
 .smallToBigImg {
-  animation: bigToNormal 1.5s ease-out;
+  animation: bigToNormal 1s ease-out;
 }
 
 .remove {

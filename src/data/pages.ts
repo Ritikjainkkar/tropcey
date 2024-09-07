@@ -993,48 +993,74 @@ export const order = [
 
 export const products = [
   {
-    "name": "Coconut Milk",
-    "image": "/images/coconut-milk.png",
-    "href": "/products/coconut-milk"
+    "name": "Coconut Treacle",
+    "image": "/images/Similar products/Similar products png-08.png",
+    "href": "/treacle",
+    "width": 30,
+    "height": 30,
+  },
+  {
+    "name": "Coconut Oil",
+    "image": "/images/Similar products/Similar products png-10.png",
+    "href": "/oil",
+    "width": 40,
+    "height": 40,
   },
   {
     "name": "Coconut Spread",
-    "image": "/images/coconut-spread.png",
-    "href": "/products/coconut-spread"
+    "image": "/images/Similar products/Similar products png-02.png",
+    "href": "/spread",
+    "width": 60,
+    "height": 20,
   },
   {
     "name": "Desiccated Coconut",
-    "image": "/images/desiccated-coconut.png",
-    "href": "/products/desiccated-coconut"
+    "image": "/images/Similar products/Similar products png-03.png",
+    "href": "/desiccated",
+    "width": 50,
+    "height": 40,
   },
   {
     "name": "Coconut Chips",
-    "image": "/images/coconut-chips.png",
-    "href": "/products/coconut-chips"
+    "image": "/images/Similar products/Similar products png-04.png",
+    "href": "/chips",
+    "width": 50,
+    "height": 40,
   },
   {
     "name": "Coconut Water",
-    "image": "/images/coconut-water.png",
-    "href": "/products/coconut-water"
+    "image": "/images/Similar products/Similar products png-05.png",
+    "href": "/water",
+    "width": 40,
+    "height": 40,
   },
   {
     "name": "Coconut Flour",
-    "image": "/images/coconut-flour.png",
-    "href": "/products/coconut-flour"
+    "image": "/images/Similar products/Similar products png-06.png",
+    "href": "/flour",
+    "width": 50,
+    "height": 40,
   },
   {
     "name": "Coconut Vinegar",
-    "image": "/images/coconut-vinegar.png",
-    "href": "/products/coconut-vinegar"
-  },
-  {
-    "name": "Coconut Treacle",
-    "image": "/images/coconut-treacle.png",
-    "href": "/products/coconut-treacle"
+    "image": "/images/Similar products/Similar products png-07.png",
+    "href": "/vinegar",
+    "width": 30,
+    "height": 30,
   },
   {
     "name": "Coconut Sugar",
-    "image": "/images/coconut-sugar.png",
-    "href": "/products/coconut-sugar"
-  }
+    "image": "/images/Similar products/Similar products png-09.png",
+    "href": "/sugar",
+    "width": 50,
+    "height": 40,
+  },
+  {
+    "name": "Coconut Milk",
+    "image": "/images/Similar products/Similar products png-01.png",
+    "href": "/milk",
+    "width": 50,
+    "height": 40,
+  },
+
 ]
