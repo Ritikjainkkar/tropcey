@@ -13,9 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        dDin: ["var(--font-ddin)"],
+        brokeline: ["var(--font-brokeline)"],
+      },
       zIndex: {
-        '100': '100',
-      }
+        "100": "100",
+      },
     },
   },
   plugins: [],

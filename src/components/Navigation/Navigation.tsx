@@ -7,7 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 const Navigation = () => {
   const [active, setActive] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
-  const route = useRouter()
+  const route = useRouter();
 
   const toggleActive = () => {
     setActive(!active);
@@ -110,10 +110,9 @@ const Navigation = () => {
                     height={40}
                     alt="search"
                     onClick={toggleSearchActive}
-                    className="cursor-pointer"
+                    className={`${styles.closeIcon}`}
                   />
                 )}
-                
               </div>
             </form>
 
@@ -136,7 +135,7 @@ const Navigation = () => {
                   height={40}
                   alt="close"
                   onClick={toggleActive}
-                  className="cursor-pointer"
+                  className={`${styles.closeIcon}`}
                 />
               )}
               {active && (
@@ -149,20 +148,19 @@ const Navigation = () => {
                   className="cursor-pointer"
                 />
               )}
-              
             </div>
 
             <div>
-            { pathname !== "/" && (
-                  <Link href="/?back=true" className=' cursor-pointer'>
-                  <img 
-                    src="/images/Close Icon/Black icons (1)-02/new icons (1)-03.png" 
-                    alt="Close" 
+              {pathname !== "/" && (
+                <Link href="/?back=true" className=" cursor-pointer">
+                  <img
+                    src="/images/Close Icon/Black icons (1)-02/new icons (1)-03.png"
+                    alt="Close"
                     width={170}
-                    onClick={() => console.log('Close button clicked')} 
+                    onClick={() => console.log("Close button clicked")}
                   />
                 </Link>
-                ) }
+              )}
             </div>
           </div>
         </div>
