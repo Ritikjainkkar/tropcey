@@ -106,7 +106,7 @@ const Navigation = () => {
                     height={40}
                     alt="search"
                     onClick={toggleSearchActive}
-                    className="cursor-pointer"
+                    className={`${styles.closeIcon}`}
                   />
                 )}
               </div>
@@ -131,7 +131,7 @@ const Navigation = () => {
                   height={40}
                   alt="close"
                   onClick={toggleActive}
-                  className="cursor-pointer"
+                  className={`${styles.closeIcon}`}
                 />
               )}
               {active && (
