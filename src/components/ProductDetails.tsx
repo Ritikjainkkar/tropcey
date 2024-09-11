@@ -1,15 +1,20 @@
-import React from 'react';
+import React from "react";
 
-const ProductDetails = ({ labels, life, storage, ingredient, labelFooter } : any) => {
-
-  const getFirstString = (str : string) => {
-    let final = ""
+const ProductDetails = ({
+  labels,
+  life,
+  storage,
+  ingredient,
+  labelFooter,
+}: any) => {
+  const getFirstString = (str: string) => {
+    let final = "";
     const strArr = str.split(" ");
-    for(let i = 0;i < strArr.length - 1 ; i ++) {
+    for (let i = 0; i < strArr.length - 1; i++) {
       final = i === 0 ? final + strArr[i] : final + " " + strArr[i];
     }
-    return final
-  }
+    return final;
+  };
 
   return (
     <div className="p-4 w-full pb-5">

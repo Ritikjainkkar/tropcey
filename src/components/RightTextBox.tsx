@@ -1,11 +1,10 @@
-import React from 'react'
-import DynamicTable from './DynamicTable'
-import ProductDetails from './ProductDetails'
-import ProductRecommendation from './ProductRecommendation'
-import Link from 'next/link'
-import SideBarNavigation from './SideBarNavigation'
+import React from "react";
+import DynamicTable from "./DynamicTable";
+import ProductDetails from "./ProductDetails";
+import ProductRecommendation from "./ProductRecommendation";
+import SideBarNavigation from "./SideBarNavigation";
 
-export default function RightTextBox({ details, isFull, isSpread } : any) {
+export default function RightTextBox({ details, isFull, isSpread }: any) {
   return (
     <div className='mt-8 w-full md:w-[55%] flex flex-col justify-center items-center pr-4 md:pr-[128px] relative'>
       <h1 className="text-2xl md:text-4xl font-bold text-black mb-1">{details.title}</h1>
@@ -30,5 +29,5 @@ export default function RightTextBox({ details, isFull, isSpread } : any) {
         </Link>
       </div> */}
     </div>
-  )
+  );
 }
