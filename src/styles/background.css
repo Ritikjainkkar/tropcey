@@ -14,18 +14,12 @@
   overflow: hidden;
 }
 
-.left-bg {
-  /* position: absolute; */
-  /* top: 0; */
-  width: auto;
-  height: 930px;
-}
-
+.left-bg,
 .right-bg {
-  /* position: absolute; */
-  /* top: 0; */
+  position: absolute;
+  top: 0;
   width: auto;
-  height: min-content;
+  height: 100vh;
 }
 
 .left-bg {
@@ -42,10 +36,5 @@
   position: relative;
   z-index: 3;
   padding: 20px;
-  background: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Optional: background for readability */
+  background: rgba(255, 255, 255, 0.8); /* Optional: background for readability */
 }
