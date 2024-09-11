@@ -17,6 +17,9 @@ const config: Config = {
         dDin: ["var(--font-ddin)"],
         brokeline: ["var(--font-brokeline)"],
       },
+      zIndex: {
+        '100': '100',
+      }
     },
   },
   plugins: [],

@@ -6,12 +6,12 @@ export default function LeftContainer({
   width,
 }: any) {
   return (
-    <div className="h-full w-full md:w-[40%] flex flex-col justify-center items-center p-4">
-      <img
-        src={imgSrc}
-        alt="Product image"
-        width={width ? width : "100%"}
-        className={`h-auto max-w-[450px] mb-8 md:mb-[64px] mt-28 md:mt-0`}
+    <div className='h-full w-full md:w-[40%] flex flex-col justify-center items-center p-4'>
+      <img 
+        src={imgSrc} 
+        alt="Product image"  
+        width={width ? width : '100%'} 
+        className={`h-auto max-w-[220px] mb-8 md:mb-[64px] md:max-w-[450px]`}
       />
       {brandingSubtitle ? (
         <div className="bg-[#0a2847] h-[50px] rounded-lg w-[100%] md:w-[300px] flex justify-center items-center">

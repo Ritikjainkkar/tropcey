@@ -1,14 +1,16 @@
+"use client"
+
 import React, { useState } from 'react';
 import { products } from '../data/pages';
 
-export default function SideBarNavigation({ searchParams }) {
+export default function SideBarNavigation() {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleSidebar = () => {
     setIsExpanded(!isExpanded);
   };
 
   const radiusX = 150; // Radius of the ellipse along the X-axis
-  const radiusY = 50;  // Radius of the ellipse along the Y-axis
+  const radiusY = 70;  // Radius of the ellipse along the Y-axis
   const center = 150;  // Center of the ellipse (since width and height of sidebar are 300px)
 
   // Define the elliptical arc segment
@@ -19,7 +21,7 @@ export default function SideBarNavigation({ searchParams }) {
   return (
     <div>
       <div
-        className={`absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer ${
+        className={`absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-[5] ${
           isExpanded ? 'bg-transparent' : 'bg-black p-2 rounded-full'
         }`}
         onClick={toggleSidebar}
@@ -35,18 +37,27 @@ export default function SideBarNavigation({ searchParams }) {
 
       {/* Expanded Sidebar with Elliptical Arc Layout */}
       {isExpanded && (
-        <div className="absolute right-10 top-1/2 transform -translate-y-1/2 w-[300px] h-[300px] rounded-full flex items-center justify-center">
+        <div className="absolute right-10 top-1/2 transform -translate-y-1/2 w-[300px] h-[300px] rounded-full flex items-center justify-center mt-5">
           <div className="relative w-full h-full">
+          <div
+              className="absolute top-[-235px] left-[170px] w-[700px] h-[800px] z-0"
+              style={{
+                border: '50px solid white', // 20px wide white strip
+                borderRadius: '50%', // Make it a circle
+                opacity: 0.5,
+                zIndex: 0, 
+              }}
+            />
             {products.map((product, index) => {
               const angle = startAngle + index * angleIncrement; // Calculate the angle for each product
               const x = center + Math.cos(angle) * radiusX; // Calculate the x position based on the elliptical radius
               const y = center + Math.sin(angle) * radiusY; // Calculate the y position based on the elliptical radius
               var extray = 0;
 
-              if(Math.ceil(products.length / 2) > index ) {
+              if (Math.ceil(products.length / 2) > index) {
                 extray = - (Math.ceil(products.length / 2) - index) * 10;
               } else {
-                extray = - (index - Math.ceil(products.length / 2)) * 10;
+                extray = - (index - Math.ceil(products.length / 2)) * 15;
               }
 
               return (
@@ -56,19 +67,19 @@ export default function SideBarNavigation({ searchParams }) {
                   className="absolute"
                   style={{
                     top: `${x - (index * 40) + 150}px`, // Adjust so the center of the item is at the calculated position
-                    right: `${y - 135 + extray}px`, // Same as above
+                    right: `${y - 155 + extray}px`, // Same as above
                   }}
                 >
-                  <div className="flex flex-row items-center space-y-2 mb-5">
+                  <div className="flex flex-row items-center space-y-2 transform transition-transform duration-300 hover:scale-110">
                     <span className="bg-black text-white py-1 px-2 rounded-full text-xs w-[135px]">
                       {product.name}
                     </span>
                     <img
                       src={product.image}
                       alt={product.name}
-                      width={40}
-                      height={40}
-                      className="rounded-full shadow-md"
+                      width={product.width}
+                      height={product.height}
+                      className="rounded-full hover:scale-125 transition-transform duration-100"
                     />
                   </div>
                 </a>
