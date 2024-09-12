@@ -74,8 +74,20 @@ const Navigation = () => {
               src="/images/navbar/logo.png"
               width={100}
               height={100}
+              className={pathname == "/" ? "" : "ml-[120px]"}
               alt="logo"
             />
+            { pathname !== "/" && (
+                  <Link href="/?back=true" className='cursor-pointer'>
+                  <img 
+                    src="/images/back icon-01-01.png" 
+                    alt="Close" 
+                    className="absolute top-0"
+                    width={120}
+                    onClick={() => console.log('Close button clicked')} 
+                  />
+                </Link>
+                ) }
           </Link>
         </div>
         {/* Right */}
@@ -150,19 +162,6 @@ const Navigation = () => {
                 />
               )}
               
-            </div>
-
-            <div>
-            { pathname !== "/" && (
-                  <Link href="/?back=true" className=' cursor-pointer'>
-                  <img 
-                    src="/images/Close Icon/Black icons (1)-02/new icons (1)-03.png" 
-                    alt="Close" 
-                    width={170}
-                    onClick={() => console.log('Close button clicked')} 
-                  />
-                </Link>
-                ) }
             </div>
           </div>
         </div>
