@@ -7,7 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 const Navigation = () => {
   const [active, setActive] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
-  const route = useRouter()
+  const route = useRouter();
 
   const toggleActive = () => {
     setActive(!active);
@@ -71,23 +71,23 @@ const Navigation = () => {
         <div className={`${styles.navLeft}`}>
           <Link href="/">
             <img
-              src="/images/navbar/logo.png"
+              src="/images/navbar/logo-black.png"
               width={100}
               height={100}
               className={pathname == "/" ? "" : "ml-[120px]"}
               alt="logo"
             />
-            { pathname !== "/" && (
-                  <Link href="/?back=true" className='cursor-pointer'>
-                  <img 
-                    src="/images/back icon-01-01.png" 
-                    alt="Close" 
-                    className="absolute top-0"
-                    width={120}
-                    onClick={() => console.log('Close button clicked')} 
-                  />
-                </Link>
-                ) }
+            {pathname !== "/" && (
+              <Link href="/?back=true" className="cursor-pointer">
+                <img
+                  src="/images/back icon-01-01.png"
+                  alt="Close"
+                  className="absolute top-0"
+                  width={120}
+                  onClick={() => console.log("Close button clicked")}
+                />
+              </Link>
+            )}
           </Link>
         </div>
         {/* Right */}
@@ -107,7 +107,7 @@ const Navigation = () => {
                 />
                 {!searchActive && (
                   <img
-                    src="/images/navbar/search-icon.png"
+                    src="/images/navbar/search-black.png"
                     width={40}
                     height={40}
                     alt="search"
@@ -117,7 +117,7 @@ const Navigation = () => {
                 )}
                 {searchActive && (
                   <img
-                    src="/images/navbar/close.png"
+                    src="/images/navbar/black_icon_close.png"
                     width={40}
                     height={40}
                     alt="search"
@@ -125,7 +125,6 @@ const Navigation = () => {
                     className={`${styles.closeIcon}`}
                   />
                 )}
-                
               </div>
             </form>
 
@@ -133,7 +132,7 @@ const Navigation = () => {
             <div className="relative flex gap-2">
               {!active && (
                 <img
-                  src="/images/navbar/burger.png"
+                  src="/images/navbar/burger-black.png"
                   width={70}
                   height={70}
                   alt="burger"
@@ -143,7 +142,7 @@ const Navigation = () => {
               )}
               {active && (
                 <img
-                  src="/images/navbar/close.png"
+                  src="/images/navbar/black_icon_close.png"
                   width={40}
                   height={40}
                   alt="close"
@@ -153,15 +152,14 @@ const Navigation = () => {
               )}
               {active && (
                 <img
-                  src="/images/navbar/angle-burger.png"
+                  src="/images/navbar/burger-black.png"
                   width={40}
                   height={40}
                   alt="angle-burger"
                   onClick={toggleActive}
-                  className="cursor-pointer"
+                  className="cursor-pointer rotate-[40deg]"
                 />
               )}
-              
             </div>
           </div>
         </div>
