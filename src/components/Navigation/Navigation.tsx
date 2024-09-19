@@ -30,7 +30,7 @@ const Navigation = () => {
         <ul className="flex flex-col gap-4  justify-center items-center">
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline  hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#899E79] tracking-wider font-brokeline  hover:text-[#FFFFFF] font-bold text-6xl"
               href="/about"
             >
               ABOUT US
@@ -38,7 +38,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#899E79] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/"
             >
               PRODUCTS
@@ -46,7 +46,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#899E79] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/our-values"
             >
               OUR VALUES
@@ -54,7 +54,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#899E79] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/contact"
             >
               CONTACT US
@@ -71,7 +71,7 @@ const Navigation = () => {
         <div className={`${styles.navLeft}`}>
           <Link href="/">
             <img
-              src="/images/navbar/logo-black.png"
+              src="/images/navbar/logo-shadow.png"
               width={100}
               height={100}
               className={pathname == "/" ? "" : "ml-[120px]"}
@@ -107,7 +107,7 @@ const Navigation = () => {
                 />
                 {!searchActive && (
                   <img
-                    src="/images/navbar/search-black.png"
+                    src="/images/navbar/search-icon.png"
                     width={40}
                     height={40}
                     alt="search"
@@ -117,7 +117,7 @@ const Navigation = () => {
                 )}
                 {searchActive && (
                   <img
-                    src="/images/navbar/black_icon_close.png"
+                    src="/images/navbar/close.png"
                     width={40}
                     height={40}
                     alt="search"
@@ -132,7 +132,7 @@ const Navigation = () => {
             <div className="relative flex gap-2">
               {!active && (
                 <img
-                  src="/images/navbar/burger-black.png"
+                  src="/images/navbar/burger.png"
                   width={70}
                   height={70}
                   alt="burger"
@@ -142,7 +142,7 @@ const Navigation = () => {
               )}
               {active && (
                 <img
-                  src="/images/navbar/black_icon_close.png"
+                  src="/images/navbar/close.png"
                   width={40}
                   height={40}
                   alt="close"
@@ -152,7 +152,7 @@ const Navigation = () => {
               )}
               {active && (
                 <img
-                  src="/images/navbar/burger-rotate.png"
+                  src="/images/navbar/angle-burger.png"
                   width={40}
                   height={40}
                   alt="angle-burger"
