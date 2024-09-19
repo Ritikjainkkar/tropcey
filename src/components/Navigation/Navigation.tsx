@@ -152,12 +152,12 @@ const Navigation = () => {
               )}
               {active && (
                 <img
-                  src="/images/navbar/burger-black.png"
+                  src="/images/navbar/burger-rotate.png"
                   width={40}
                   height={40}
                   alt="angle-burger"
                   onClick={toggleActive}
-                  className="cursor-pointer rotate-[40deg]"
+                  className="cursor-pointer"
                 />
               )}
             </div>
