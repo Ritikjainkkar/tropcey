@@ -9,7 +9,7 @@ export default function LeftContainer({
     <div className="h-full w-full md:w-[40%] flex flex-col justify-center items-center p-4">
       <img
         src="/images/home/Green Chips-tail.png"
-        width={"150px"}
+        width={"200px"}
         height={"100px"}
         alt=""
         className="tail-image lg:mt-[100px] md:mt-[150px] mt-[100px]"
