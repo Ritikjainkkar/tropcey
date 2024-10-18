@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import { products } from '../data/pages';
+import React, { useState } from "react";
+import { products } from "../data/pages";
 
 export default function SideBarNavigation() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,28 +10,28 @@ export default function SideBarNavigation() {
   };
 
   const radiusX = 150; // Radius of the ellipse along the X-axis
-  const radiusY = 70;  // Radius of the ellipse along the Y-axis
-  const center = 150;  // Center of the ellipse (since width and height of sidebar are 300px)
+  const radiusY = 70; // Radius of the ellipse along the Y-axis
+  const center = 150; // Center of the ellipse (since width and height of sidebar are 300px)
 
   // Define the elliptical arc segment
   const startAngle = Math.PI / 4; // Start at 45 degrees
-  const endAngle = 3 * Math.PI / 4; // End at 135 degrees
+  const endAngle = (3 * Math.PI) / 4; // End at 135 degrees
   const angleIncrement = (endAngle - startAngle) / (products.length - 1); // Calculate the increment per product
 
   return (
     <div>
       <div
-        className={`absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-[5] ${
-          isExpanded ? 'bg-transparent' : 'bg-black p-2 rounded-full'
+        className={`absolute right-[5px] top-1/2 transform -translate-y-1/2 cursor-pointer z-[5] ${
+          isExpanded ? "bg-transparent" : "bg-black p-2 rounded-full"
         }`}
         onClick={toggleSidebar}
       >
         <img
-          src="/images/sidebar.png"
+          src="/images/singl-sidebar-icon.png"
           alt="Toggle Sidebar"
           width={isExpanded ? 40 : 30}
           height={isExpanded ? 40 : 30}
-          className={isExpanded ? '' : 'shadow-lg'}
+          className={isExpanded ? "" : "shadow-lg"}
         />
       </div>
 
@@ -39,13 +39,13 @@ export default function SideBarNavigation() {
       {isExpanded && (
         <div className="absolute right-10 top-1/2 transform -translate-y-1/2 w-[300px] h-[300px] rounded-full flex items-center justify-center mt-5">
           <div className="relative w-full h-full">
-          <div
+            <div
               className="absolute top-[-235px] left-[170px] w-[700px] h-[800px] z-0"
               style={{
-                border: '50px solid white', // 20px wide white strip
-                borderRadius: '50%', // Make it a circle
+                border: "50px solid white", // 20px wide white strip
+                borderRadius: "50%", // Make it a circle
                 opacity: 0.5,
-                zIndex: 0, 
+                zIndex: 0,
               }}
             />
             {products.map((product, index) => {
@@ -55,9 +55,9 @@ export default function SideBarNavigation() {
               var extray = 0;
 
               if (Math.ceil(products.length / 2) > index) {
-                extray = - (Math.ceil(products.length / 2) - index) * 10;
+                extray = -(Math.ceil(products.length / 2) - index) * 10;
               } else {
-                extray = - (index - Math.ceil(products.length / 2)) * 15;
+                extray = -(index - Math.ceil(products.length / 2)) * 15;
               }
 
               return (
@@ -66,7 +66,7 @@ export default function SideBarNavigation() {
                   href={product.href}
                   className="absolute"
                   style={{
-                    top: `${x - (index * 40) + 150}px`, // Adjust so the center of the item is at the calculated position
+                    top: `${x - index * 40 + 150}px`, // Adjust so the center of the item is at the calculated position
                     right: `${y - 155 + extray}px`, // Same as above
                   }}
                 >
