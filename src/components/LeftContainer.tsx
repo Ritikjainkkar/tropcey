@@ -7,7 +7,7 @@ export default function LeftContainer({
 }: any) {
   return (
     <div className='h-full w-full md:w-[40%] flex flex-col justify-center items-center p-4'>
-      <img 
+      <img loading="lazy" 
         src={imgSrc} 
         alt="Product image"  
         width={width ? width : '100%'} 

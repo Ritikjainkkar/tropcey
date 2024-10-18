@@ -169,21 +169,21 @@ const Home: React.FC = () => {
       <div style={{ overflow: "hidden" }} className="top-container flex z-0 hidden" ref={scrollContainerRef}>
         <div className="landing-left flex items-center">
           <div className="flex relative">
-            <img className="treeImg" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
+            <img loading="lazy" className="treeImg" loading="lazy" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
             <div className="image-collection display-none" ref={imageRef}>
-              <div data-url="/vinegar" className="marker" style={{ width: "155px", top: '15%', left: '42%' }}><img src="/images/land/About us Pages-03.png" width="180px" height="180px" /></div>
-              <div data-url="/treacle" className="marker" style={{ top: '15%', left: '64%' }}><img src="/images/land/About us Pages-04.png" width="150px" height="150px" /></div>
-              <div data-url="/chips" className="marker" style={{ top: '30%', left: '10%' }}><img src="/images/land/About us Pages-05.png" width="150px" height="150px" /></div>
-              <div data-url="/spread" className="marker" style={{ top: '30%', left: '32%' }}><img src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
-              <div data-url="/flour" className="marker" style={{ top: '30%', left: '53%' }}><img src="/images/land/About us Pages-11.png" width="150px" height="150px" /></div>
-              <div data-url="/sugar" className="marker" style={{ top: '50%', left: '15%' }}><img src="/images/land/About us Pages-06.png" width="150px" height="150px" /></div>
-              <div data-url="/dessicated" className="marker" style={{ top: '50%', left: '40%' }}><img src="/images/land/About us Pages-08.png" width="150px" height="150px" /></div>
-              <div data-url="/milk" className="marker" style={{ top: '50%', left: '70%' }}><img src="/images/land/About us Pages-10.png" width="150px" height="150px" /></div>
-              <div data-url="/oil" className="marker" style={{ top: '65%', left: '55%' }}><img src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
+              <div data-url="/vinegar" className="marker" style={{ width: "155px", top: '15%', left: '42%' }}><img loading="lazy" src="/images/land/About us Pages-03.png" width="180px" height="180px" /></div>
+              <div data-url="/treacle" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/images/land/About us Pages-04.png" width="150px" height="150px" /></div>
+              <div data-url="/chips" className="marker" style={{ top: '30%', left: '10%' }}><img loading="lazy" src="/images/land/About us Pages-05.png" width="150px" height="150px" /></div>
+              <div data-url="/spread" className="marker" style={{ top: '30%', left: '32%' }}><img loading="lazy" src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
+              <div data-url="/flour" className="marker" style={{ top: '30%', left: '53%' }}><img loading="lazy" src="/images/land/About us Pages-11.png" width="150px" height="150px" /></div>
+              <div data-url="/sugar" className="marker" style={{ top: '50%', left: '15%' }}><img loading="lazy" src="/images/land/About us Pages-06.png" width="150px" height="150px" /></div>
+              <div data-url="/dessicated" className="marker" style={{ top: '50%', left: '40%' }}><img loading="lazy" src="/images/land/About us Pages-08.png" width="150px" height="150px" /></div>
+              <div data-url="/milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-10.png" width="150px" height="150px" /></div>
+              <div data-url="/oil" className="marker" style={{ top: '65%', left: '55%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
             </div>
             <div className="product" ref={productRef}>
-              <img className="absolute" style={{ bottom: '-33%', left: '-5%' }} width="100%" src="/images/home1/About us Pages-05.png" alt="Descriptive Alt Text" />
-              <img className="absolute" style={{ bottom: '-35%', left: '55%', transform: 'scale(0.65)' }} width="100%" src="/images/home1/About us Pages-07.png" alt="Descriptive Alt Text" />
+              <img loading="lazy" className="absolute" style={{ bottom: '-33%', left: '-5%' }} width="100%" src="/images/home1/About us Pages-05.png" alt="Descriptive Alt Text" />
+              <img loading="lazy" className="absolute" style={{ bottom: '-35%', left: '55%', transform: 'scale(0.65)' }} width="100%" src="/images/home1/About us Pages-07.png" alt="Descriptive Alt Text" />
             </div>
             <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
               <button
@@ -200,8 +200,13 @@ const Home: React.FC = () => {
         </div>
         <div className="landing-right flex justify-center items-center">
           <div className="mb-[200px]">
-            <img className="" style={{ margin: 'auto' }} width="50%" src="/images/home1/About us Pages-10.png" alt="Descriptive Alt Text" />
-            <img className="" style={{ top: '50%' }} width="100%" src="/images/home1/About us Pages-09.png" alt="Descriptive Alt Text" />
+            <div class="flip-container mb-[200px]">
+              <div class="flipper">
+                <img loading="lazy" src="/images/home1/only compass-01 (1).png" alt="Front Image" class="front" />
+                <img loading="lazy" src="/images/home1/only compass-02 (2).png" alt="Back Image" class="back" />
+              </div>
+            </div>
+            <img loading="lazy" className="mt-[220px]" style={{ top: '50%' }} width="100%" src="/images/home1/About us Pages-09.png" alt="Descriptive Alt Text" />
           </div>
         </div>
       </div>

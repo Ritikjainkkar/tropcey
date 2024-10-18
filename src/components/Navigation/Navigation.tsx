@@ -79,7 +79,7 @@ const Navigation = () => {
             />
             { pathname !== "/" && (
                   <Link href="/?back=true" className='cursor-pointer'>
-                  <img 
+                  <img loading="lazy" 
                     src="/images/back icon-01-01.png" 
                     alt="Close" 
                     className="absolute top-0"

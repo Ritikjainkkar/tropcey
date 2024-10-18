@@ -39,19 +39,19 @@ export const data = {
     recommendations: [
       {
         url: "/images/recommendations/Green Chips-06.png",
-        click: "",
+        click: "/chips",
       },
       {
         url: "/images/recommendations/Green Chips-10.png",
-        click: "",
+        click: "/chips/blue",
       },
       {
         url: "/images/recommendations/Green Chips-11.png",
-        click: "",
+        click: "/chips/yellow",
       },
       {
         url: "/images/recommendations/Green Chips-12.png",
-        click: "",
+        click: "/chips/brown",
       },
     ],
   },
@@ -223,7 +223,55 @@ export const data = {
   dessicated: {
     id: "19",
     name: "dessicated",
-    imgUri: "/images/Dessicated/Desicated coconut Page-10 (1).png",
+    imgUri: "/images/Dessicated/Desicated coconut Page-05 (1).png",
+    title: "Desiccated Coconut",
+    brandingSubtitle: "",
+    subTitle: "Fine Grade",
+    description:
+      "Tropcey Desiccated Coconut is 100% natural co conutand rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [
+        ["500g stand up pouch", "24", "72", "17280", "34560"],
+        ["1kg stand up pouch", "4", "200", "8000", "16000"],
+        ["25kg craft paper bag", "", "4", "40", "80"],
+      ],
+    },
+    life: "12 Months",
+    storage: "In a cool dry place, away from direct sunlight.",
+    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
+    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
+    labelFooter:
+      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
+    mainImage: {
+      sizeW: 400,
+      sizeH: "",
+    },
+    background: {
+      left: "/images/Dessicated/Desicated coconut Page-04.png",
+      right: "/images/Dessicated/Desicated coconut Page - Medium Grade-04.png",
+    },
+    recommendations: [
+      {
+        url: "/images/Dessicated/Desicated coconut Page-06.png",
+        click: "/dessicated",
+      },
+      {
+        url: "/images/Dessicated/Desicated coconut Page-08.png",
+        click: "/dessicated/medium",
+      },
+    ],
+  },
+  meddessicated: {
+    id: "19",
+    name: "dessicated",
+    imgUri: "/images/Dessicated/Desicated coconut Page - Medium Grade-05.png",
     title: "Desiccated Coconut",
     brandingSubtitle: "",
     subTitle: "Fine Grade",
@@ -259,7 +307,7 @@ export const data = {
     },
     recommendations: [
       {
-        url: "/images/Dessicated/Desicated coconut Page-06.png",
+        url: "/images/Dessicated/Desicated coconut Page - Medium Grade-09.png",
         click: "/dessicated",
       },
       {
@@ -1127,6 +1175,174 @@ export const data = {
       },
     ],
   },
+  blueChips: {
+    id: "1",
+    name: "chip",
+    imgUri: "/images/home/Blues Chips Page Final-01.png",
+    background: {
+      left: "/images/background/Green Chips-13.png",
+      right: "/images/background/Green Chips-14.png",
+    },
+    title: "Coconut Chips",
+    subTitle: "Baked Chips",
+    description:
+      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [
+        ["40g pouch", "24", "72", "17280", "34560"],
+        ["80g pouch", "24", "56", "13440", "26880"],
+        ["100g pouch", "24", "72", "17280", "34560"],
+        ["500g pouch", "12", "72", "8640", "17280"],
+        ["40g pouch", "N/A", "96", "960", "1920"],
+        ["40g pouch", "N/A", "48", "480", "960"],
+      ],
+    },
+    life: "12 Months",
+    storage: "In a cool dry place, away from direct sunlight.",
+    ingredient: "Dried Coconut",
+    brandingTitle:
+      "Healthy snack, as a topping on salads, desserts and cereals",
+    brandingSubtitle: "Rich source of dietary fiber",
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/chips/Green Chips-09.png",
+        click: "/chips",
+      },
+      {
+        url: "/images/chips/Blues Chips Page Final-03.png",
+        click: "/chips/blue",
+      },
+      {
+        url: "/images/recommendations/Green Chips-11.png",
+        click: "/chips/yellow",
+      },
+      {
+        url: "/images/recommendations/Green Chips-12.png",
+        click: "/chips/brown",
+      },
+    ],
+  },
+  brownChips: {
+    id: "1",
+    name: "chip",
+    imgUri: "/images/home/Brown Chips Page Final-01.png",
+    background: {
+      left: "/images/background/Brown Chips Page Final-02.png",
+      right: "/images/background/Brown Chips Page Final-02.png",
+    },
+    title: "Coconut Chips",
+    subTitle: "Baked Chips",
+    description:
+      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [
+        ["40g pouch", "24", "72", "17280", "34560"],
+        ["80g pouch", "24", "56", "13440", "26880"],
+        ["100g pouch", "24", "72", "17280", "34560"],
+        ["500g pouch", "12", "72", "8640", "17280"],
+        ["40g pouch", "N/A", "96", "960", "1920"],
+        ["40g pouch", "N/A", "48", "480", "960"],
+      ],
+    },
+    life: "12 Months",
+    storage: "In a cool dry place, away from direct sunlight.",
+    ingredient: "Dried Coconut",
+    brandingTitle:
+      "Healthy snack, as a topping on salads, desserts and cereals",
+    brandingSubtitle: "Rich source of dietary fiber",
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/chips/Green Chips-09.png",
+        click: "/chips",
+      },
+      {
+        url: "/images/recommendations/Green Chips-10.png",
+        click: "/chips/blue",
+      },
+      {
+        url: "/images/recommendations/Green Chips-11.png",
+        click: "/chips/yellow",
+      },
+      {
+        url: "/images/chips/Brown Chips Page Final-03.png",
+        click: "/chips/brown",
+      },
+    ],
+  },
+  yellowChips: {
+    id: "1",
+    name: "chip",
+    imgUri: "/images/home/Yellow Chips Page Final-01.png",
+    background: {
+      left: "/images/background/Green Chips-13.png",
+      right: "/images/background/Green Chips-14.png",
+    },
+    title: "Coconut Chips",
+    subTitle: "Baked Chips",
+    description:
+      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [
+        ["40g pouch", "24", "72", "17280", "34560"],
+        ["80g pouch", "24", "56", "13440", "26880"],
+        ["100g pouch", "24", "72", "17280", "34560"],
+        ["500g pouch", "12", "72", "8640", "17280"],
+        ["40g pouch", "N/A", "96", "960", "1920"],
+        ["40g pouch", "N/A", "48", "480", "960"],
+      ],
+    },
+    life: "12 Months",
+    storage: "In a cool dry place, away from direct sunlight.",
+    ingredient: "Dried Coconut",
+    brandingTitle:
+      "Healthy snack, as a topping on salads, desserts and cereals",
+    brandingSubtitle: "Rich source of dietary fiber",
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/chips/Green Chips-09.png",
+        click: "/chips",
+      },
+      {
+        url: "/images/recommendations/Green Chips-10.png",
+        click: "/chips/blue",
+      },
+      {
+        url: "/images/chips/Yellow Chips Page Final-03.png",
+        click: "/chips/yellow",
+      },
+      {
+        url: "/images/recommendations/Green Chips-12.png",
+        click: "/chips/brown",
+      },
+    ],
+  }
 };
 
 export const order = [

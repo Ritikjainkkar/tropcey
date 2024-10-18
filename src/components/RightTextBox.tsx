@@ -45,7 +45,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
       <SideBarNavigation />
       {/* <div  className="absolute top-[-75px] right-[100px] cursor-pointer z-100" >
         <Link href="/?back=true" className='z-100 cursor-pointer'>
-          <img 
+          <img loading="lazy" 
             src="/images/Close Icon/Black icons (1)-02/new icons (1)-03.png" 
             alt="Close" 
             width={80}
