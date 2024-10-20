@@ -185,7 +185,7 @@ const Home: React.FC = () => {
               <img loading="lazy" className="absolute" style={{ bottom: '-33%', left: '-5%' }} width="100%" src="/images/home1/About us Pages-05.png" alt="Descriptive Alt Text" />
               <img loading="lazy" className="absolute" style={{ bottom: '-35%', left: '55%', transform: 'scale(0.65)' }} width="100%" src="/images/home1/About us Pages-07.png" alt="Descriptive Alt Text" />
             </div>
-            <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
+            {/* <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
               <button
                 className="text-white py-2 px-6 rounded-full shadow-lg animate-bounce relative"
                 style={{
@@ -195,7 +195,7 @@ const Home: React.FC = () => {
               >
                 <marquee scrollamount="3" behavior="scroll">Click here for instructions!</marquee>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="landing-right flex justify-center items-center">
