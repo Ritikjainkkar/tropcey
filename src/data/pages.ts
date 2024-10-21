@@ -166,7 +166,7 @@ export const data = {
   spread: {
     id: "7",
     name: "spread",
-    imgUri: "/images/Cashew/ca-07.png",
+    imgUri: "/images/Puree/coconut puree-07.png",
     title: "Coconut Spread",
     subTitle: "Made from Coconut Puree",
     description:
@@ -204,20 +204,20 @@ export const data = {
     secondaryColor: "",
     recommendations: [
       {
-        url: "/images/Cashew/ca-06.png",
+        url: "/images/Cashew/Puree 1-10.png",
+        click: "/spread/",
+      },
+      {
+        url: "/images/Cashew/Puree 1-06.png",
         click: "/spread/cashew",
       },
       {
         url: "/images/Cashew/Puree 1-05.png",
-        click: "/spread/cashew",
+        click: "/spread/dark-chocolate",
       },
       {
         url: "/images/Cashew/Puree 1-07.png",
         click: "/spread/white-chocolate",
-      },
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/dark",
       },
     ],
   },
@@ -706,7 +706,7 @@ export const data = {
   coil_greenchili: {
     id: "14",
     name: "coil_greenchili",
-    imgUri: "/images/Green chili/green chilli-04.png",
+    imgUri: "/images/Green Chili/green chilli-04.png",
     title: "Coconut Oil",
     subTitle: "With Natural Green Chili",
     description:
@@ -760,7 +760,7 @@ export const data = {
         click: "/oil/mint",
       },
       {
-        url: "/images/Green chili/green chilli-08.png",
+        url: "/images/Green Chili/green chilli-08.png",
         click: "",
       },
       {
@@ -1041,20 +1041,20 @@ export const data = {
     secondaryColor: "",
     recommendations: [
       {
+        url: "/images/Cashew/Puree 1-10.png",
+        click: "/spread/",
+      },
+      {
+        url: "/images/Cashew/Puree 1-06.png",
+        click: "/spread/cashew",
+      },
+      {
         url: "/images/Cashew/Puree 1-05.png",
         click: "/spread/dark-chocolate",
       },
       {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread",
-      },
-      {
         url: "/images/White Chcocolate/Puree 1-09.png",
         click: "/spread/white-chocolate",
-      },
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/cashew",
       },
     ],
   },
@@ -1100,20 +1100,20 @@ export const data = {
     secondaryColor: "",
     recommendations: [
       {
+        url: "/images/Cashew/Puree 1-10.png",
+        click: "/spread/",
+      },
+      {
+        url: "/images/Cashew/ca-06.png",
+        click: "/spread/cashew",
+      },
+      {
         url: "/images/Cashew/Puree 1-05.png",
         click: "/spread/dark-chocolate",
       },
       {
         url: "/images/Cashew/Puree 1-07.png",
         click: "/spread/white-chocolate",
-      },
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/cashew",
-      },
-      {
-        url: "/images/Cashew/ca-06.png",
-        click: "/spread/cashew",
       },
     ],
   },
@@ -1159,20 +1159,20 @@ export const data = {
     secondaryColor: "",
     recommendations: [
       {
+        url: "/images/Cashew/Puree 1-10.png",
+        click: "/spread/",
+      },
+      {
+        url: "/images/Cashew/Puree 1-06.png",
+        click: "/spread/cashew",
+      },
+      {
         url: "/images/Dark Chocolate/Puree 1-08.png",
         click: "/spread/dark-chocolate",
       },
       {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread",
-      },
-      {
         url: "/images/Cashew/Puree 1-07.png",
         click: "/spread/white-chocolate",
-      },
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/cashew",
       },
     ],
   },
@@ -1215,20 +1215,20 @@ export const data = {
     label: ["VEGAN", "NON GMO"],
     recommendations: [
       {
-        url: "/images/chips/Green Chips-09.png",
-        click: "/chips",
+        url: "/images/Cashew/Puree 1-10.png",
+        click: "/spread/",
       },
       {
-        url: "/images/chips/Blues Chips Page Final-03.png",
-        click: "/chips/blue",
+        url: "/images/Cashew/Puree 1-06.png",
+        click: "/spread/cashew",
       },
       {
-        url: "/images/recommendations/Green Chips-11.png",
-        click: "/chips/yellow",
+        url: "/images/Cashew/Puree 1-05.png",
+        click: "/spread/dark-chocolate",
       },
       {
-        url: "/images/recommendations/Green Chips-12.png",
-        click: "/chips/brown",
+        url: "/images/Cashew/Puree 1-07.png",
+        click: "/spread/white-chocolate",
       },
     ],
   },

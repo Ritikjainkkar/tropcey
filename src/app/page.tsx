@@ -169,7 +169,7 @@ const Home: React.FC = () => {
       <div style={{ overflow: "hidden" }} className="top-container flex z-0 hidden" ref={scrollContainerRef}>
         <div className="landing-left flex items-center">
           <div className="flex relative">
-            <img loading="lazy" className="treeImg" loading="lazy" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
+            <img loading="lazy" className="treeImg" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
             <div className="image-collection display-none" ref={imageRef}>
               <div data-url="/vinegar" className="marker" style={{ width: "155px", top: '15%', left: '42%' }}><img loading="lazy" src="/images/land/About us Pages-03.png" width="180px" height="180px" /></div>
               <div data-url="/treacle" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/images/land/About us Pages-04.png" width="150px" height="150px" /></div>
