@@ -1,4 +1,5 @@
 "use client"
+"use client"
 import Background from '@/components/Background'
 import LeftContainer from '@/components/LeftContainer';
 import RightTextBox from '@/components/RightTextBox';

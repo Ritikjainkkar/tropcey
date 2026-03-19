@@ -1,4 +1,5 @@
 "use client"
+"use client"
 import Background from '@/components/Background'
 import LeftContainer from '@/components/LeftContainer';
 import RightTextBox from '@/components/RightTextBox';
@@ -29,26 +30,18 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
 
   return (
     <div 
-      ref={AnimRef}
-      style={{ transform: 'translate(0, 0) scale(1)', filter: 'blur(30px)', opacity: 0.8  }} 
-      className="animated-element"
-    >
-      <Background leftSrc={treacle.background.left} RightSrc={treacle.background.right}/>
-      <div className='relative text-white flex justify-between h-[100vh] w-[100%] items-center z-10'>
-        <LeftContainer imgSrc={treacle.imgUri} width={treacle.mainImage.sizeW}/>
-        <RightTextBox details={treacle}/>
-        <Link href="/?back=true">
-          <img 
-            src="/Icons/close.svg" 
-            alt="Close" 
-            width={40}
-            className="absolute top-4 right-4 cursor-pointer z-20" 
-            onClick={() => console.log('Close button clicked')} 
-          />
-        </Link>
-        <SideBarNavigation searchParams={undefined} />
-      </div>
-    </div>
+  ref={AnimRef}
+  style={{ transform: 'translate(0, 0) scale(1)', filter: 'blur(30px)', opacity: 0.8  }} 
+  className="animated-element relative"
+>
+  <Background leftSrc={treacle.background.left} RightSrc={treacle.background.right}/>
+  <div className='relative text-white flex flex-col md:flex-row p-5 md:p-0 justify-between h-[100vh] w-[100%] items-center z-10'>
+    <LeftContainer imgSrc={treacle.imgUri} width={treacle.mainImage.sizeW}/>
+    <RightTextBox details={treacle}/>
+  </div>
+  
+</div>
+
   )
 }
 

@@ -1,4 +1,5 @@
 "use client"
+"use client"
 import Background from '@/components/Background'
 import LeftContainer from '@/components/LeftContainer';
 import RightTextBox from '@/components/RightTextBox';
@@ -32,15 +33,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
         <LeftContainer imgSrc={spread.imgUri} width={spread.mainImage.sizeW}/>
         <RightTextBox details={spread}/>
       </div>
-      <Link href="/?back=true">
-          <img 
-            src="/Icons/close.svg" 
-            alt="Close" 
-            width={40}
-            className="absolute top-4 right-4 cursor-pointer z-20" 
-            onClick={() => console.log('Close button clicked')} 
-          />
-        </Link>
+      
     </div>
   )
 }

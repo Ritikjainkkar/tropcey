@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import styles from "./Navigation.module.css";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navigation = () => {
   const [active, setActive] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
+  const route = useRouter();
 
   const toggleActive = () => {
     setActive(!active);
@@ -14,6 +16,8 @@ const Navigation = () => {
   const toggleSearchActive = () => {
     setSearchActive(!searchActive);
   };
+
+  const pathname = usePathname();
 
   return (
     <div>
@@ -26,7 +30,7 @@ const Navigation = () => {
         <ul className="flex flex-col gap-4  justify-center items-center">
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline  hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] tracking-wider font-brokeline  hover:text-[#FFFFFF] font-bold text-6xl"
               href="/about"
             >
               ABOUT US
@@ -34,7 +38,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/"
             >
               PRODUCTS
@@ -42,7 +46,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/our-values"
             >
               OUR VALUES
@@ -50,7 +54,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#889D75] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/contact"
             >
               CONTACT US
@@ -67,11 +71,23 @@ const Navigation = () => {
         <div className={`${styles.navLeft}`}>
           <Link href="/">
             <img
-              src="/images/navbar/logo.png"
+              src="/images/navbar/logo-shadow.png"
               width={100}
               height={100}
+              className={pathname == "/" ? "" : "ml-[120px]"}
               alt="logo"
             />
+            {pathname !== "/" && (
+              <Link href="/?back=true" className="cursor-pointer">
+                <img
+                  src="/images/back icon-01-01.png"
+                  alt="Close"
+                  className="absolute top-0"
+                  width={120}
+                  onClick={() => console.log("Close button clicked")}
+                />
+              </Link>
+            )}
           </Link>
         </div>
         {/* Right */}
@@ -106,7 +122,7 @@ const Navigation = () => {
                     height={40}
                     alt="search"
                     onClick={toggleSearchActive}
-                    className="cursor-pointer"
+                    className={`${styles.closeIcon}`}
                   />
                 )}
               </div>
@@ -131,7 +147,7 @@ const Navigation = () => {
                   height={40}
                   alt="close"
                   onClick={toggleActive}
-                  className="cursor-pointer"
+                  className={`${styles.closeIcon}`}
                 />
               )}
               {active && (
@@ -148,7 +164,6 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-
       {/* extra */}
     </div>
   );

@@ -1,4 +1,5 @@
 "use client"
+"use client"
 import Background from '@/components/Background'
 import LeftContainer from '@/components/LeftContainer';
 import RightTextBox from '@/components/RightTextBox';
@@ -32,7 +33,6 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
         <LeftContainer imgSrc={vinegar.imgUri} width={vinegar.mainImage.sizeW}/>
         <RightTextBox details={vinegar}/>
       </div>
-      <SideBarNavigation searchParams={undefined} />
     </div>
   )
 }
