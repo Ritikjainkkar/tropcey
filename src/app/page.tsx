@@ -5,15 +5,17 @@ import { useEffect, useRef, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from 'next/navigation';
 
 const urls = [
-  "/oil",
-  "/chips",
-  "/spread",
-  "/dessicated",
-  "/milk",
-  "/treacle",
-  "/sugar",
-  "/flour",
-  "/vinegar"
+  "/organic-virgin-coconut-oil",
+  "/infused-virgin-coconut-oil",
+  "/organic-coconut-chips",
+  "/organic-coconut-sugar",
+  "/organic-coconut-puree",
+  "/coconut-chocolate-spread",
+  "/organic-coconut-syrup",
+  "/organic-coconut-flour",
+  "/organic-coconut-water-vinegar",
+  "/organic-desiccated-coconut",
+  "/coconut-milk"
 ];
 
 const Home: React.FC = () => {
@@ -171,15 +173,19 @@ const Home: React.FC = () => {
           <div className="flex relative">
             <img loading="lazy" className="treeImg" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
             <div className="image-collection display-none" ref={imageRef}>
-              <div data-url="/vinegar" className="marker" style={{ width: "155px", top: '15%', left: '42%' }}><img loading="lazy" src="/images/land/About us Pages-03.png" width="180px" height="180px" /></div>
-              <div data-url="/treacle" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/images/land/About us Pages-04.png" width="150px" height="150px" /></div>
-              <div data-url="/chips" className="marker" style={{ top: '30%', left: '10%' }}><img loading="lazy" src="/images/land/About us Pages-05.png" width="150px" height="150px" /></div>
-              <div data-url="/spread" className="marker" style={{ top: '30%', left: '32%' }}><img loading="lazy" src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
-              <div data-url="/flour" className="marker" style={{ top: '30%', left: '53%' }}><img loading="lazy" src="/images/land/About us Pages-11.png" width="150px" height="150px" /></div>
-              <div data-url="/sugar" className="marker" style={{ top: '50%', left: '15%' }}><img loading="lazy" src="/images/land/About us Pages-06.png" width="150px" height="150px" /></div>
-              <div data-url="/dessicated" className="marker" style={{ top: '50%', left: '40%' }}><img loading="lazy" src="/images/land/About us Pages-08.png" width="150px" height="150px" /></div>
-              <div data-url="/milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-10.png" width="150px" height="150px" /></div>
-              <div data-url="/oil" className="marker" style={{ top: '65%', left: '55%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
+              <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ width: "155px", top: '15%', left: '42%' }}><img loading="lazy" src="/images/land/About us Pages-03.png" width="180px" height="180px" /></div>
+              <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/images/land/About us Pages-04.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '30%', left: '10%' }}><img loading="lazy" src="/images/land/About us Pages-05.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-coconut-puree" className="marker" style={{ top: '30%', left: '32%' }}><img loading="lazy" src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-coconut-flour" className="marker" style={{ top: '30%', left: '53%' }}><img loading="lazy" src="/images/land/About us Pages-11.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '50%', left: '15%' }}><img loading="lazy" src="/images/land/About us Pages-06.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-desiccated-coconut" className="marker" style={{ top: '50%', left: '40%' }}><img loading="lazy" src="/images/land/About us Pages-08.png" width="150px" height="150px" /></div>
+              <div data-url="/coconut-milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-10.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-virgin-coconut-oil" className="marker" style={{ top: '65%', left: '55%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
+              {/* New: Infused Virgin Coconut Oil */}
+              <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '75%', left: '30%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
+              {/* New: Coconut Chocolate Spread */}
+              <div data-url="/coconut-chocolate-spread" className="marker" style={{ top: '75%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
             </div>
             <div className="product" ref={productRef}>
               <img loading="lazy" className="absolute" style={{ bottom: '-33%', left: '-5%' }} width="100%" src="/images/home1/About us Pages-05.png" alt="Descriptive Alt Text" />

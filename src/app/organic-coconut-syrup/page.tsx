@@ -21,8 +21,8 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
       }, 10); 
     }
     if(typeof window !== 'undefined') {
-      localStorage.setItem('lastUrl', '/treacle')
-      localStorage.setItem('lastPage', 'treacle')
+      localStorage.setItem('lastUrl', '/organic-coconut-syrup')
+      localStorage.setItem('lastPage', 'organic-coconut-syrup')
     }
   }, []);
 

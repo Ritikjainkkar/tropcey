@@ -21,17 +21,15 @@ export default function SideBarNavigation() {
   return (
     <div>
       <div
-        className={`absolute right-[5px] top-1/2 transform -translate-y-1/2 cursor-pointer z-[5] ${
-          isExpanded ? "bg-transparent" : "bg-black p-2 rounded-full"
-        }`}
+        className={`absolute right-[5px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[5]`}
         onClick={toggleSidebar}
       >
         <img
-          src="/images/singl-sidebar-icon.png"
+          src="/Icons/label-icon.png"
           alt="Toggle Sidebar"
-          width={isExpanded ? 40 : 30}
-          height={isExpanded ? 40 : 30}
-          className={isExpanded ? "" : "shadow-lg"}
+          width={isExpanded ? 100 : 90}
+          height={isExpanded ? 100 : 90}
+          className="shadow-lg"
         />
       </div>
 

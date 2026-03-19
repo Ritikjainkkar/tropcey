@@ -8,7 +8,7 @@ export const data = {
       left: "/images/background/Green Chips-13.png",
       right: "/images/background/Green Chips-14.png",
     },
-    title: "Coconut Chips",
+    title: "Organic Coconut Chips",
     subTitle: "Baked Chips",
     description:
       "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
@@ -40,7 +40,7 @@ export const data = {
     recommendations: [
       {
         url: "/images/recommendations/Green Chips-06.png",
-        click: "/chips",
+        click: "/organic-coconut-chips",
       },
       {
         url: "/images/recommendations/Green Chips-10.png",
@@ -64,7 +64,7 @@ export const data = {
       left: "",
       right: "",
     },
-    title: "Coconut Sugar",
+    title: "Organic Coconut Sugar",
     subTitle: "Baked Chips",
     description:
       "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
@@ -108,7 +108,7 @@ export const data = {
       left: "/images/Flour page/Flour page Final-07.png",
       right: "/images/Flour page/Flour page Final-08.png",
     },
-    title: "Coconut Flour",
+    title: "Organic Coconut Flour",
     subTitle: "",
     description:
       "Tropcey Coconut Flour is made by defatted dried coconut meat which can be used to bake high-quality, gluten free, low carbohydrate food.It has a low glycemic index.",
@@ -167,7 +167,7 @@ export const data = {
     id: "7",
     name: "spread",
     imgUri: "/images/Puree/coconut puree-07.png",
-    title: "Coconut Spread",
+    title: "Organic Coconut Puree",
     subTitle: "Made from Coconut Puree",
     description:
       "Tropcey Coconut Puree is made from 100% natural dried coconut meat. Coconut Puree has a unique rich sweet flavour and is an amazing spread on crackers and toasts.",
@@ -225,7 +225,7 @@ export const data = {
     id: "19",
     name: "dessicated",
     imgUri: "/images/Dessicated/Desicated coconut Page-05 (1).png",
-    title: "Desiccated Coconut",
+    title: "Organic Desiccated Coconut",
     brandingSubtitle: "",
     subTitle: "Fine Grade",
     description:
@@ -329,7 +329,7 @@ export const data = {
       left: "/images/Treacle Page/Treacle Page Final-02.png",
       right: "/images/Treacle Page/Treacle Page Final-08.png",
     },
-    title: "Coconut Treacle",
+    title: "Organic Coconut Syrup",
     subTitle: "",
     description:
       "Tropcey Coconut Treacle is produced from 100% natural sap, the sugary fluid extracted from the coconut tree",
@@ -352,7 +352,7 @@ export const data = {
     id: "9",
     name: "vinegar",
     imgUri: "/images/Vinegar page/Vinegar page Final-03 (1).png",
-    title: "Coconut Vinegar",
+    title: "Organic Coconut Water Vinegar",
     subTitle: "",
     description:
       "Tropcey Coconut Vinegar is made from fermented coconut water and is used extensively as a preservative and flavoring agent in pickles, salads and sauces.",
@@ -485,7 +485,7 @@ export const data = {
     id: "12",
     name: "coil_extravergin",
     imgUri: "/images/Extra Virgin/extra virgin-03.png",
-    title: "Coconut Oil",
+    title: "Organic Virgin Coconut Oil",
     subTitle: "Extra Virgin",
     description:
       "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
@@ -1343,89 +1343,229 @@ export const data = {
         click: "/chips/brown",
       },
     ],
+  },
+  infused_virgin_coconut_oil: {
+    id: "20",
+    name: "infused_virgin_coconut_oil",
+    imgUri: "/images/Cinnamon/Cinnamon-01.png",
+    title: "Infused Virgin Coconut Oil",
+    subTitle: "With Natural Infusions",
+    description:
+      "Tropcey Infused Virgin Coconut Oil is crafted from 100% natural cold-pressed virgin coconut oil, carefully blended with natural botanical extracts. Each infusion brings a unique aroma and flavour profile, perfect for culinary use, skin care, and aromatherapy. Our range includes cinnamon, garlic, ginger, mint, turmeric, and chili infusions.",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [
+        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
+        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
+        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
+        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
+      ],
+    },
+    life: "24 Months",
+    storage: "In a cool dry place, away from direct sunlight.",
+    ingredient: "100% cold pressed virgin coconut oil with natural botanical extracts.",
+    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
+    labelFooter:
+      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
+    mainImage: {
+      sizeW: 400,
+      sizeH: "",
+    },
+    background: {
+      left: "/images/Cinnamon/Cinnamon-03.png",
+      right: "/images/Cinnamon/Cinnamon-02.png",
+    },
+    recommendations: [
+      {
+        url: "/images/Cinnamon/jar-01.png",
+        click: "/organic-virgin-coconut-oil/extra-virgin",
+      },
+      {
+        url: "/images/Cinnamon/jar-02.png",
+        click: "/organic-virgin-coconut-oil/red-chili",
+      },
+      {
+        url: "/images/Cinnamon/Cinnamon-09.png",
+        click: "/organic-virgin-coconut-oil/cinnamon",
+      },
+      {
+        url: "/images/Cinnamon/jar-04.png",
+        click: "/organic-virgin-coconut-oil/mint",
+      },
+      {
+        url: "/images/Cinnamon/jar-05.png",
+        click: "/organic-virgin-coconut-oil/green-chili",
+      },
+      {
+        url: "/images/Cinnamon/jar-06.png",
+        click: "/organic-virgin-coconut-oil/ginger",
+      },
+      {
+        url: "/images/Cinnamon/jar-07.png",
+        click: "/organic-virgin-coconut-oil/garlic",
+      },
+      {
+        url: "/images/Cinnamon/jar-08.png",
+        click: "/organic-virgin-coconut-oil/turmeric",
+      },
+    ],
+  },
+  coconut_chocolate_spread: {
+    id: "21",
+    name: "coconut_chocolate_spread",
+    imgUri: "/images/Dark Chocolate/dark chcocolate-04.png",
+    title: "Coconut Chocolate Spread",
+    subTitle: "Made from Coconut Puree",
+    subTitleSupport: "With Chocolate",
+    description:
+      "Tropcey Coconut Chocolate Spread is a delicious blend of 100% natural coconut puree and rich chocolate. This creamy spread combines the tropical sweetness of coconut with the indulgent flavour of chocolate, making it an irresistible topping for toast, pancakes, and desserts. Free from artificial additives and preservatives.",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [["300ml wide mouth glass jar", "12", "165", "19800", "39600"]],
+    },
+    life: "12 Months",
+    storage:
+      "Store in sealed container in a cool, dry place before and after opening.",
+    ingredient: "100% Natural Dried Coconut, Chocolate",
+    brandingTitle:
+      "A rich chocolatey spread with natural coconut goodness",
+    brandingSubtitle: "",
+    brandingFooter: "Rich in natural coconut flavour",
+    labelFooter:
+      " Mix well before use if natural separation occurs. If it is solidified, it can be softened by placing it in a bowl of hot water.",
+    label: ["VEGAN", "NON GMO", "GLUTEN & DAIRY FREE"],
+    backgroundImage: {
+      left: "/images/Cashew/coconut puree-05.png",
+      right: "/images/Cashew/coconut puree-04.png",
+    },
+    mainImage: {
+      sizeW: 400,
+      sizeH: "",
+    },
+    primaryColor: "",
+    secondaryColor: "",
+    recommendations: [
+      {
+        url: "/images/Cashew/Puree 1-10.png",
+        click: "/organic-coconut-puree",
+      },
+      {
+        url: "/images/Cashew/Puree 1-06.png",
+        click: "/organic-coconut-puree/cashew",
+      },
+      {
+        url: "/images/Dark Chocolate/Puree 1-08.png",
+        click: "/coconut-chocolate-spread",
+      },
+      {
+        url: "/images/Cashew/Puree 1-07.png",
+        click: "/organic-coconut-puree/white-chocolate",
+      },
+    ],
   }
 };
 
 export const order = [
-  "oil",
-  "chips",
-  "spread",
-  "⁠dessicated",
-  "milk",
-  "treacle",
-  "sugar",
-  "flour",
-  "⁠vineagar",
+  "organic-virgin-coconut-oil",
+  "infused-virgin-coconut-oil",
+  "organic-coconut-chips",
+  "organic-coconut-sugar",
+  "organic-coconut-puree",
+  "coconut-chocolate-spread",
+  "organic-coconut-syrup",
+  "organic-coconut-flour",
+  "organic-coconut-water-vinegar",
+  "organic-desiccated-coconut",
+  "coconut-milk",
 ];
 
 export const products = [
   {
-    name: "Coconut Treacle",
-    image: "/images/Similar products/Similar products png-08.png",
-    href: "/treacle",
-    width: 30,
-    height: 30,
-  },
-  {
-    name: "Coconut Oil",
+    name: "Organic Virgin Coconut Oil",
     image: "/images/Similar products/Similar products png-10.png",
-    href: "/oil",
+    href: "/organic-virgin-coconut-oil",
     width: 40,
     height: 40,
   },
   {
-    name: "Coconut Spread",
+    name: "Infused Virgin Coconut Oil",
+    image: "/images/Similar products/Similar products png-10.png",
+    href: "/infused-virgin-coconut-oil",
+    width: 40,
+    height: 40,
+  },
+  {
+    name: "Organic Coconut Chips",
+    image: "/images/Similar products/Similar products png-04.png",
+    href: "/organic-coconut-chips",
+    width: 50,
+    height: 40,
+  },
+  {
+    name: "Organic Coconut Sugar",
+    image: "/images/Similar products/Similar products png-09.png",
+    href: "/organic-coconut-sugar",
+    width: 50,
+    height: 40,
+  },
+  {
+    name: "Organic Coconut Puree",
     image: "/images/Similar products/Similar products png-02.png",
-    href: "/spread",
+    href: "/organic-coconut-puree",
     width: 60,
     height: 20,
   },
   {
-    name: "Desiccated Coconut",
-    image: "/images/Similar products/Similar products png-03.png",
-    href: "/desiccated",
-    width: 50,
-    height: 40,
+    name: "Coconut Chocolate Spread",
+    image: "/images/Similar products/Similar products png-02.png",
+    href: "/coconut-chocolate-spread",
+    width: 60,
+    height: 20,
   },
   {
-    name: "Coconut Chips",
-    image: "/images/Similar products/Similar products png-04.png",
-    href: "/chips",
-    width: 50,
-    height: 40,
-  },
-  {
-    name: "Coconut Water",
-    image: "/images/Similar products/Similar products png-05.png",
-    href: "/water",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Coconut Flour",
-    image: "/images/Similar products/Similar products png-06.png",
-    href: "/flour",
-    width: 50,
-    height: 40,
-  },
-  {
-    name: "Coconut Vinegar",
-    image: "/images/Similar products/Similar products png-07.png",
-    href: "/vinegar",
+    name: "Organic Coconut Syrup",
+    image: "/images/Similar products/Similar products png-08.png",
+    href: "/organic-coconut-syrup",
     width: 30,
     height: 30,
   },
   {
-    name: "Coconut Sugar",
-    image: "/images/Similar products/Similar products png-09.png",
-    href: "/sugar",
+    name: "Organic Coconut Flour",
+    image: "/images/Similar products/Similar products png-06.png",
+    href: "/organic-coconut-flour",
+    width: 50,
+    height: 40,
+  },
+  {
+    name: "Organic Coconut Water Vinegar",
+    image: "/images/Similar products/Similar products png-07.png",
+    href: "/organic-coconut-water-vinegar",
+    width: 30,
+    height: 30,
+  },
+  {
+    name: "Organic Desiccated Coconut",
+    image: "/images/Similar products/Similar products png-03.png",
+    href: "/organic-desiccated-coconut",
     width: 50,
     height: 40,
   },
   {
     name: "Coconut Milk",
     image: "/images/Similar products/Similar products png-01.png",
-    href: "/milk",
+    href: "/coconut-milk",
     width: 50,
     height: 40,
   },
