@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/ritik/Desktop/tropcey/public/Icons/new-label-icon.svg:*)"
+    ]
+  }
+}

@@ -15,7 +15,7 @@ const urls = [
   "/organic-coconut-flour",
   "/organic-coconut-water-vinegar",
   "/organic-desiccated-coconut",
-  "/coconut-milk"
+  "/organic-coconut-milk"
 ];
 
 const Home: React.FC = () => {
@@ -180,7 +180,7 @@ const Home: React.FC = () => {
               <div data-url="/organic-coconut-flour" className="marker" style={{ top: '30%', left: '53%' }}><img loading="lazy" src="/images/land/About us Pages-11.png" width="150px" height="150px" /></div>
               <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '50%', left: '15%' }}><img loading="lazy" src="/images/land/About us Pages-06.png" width="150px" height="150px" /></div>
               <div data-url="/organic-desiccated-coconut" className="marker" style={{ top: '50%', left: '40%' }}><img loading="lazy" src="/images/land/About us Pages-08.png" width="150px" height="150px" /></div>
-              <div data-url="/coconut-milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-10.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-coconut-milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-10.png" width="150px" height="150px" /></div>
               <div data-url="/organic-virgin-coconut-oil" className="marker" style={{ top: '65%', left: '55%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
               {/* New: Infused Virgin Coconut Oil */}
               <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '75%', left: '30%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>

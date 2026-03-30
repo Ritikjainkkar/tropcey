@@ -68,7 +68,17 @@ const Navigation = () => {
         className={`${styles.navigationWrap} absolute  w-full z-20 top-0 flex justify-between gap-2 items-center py-5 px-4 md:px-14 `}
       >
         {/* Left */}
-        <div className={`${styles.navLeft}`}>
+        <div className={`${styles.navLeft} relative`}>
+          {pathname !== "/" && (
+            <Link href="/?back=true" className="cursor-pointer">
+              <img
+                src="/images/back icon-01-01.png"
+                alt="Close"
+                className="absolute top-0"
+                width={120}
+              />
+            </Link>
+          )}
           <Link href="/">
             <img
               src="/images/navbar/logo-shadow.png"
@@ -77,17 +87,6 @@ const Navigation = () => {
               className={pathname == "/" ? "" : "ml-[120px]"}
               alt="logo"
             />
-            {pathname !== "/" && (
-              <Link href="/?back=true" className="cursor-pointer">
-                <img
-                  src="/images/back icon-01-01.png"
-                  alt="Close"
-                  className="absolute top-0"
-                  width={120}
-                  onClick={() => console.log("Close button clicked")}
-                />
-              </Link>
-            )}
           </Link>
         </div>
         {/* Right */}

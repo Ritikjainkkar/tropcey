@@ -136,10 +136,10 @@ export const data = {
     id: "5",
     name: "flour",
     imgUri: "/images/Milk/Milk 3-03.png",
-    title: "Coconut Milk",
+    title: "Organic Coconut Milk",
     subTitle: "",
     description:
-      "Tropcey Coconut Milk is a 100% natural product made from fresh white kernel of mature coconuts. The cream-white milk is ideal",
+      "Tropcey Organic Coconut Milk is a 100% natural product made from fresh white kernel of mature coconuts. The cream-white milk is ideal",
     table: {
       header: [
         "Packaging",
@@ -1488,7 +1488,7 @@ export const order = [
   "organic-coconut-flour",
   "organic-coconut-water-vinegar",
   "organic-desiccated-coconut",
-  "coconut-milk",
+  "organic-coconut-milk",
 ];
 
 export const products = [
@@ -1563,9 +1563,9 @@ export const products = [
     height: 40,
   },
   {
-    name: "Coconut Milk",
+    name: "Organic Coconut Milk",
     image: "/images/Similar products/Similar products png-01.png",
-    href: "/coconut-milk",
+    href: "/organic-coconut-milk",
     width: 50,
     height: 40,
   },
