@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(/Users/ritik/Desktop/tropcey/public/Icons/new-label-icon.svg:*)"
+      "Bash(/Users/ritik/Desktop/tropcey/public/Icons/new-label-icon.svg:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(brew list:*)",
+      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; mirror --reverse --delete --verbose /Users/ritik/Desktop/tropcey/out/ /; quit\")",
+      "Bash(git pull:*)",
+      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 3; mirror --reverse --delete --verbose /Users/ritik/Desktop/tropcey/out/ /; quit\")"
     ]
   }
 }

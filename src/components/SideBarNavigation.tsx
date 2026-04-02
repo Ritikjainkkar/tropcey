@@ -27,8 +27,8 @@ export default function SideBarNavigation() {
         <img
           src="/Icons/label-icon.png"
           alt="Toggle Sidebar"
-          width={80}
-          height={80}
+          width={50}
+          height={50}
           className="shadow-lg"
         />
       </div>

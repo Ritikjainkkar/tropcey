@@ -40,15 +40,15 @@ const Home: React.FC = () => {
       throttledClickManually(urls[number]);
     }
 
-    if (productRef.current && !imageRef.current.classList.contains('slow-come')) {
+    if (productRef.current && imageRef.current && !imageRef.current.classList.contains('slow-come')) {
       if (!productRef.current.classList.contains('slow-disappear')) {
         productRef.current.classList.add('slow-disappear');
         setTimeout(() => {
-          productRef.current.classList.add('display-none');
+          productRef.current?.classList.add('display-none');
         }, 1000);
         setTimeout(() => {
-          imageRef.current.classList.remove('display-none');
-          imageRef.current.classList.add('slow-come');
+          imageRef.current?.classList.remove('display-none');
+          imageRef.current?.classList.add('slow-come');
         }, 500);
       }
     }
@@ -85,19 +85,33 @@ const Home: React.FC = () => {
     treeImage?.classList.add("smallToBigImg");
     image?.classList.add("zoom-in");
 
+    // Reset all marker images that were hidden/animated during onMarkerClick
+    document.querySelectorAll('.marker img').forEach((img: any) => {
+      img.style.display = '';
+      img.style.zIndex = '';
+      img.classList.remove('zoom-out');
+      img.classList.remove('initial-zoom');
+    });
+    document.querySelectorAll('.marker').forEach((m: any) => {
+      m.classList.remove('zoom-in');
+      m.classList.remove('initial-zoom');
+    });
+    imageWrapper?.classList.remove('initial-zoom');
+
     setTimeout(() => {
       leftContainer.style.display = 'flex';
       imageWrapper.style.display = 'flex';
     }, 1400);
   };
 
-  const onMarkerClick = (event: any, url: any) => {
+  const onMarkerClick = (event: any, url: any, markerEl?: any) => {
     event.preventDefault();
+    const marker = markerEl || event.currentTarget;
     document.querySelectorAll('.marker img').forEach((img: any) => {
       img.style.display = 'none';
       img.classList.remove('initial-zoom');
     });
-    const parentContainer = event.currentTarget.closest('.relative');
+    const parentContainer = marker.closest('.relative');
     const leftContainer = document.querySelectorAll('.landing-right')[0];
     leftContainer.style.display = 'none';
 
@@ -107,7 +121,7 @@ const Home: React.FC = () => {
     imageTree.classList.remove('smallToBigImg');
     imageTree.classList.remove('initial-zoom');
 
-    const img = event.currentTarget.querySelector('img');
+    const img = marker.querySelector('img');
     img.style.display = 'block';
     img.style.zIndex = 1000;
     img.classList.add('zoom-out');
@@ -136,11 +150,18 @@ const Home: React.FC = () => {
       handleEvent(event);
     }, 2000);
 
-    document.querySelectorAll('.marker').forEach(marker => {
-      const url = marker.getAttribute('data-url');
-      marker.addEventListener('click', (event) => onMarkerClick(event, url));
-    });
+    const handleMarkerDelegate = (event: any) => {
+      const marker = event.target.closest('.marker');
+      if (marker) {
+        const url = marker.getAttribute('data-url');
+        if (url) {
+          event.stopPropagation();
+          onMarkerClick(event, url, marker);
+        }
+      }
+    };
 
+    document.addEventListener('click', handleMarkerDelegate, true);
     window.addEventListener('wheel', handleScroll);
     window.addEventListener('click', handleEvent);
 
@@ -157,11 +178,8 @@ const Home: React.FC = () => {
     window.addEventListener('popstate', handlePopState);
     
     return () => {
-      document.querySelectorAll('.marker').forEach((marker: any) => {
-        marker.removeEventListener('click', onMarkerClick);
-      });
-
-      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleMarkerDelegate, true);
+      window.removeEventListener('wheel', handleScroll);
       window.removeEventListener('click', handleEvent);
     };
   }, [handleEvent, onBackCame]);
@@ -173,7 +191,7 @@ const Home: React.FC = () => {
           <div className="flex relative">
             <img loading="lazy" className="treeImg" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
             <div className="image-collection display-none" ref={imageRef}>
-              <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ width: "155px", top: '15%', left: '42%' }}><img loading="lazy" src="/images/land/About us Pages-03.png" width="180px" height="180px" /></div>
+              <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ top: '15%', left: '42%' }}><img loading="lazy" src="/images/land/About us Pages-03.png" width="150px" height="150px" /></div>
               <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/images/land/About us Pages-04.png" width="150px" height="150px" /></div>
               <div data-url="/organic-coconut-chips" className="marker" style={{ top: '30%', left: '10%' }}><img loading="lazy" src="/images/land/About us Pages-05.png" width="150px" height="150px" /></div>
               <div data-url="/organic-coconut-puree" className="marker" style={{ top: '30%', left: '32%' }}><img loading="lazy" src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
