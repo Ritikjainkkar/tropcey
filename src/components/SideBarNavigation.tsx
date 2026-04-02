@@ -9,9 +9,9 @@ export default function SideBarNavigation() {
     setIsExpanded(!isExpanded);
   };
 
-  const radiusX = 150; // Radius of the ellipse along the X-axis
-  const radiusY = 70; // Radius of the ellipse along the Y-axis
-  const center = 150; // Center of the ellipse (since width and height of sidebar are 300px)
+  const radiusX = 160; // Radius of the ellipse along the X-axis
+  const radiusY = 80; // Radius of the ellipse along the Y-axis
+  const center = 160; // Center of the ellipse (since width and height of sidebar are 300px)
 
   // Define the elliptical arc segment
   const startAngle = Math.PI / 4; // Start at 45 degrees
@@ -21,7 +21,7 @@ export default function SideBarNavigation() {
   return (
     <div>
       <div
-        className={`absolute right-[5px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[5]`}
+        className={`absolute right-[45px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[5]`}
         onClick={toggleSidebar}
       >
         <img
@@ -35,7 +35,7 @@ export default function SideBarNavigation() {
 
       {/* Expanded Sidebar with Elliptical Arc Layout */}
       {isExpanded && (
-        <div className="absolute right-10 top-1/2 transform -translate-y-1/2 w-[300px] h-[300px] rounded-full flex items-center justify-center mt-5">
+        <div className="absolute right-[80px] top-1/2 transform -translate-y-1/2 w-[300px] h-[300px] rounded-full flex items-center justify-center mt-5">
           <div className="relative w-full h-full">
             <div
               className="absolute top-[-235px] left-[170px] w-[700px] h-[800px] z-0"
