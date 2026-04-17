@@ -33,6 +33,14 @@ const franklin = localfont({
   ],
   variable: "--font-franklin",
 });
+const franklinGothic = localfont({
+  src: [
+    {
+      path: "../../public/fonts/FranklinGothic.ttf",
+    },
+  ],
+  variable: "--font-franklinGothic",
+});
 const franklinHeavy = localfont({
   src: [
     {
@@ -50,6 +58,42 @@ const franklinBook = localfont({
   variable: "--font-franklinBook",
 });
 
+const futuraBold = localfont({
+  src: [
+    {
+      path: "../../public/fonts/Futura Bold.otf",
+    },
+  ],
+  variable: "--font-futuraBold",
+});
+
+const impact = localfont({
+  src: [
+    {
+      path: "../../public/fonts/Impact.ttf",
+    },
+  ],
+  variable: "--font-impact",
+});
+
+const archivo = localfont({
+  src: [
+    {
+      path: "../../public/fonts/ArchivoBlack-Regular.ttf",
+    },
+  ],
+  variable: "--font-archivo",
+});
+
+const berkShire = localfont({
+  src: [
+    {
+      path: "../../public/fonts/BerkshireSwash-Regular.ttf",
+    },
+  ],
+  variable: "--font-berkShire",
+});
+
 export const metadata: Metadata = {
   title: "Tropcey Holdings",
   description: "Tropcey Holdings - Premium Coconut Products",
@@ -63,7 +107,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${dDin.variable} ${brokeline.variable} ${franklin.variable} ${franklinHeavy.variable} ${franklinBook.variable}`}
+        className={`${inter.className} ${dDin.variable} ${brokeline.variable} ${franklin.variable} ${franklinHeavy.variable} ${franklinBook.variable} ${futuraBold.variable} ${impact.variable} ${archivo.variable} ${berkShire.variable} ${franklinGothic.variable}`}
       >
         <header>
           <Navigation />

@@ -1,212 +1,191 @@
 import React from "react";
-import styles from "./our-values.module.css";
 
 const OurValues = () => {
   return (
-    <div className="value-wrapper">
-      {/* First Section */}
-      <div
-        className={`${styles.first} md:pt-0 pt-[100px] bg-[url('/images/our-values/value-bg.jpg')] lg:min-h-screen min-h-container lg:py-0 py-8 bg-cover flex gap-4 flex-col lg:flex-row`}
-      >
-        {/* left */}
-        <div className="basis-1/2 flex justify-center items-center">
-          <img
-            src="/images/our-values/value-coconut.png"
-            alt="Our Values"
-            width={800}
-            height={800}
-            className={`${styles.firstImg} mt-[100px] ml-[100px]`}
-          />
-        </div>
-        {/* right */}
-        <div className="basis-1/2 flex justify-center lg:items-baseline items-center flex-col">
-          <h1 className="text-4xl font-brokeline font-400 md:text-7xl lg:text-7xl lg:mb-4 mt-4 lg:mt-0 text-[#215519]">
-            OUR VALUES
-          </h1>
-          <p className="text-[20px] tracking-wider font-dDin text-[#215519] mt-4 lg:mt-0">
-            Health Benifits
-          </p>
-          <p className="text-[20px] tracking-wider font-dDin text-[#215519]">
-            Community Involvement
-          </p>
-          <p className="text-[20px] tracking-wider font-dDin text-[#215519]">
-            Environmentally Friendly
-          </p>
-          <p className="text-[20px] tracking-wider font-dDin text-[#215519]">
-            Sustainability
-          </p>
-          <p className="text-[20px] tracking-wider font-dDin text-[#215519]">
-            Tropical Identity
-          </p>
-        </div>
-      </div>
+    <div className="values-page-wrap">
+      {/* Section 1 */}
+      <section className="relative min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
+        <div className="mx-auto px-5 py-16 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center  gap-20">
+            {/* Left Content */}
+            <div className="flex-1 text-center lg:text-left relative">
+              <h2 className="text-[#92C142] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy mt-4 md:mt-0">
+                1. &lsquo;Truly Naturally&rsquo;
+                <br />
+                Coconut Goodness
+              </h2>
+              <p className="text-white text-base lg:text-lg leading-relaxed max-w-2xl text-justify font-franklinBook">
+                Ensuring that the &lsquo;coconut goodness&rsquo; is preserved in
+                its own natural form is the main focus during our production
+                process. The organically cultivated and processed coconut
+                essence with its&rsquo; unique flavours is the trademark
+                identity of Tropcey products. Non-addition of preservatives
+                during the production process, allows the customers in the
+                global market to indulge the &lsquo;Truly Naturally&rsquo;
+                coconut goodness in their day to day recipes.
+              </p>
+              {/* Vertical Line */}
+              <div className="hidden lg:block absolute right-[-50px] top-1/2 transform -translate-y-1/2">
+                <div className="w-2 h-96 bg-[#92C142]"></div>
+              </div>
+            </div>
 
-      {/* Second Section */}
-      <div className="second bg-[url('/images/our-values/value-green-bg1.jpg')] lg:bg-[url('/images/our-values/value-green-bg.jpg')] min-h-screen bg-cover bg-no-repeat">
-        <div className="value-container bg-[url('/images/our-values/value-second-bg.png')] min-h-screen bg-cover bg-no-repeat flex lg:gap-4 md:gap-16 gap-4 lg:flex-row flex-col justify-center items-center">
-          {/* left */}
-          <div className="basis-2/3 order-2 lg:order-1 flex flex-col justify-center items-center md:px-16 px-4 ">
-            <h1 className="md:text-5xl font-brokeline text-4xl mb-4 text-white ">
-              Health Benifits
-            </h1>
-            <p className="text-white tracking-wider font-dDin text-1xl text-justify lg:px-14 px-4">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue
-            </p>
-          </div>
-
-          {/* right */}
-          <div className="basis-1/3 flex order-1 lg:order-2 lg:justify-normal justify-center items-center">
-            <img
-              src={"/images/our-values/heart.png"}
-              alt="heart"
-              width={300}
-              height={300}
-              className={`${styles.secondImg}`}
-            />
+            {/* Right Content */}
+            <div className=" flex justify-center lg:justify-end">
+              <div className="w-40 h-40 lg:w-56 lg:h-56   flex items-center justify-center ">
+                <img src="/images/values-first-sec-img.png" alt="Image" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Third Section */}
-      <div className="third lg:bg-[url('/images/our-values/third-white-bg.jpg')] bg-[url('/images/our-values/third-white-bg-mb.jpg')] min-h-screen bg-cover bg-no-repeat">
-        <div className="value-container bg-[url('/images/our-values/value-second-bg.png')] min-h-screen bg-cover bg-no-repeat flex gap-4 lg:flex-row flex-col justify-center items-center">
-          {/* left */}
-          <div className="basis-1/3 flex lg:justify-end justify-center items-center">
-            <img
-              src={"/images/our-values/commynity.png"}
-              alt="heart"
-              width={300}
-              height={300}
-              className={`${styles.thirdImg}`}
-            />
-          </div>
+      {/* Section 2 */}
+      <section className="relative min-h-screen flex items-center bg-[url('/images/values-second-sec-bg.png')] bg-cover bg-center overflow-hidden">
+        <div className="mx-auto px-5 py-16 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center  gap-20">
+            {/* Left Content */}
+            <div className=" flex justify-center lg:justify-end relative">
+              <div className="w-40 h-40 lg:w-56 lg:h-56   flex items-center justify-center ">
+                <img src="/images/values-second-sec-img.png" alt="Image" />
+              </div>
+              {/* Vertical Line */}
+              <div className="hidden lg:block absolute right-[-50px] top-1/2 transform -translate-y-1/2">
+                <div className="w-2 h-96 bg-[#1F6143]"></div>
+              </div>
+            </div>
 
-          {/* right */}
+            {/* Right Content */}
 
-          <div className="basis-2/3 flex flex-col justify-center items-center md:px-16 px-4">
-            <h1 className="lg:text-5xl md:text-5xl text-2xl lg:mt-0 mt-5 mb-4 text-[#215519] font-brokeline">
-              Community Involvement
-            </h1>
-            <p className="text-[#215519] tracking-wider lg:px-14 px-4 font-dDin text-1xl text-justify">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Fourth Section */}
-      <div className="second bg-[url('/images/our-values/value-green-bg1.jpg')] lg:bg-[url('/images/our-values/value-green-bg.jpg')] min-h-screen bg-cover bg-no-repeat">
-        <div className="value-container bg-[url('/images/our-values/value-second-bg.png')] min-h-screen bg-cover bg-no-repeat flex gap-4 lg:flex-row flex-col justify-center items-center">
-          {/* left */}
-          <div className="basis-2/3 flex order-2 lg:order-1 flex-col justify-center items-center md:px-14 px-4">
-            <h1 className="lg:text-5xl md:text-5xl text-2xl mb-4 text-white font-brokeline">
-              Environmentally Friendly
-            </h1>
-            <p className="text-white tracking-wider font-dDin lg:px-14 px-4  text-1xl text-justify">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue
-            </p>
-          </div>
-
-          {/* right */}
-          <div className="basis-1/3 flex order-1 lg:order-2 lg:justify-normal justify-center items-center">
-            <img
-              src={"/images/our-values/environment.png"}
-              alt="heart"
-              width={300}
-              height={300}
-              className={`lg:mt-0 mt-5 ${styles.fifthImg}`}
-            />
+            <div className="flex-1 text-center lg:text-left relative">
+              <h2 className="text-[#1F6143] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy ">
+                2. Quality Assurance
+              </h2>
+              <p className="text-white text-base lg:text-lg leading-relaxed max-w-2xl text-justify font-franklinBook">
+                All our products and the production processes have been
+                certified to comply with the international quality standards.
+                The quality controlling and quality assurance procedures adopted
+                from sourcing of raw materials up until the delivery of the
+                packaged products, provide the customers with reliable and
+                consistent results from their purchases.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Fifth Section */}
-      <div className="third lg:bg-[url('/images/our-values/third-white-bg.jpg')] bg-[url('/images/our-values/third-white-bg-mb.jpg')] min-h-screen bg-cover bg-no-repeat">
-        <div className="value-container bg-[url('/images/our-values/value-second-bg.png')] min-h-screen bg-cover bg-no-repeat flex gap-4 lg:flex-row flex-col justify-center items-center">
-          {/* left */}
-          <div className="basis-1/3 flex lg:justify-end justify-center items-center">
-            <img
-              src={"/images/our-values/sustain.png"}
-              alt="heart"
-              width={300}
-              height={300}
-              className={`${styles.thirdImg}`}
-            />
-          </div>
+      {/* Section 3 */}
+      <section className="relative min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
+        <div className="mx-auto px-5 py-16 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center  gap-20">
+            {/* Left Content */}
+            <div className="flex-1 text-center lg:text-left relative">
+              <h2 className="text-[#92C142] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy ">
+                3. Empowering
+                <br />
+                Communities
+              </h2>
+              <p className="text-white text-base lg:text-lg leading-relaxed max-w-2xl text-justify font-franklinBook">
+                The business provides an immense support for the local
+                communities through many direct employment opportunities. The
+                workforce at the factory is a complete representation of local
+                communities for whom 'coconuts' have been an integral part of
+                their normal day to day life. The local knowledge on 'coconuts'
+                has been a very important factor in terms of ensuring that the
+                products are consistent with highest level of quality. In
+                addition, continuous close collaboration with the local farming
+                communities ensures sustainable sourcing while empowering local
+                livelihoods.
+              </p>
+              {/* Vertical Line */}
+              <div className="hidden lg:block absolute right-[-50px] top-1/2 transform -translate-y-1/2">
+                <div className="w-2 h-96 bg-[#92C142]"></div>
+              </div>
+            </div>
 
-          {/* right */}
-
-          <div className="basis-2/3 flex flex-col justify-center items-center md:px-16 px-4">
-            <h1 className="lg:text-5xl md:text-5xl text-2xl lg:mt-0 mt-5 mb-4 text-[#215519] font-brokeline">
-              Sustainability
-            </h1>
-            <p className="text-[#215519] tracking-wider lg:px-14 px-4 font-dDin text-1xl text-justify">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Sixth Section */}
-      <div className="second bg-[url('/images/our-values/value-green-bg1.jpg')] lg:bg-[url('/images/our-values/value-green-bg.jpg')] min-h-screen bg-cover bg-no-repeat">
-        <div className="value-container bg-[url('/images/our-values/value-second-bg.png')] min-h-screen bg-cover bg-no-repeat flex gap-4 lg:flex-row flex-col justify-center items-center">
-          {/* left */}
-          <div className="basis-2/3 flex order-2 lg:order-1 flex-col justify-center items-center md:px-16 px-4">
-            <h1 className="lg:text-5xl md:text-5xl text-2xl mb-4 text-white font-brokeline">
-              Tropical Identity
-            </h1>
-            <p className="text-white tracking-wider lg:px-14 px-4 font-dDin text-1xl text-justify">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue
-            </p>
-          </div>
-
-          {/* right */}
-          <div className="basis-1/3 flex order-1 lg:order-2 lg:justify-normal justify-center items-center">
-            <img
-              src={"/images/our-values/tropical.png"}
-              alt="heart"
-              width={300}
-              height={300}
-              className={`${styles.sixthImg} lg:mt-0 mt-5`}
-            />
+            {/* Right Content */}
+            <div className=" flex justify-center lg:justify-end">
+              <div className="w-40 h-40 lg:w-56 lg:h-56 flex items-center justify-center ">
+                <img src="/images/values-third-sec-img.png" alt="Image" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Section 4 */}
+      <section className="relative min-h-screen flex items-center bg-[url('/images/values-second-sec-bg.png')] bg-cover bg-center overflow-hidden">
+        <div className="mx-auto px-5 py-16 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center  gap-20">
+            {/* Left Content */}
+            <div className=" flex justify-center lg:justify-end relative">
+              <div className="w-40 h-40 lg:w-56 lg:h-56   flex items-center justify-center ">
+                <img src="/images/values-fourth-sec-img.png" alt="Image" />
+              </div>
+              {/* Vertical Line */}
+              <div className="hidden lg:block absolute right-[-50px] top-1/2 transform -translate-y-1/2">
+                <div className="w-2 h-96 bg-[#1F6143]"></div>
+              </div>
+            </div>
+
+            {/* Right Content */}
+
+            <div className="flex-1 text-center lg:text-left relative">
+              <h2 className="text-[#1F6143] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy ">
+                4. Sustainability, <br /> Innovation and Growth
+              </h2>
+              <p className="text-white text-base lg:text-lg leading-relaxed max-w-2xl text-justify font-franklinBook">
+                'No segment of coconuts are discarded as waste'. That is a
+                simple norm for the production process. The diverse and the
+                unique range of the products have been processed from various
+                segments of the coconut tree. The innovative production
+                processes are continuously being improved through technology,
+                research and process improvement ensuring sustainability
+                throughout the entire business operation. A huge plus point is
+                that our unique organic product range promotes sustainable
+                agriculture within the local communities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 */}
+      <section className="relative min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
+        <div className="mx-auto px-5 py-16 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center  gap-20">
+            {/* Left Content */}
+            <div className="flex-1 text-center lg:text-left relative">
+              <h2 className="text-[#92C142] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy ">
+                5. Customer Centric
+                <br />
+                Integrity and Transparency
+              </h2>
+              <p className="text-white text-base lg:text-lg leading-relaxed max-w-2xl text-justify font-franklinBook">
+                The philosophy behind the operation and product innovation is
+                simple; &lsquo;Deliver the Truly Naturally Coconut Goodness to
+                Customers through innovative Products while ensuring User
+                Convenience&rsquo;. In order to ensure customer interest by all
+                means, our business is built upon honesty, integrity, and
+                ethical conduct. We work transparently; we build solid
+                partnerships through trust and respect while upholding a
+                professional standard of conduct in all our business endeavors.
+              </p>
+              {/* Vertical Line */}
+              <div className="hidden lg:block absolute right-[-50px] top-1/2 transform -translate-y-1/2">
+                <div className="w-2 h-96 bg-[#92C142]"></div>
+              </div>
+            </div>
+
+            {/* Right Content */}
+            <div className=" flex justify-center lg:justify-end">
+              <div className="w-40 h-40 lg:w-56 lg:h-56 flex items-center justify-center ">
+                <img src="/images/values-fifth-sec-img.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

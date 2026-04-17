@@ -24,7 +24,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
     }
   }, []);
 
-  const chip = data?.chips;
+  const chip = data?.sweetChips;
 
   return (
     <div
@@ -36,15 +36,17 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
       }}
       className="animated-element"
     >
-      <Background
+      {/* <Background
         leftSrc={chip.background.left}
         RightSrc={chip.background.right}
-      />
-      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row justify-between min-h-[100vh] w-[100%] items-center z-10 pb-5">
+      /> */}
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row justify-between min-h-[100vh] w-[100%] items-center z-10 pb-5 bg-[url('/images/background/sweet-chips-bg.png')] bg-cover bg-center">
         <LeftContainer
           imgSrc={chip.imgUri}
           brandingSubtitle={chip.brandingSubtitle}
           width={350}
+          title={chip.title}
+          details={chip}
         />
         <RightTextBox details={chip} isFull={false} />
       </div>
