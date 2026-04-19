@@ -1,12 +1,13 @@
-"use client"
-"use client"
-import Background from '@/components/Background'
-import LeftContainer from '@/components/LeftContainer';
-import RightTextBox from '@/components/RightTextBox';
-import { data } from '@/data/pages';
-import React, { useEffect, useRef } from 'react'
+"use client";
+import Background from "@/components/Background";
+import LeftContainer from "@/components/LeftContainer";
+import RightTextBox from "@/components/RightTextBox";
+import { data } from "@/data/pages";
+import React, { useEffect, useRef } from "react";
 
-const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchParams }) => {
+const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
+  searchParams,
+}) => {
   const hash = searchParams;
 
   const AnimRef = useRef<any>(null);
@@ -14,26 +15,43 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
   useEffect(() => {
     if (AnimRef.current) {
       setTimeout(() => {
-        AnimRef.current.classList.add('to-normal-position');
-      }, 10); 
+        AnimRef.current.classList.add("to-normal-position");
+      }, 10);
     }
-    if(typeof window !== 'undefined') {
-      localStorage.setItem('lastUrl', '/organic-coconut-flour')
-      localStorage.setItem('lastPage', 'organic-coconut-flour')
+    if (typeof window !== "undefined") {
+      localStorage.setItem("lastUrl", "/organic-coconut-flour");
+      localStorage.setItem("lastPage", "organic-coconut-flour");
     }
   }, []);
 
-  const flour = data?.flour;
+  const flour = data?.organic_coconut_flour;
 
   return (
-    <div>
-      <Background leftSrc={flour.background.left} RightSrc={flour.background.right} />
-      <div className='relative text-white flex justify-between h-[100vh] w-[100%] items-center z-10'>
-        <LeftContainer imgSrc={flour.imgUri} width={350} />
-        <RightTextBox details={flour} width={300}/>
+    <div
+      ref={AnimRef}
+      style={{
+        transform: "translate(0, 0) scale(1)",
+        filter: "blur(30px)",
+        opacity: 0.8,
+      }}
+      className="animated-element"
+    >
+      {/* <Background
+        leftSrc={chip.background.left}
+        RightSrc={chip.background.right}
+      /> */}
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row justify-between min-h-[100vh] w-[100%] items-center z-10 pb-5 bg-[url('/images/background/flour-bg-img.png')] bg-cover bg-center">
+        <LeftContainer
+          imgSrc={flour.imgUri}
+          brandingSubtitle={flour.brandingSubtitle}
+          width={350}
+          title={flour.title}
+          details={flour}
+        />
+        <RightTextBox details={flour} isFull={false} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

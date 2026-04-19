@@ -1,15 +1,13 @@
-"use client"
-"use client"
-import Background from '@/components/Background'
-import LeftContainer from '@/components/LeftContainer';
-import RightTextBox from '@/components/RightTextBox';
-import SideBarNavigation from '@/components/SideBarNavigation';
-import { data } from '@/data/pages';
-import Link from 'next/link';
-import React from 'react'
-import { useEffect, useRef } from 'react';
+"use client";
+import Background from "@/components/Background";
+import LeftContainer from "@/components/LeftContainer";
+import RightTextBox from "@/components/RightTextBox";
+import { data } from "@/data/pages";
+import React, { useEffect, useRef } from "react";
 
-const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchParams }) => {
+const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
+  searchParams,
+}) => {
   const hash = searchParams;
 
   const AnimRef = useRef<any>(null);
@@ -17,32 +15,43 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({ searchPar
   useEffect(() => {
     if (AnimRef.current) {
       setTimeout(() => {
-        AnimRef.current.classList.add('to-normal-position');
-      }, 10); 
+        AnimRef.current.classList.add("to-normal-position");
+      }, 10);
     }
-    if(typeof window !== 'undefined') {
-      localStorage.setItem('lastUrl', '/organic-coconut-syrup')
-      localStorage.setItem('lastPage', 'organic-coconut-syrup')
+    if (typeof window !== "undefined") {
+      localStorage.setItem("lastUrl", "/coconut-chocolate-syrup");
+      localStorage.setItem("lastPage", "coconut-chocolate-syrup");
     }
   }, []);
 
-  const treacle = data?.treacle;
+  const syrup = data?.coconut_chocolate_syrup;
 
   return (
-    <div 
-  ref={AnimRef}
-  style={{ transform: 'translate(0, 0) scale(1)', filter: 'blur(30px)', opacity: 0.8  }} 
-  className="animated-element relative"
->
-  <Background leftSrc={treacle.background.left} RightSrc={treacle.background.right}/>
-  <div className='relative text-white flex flex-col md:flex-row p-5 md:p-0 justify-between h-[100vh] w-[100%] items-center z-10'>
-    <LeftContainer imgSrc={treacle.imgUri} width={treacle.mainImage.sizeW}/>
-    <RightTextBox details={treacle}/>
-  </div>
-  
-</div>
+    <div
+      ref={AnimRef}
+      style={{
+        transform: "translate(0, 0) scale(1)",
+        filter: "blur(30px)",
+        opacity: 0.8,
+      }}
+      className="animated-element"
+    >
+      {/* <Background
+        leftSrc={chip.background.left}
+        RightSrc={chip.background.right}
+      /> */}
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row justify-between min-h-[100vh] w-[100%] items-center z-10 pb-5 bg-[url('/images/background/syrup-bg-img.jpg')] bg-cover bg-center">
+        <LeftContainer
+          imgSrc={syrup.imgUri}
+          brandingSubtitle={syrup.brandingSubtitle}
+          width={350}
+          title={syrup.title}
+          details={syrup}
+        />
+        <RightTextBox details={syrup} isFull={false} />
+      </div>
+    </div>
+  );
+};
 
-  )
-}
-
-export default Page
+export default Page;

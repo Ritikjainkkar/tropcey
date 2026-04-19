@@ -1,149 +1,381 @@
+import Image from "next/image";
 import React from "react";
-import styles from "./contact.module.css";
 
 const Contact = () => {
   return (
-    <div className="bg-[url('/images/contact/ContactusPages-07.png')]  bg-cover bg-no-repeat pt-[100px]">
-      {/* top section */}
-      <div className="flex gap-4 justify-center items-center flex-col lg:flex-row min-h-screen">
-        {/* left */}
-        <div className="basis-1/2">
-          <img
-            src="/images/contact/contact-iland.png"
-            alt="Iland"
-            width={600}
-            height={600}
-            className={`${styles.contactImg}`}
+    <div className="contact-page-wrap mx-auto">
+      {/* Contact Form */}
+      <section
+        className="relative w-full min-h-screen flex items-center lg:pt-16 md:pt-10 pt-14"
+        style={{ backgroundColor: "#0e5c38" }}
+      >
+        <div className="w-full flex flex-col lg:flex-row items-stretch min-h-screen  max-w-[1440px] mx-auto">
+          <div className="flex-none lg:w-[40%] flex flex-col items-center justify-center py-16 px-8 gap-6">
+            <div className="w-28 h-28  flex items-center justify-center ">
+              <img
+                src="/images/contact-phone.png"
+                alt="Contact Icon"
+                className="w-20 h-20 object-contain"
+              />
+            </div>
+
+            {/* CONTACT US text */}
+            <div className="text-center leading-none">
+              <p
+                className="text-4xl font-extrabold uppercase tracking-widest font-franklinHeavy"
+                style={{ color: "#8cc63f" }}
+              >
+                CONTACT
+              </p>
+              <p className="text-9xl mt-[-30px] font-extrabold uppercase text-white leading-tight font-franklinHeavy">
+                US
+              </p>
+            </div>
+          </div>
+
+          {/* Vertical Divider */}
+          <div
+            className="hidden lg:block flex-none w-[5px] self-stretch my-12"
+            style={{ backgroundColor: "#8cc63f" }}
           />
-        </div>
-        {/* right */}
-        <div className="basis-1/2">
-          <h1 className="text-4xl font-brokeline md:text-7xl lg:text-7xl text-[#215519] text-bold mt-8">
-            CONTACT US
-          </h1>
 
-          <div className="md:w-[400px] w-[300px] lg:w-[80%] my-5 flex flex-col justify-center align-baseline">
-            <div className="mb-5">
-              <input
-                type="text"
-                id="name"
-                className="bg-[#C3D8AA] tracking-wider font-dDin border-none w-full p-2.5 focus-visible:outline-none  placeholder-[#215519]"
-                placeholder="Name"
-                required
-              />
-            </div>
+          {/* Right: Form Card */}
+          <div className="flex-1 flex items-center justify-center py-10 px-6 lg:px-12">
+            <div className="bg-white rounded-3xl shadow-2xl w-full max-w-2xl p-8 lg:p-10">
+              {/* Name */}
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-bold mb-1 font-franklin"
+                  style={{ color: "#0e5c38" }}
+                >
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  className="w-full rounded-lg px-4 py-3 text-sm outline-none placeholder-[#8aad6a] font-franklinBook"
+                  style={{
+                    backgroundColor: "#e8f5e0",
+                    color: "#0e5c38",
+                    border: "none",
+                  }}
+                />
+              </div>
 
-            <div className="mb-5">
-              <input
-                type="text"
-                id="subject"
-                className="bg-[#C3D8AA] tracking-wider font-dDin border-none w-full p-2.5 focus-visible:outline-none placeholder-[#215519]"
-                placeholder="Subject"
-                required
-              />
-            </div>
+              {/* Email */}
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-bold mb-1 font-franklin"
+                  style={{ color: "#0e5c38" }}
+                >
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className="w-full rounded-lg px-4 py-3 text-sm outline-none placeholder-[#8aad6a] font-franklinBook"
+                  style={{
+                    backgroundColor: "#e8f5e0",
+                    color: "#0e5c38",
+                    border: "none",
+                  }}
+                />
+              </div>
 
-            <div className="mb-5">
-              <input
-                type="email"
-                id="email"
-                className="bg-[#C3D8AA] tracking-wider font-dDin border-none w-full p-2.5 focus-visible:outline-none placeholder-[#215519]"
-                placeholder="Email"
-                required
-              />
-            </div>
+              {/* Number */}
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-bold mb-1 font-franklin"
+                  style={{ color: "#0e5c38" }}
+                >
+                  Your Contact Number{" "}
+                  <span className="font-normal">(Optional)</span>
+                </label>
+                <input
+                  type="tel"
+                  name="contactNumber"
+                  placeholder="Contact Number"
+                  className="w-full rounded-lg px-4 py-3 text-sm outline-none placeholder-[#8aad6a] font-franklinBook"
+                  style={{
+                    backgroundColor: "#e8f5e0",
+                    color: "#0e5c38",
+                    border: "none",
+                  }}
+                />
+              </div>
 
-            <div className="mb-5">
-              <textarea
-                className="resize tracking-wider font-dDin focus-visible:outline-none placeholder-[#215519] border-none w-full p-2.5 bg-[#C3D8AA] "
-                placeholder="Type your message here..."
-                rows={5}
-              ></textarea>
+              {/* Company */}
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-bold mb-1 font-franklin"
+                  style={{ color: "#0e5c38" }}
+                >
+                  Your Company Name{" "}
+                  <span className="font-normal">(Optional)</span>
+                </label>
+                <input
+                  type="text"
+                  name="companyName"
+                  placeholder="Company Name"
+                  className="w-full rounded-lg px-4 py-3 text-sm outline-none placeholder-[#8aad6a] font-franklinBook"
+                  style={{
+                    backgroundColor: "#e8f5e0",
+                    color: "#0e5c38",
+                    border: "none",
+                  }}
+                />
+              </div>
+
+              {/* Inquiry */}
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-bold mb-1 font-franklin"
+                  style={{ color: "#0e5c38" }}
+                >
+                  Inquiry Category{" "}
+                  <span className="font-normal">(Optional)</span>
+                </label>
+                <input
+                  type="text"
+                  name="inquiryCategory"
+                  placeholder="Inquiry"
+                  className="w-full rounded-lg px-4 py-3 text-sm outline-none placeholder-[#8aad6a] font-franklinBook"
+                  style={{
+                    backgroundColor: "#e8f5e0",
+                    color: "#0e5c38",
+                    border: "none",
+                  }}
+                />
+              </div>
+
+              {/* Subject */}
+              <div className="mb-4">
+                <label
+                  className="block text-sm font-bold mb-1 font-franklin"
+                  style={{ color: "#0e5c38" }}
+                >
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  className="w-full rounded-lg px-4 py-3 text-sm outline-none placeholder-[#8aad6a] font-franklinBook"
+                  style={{
+                    backgroundColor: "#e8f5e0",
+                    color: "#0e5c38",
+                    border: "none",
+                  }}
+                />
+              </div>
+
+              {/* Message */}
+              <div className="mb-6">
+                <label
+                  className="block text-sm font-bold mb-1 font-franklin"
+                  style={{ color: "#0e5c38" }}
+                >
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows={6}
+                  className="w-full rounded-lg px-4 py-3 text-sm outline-none resize-none placeholder-[#8aad6a] font-franklinBook"
+                  style={{
+                    backgroundColor: "#e8f5e0",
+                    color: "#0e5c38",
+                    border: "none",
+                  }}
+                />
+              </div>
+
+              {/* Submit Button */}
+              <div className="flex justify-center">
+                <button
+                  className="px-12 py-3 rounded-full text-white text-sm font-extrabold uppercase tracking-widest transition-opacity hover:opacity-90 active:scale-95 font-franklinHeavy"
+                  style={{ backgroundColor: "#8cc63f" }}
+                >
+                  SUBMIT
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Bottom section */}
-      <div className="min-h-screen  flex gap-4 py-5 flex-col lg:flex-row">
-        {/* Left section */}
-        <div className="flex justify-center items-center basis-1/2">
-          <img
-            src="/images/contact/contact-mic.png"
-            alt="Map"
-            width={400}
-            height={400}
-            className={`${styles.contactMic}`}
-          />
-        </div>
-        <span className="bg-[#215519] w-2"></span>
-        {/* Right section */}
-        <div className="basis-1/2 px-10">
-          <h1 className="text-4xl tracking-wider font-dDin lg:text-4xl text-[#215519] text-bold mt-8">
-            How can we help?
-          </h1>
-          <div>
-            <div className="flex gap-2 items-baseline mt-3">
-              <input
-                type="radio"
-                name="radio"
-                className={`${styles.radio}`}
-                defaultChecked
+      {/* ── SECTION 2: Company Info + Products ── */}
+      <section className="relative w-full flex flex-col bg-[#202020] mx-auto">
+        {/* Bottom info strip */}
+        <div className="w-full flex flex-col lg:flex-row items-stretch max-w-[1440px] mx-auto">
+          {/* Left: Logo + Company details */}
+          <div className="flex-none lg:w-[45%] flex flex-col items-center justify-center py-12 px-8 gap-4">
+            {/* Logo placeholder */}
+            <div className="w-40 h-40 rounded-full overflow-hidden flex items-center justify-center">
+              {/* Replace with your logo */}
+              <img
+                src="/images/contact-tropcey.png"
+                alt="Tropcey Logo"
+                className="w-full h-full object-contain"
               />
-              <p className="font-dDin tracking-wider text-[#215519]">
-                Packaging Concern <br /> I have a container (bottle/carton/can)
-                that has an issue.
+            </div>
+
+            {/* Company Names */}
+            <div className="text-center">
+              <p
+                className="text-xs font-bold tracking-widest uppercase font-franklin"
+                style={{ color: "#0e5c38" }}
+              >
+                TROPCEY HOLDINGS (PRIVATE) LIMITED
+              </p>
+              <p
+                className="text-xs font-bold tracking-widest uppercase font-franklin"
+                style={{ color: "#0e5c38" }}
+              >
+                TROPCEY VENTURES (PRIVATE) LIMITED
               </p>
             </div>
 
-            <div className="flex gap-2 items-baseline mt-3">
-              <input type="radio" name="radio" className={`${styles.radio}`} />
-              <p className="font-dDin tracking-wider text-[#215519]">
-                Product Concern <br />
-                The drink inside my container has an issue.
+            {/* Address */}
+            <div className="text-center">
+              <p
+                className="text-sm font-semibold font-franklinHeavy"
+                style={{ color: "#0e5c38" }}
+              >
+                Porapola, Talwita, Kurunegala,
+              </p>
+              <p
+                className="text-sm font-semibold font-franklinHeavy"
+                style={{ color: "#0e5c38" }}
+              >
+                Sri Lanka.
               </p>
             </div>
 
-            <div className="flex gap-2 items-baseline mt-3">
-              <input type="radio" name="radio" className={`${styles.radio}`} />
-              <p className="font-dDin tracking-wider text-[#215519]">
-                Compliment/Comment <br />I don&apos;t have a comment about a
-                specific container, but I&apos;d like to share my overall
-                experience with your products.
-              </p>
+            {/* Contact Info */}
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-1">
+              <a
+                href="mailto:info@tropcey.com"
+                className="flex items-center gap-2 text-xs"
+                style={{ color: "#0e5c38" }}
+              >
+                <img
+                  src="/images/social-email.png"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                />
+                <p className="text-[#0e5c38] font-bold">info@tropcey.com</p>
+              </a>
+
+              <a
+                href="https://www.tropcey.com"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 text-xs"
+              >
+                <img
+                  src="/images/social-web.png"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                />
+                <p className="text-[#0e5c38] font-bold">www.tropcey.com</p>
+              </a>
+
+              <a
+                href="tel:+94112857101"
+                className="flex items-center gap-2 text-xs"
+              >
+                <img
+                  src="/images/social-call.png"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                />
+                <p className="text-[#0e5c38] font-bold">+94 112 857 101</p>
+              </a>
             </div>
 
-            <div className="flex gap-2 items-baseline mt-3">
-              <input type="radio" name="radio" className={`${styles.radio}`} />
-              <p className="font-dDin tracking-wider text-[#215519]">
-                Questions <br />I have a question about your products, brands,
-                or company
-              </p>
-            </div>
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 mt-1">
+              {/* Facebook */}
+              <a
+                target="_blank"
+                href="#"
+                className="w-8 h-8 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+              >
+                <img
+                  src="/images/social-fb.png"
+                  alt="Facebook"
+                  width={40}
+                  height={40}
+                />
+              </a>
 
-            <div className="flex gap-2 items-baseline mt-3">
-              <input type="radio" name="radio" className={`${styles.radio}`} />
-              <p className="font-dDin tracking-wider text-[#215519]">
-                Coupon/Merchandise Request
-              </p>
-            </div>
+              {/* Instagram */}
+              <a
+                target="_blank"
+                href="#"
+                className="w-8 h-8 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+              >
+                <img
+                  src="/images/social-instagram.png"
+                  alt="Instagram"
+                  width={40}
+                  height={40}
+                />
+              </a>
 
-            <div className="flex gap-2 items-baseline mt-3">
-              <input type="radio" name="radio" className={`${styles.radio}`} />
-              <p className="font-dDin tracking-wider text-[#215519]">
-                Sponsorship/Donation
-              </p>
-            </div>
+              {/* X (Twitter) */}
+              <a
+                target="_blank"
+                href="#"
+                className="w-8 h-8 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+              >
+                <img
+                  src="/images/social-x.png"
+                  alt="X (Twitter)"
+                  width={40}
+                  height={40}
+                />
+              </a>
 
-            <button
-              type="submit"
-              className="text-white bg-[#215519] hover:bg-[#C3D8AA] focus:ring-4 focus:outline-none  focus-visible:outline-none focus-within:outline-none w-full sm:w-auto px-14 py-2.5 text-center transform duration-300 mt-4 rounded-full font-bold"
-            >
-              Submit
-            </button>
+              {/* LinkedIn */}
+              <a
+                target="_blank"
+                href="#"
+                className="w-8 h-8 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+              >
+                <img
+                  src="/images/social-linkedin.png"
+                  alt="LinkedIn"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </div>
+          </div>
+
+          {/* Vertical Divider */}
+          <div
+            className="hidden lg:block flex-none w-[5px] self-stretch my-10"
+            style={{ backgroundColor: "#1a3a28" }}
+          />
+
+          {/* Right: Products image placeholder */}
+          <div className="flex-1 flex items-center justify-center py-8 px-6 lg:px-10">
+            {/* Replace with your products image */}
+            <img
+              src="/images/contact-product.png"
+              alt="Tropcey Products"
+              className="max-w-full max-h-72 object-contain"
+            />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

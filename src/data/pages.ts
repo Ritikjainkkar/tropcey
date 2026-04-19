@@ -1,1357 +1,355 @@
 export const data = {
-  chips: {
+  organic_coconut_sugar: {
     id: "1",
-    name: "chip",
-    // width: "300px",
-    imgUri: "/images/home/Green Chips-02.png",
-    background: {
-      left: "/images/background/Green Chips-13.png",
-      right: "/images/background/Green Chips-14.png",
-    },
-    title: "Organic Coconut Chips",
-    subTitle: "Baked Chips",
-    description:
-      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["40g pouch", "24", "72", "17280", "34560"],
-        ["80g pouch", "24", "56", "13440", "26880"],
-        ["100g pouch", "24", "72", "17280", "34560"],
-        ["500g pouch", "12", "72", "8640", "17280"],
-        ["40g pouch", "N/A", "96", "960", "1920"],
-        ["40g pouch", "N/A", "48", "480", "960"],
-      ],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Dried Coconut",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "Rich source of dietary fiber",
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO"],
-    recommendations: [
+    imgUri: "/images/home/sugar-main-img.png",
+    brandImg: "/images/sugar-brand-img.png",
+    title: [
+      { text: "Organic", color: "#3B281B", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Sugar", color: "black", size: "72px", font: "archivo" },
       {
-        url: "/images/recommendations/Green Chips-06.png",
-        click: "/organic-coconut-chips",
-      },
-      {
-        url: "/images/recommendations/Green Chips-10.png",
-        click: "/chips/blue",
-      },
-      {
-        url: "/images/recommendations/Green Chips-11.png",
-        click: "/chips/yellow",
-      },
-      {
-        url: "/images/recommendations/Green Chips-12.png",
-        click: "/chips/brown",
+        text: "POUCHES AND SUGAR STICKS",
+        color: "black",
+        size: "18px",
+        font: "archivo",
       },
     ],
-  },
-  sugar: {
-    id: "1",
-    name: "sugar",
-    imgUri: "/images/background/Sugar page Final-05.png",
-    background: {
-      left: "",
-      right: "",
+    verticalLine: {
+      color: "#3B281B",
     },
-    title: "Organic Coconut Sugar",
-    subTitle: "Baked Chips",
-    description:
-      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
+    description: {
+      text: "Tropcey Organic Coconut sugar is an unrefined alternative to conventional sugar, and this natural coconut sweetener is made from pure coconut sap, the sugary fluid extracted from the coconut flower. Coconut sugar is favored for its low Glycemic Index. It provides a rich sweet flavour.The unrefined and organic pedigree add more value to this unique product.",
+      sectionTitle: "Versatile & Multi-Purpose Use",
+      bulletPoints: [
+        "Dissolves easily in hot and cold drinks; coffee, tea, smoothies, and cocktails.",
+        "Can be used for various baking purposes.",
+        "Can be used as a substitute for conventional sugar in any recipe.",
       ],
-      row: [
-        ["40g pouch", "24", "72", "17280", "34560"],
-        ["80g pouch", "24", "56", "13440", "26880"],
-        ["100g pouch", "24", "72", "17280", "34560"],
-        ["500g pouch", "12", "72", "8640", "17280"],
-        ["40g pouch", "N/A", "96", "960", "1920"],
-        ["40g pouch", "N/A", "48", "480", "960"],
-      ],
+      footerText:
+        "The product with a Low GI Value is a perfect choice for a natural sweetener in coffee, tea, desserts, baking, etc.",
+      color: "white",
     },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Dried Coconut",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "",
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO", "GLUTEN & DAIRY FREE"],
-    backgroundImage: {
-      left: "/images/background/Sugar page Final-03.png",
-      right: "/images/background/Sugar page Final-04.png",
-    },
-    primaryColor: "",
-    secondaryColor: "",
-  },
-  flour: {
-    id: "3",
-    name: "flour",
-    imgUri: "/images/Flour page/Flour page Final-04 (1).png",
-    background: {
-      left: "/images/Flour page/Flour page Final-07.png",
-      right: "/images/Flour page/Flour page Final-08.png",
-    },
-    title: "Organic Coconut Flour",
-    subTitle: "",
-    description:
-      "Tropcey Coconut Flour is made by defatted dried coconut meat which can be used to bake high-quality, gluten free, low carbohydrate food.It has a low glycemic index.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["500g stand up pouch", "24", "72", "17280", "34560"],
-        ["1kg stand up pouch", "24", "56", "13440", "26880"],
-        ["25 Kg craft paper bag", "N/A", "72", "17280", "34560"],
-      ],
-    },
-    life: "18 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Dried flour",
-    label: ["VEGAN", "NON GMO", "GLUTEN FREE", "NO PRESERVATIVE"],
-  },
-  oil: {},
-  milk: {
-    id: "5",
-    name: "flour",
-    imgUri: "/images/Milk/Milk 3-03.png",
-    title: "Organic Coconut Milk",
-    subTitle: "",
-    description:
-      "Tropcey Organic Coconut Milk is a 100% natural product made from fresh white kernel of mature coconuts. The cream-white milk is ideal",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["400ml can", "24", "90", "21600", "43200"],
-        ["1L can", "6", "60", "3600", "7200"],
-      ],
-    },
-    life: "24 Months",
-    storage:
-      "In a cool dry place. Once opened keep refrigerated and consume within 48 hours.",
-    ingredient: "Coconut Kernel Extract, Water, Guar Gum.",
-    label: ["GLUTEN FREE", "NO preservative"],
-    background: {
-      left: "/images/Milk/back-10.png",
-      right: "/images/Milk/back-09.png",
-    },
-  },
-  spread: {
-    id: "7",
-    name: "spread",
-    imgUri: "/images/Puree/coconut puree-07.png",
-    title: "Organic Coconut Puree",
-    subTitle: "Made from Coconut Puree",
-    description:
-      "Tropcey Coconut Puree is made from 100% natural dried coconut meat. Coconut Puree has a unique rich sweet flavour and is an amazing spread on crackers and toasts.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["300ml wide mouth glass jar", "12", "165", "19800", "39600"]],
-    },
-    life: "12 Months",
-    storage:
-      "Store in sealed container in a cool, dry place before and after opening.",
-    ingredient: "100% Natural Dried Coconut. White Chocolate",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "",
-    brandingFooter: "Rich source of dietarv fiber",
-    labelFooter:
-      " Mix well before use if natural separation occurs. If it is solidified, it can be softened by placing it in a bowl of hot water.",
-    label: ["VEGAN", "NON GMO", "GLUTEN & DAIRY FREE"],
-    backgroundImage: {
-      left: "/images/Cashew/coconut puree-05.png",
-      right: "/images/Cashew/coconut puree-04.png",
-    },
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    primaryColor: "",
-    secondaryColor: "",
-    recommendations: [
+    ingrediants: [
       {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/",
+        text: "100% Pure & 100% Natural",
+        color: "#3B281B",
       },
       {
-        url: "/images/Cashew/Puree 1-06.png",
-        click: "/spread/cashew",
+        text: "Natural Certified Organic – Quality Guaranteed",
+        color: "#3B281B",
       },
       {
-        url: "/images/Cashew/Puree 1-05.png",
-        click: "/spread/dark-chocolate",
+        text: "Low GI",
+        color: "#3B281B",
       },
       {
-        url: "/images/Cashew/Puree 1-07.png",
-        click: "/spread/white-chocolate",
+        text: "Fresh & Delicious",
+        color: "#3B281B",
+      },
+      {
+        text: "Vegan & Plant-Based  ",
+        color: "#3B281B",
       },
     ],
-  },
-  dessicated: {
-    id: "19",
-    name: "dessicated",
-    imgUri: "/images/Dessicated/Desicated coconut Page-05 (1).png",
-    title: "Organic Desiccated Coconut",
-    brandingSubtitle: "",
-    subTitle: "Fine Grade",
-    description:
-      "Tropcey Desiccated Coconut is 100% natural co conutand rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["500g stand up pouch", "24", "72", "17280", "34560"],
-        ["1kg stand up pouch", "4", "200", "8000", "16000"],
-        ["25kg craft paper bag", "", "4", "40", "80"],
-      ],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Dessicated/Desicated coconut Page-04.png",
-      right: "/images/Dessicated/Desicated coconut Page - Medium Grade-04.png",
-    },
-    recommendations: [
+    itemDetails: [
       {
-        url: "/images/Dessicated/Desicated coconut Page-06.png",
-        click: "/dessicated",
+        title: "Ingredients",
+        subTitle: "Coconut Sugar.",
+        color: "white",
       },
       {
-        url: "/images/Dessicated/Desicated coconut Page-08.png",
-        click: "/dessicated/medium",
+        title: "Packaging",
+        subTitle:
+          "Comes in 200g pouches and single serving size (15g) “Sugar Sticks”.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
       },
     ],
-  },
-  meddessicated: {
-    id: "19",
-    name: "dessicated",
-    imgUri: "/images/Dessicated/Desicated coconut Page - Medium Grade-05.png",
-    title: "Desiccated Coconut",
-    brandingSubtitle: "",
-    subTitle: "Fine Grade",
-    description:
-      "Tropcey Desiccated Coconut is 100% natural co conutand rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["500g stand up pouch", "24", "72", "17280", "34560"],
-        ["1kg stand up pouch", "4", "200", "8000", "16000"],
-        ["25kg craft paper bag", "", "4", "40", "80"],
-      ],
+    nutritionChart: "/images/sugar-chart.png",
+    brandingSubtitle: {
+      text: "Sweetness The Natural Way",
+      color: "#3B281B",
     },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Dessicated/Desicated coconut Page-04.png",
-      right: "/images/Dessicated/Desicated coconut Page-03.png",
-    },
-    recommendations: [
-      {
-        url: "/images/Dessicated/Desicated coconut Page - Medium Grade-09.png",
-        click: "/dessicated",
-      },
-      {
-        url: "/images/Dessicated/Desicated coconut Page-07.png",
-        click: "/dessicated",
-      },
-    ],
-  },
-  treacle: {
-    id: "8",
-    name: "treacle",
-    imgUri: "/images/Treacle Page/Treacle Page Final-05.png",
-    mainImage: {
-      sizeW: 300,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Treacle Page/Treacle Page Final-02.png",
-      right: "/images/Treacle Page/Treacle Page Final-08.png",
-    },
-    title: "Organic Coconut Syrup",
-    subTitle: "",
-    description:
-      "Tropcey Coconut Treacle is produced from 100% natural sap, the sugary fluid extracted from the coconut tree",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["250ml wide mouth glass jar", "12", "120", "21600", "43200"]],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Coconut treacle",
-    label: ["VEGAN", "NON GMO"],
-  },
-  vinegar: {
-    id: "9",
-    name: "vinegar",
-    imgUri: "/images/Vinegar page/Vinegar page Final-03 (1).png",
-    title: "Organic Coconut Water Vinegar",
-    subTitle: "",
-    description:
-      "Tropcey Coconut Vinegar is made from fermented coconut water and is used extensively as a preservative and flavoring agent in pickles, salads and sauces.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["250ml wide mouth glass jar", "12", "120", "21600", "43200"]],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Coconut treacle",
-    label: ["VEGAN", "NON GMO"],
-    mainImage: {
-      sizeW: 300,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Vinegar page/Vinegar page Final-02 (1)-08.png",
-      right: "/images/Vinegar page/Vinegar page Final-02 (1)-07.png",
-    },
-  },
-  water: {
-    id: "10",
-    name: "water",
-    imgUri: "/images/Coconut water/Coconut water page Final-04 (1).png",
-    background: {
-      left: "/images/Coconut water/Coconut water page Final-07 (3).png",
-      right: "/images/Coconut water/Coconut water page Final-08.png",
-    },
-    title: "Coconut Water",
-    subTitle: "",
-    description:
-      "Tropcey Coconut Water is tapped from the center of the coconut and is a revitalizing beverage. The water is naturally rich in electrolytes making it extremely refreshing. Coconut water is grate alternative to many juice drinks as it contains less sugar and less cholesterol.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["1 Tetra Pack", "12", "90", "10800", "21600"]],
-    },
-    life: "12 Months",
-    storage:
-      "In a cool dry place. Once opened keep refrigerated and consume within 48 hours",
-    ingredient: "Organic coconut water",
-    label: ["VEGAN", "NON GMO"],
-  },
-  coil_cinnamon: {
-    id: "11",
-    name: "vinegar",
-    imgUri: "/images/Cinnamon/Cinnamon-01.png",
-    title: "Coconut Oil",
-    subTitle: "With Natural Cinnamon",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Cinnamon/Cinnamon-02.png",
-    },
-    recommendations: [
-      {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/oil/extra-virgin",
-      },
-      {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/oil/red-chili",
-      },
-      {
-        url: "/images/Cinnamon/Cinnamon-09.png",
-        click: "",
-      },
-      {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/oil/mint",
-      },
-      {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/oil/green-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/oil/ginger",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/oil/garlic",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/oil/turmeric",
-      },
-    ],
   },
   coil_extravergin: {
-    id: "12",
-    name: "coil_extravergin",
-    imgUri: "/images/Extra Virgin/extra virgin-03.png",
-    title: "Organic Virgin Coconut Oil",
-    subTitle: "Extra Virgin",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
+    id: "2",
+    // name: "Coconut Oil",
+    nameBgColor: "#7F4C28",
+    imgUri: "/images/home/virgin-oil.png",
+    brandImg: "/images/oil-brand-img.png",
     background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Extra Virgin/back-01.png",
+      left: "/images/background/sweet-chips-bg-left.png",
+      right: "/images/background/sweet-chips-bg-right.png",
     },
-    recommendations: [
+    title: [
+      { text: "Organic", color: "#7F4C28", size: "48px" },
+      { text: "Virgin", color: "black", size: "48px" },
+      { text: "Coconut Oil", color: "black", size: "30px" },
+    ],
+    verticalLine: {
+      color: "#7F4C28",
+    },
+    description: {
+      text: "Tropcey Organic Virgin Coconut Oil is a 100% natural and an unrefined product made from fresh coconuts using a cold pressed method. Highly regarded as a natural source of Lauric Acid.",
+      color: "white",
+    },
+
+    ingrediants: [
       {
-        url: "/images/Extra Virgin/jar-01.png",
-        click: "",
+        text: "100% Pure & 100% Natural",
+        color: "#7F4C28",
       },
       {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/oil/red-chili",
+        text: "Certified Organic - Quality Guaranteed",
+        color: "#7F4C28",
       },
       {
-        url: "/images/Cinnamon/jar-03.png",
-        click: "/oil/cinnamon",
+        text: "Freshness Guaranteed",
+        color: "#7F4C28",
       },
       {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/oil/mint",
+        text: "Vegan & Plant-Based",
+        color: "#7F4C28",
       },
       {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/oil/green-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/oil/ginger",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/oil/garlic",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/oil/turmeric",
+        text: "No additives, preservatives, or artificial ingredients",
+        color: "#7F4C28",
       },
     ],
-  },
-  coil_garlic: {
-    id: "13",
-    name: "coil_garlic",
-    imgUri: "/images/Garlic/Garlic-06.png",
-    title: "Coconut Oil",
-    subTitle: "With Natural Garlic",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Garlic/Garlic-01.png",
-    },
-    recommendations: [
+    itemDetails: [
       {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/oil/extra-virgin",
+        title: "Ingredients",
+        subTitle: "100% cold pressed virgin coconut oil.",
+        color: "white",
       },
       {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/oil/red-chili",
+        title: "Suitable for",
+        subTitle:
+          "Cooking and baking needs. Can be used as a salad dress-ing, pizza topping, etc.",
+        color: "white",
       },
       {
-        url: "/images/Cinnamon/jar-03.png",
-        click: "/oil/cinnamon",
+        title: "Storage",
+        subTitle:
+          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+        color: "white",
       },
       {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/oil/mint",
-      },
-      {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/oil/green-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/oil/ginger",
-      },
-      {
-        url: "/images/Garlic/Garlic-08.png",
-        click: "",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/oil/turmeric",
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
       },
     ],
-  },
-  coil_ginger: {
-    id: "14",
-    name: "coil_ginger",
-    imgUri: "/images/Ginger/Ginger-06.png",
-    title: "Coconut Oil",
-    subTitle: "With Natural Ginger",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Ginger/Ginger-02.png",
-    },
-    recommendations: [
-      {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/oil/extra-virgin",
-      },
-      {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/oil/red-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-03.png",
-        click: "/oil/cinnamon",
-      },
-      {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/oil/mint",
-      },
-      {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/oil/green-chili",
-      },
-      {
-        url: "/images/Ginger/Ginger-09.png",
-        click: "",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/oil/garlic",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/oil/turmeric",
-      },
-    ],
-  },
-  coil_greenchili: {
-    id: "14",
-    name: "coil_greenchili",
-    imgUri: "/images/Green Chili/green chilli-04.png",
-    title: "Coconut Oil",
-    subTitle: "With Natural Green Chili",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Green chili/green chilli-06.png",
-    },
-    recommendations: [
-      {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/oil/extra-virgin",
-      },
-      {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/oil/red-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-03.png",
-        click: "/oil/cinnamon",
-      },
-      {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/oil/mint",
-      },
-      {
-        url: "/images/Green Chili/green chilli-08.png",
-        click: "",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/oil/ginger",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/oil/garlic",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/oil/turmeric",
-      },
-    ],
-  },
-  coil_mint: {
-    id: "15",
-    name: "coil_mint",
-    imgUri: "/images/Mint/Mint-01.png",
-    title: "Coconut Oil",
-    subTitle: "With Natural Mint",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Mint/Mint-05.png",
-    },
-    recommendations: [
-      {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/oil/extra-virgin",
-      },
-      {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/oil/red-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-03.png",
-        click: "/oil/cinnamon",
-      },
-      {
-        url: "/images/Mint/Mint-08.png",
-        click: "",
-      },
-      {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/oil/green-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/oil/ginger",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/oil/garlic",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/oil/turmeric",
-      },
-    ],
-  },
-  coil_redchili: {
-    id: "16",
-    name: "coil_redchili",
-    imgUri: "/images/Red Chili/red chilli-06.png",
-    title: "Coconut Oil",
-    subTitle: "With Natural Red Chili",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Red Chili/red chilli-01.png",
-    },
-    recommendations: [
-      {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/oil/extra-virgin",
-      },
-      {
-        url: "/images/Red Chili/red chilli-10.png",
-        click: "",
-      },
-      {
-        url: "/images/Cinnamon/jar-03.png",
-        click: "/oil/cinnamon",
-      },
-      {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/oil/mint",
-      },
-      {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/oil/green-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/oil/ginger",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/oil/garlic",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/oil/turmeric",
-      },
-    ],
-  },
-  coil_turmeric: {
-    id: "17",
-    name: "coil_turmeric",
-    imgUri: "/images/Turmeric/Turmeric-06.png",
-    title: "Coconut Oil",
-    subTitle: "With Natural Turmeric",
-    description:
-      "Tropcey Virgin Coconut Oil is 100% natural and rich in lauric acid, is derived from fresh coconut via a cold press process. It will give your dishes a natural colour, aroma and flavour.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
-        ["200l steel drum(Bulk)", "", "4", "40", "80"],
-        ["1000l TOTE(Bulk)", "", "2", "20", "40"],
-      ],
-    },
-    life: "24 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil. Red Chili extract.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Turmeric/Turmeric-05.png",
-    },
-    recommendations: [
-      {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/oil/extra-virgin",
-      },
-      {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/oil/red-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-03.png",
-        click: "/oil/cinnamon",
-      },
-      {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/oil/mint",
-      },
-      {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/oil/green-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/oil/ginger",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/oil/garlic",
-      },
-      {
-        url: "/images/Turmeric/Turmeric-09.png",
-        click: "",
-      },
-    ],
-  },
-  spread_whiteChocolate: {
-    id: "18",
-    name: "spread",
-    imgUri: "/images/White Chcocolate/white chcocolate-04.png",
-    title: "Coconut Spread",
-    subTitle: "Made from Coconut Puree",
-    subTitleSupport: "With WHITE CHOCOLATE",
-    description:
-      "Tropcey Coconut Puree is made from 100% natural dried coconut meat. Coconut Puree has a unique rich sweet flavour and is an amazing spread on crackers and toasts.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["300ml wide mouth glass jar", "12", "165", "19800", "39600"]],
-    },
-    life: "12 Months",
-    storage:
-      "Store in sealed container in a cool, dry place before and after opening.",
-    ingredient: "100% Natural Dried Coconut. White Chocolate",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "",
-    brandingFooter: "Rich source of dietarv fiber",
-    labelFooter:
-      " Mix well before use if natural separation occurs. If it is solidified, it can be softened by placing it in a bowl of hot water.",
-    label: ["VEGAN", "NON GMO", "GLUTEN & DAIRY FREE"],
-    backgroundImage: {
-      left: "/images/Cashew/coconut puree-05.png",
-      right: "/images/Cashew/coconut puree-04.png",
-    },
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    primaryColor: "",
-    secondaryColor: "",
-    recommendations: [
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/",
-      },
-      {
-        url: "/images/Cashew/Puree 1-06.png",
-        click: "/spread/cashew",
-      },
-      {
-        url: "/images/Cashew/Puree 1-05.png",
-        click: "/spread/dark-chocolate",
-      },
-      {
-        url: "/images/White Chcocolate/Puree 1-09.png",
-        click: "/spread/white-chocolate",
-      },
-    ],
-  },
-  spread_whiteCashew: {
-    id: "18",
-    name: "spread",
-    imgUri: "/images/Cashew/ca-07.png",
-    title: "Coconut Spread",
-    subTitle: "Made from Coconut Puree",
-    subTitleSupport: "With Cashew",
-    description:
-      "Tropcey Coconut Puree is made from 100% natural dried coconut meat. Coconut Puree has a unique rich sweet flavour and is an amazing spread on crackers and toasts.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["300ml wide mouth glass jar", "12", "165", "19800", "39600"]],
-    },
-    life: "12 Months",
-    storage:
-      "Store in sealed container in a cool, dry place before and after opening.",
-    ingredient: "100% Natural Dried Coconut. White Chocolate",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "",
-    brandingFooter: "Rich source of dietarv fiber",
-    labelFooter:
-      " Mix well before use if natural separation occurs. If it is solidified, it can be softened by placing it in a bowl of hot water.",
-    label: ["VEGAN", "NON GMO", "GLUTEN & DAIRY FREE"],
-    backgroundImage: {
-      left: "/images/Cashew/coconut puree-05.png",
-      right: "/images/Cashew/coconut puree-04.png",
-    },
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    primaryColor: "",
-    secondaryColor: "",
-    recommendations: [
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/",
-      },
-      {
-        url: "/images/Cashew/ca-06.png",
-        click: "/spread/cashew",
-      },
-      {
-        url: "/images/Cashew/Puree 1-05.png",
-        click: "/spread/dark-chocolate",
-      },
-      {
-        url: "/images/Cashew/Puree 1-07.png",
-        click: "/spread/white-chocolate",
-      },
-    ],
-  },
-  spread_darkChocolate: {
-    id: "18",
-    name: "spread",
-    imgUri: "/images/Dark Chocolate/dark chcocolate-04.png",
-    title: "Coconut Spread",
-    subTitle: "Made from Coconut Puree",
-    subTitleSupport: "With DARK CHOCOLATE",
-    description:
-      "Tropcey Coconut Puree is made from 100% natural dried coconut meat. Coconut Puree has a unique rich sweet flavour and is an amazing spread on crackers and toasts.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["300ml wide mouth glass jar", "12", "165", "19800", "39600"]],
-    },
-    life: "12 Months",
-    storage:
-      "Store in sealed container in a cool, dry place before and after opening.",
-    ingredient: "100% Natural Dried Coconut. White Chocolate",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "",
-    brandingFooter: "Rich source of dietarv fiber",
-    labelFooter:
-      " Mix well before use if natural separation occurs. If it is solidified, it can be softened by placing it in a bowl of hot water.",
-    label: ["VEGAN", "NON GMO", "GLUTEN & DAIRY FREE"],
-    backgroundImage: {
-      left: "/images/Cashew/coconut puree-05.png",
-      right: "/images/Cashew/coconut puree-04.png",
-    },
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
-    },
-    primaryColor: "",
-    secondaryColor: "",
-    recommendations: [
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/",
-      },
-      {
-        url: "/images/Cashew/Puree 1-06.png",
-        click: "/spread/cashew",
-      },
-      {
-        url: "/images/Dark Chocolate/Puree 1-08.png",
-        click: "/spread/dark-chocolate",
-      },
-      {
-        url: "/images/Cashew/Puree 1-07.png",
-        click: "/spread/white-chocolate",
-      },
-    ],
-  },
-  blueChips: {
-    id: "1",
-    name: "chip",
-    imgUri: "/images/home/Blues Chips Page Final-01.png",
-    background: {
-      left: "/images/background/Green Chips-13.png",
-      right: "/images/background/Green Chips-14.png",
-    },
-    title: "Coconut Chips",
-    subTitle: "Baked Chips",
-    description:
-      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["40g pouch", "24", "72", "17280", "34560"],
-        ["80g pouch", "24", "56", "13440", "26880"],
-        ["100g pouch", "24", "72", "17280", "34560"],
-        ["500g pouch", "12", "72", "8640", "17280"],
-        ["40g pouch", "N/A", "96", "960", "1920"],
-        ["40g pouch", "N/A", "48", "480", "960"],
-      ],
-    },
+    nutritionChart: "/images/oil-nutrition.png",
+
     life: "12 Months",
     storage: "In a cool dry place, away from direct sunlight.",
     ingredient: "Dried Coconut",
     brandingTitle:
       "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "Rich source of dietary fiber",
+    brandingSubtitle: {
+      text: "Coconut Goodness In Every Drop.",
+      color: "#7F4C28",
+    },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
-    recommendations: [
-      {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/spread/",
-      },
-      {
-        url: "/images/Cashew/Puree 1-06.png",
-        click: "/spread/cashew",
-      },
-      {
-        url: "/images/Cashew/Puree 1-05.png",
-        click: "/spread/dark-chocolate",
-      },
-      {
-        url: "/images/Cashew/Puree 1-07.png",
-        click: "/spread/white-chocolate",
-      },
-    ],
-  },
-  brownChips: {
-    id: "1",
-    name: "chip",
-    imgUri: "/images/home/Brown Chips Page Final-01.png",
-    background: {
-      left: "/images/background/Brown Chips Page Final-02.png",
-      right: "/images/background/Brown Chips Page Final-02.png",
-    },
-    title: "Coconut Chips",
-    subTitle: "Baked Chips",
-    description:
-      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["40g pouch", "24", "72", "17280", "34560"],
-        ["80g pouch", "24", "56", "13440", "26880"],
-        ["100g pouch", "24", "72", "17280", "34560"],
-        ["500g pouch", "12", "72", "8640", "17280"],
-        ["40g pouch", "N/A", "96", "960", "1920"],
-        ["40g pouch", "N/A", "48", "480", "960"],
-      ],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Dried Coconut",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "Rich source of dietary fiber",
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO"],
-    recommendations: [
-      {
-        url: "/images/chips/Green Chips-09.png",
-        click: "/chips",
-      },
-      {
-        url: "/images/recommendations/Green Chips-10.png",
-        click: "/chips/blue",
-      },
-      {
-        url: "/images/recommendations/Green Chips-11.png",
-        click: "/chips/yellow",
-      },
-      {
-        url: "/images/chips/Brown Chips Page Final-03.png",
-        click: "/chips/brown",
-      },
-    ],
-  },
-  yellowChips: {
-    id: "1",
-    name: "chip",
-    imgUri: "/images/home/Yellow Chips Page Final-01.png",
-    background: {
-      left: "/images/background/Green Chips-13.png",
-      right: "/images/background/Green Chips-14.png",
-    },
-    title: "Coconut Chips",
-    subTitle: "Baked Chips",
-    description:
-      "Tropcey Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["40g pouch", "24", "72", "17280", "34560"],
-        ["80g pouch", "24", "56", "13440", "26880"],
-        ["100g pouch", "24", "72", "17280", "34560"],
-        ["500g pouch", "12", "72", "8640", "17280"],
-        ["40g pouch", "N/A", "96", "960", "1920"],
-        ["40g pouch", "N/A", "48", "480", "960"],
-      ],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Dried Coconut",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: "Rich source of dietary fiber",
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO"],
-    recommendations: [
-      {
-        url: "/images/chips/Green Chips-09.png",
-        click: "/chips",
-      },
-      {
-        url: "/images/recommendations/Green Chips-10.png",
-        click: "/chips/blue",
-      },
-      {
-        url: "/images/chips/Yellow Chips Page Final-03.png",
-        click: "/chips/yellow",
-      },
-      {
-        url: "/images/recommendations/Green Chips-12.png",
-        click: "/chips/brown",
-      },
-    ],
+    // recommendations: [
+    //   {
+    //     url: "/images/recommendations/sweet-chips-img-recommened-1.png",
+    //     click: "/organic-coconut-chips",
+    //   },
+    //   {
+    //     url: "/images/recommendations/sweet-chips-img-recommened-2.png",
+    //     click: "/organic-coconut-chips/toasted",
+    //   },
+    // ],
   },
   infused_virgin_coconut_oil: {
-    id: "20",
-    name: "infused_virgin_coconut_oil",
-    imgUri: "/images/Cinnamon/Cinnamon-01.png",
-    title: "Infused Virgin Coconut Oil",
-    subTitle: "With Natural Infusions",
-    description:
-      "Tropcey Infused Virgin Coconut Oil is crafted from 100% natural cold-pressed virgin coconut oil, carefully blended with natural botanical extracts. Each infusion brings a unique aroma and flavour profile, perfect for culinary use, skin care, and aromatherapy. Our range includes cinnamon, garlic, ginger, mint, turmeric, and chili infusions.",
+    id: "3",
+    imgUri: "/images/home/chili-main-img.png",
+    brandImg: "/images/infused-virgin-brand-img.png",
+    title: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+    ],
+    verticalLine: {
+      color: "black",
+    },
+    titleLabel: {
+      text: "Bottles",
+      color: "white",
+      size: "48px",
+      bgColor: "black",
+    },
+    description: {
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "With Pepper",
+        color: "#000",
+      },
+      {
+        text: "With Chili",
+        color: "#000",
+      },
+      {
+        text: "With Garlic",
+        color: "#000",
+      },
+      {
+        text: "With Ginger",
+        color: "#000",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle:
+          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/nutrition-chart.png",
+    brandingSubtitle: {
+      text: "Coconut Goodness, Perfectly Infused",
+      color: "black",
+    },
+    recommendations: [
+      {
+        url: "/images/recommendations/chili-flavour.png",
+        click: "/infused-virgin-coconut-oil",
+        name: "Chili",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/ginger.png",
+        click: "/infused-virgin-coconut-oil/ginger",
+        name: "Ginger",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/pepper.png",
+        click: "/infused-virgin-coconut-oil/pepper",
+        name: "Pepper",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/garlic.png",
+        click: "/infused-virgin-coconut-oil/garlic",
+        name: "Garlic",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+    ],
+  },
+  sweetChips: {
+    id: "4",
+    name: "Sweet Chips",
+    nameBgColor: "#751F24",
+    imgUri: "/images/home/sweet-chips-main-img.png",
+    brandImg: "/images/sweet-chips-4-logo.png",
+    background: {
+      left: "/images/background/sweet-chips-bg-left.png",
+      right: "/images/background/sweet-chips-bg-right.png",
+    },
+    title: [
+      { text: "Organic", color: "#751F24", size: "30px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "48px", font: "futuraBold" },
+    ],
+    verticalLine: {
+      color: "#751F24",
+    },
+    subTitle: "Baked Chips",
+    description: {
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes. Adding to the vibrant tastes, comes in two different flavours.",
+      color: "white",
+    },
+
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#751F24",
+      },
+      {
+        text: "Certified Organic - Quality Guaranteed",
+        color: "#751F24",
+      },
+      {
+        text: "Fresh, Crunchy & Delicious",
+        color: "#751F24",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#751F24",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#751F24",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
     table: {
       header: [
         "Packaging",
@@ -1361,120 +359,968 @@ export const data = {
         "Units per 40ft container",
       ],
       row: [
-        ["200ml wide mouth glass jar", "12", "182", "21840", "43680"],
-        ["320ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["500ml wide mouth glass jar", "12", "121", "14520", "29040"],
-        ["1000ml wide mouth glass jar", "4", "200", "8000", "16000"],
+        ["40g pouch", "24", "72", "17280", "34560"],
+        ["80g pouch", "24", "56", "13440", "26880"],
+        ["100g pouch", "24", "72", "17280", "34560"],
+        ["500g pouch", "12", "72", "8640", "17280"],
+        ["40g pouch", "N/A", "96", "960", "1920"],
+        ["40g pouch", "N/A", "48", "480", "960"],
       ],
     },
-    life: "24 Months",
+    life: "12 Months",
     storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "100% cold pressed virgin coconut oil with natural botanical extracts.",
-    label: ["VEGAN", "NO PRESERVATIVE", "COLD PRESSED"],
-    labelFooter:
-      " if it is solidified, it can be softened by placing it in a bowl of hot water.",
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
+    ingredient: "Dried Coconut",
+    brandingTitle:
+      "Healthy snack, as a topping on salads, desserts and cereals",
+    brandingSubtitle: {
+      text: "Snack the Authentic Tropical Way.",
+      color: "#751F24",
     },
-    background: {
-      left: "/images/Cinnamon/Cinnamon-03.png",
-      right: "/images/Cinnamon/Cinnamon-02.png",
-    },
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
     recommendations: [
       {
-        url: "/images/Cinnamon/jar-01.png",
-        click: "/organic-virgin-coconut-oil/extra-virgin",
+        url: "/images/recommendations/sweet-chips-img-recommened-1.png",
+        click: "/organic-coconut-chips",
+        sizeLg: "120px",
+        sizeMd: "100px",
       },
       {
-        url: "/images/Cinnamon/jar-02.png",
-        click: "/organic-virgin-coconut-oil/red-chili",
-      },
-      {
-        url: "/images/Cinnamon/Cinnamon-09.png",
-        click: "/organic-virgin-coconut-oil/cinnamon",
-      },
-      {
-        url: "/images/Cinnamon/jar-04.png",
-        click: "/organic-virgin-coconut-oil/mint",
-      },
-      {
-        url: "/images/Cinnamon/jar-05.png",
-        click: "/organic-virgin-coconut-oil/green-chili",
-      },
-      {
-        url: "/images/Cinnamon/jar-06.png",
-        click: "/organic-virgin-coconut-oil/ginger",
-      },
-      {
-        url: "/images/Cinnamon/jar-07.png",
-        click: "/organic-virgin-coconut-oil/garlic",
-      },
-      {
-        url: "/images/Cinnamon/jar-08.png",
-        click: "/organic-virgin-coconut-oil/turmeric",
+        url: "/images/recommendations/sweet-chips-img-recommened-2.png",
+        click: "/organic-coconut-chips/toasted",
+        sizeLg: "120px",
+        sizeMd: "100px",
       },
     ],
   },
-  coconut_chocolate_spread: {
-    id: "21",
-    name: "coconut_chocolate_spread",
-    imgUri: "/images/Dark Chocolate/dark chcocolate-04.png",
-    title: "Coconut Chocolate Spread",
-    subTitle: "Made from Coconut Puree",
-    subTitleSupport: "With Chocolate",
-    description:
-      "Tropcey Coconut Chocolate Spread is a delicious blend of 100% natural coconut puree and rich chocolate. This creamy spread combines the tropical sweetness of coconut with the indulgent flavour of chocolate, making it an irresistible topping for toast, pancakes, and desserts. Free from artificial additives and preservatives.",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [["300ml wide mouth glass jar", "12", "165", "19800", "39600"]],
+  sweetToastedChips: {
+    id: "5",
+    name: "Toasted Chips",
+    nameBgColor: "#751F24",
+    imgUri: "/images/home/toasted-chips.png",
+    brandImg: "/images/toasted-brand-img.png",
+    background: {
+      left: "/images/background/sweet-chips-bg-left.png",
+      right: "/images/background/sweet-chips-bg-right.png",
     },
-    life: "12 Months",
-    storage:
-      "Store in sealed container in a cool, dry place before and after opening.",
-    ingredient: "100% Natural Dried Coconut, Chocolate",
-    brandingTitle:
-      "A rich chocolatey spread with natural coconut goodness",
-    brandingSubtitle: "",
-    brandingFooter: "Rich in natural coconut flavour",
-    labelFooter:
-      " Mix well before use if natural separation occurs. If it is solidified, it can be softened by placing it in a bowl of hot water.",
-    label: ["VEGAN", "NON GMO", "GLUTEN & DAIRY FREE"],
-    backgroundImage: {
-      left: "/images/Cashew/coconut puree-05.png",
-      right: "/images/Cashew/coconut puree-04.png",
+    title: [
+      { text: "Organic", color: "#751F24", size: "30px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "48px", font: "futuraBold" },
+    ],
+    verticalLine: {
+      color: "#751F24",
     },
-    mainImage: {
-      sizeW: 400,
-      sizeH: "",
+    description: {
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes. Adding to the vibrant tastes, comes in two different flavours.",
+      color: "white",
     },
-    primaryColor: "",
-    secondaryColor: "",
-    recommendations: [
+
+    ingrediants: [
       {
-        url: "/images/Cashew/Puree 1-10.png",
-        click: "/organic-coconut-puree",
+        text: "100% Pure & 100% Natural",
+        color: "#751F24",
       },
       {
-        url: "/images/Cashew/Puree 1-06.png",
-        click: "/organic-coconut-puree/cashew",
+        text: "Certified Organic - Quality Guaranteed",
+        color: "#751F24",
       },
       {
-        url: "/images/Dark Chocolate/Puree 1-08.png",
-        click: "/coconut-chocolate-spread",
+        text: "Fresh, Crunchy & Delicious",
+        color: "#751F24",
       },
       {
-        url: "/images/Cashew/Puree 1-07.png",
-        click: "/organic-coconut-puree/white-chocolate",
+        text: "Gluten-Free",
+        color: "#751F24",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#751F24",
       },
     ],
-  }
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
+    life: "12 Months",
+    brandingSubtitle: {
+      text: "Snack the Authentic Tropical Way.",
+      color: "#751F24",
+    },
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/recommendations/toasted-link-1.png",
+        click: "/organic-coconut-chips",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+      {
+        url: "/images/recommendations/toasted-link-2.png",
+        click: "/organic-coconut-chips/toasted",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+    ],
+  },
+  infused_virgin_coconut_oil_ginger: {
+    id: "6",
+    imgUri: "/images/home/ginger-main-img.png",
+    brandImg: "/images/infused-virgin-brand-img.png",
+    title: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+    ],
+    verticalLine: {
+      color: "black",
+    },
+    titleLabel: {
+      text: "Bottles",
+      color: "#000",
+      size: "48px",
+      bgColor: "black",
+    },
+    description: {
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "With Pepper",
+        color: "#000",
+      },
+      {
+        text: "With Chili",
+        color: "#000",
+      },
+      {
+        text: "With Garlic",
+        color: "#000",
+      },
+      {
+        text: "With Ginger",
+        color: "#000",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle:
+          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/ginger-nutrition-chart.png",
+    brandingSubtitle: {
+      text: "Coconut Goodness, Perfectly Infused",
+      color: "black",
+    },
+    recommendations: [
+      {
+        url: "/images/recommendations/chili.png",
+        click: "/infused-virgin-coconut-oil",
+        name: "Chili",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/ginger-flavour.png",
+        click: "/infused-virgin-coconut-oil/ginger",
+        name: "Ginger",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/pepper.png",
+        click: "/infused-virgin-coconut-oil/pepper",
+        name: "Pepper",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/garlic.png",
+        click: "/infused-virgin-coconut-oil/garlic",
+        name: "Garlic",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+    ],
+  },
+  infused_virgin_coconut_oil_pepper: {
+    id: "7",
+    imgUri: "/images/home/pepper-main-img.png",
+    brandImg: "/images/infused-virgin-brand-img.png",
+    title: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+    ],
+    verticalLine: {
+      color: "black",
+    },
+    titleLabel: {
+      text: "Bottles",
+      color: "#000",
+      size: "48px",
+      bgColor: "black",
+    },
+    description: {
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "With Pepper",
+        color: "#000",
+      },
+      {
+        text: "With Chili",
+        color: "#000",
+      },
+      {
+        text: "With Garlic",
+        color: "#000",
+      },
+      {
+        text: "With Ginger",
+        color: "#000",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle:
+          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/pepper-chart.png",
+    brandingSubtitle: {
+      text: "Coconut Goodness, Perfectly Infused",
+      color: "black",
+    },
+    recommendations: [
+      {
+        url: "/images/recommendations/chili.png",
+        click: "/infused-virgin-coconut-oil",
+        name: "Chili",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/ginger.png",
+        click: "/infused-virgin-coconut-oil/ginger",
+        name: "Ginger",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/pepper-flavour.png",
+        click: "/infused-virgin-coconut-oil/pepper",
+        name: "Pepper",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/garlic.png",
+        click: "/infused-virgin-coconut-oil/garlic",
+        name: "Garlic",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+    ],
+  },
+  infused_virgin_coconut_oil_garlic: {
+    id: "8",
+    imgUri: "/images/home/garlic-main-img.png",
+    brandImg: "/images/infused-virgin-brand-img.png",
+    title: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+    ],
+    verticalLine: {
+      color: "black",
+    },
+    titleLabel: {
+      text: "Bottles",
+      color: "#000",
+      size: "48px",
+      bgColor: "black",
+    },
+    description: {
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "With Pepper",
+        color: "#000",
+      },
+      {
+        text: "With Chili",
+        color: "#000",
+      },
+      {
+        text: "With Garlic",
+        color: "#000",
+      },
+      {
+        text: "With Ginger",
+        color: "#000",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle:
+          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/garlic-chart.png",
+    brandingSubtitle: {
+      text: "Coconut Goodness, Perfectly Infused",
+      color: "black",
+    },
+    recommendations: [
+      {
+        url: "/images/recommendations/chili.png",
+        click: "/infused-virgin-coconut-oil",
+        name: "Chili",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/ginger.png",
+        click: "/infused-virgin-coconut-oil/ginger",
+        name: "Ginger",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/pepper.png",
+        click: "/infused-virgin-coconut-oil/pepper",
+        name: "Pepper",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+      {
+        url: "/images/recommendations/garlic-flavour.png",
+        click: "/infused-virgin-coconut-oil/garlic",
+        name: "Garlic",
+        color: "black",
+        sizeLg: "70px",
+        sizeMd: "80px",
+      },
+    ],
+  },
+  organic_coconut_puree: {
+    id: "9",
+    imgUri: "/images/home/puree-main-img.png",
+    brandImg: "/images/puree-brand-img.png",
+    title: [
+      { text: "Organic", color: "#AC4E2B", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Puree", color: "black", size: "72px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#AC4E2B",
+    },
+    description: {
+      text: "Tropcey Organic Coconut Puree is made using only 100% natural dried coconut meat. It does not contain any dairy substrate, additives or preservatives. The rich, thick and creamy product containing dietary fiber adds a unique texture and flavour to dishes; thus making it a best fit for everyday cooking.",
+      sectionTitle: "Versatile & Multi-Purpose Use",
+      bulletPoints: [
+        "Perfect for desserts, sauces and baked goods for extra creaminess.",
+        "A base for coconut-based ice creams/ smoothies/ shakes and soups.",
+        "Often added to curries and marinades for rich flavor and smooth texture.",
+      ],
+
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#AC4E2B",
+      },
+      {
+        text: "Natural Certified Organic – Quality Guaranteed",
+        color: "#AC4E2B",
+      },
+      {
+        text: "Fresh, Creamy & Delicious",
+        color: "#AC4E2B",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#AC4E2B",
+      },
+      {
+        text: "Vegan & Plant-Based  ",
+        color: "#AC4E2B",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle: "100% Natural Dried Coconut.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "Can be used in curries for a rich and creamy flavour and texture, and can be used for baking needs and desserts.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle:
+          " In a cool dry place, away from direct sunlight. Once opened recommend to refrigerate. Starts to solidify at temperatures below 24°C (77°F).",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/puree-chart.png",
+    brandingSubtitle: {
+      text: "Naturally Authentic Coconut Goodness",
+      color: "#AC4E2B",
+    },
+  },
+  coconut_chocolate_spread: {
+    id: "10",
+    advice: {
+      text: "ALLERGY ADVICE : CONTAINS COW MILK AND SOY.",
+      bgColor: "#372115",
+      font: "franklinHeavy",
+    },
+    imgUri: "/images/home/spread-main-img.png",
+    // brandImg: "/images/puree-brand-img.png",
+    title: [
+      { text: "COCONUT", color: "#372115", size: "48px", font: "futuraBold" },
+      { text: "CHOCOLATE", color: "black", size: "48px", font: "futuraBold" },
+      { text: "SPREAD", color: "black", size: "72px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#372115",
+    },
+    titleLabel: {
+      text: "Chocolate Flavored Pure \nCoconut Cream",
+      color: "#000",
+      size: "48px",
+      bgColor: "#372115",
+    },
+    description: {
+      text: "Tropcey Coconut Chocolate Spread is mainly produced by grinding desiccated coconut to a soft, creamy paste which is finally blended with cocoa powder. The unique flavour combination of coconut and cocoa made in to a consistent and spreadable paste can be used to enhance the flavour of various recipes.",
+      sectionTitle: "Versatile & Multi-Purpose Use",
+      bulletPoints: [
+        "Can be used as a spread on toast, crackers, and waffles.",
+        "Serves as a topping for ice cream, brownies, or fresh fruits.",
+        "Enhances recipes such as doughnut fillings, cookie centers, or used as a simple frosting for cakes and cupcakes.",
+      ],
+
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "Quality Guaranteed",
+        color: "#372115",
+      },
+      {
+        text: "Fresh, Creamy & Delicious ",
+        color: "#372115",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Coconut Puree (Creamed Coconut), Cocoa Powder, Sugar, Palm Fat, Salt, Milk Flavour, Soyalecithin (E322).",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle: "Spreads, Baking, Smoothies and Desserts.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: " In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/spread-chart.png",
+    brandingSubtitle: {
+      text: "Refind Taste Magically Made",
+      color: "#372115",
+    },
+  },
+  coconut_chocolate_syrup: {
+    id: "11",
+
+    imgUri: "/images/home/syrup-main-img.png",
+    brandImg: "/images/syrup-brand-img.png",
+    title: [
+      { text: "ORGANIC", color: "#372115", size: "48px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
+      { text: "SYRUP", color: "black", size: "72px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#372115",
+    },
+    afterTitle: {
+      text: "BOTTLES AND TREACLE SACHETS",
+      color: "#372115",
+      size: "18px",
+      font: "futuraBold",
+    },
+    titleLabel: {
+      text: "Coconut Treacle",
+      color: "#000",
+      size: "48px",
+      bgColor: "#372115",
+    },
+    description: {
+      text: "Tropcey Organic Coconut Syrup is produced from 100% natural coconut sap, the sugary fluid extracted from the coconut flower. It is a product with a unique and rich sweet flavour.",
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "Low GI",
+        color: "#372115",
+      },
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#372115",
+      },
+      {
+        text: "Certified Organic – Quality Guaranteed",
+        color: "#372115",
+      },
+      {
+        text: "Fresh & Delicious",
+        color: "#372115",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#372115",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle: "Coconut Syrup.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A sweet topping for desserts and pancakes and can be used as a sweet syrup in various recipes.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/syrup-chart.png",
+    brandingSubtitle: {
+      text: "Rich and Sweet, Naturally Made",
+      color: "#372115",
+    },
+  },
+  organic_coconut_flour: {
+    id: "12",
+    imgUri: "/images/home/flour-main-img.png",
+    brandImg: "/images/flour-brand-img.png",
+    title: [
+      { text: "ORGANIC", color: "#fff", size: "48px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
+      { text: "FLOUR", color: "black", size: "72px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#fff",
+    },
+
+    description: {
+      text: `Coconut flour is an unrefined, gluten-free alternative to wheat flour and is rich in fiber, and plant-based protein. \n\nTropcey Organic Coconut Flour is made from the coconut kernel residue obtained after expelling oil. It contains no added sugar, no added additives and no preservatives. \n\nNaturally gluten-free, this coconut flour is suitable for people with gluten intolerance. The rich fiber content combined with other nutrients make it a good fit for day to day cooking and recipes.`,
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "Certified Organic – Quality Guaranteed",
+        color: "#000",
+      },
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#000",
+      },
+      {
+        text: "Fresh & Delicious",
+        color: "#000",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#000",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#000",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle: "Coconut Flour.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "Used as a flour substitute to reduce gluten in baking. It can be mixed with other flours for various baking purposes. Works as a thickener in soups, curries, etc.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "18 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/syrup-chart.png",
+    brandingSubtitle: {
+      text: "The Authentic Tropical Addition",
+      color: "#000",
+    },
+  },
+  organic_coconut_vinegar: {
+    id: "13",
+    imgUri: "/images/home/vinegar-main-img.png",
+    brandImg: "/images/vinegar-brand-img.png",
+    title: [
+      { text: "ORGANIC", color: "#284E2A", size: "48px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
+      { text: "VINEGAR", color: "black", size: "72px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#284E2A",
+    },
+    titleLabel: {
+      text: "Made from Pure \n Coconut Water",
+      color: "#000",
+      size: "48px",
+      bgColor: "#284E2A",
+    },
+    description: {
+      text: `Tropcey Organic Coconut Vinegar is produced from pure fermented coconut water.`,
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#284E2A",
+      },
+      {
+        text: "Certified Organic – Quality Guaranteed",
+        color: "#284E2A",
+      },
+      {
+        text: "Fresh & Pure",
+        color: "#284E2A",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#284E2A",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle: "100% Natural Coconut Water.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "Used in various curries and dishes for a unique flavour. Also suitable for salad dressings, marinades, and pickles.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/vinegar-chart.png",
+    brandingSubtitle: {
+      text: "Authentic Taste, Naturally Made",
+      color: "#284E2A",
+    },
+  },
+  organic_desiccated_coconut: {
+    id: "14",
+    imgUri: "/images/home/desiccated-main-img.png",
+    brandImg: "/images/desiccated-brand-img.png",
+    title: [
+      { text: "ORGANIC", color: "#2C4523", size: "48px", font: "futuraBold" },
+      {
+        text: "DESICCATED  ",
+        color: "black",
+        size: "36px",
+        font: "futuraBold",
+      },
+      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
+    ],
+    verticalLine: {
+      color: "#2C4523",
+    },
+    titleLabel: {
+      text: "Fine Grade",
+      color: "#000",
+      size: "48px",
+      bgColor: "#2C4523",
+    },
+    description: {
+      text: "Tropcey Organic Desiccated Coconut is made by 100% natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture. \n It is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
+      sectionTitle: "Versatile & Multi-Purpose Use",
+      bulletPoints: [
+        "Commonly used for various cooking and baking needs.",
+        "Added to curries, granola, smoothies, and desserts for flavor and texture.",
+        "Used as a topping for yogurt, ice cream, and confectionery items.",
+        "Adding to salads will give a unique flavor and a texture.",
+      ],
+
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#2C4523",
+      },
+      {
+        text: "Certified Organic – Quality Guaranteed",
+        color: "#2C4523",
+      },
+      {
+        text: "Fresh & Delicious",
+        color: "#2C4523",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#2C4523",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#2C4523",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle: "Coconut Kernel.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/desiccated-chart.png",
+    brandingSubtitle: {
+      text: "Natural Flakes, Premium Taste",
+      color: "#2C4523",
+    },
+  },
+  organic_coconut_milk: {
+    id: "15",
+    imgUri: "/images/home/milk-main-img.png",
+    brandImg: "/images/milk-brand-img.png",
+    title: [
+      { text: "ORGANIC", color: "#1A523E", size: "48px", font: "futuraBold" },
+      {
+        text: "COCONUT  ",
+        color: "black",
+        size: "48px",
+        font: "futuraBold",
+      },
+      { text: "MILK", color: "black", size: "72px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#1A523E",
+    },
+    description: {
+      text: "Tropcey Organic Coconut Milk is a 100% natural product made from fresh white kernels of mature coconuts, and it does not contain any artificial ingredients. \n\n Carefully processed to preserve its' natural taste and nutrients; Tropcey Organic Coconut Milk is a key ingredient in curries and soups for rich, creamy flavour and texture; and a popular in vegan recipes as a dairy milk substitute.",
+      color: "white",
+    },
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#1A523E",
+      },
+      {
+        text: "Certified Organic – Quality Guaranteed",
+        color: "#1A523E",
+      },
+      {
+        text: "Fresh & Delicious",
+        color: "#1A523E",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#1A523E",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#1A523E",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle: "Coconut Kernel Extract, Water, Guar Gum.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A key ingredient in curries and soups for rich creamy flavour and texture. Popular in vegan recipes as a dairy milk substitute.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle:
+          "In a cool, dry place. Once opened, keep refrigerated and consume within 48 hours.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "24 Months",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/milk-chart.png",
+    brandingSubtitle: {
+      text: "Rich Taste Naturally Made",
+      color: "#1A523E",
+    },
+  },
 };
 
 export const order = [
@@ -1494,79 +1340,147 @@ export const order = [
 export const products = [
   {
     name: "Organic Virgin Coconut Oil",
-    image: "/images/Similar products/Similar products png-10.png",
+    image: "/images/single-img/Organic-Virgin-Coconut-Oil.png",
     href: "/organic-virgin-coconut-oil",
     width: 40,
     height: 40,
   },
   {
     name: "Infused Virgin Coconut Oil",
-    image: "/images/Similar products/Similar products png-10.png",
+    image: "/images/single-img/Infused-Virgin-Coconut-Oil.png",
     href: "/infused-virgin-coconut-oil",
-    width: 40,
+    width: 15,
     height: 40,
   },
   {
     name: "Organic Coconut Chips",
-    image: "/images/Similar products/Similar products png-04.png",
+    image: "/images/single-img/Organic-Coconut-Chips.png",
     href: "/organic-coconut-chips",
-    width: 50,
+    width: 30,
     height: 40,
   },
   {
     name: "Organic Coconut Sugar",
-    image: "/images/Similar products/Similar products png-09.png",
+    image: "/images/single-img/Organic-Coconut-Sugar.png",
     href: "/organic-coconut-sugar",
-    width: 50,
+    width: 40,
     height: 40,
   },
   {
     name: "Organic Coconut Puree",
-    image: "/images/Similar products/Similar products png-02.png",
+    image: "/images/single-img/Organic-Coconut-Puree.png",
     href: "/organic-coconut-puree",
-    width: 60,
+    width: 40,
     height: 20,
   },
   {
     name: "Coconut Chocolate Spread",
-    image: "/images/Similar products/Similar products png-02.png",
+    image: "/images/single-img/Coconut-Chocolate-Spread.png",
     href: "/coconut-chocolate-spread",
-    width: 60,
+    width: 40,
     height: 20,
   },
   {
     name: "Organic Coconut Syrup",
-    image: "/images/Similar products/Similar products png-08.png",
+    image: "/images/single-img/Organic-Coconut-Syrup.png",
     href: "/organic-coconut-syrup",
-    width: 30,
+    width: 25,
     height: 30,
   },
   {
     name: "Organic Coconut Flour",
-    image: "/images/Similar products/Similar products png-06.png",
+    image: "/images/single-img/Organic-Coconut-Flour.png",
     href: "/organic-coconut-flour",
-    width: 50,
+    width: 30,
     height: 40,
   },
   {
     name: "Organic Coconut Water Vinegar",
-    image: "/images/Similar products/Similar products png-07.png",
+    image: "/images//single-img/Organic-Coconut-Water-Vinegar.png",
     href: "/organic-coconut-water-vinegar",
-    width: 30,
+    width: 15,
     height: 30,
   },
   {
     name: "Organic Desiccated Coconut",
-    image: "/images/Similar products/Similar products png-03.png",
+    image: "/images/single-img/Organic-Desiccated-Coconut.png",
     href: "/organic-desiccated-coconut",
-    width: 50,
+    width: 30,
     height: 40,
   },
   {
     name: "Organic Coconut Milk",
-    image: "/images/Similar products/Similar products png-01.png",
+    image: "/images/single-img/Organic-Coconut-Milk.png",
     href: "/organic-coconut-milk",
-    width: 50,
+    width: 30,
     height: 40,
+  },
+];
+
+export const productData = [
+  {
+    id: 1,
+    name: "Organic Coconut Chips",
+    image: "/images/single-img/Organic-Coconut-Chips.png",
+    href: "/organic-coconut-chips",
+  },
+  {
+    id: 2,
+    name: "Organic Coconut Flour",
+    image: "/images/single-img/Organic-Coconut-Flour.png",
+    href: "/organic-coconut-flour",
+  },
+  {
+    id: 3,
+    name: "Organic Coconut Sugar",
+    image: "/images/single-img/Organic-Coconut-Sugar.png",
+    href: "/organic-coconut-sugar",
+  },
+  {
+    id: 4,
+    name: "Organic Desiccated Coconut",
+    image: "/images/single-img/Organic-Desiccated-Coconut.png",
+    href: "/organic-desiccated-coconut",
+  },
+  {
+    id: 5,
+    name: "Organic Virgin Coconut Oil",
+    image: "/images/single-img/Organic-Virgin-Coconut-Oil.png",
+    href: "/organic-virgin-coconut-oil",
+  },
+  {
+    id: 6,
+    name: "Coconut Chocolate Spread",
+    image: "/images/single-img/Coconut-Chocolate-Spread.png",
+    href: "/coconut-chocolate-spread",
+  },
+  {
+    id: 7,
+    name: "Organic Coconut Puree",
+    image: "/images/single-img/Organic-Coconut-Puree.png",
+    href: "/organic-coconut-puree",
+  },
+  {
+    id: 8,
+    name: "Organic Coconut Milk",
+    image: "/images/single-img/Organic-Coconut-Milk.png",
+    href: "/organic-coconut-milk",
+  },
+  {
+    id: 9,
+    name: "Organic Coconut Water Vinegar",
+    image: "/images/single-img/Organic-Coconut-Water-Vinegar.png",
+    href: "/organic-coconut-water-vinegar",
+  },
+  {
+    id: 10,
+    name: "Organic Coconut Syrup",
+    image: "/images/single-img/Organic-Coconut-Syrup.png",
+    href: "/organic-coconut-syrup",
+  },
+  {
+    id: 11,
+    name: "infused Virgin Coconut Oil (Bottles)",
+    image: "/images/single-img/Infused-Virgin-Coconut-Oil.png",
   },
 ];

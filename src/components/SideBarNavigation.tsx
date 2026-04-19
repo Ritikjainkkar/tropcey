@@ -19,11 +19,11 @@ export default function SideBarNavigation() {
   const angleIncrement = (endAngle - startAngle) / (products.length - 1); // Calculate the increment per product
 
   return (
-    <div>
-      <div
-        className={`absolute right-[45px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[5]`}
-        onClick={toggleSidebar}
-      >
+    <div
+      className={`absolute right-[10px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[100] `}
+      onClick={toggleSidebar}
+    >
+      <div>
         <img
           src="/Icons/label-icon.png"
           alt="Toggle Sidebar"
@@ -35,14 +35,14 @@ export default function SideBarNavigation() {
 
       {/* Expanded Sidebar with Elliptical Arc Layout */}
       {isExpanded && (
-        <div className="absolute right-[80px] top-1/2 transform -translate-y-1/2 w-[300px] h-[300px] rounded-full flex items-center justify-center mt-5">
+        <div className="absolute right-[80px] top-1/2 transform -translate-y-1/2 w-[298px] h-[367px] rounded-full flex items-center justify-center mt-5">
           <div className="relative w-full h-full">
             <div
-              className="absolute top-[-235px] left-[170px] w-[700px] h-[800px] z-0"
+              className="absolute top-[-280px] left-[170px] w-[580px] h-[855px] z-0"
               style={{
                 border: "50px solid white", // 20px wide white strip
                 borderRadius: "50%", // Make it a circle
-                opacity: 0.5,
+                opacity: 0.7,
                 zIndex: 0,
               }}
             />
@@ -76,8 +76,8 @@ export default function SideBarNavigation() {
                       src={product.image}
                       alt={product.name}
                       width={product.width}
-                      height={product.height}
-                      className="rounded-full hover:scale-125 transition-transform duration-100"
+                      // height={product.height}
+                      className=" hover:scale-125 transition-transform duration-100"
                     />
                   </div>
                 </a>

@@ -25,7 +25,7 @@ const Navigation = () => {
       <div
         className={`${styles.navLink} ${
           active ? "active" : "hidden"
-        } min-h-screen flex justify-center items-center fixed top-0 w-full  left-0`}
+        } min-h-screen flex justify-center items-center fixed top-0 w-full  left-0 `}
       >
         <ul className="flex flex-col gap-4  justify-center items-center">
           <li onClick={toggleActive}>
@@ -39,7 +39,7 @@ const Navigation = () => {
           <li onClick={toggleActive}>
             <Link
               className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
-              href="/"
+              href="/products"
             >
               PRODUCTS
             </Link>
@@ -65,7 +65,7 @@ const Navigation = () => {
 
       {/* Navigation Wrap */}
       <div
-        className={`${styles.navigationWrap} absolute  w-full z-20 top-0 flex justify-between gap-2 items-center py-5 px-4 md:px-14 `}
+        className={`${styles.navigationWrap} absolute  w-full z-20 top-0 flex justify-between gap-2 items-center py-2 px-4 md:px-14 `}
       >
         {/* Left */}
         <div className={`${styles.navLeft} relative`}>
@@ -84,12 +84,13 @@ const Navigation = () => {
               src="/images/navbar/logo-shadow.png"
               width={100}
               height={100}
-              className={pathname == "/" ? "" : "ml-[120px]"}
+              className={pathname == "/" ? "" : "ml-[110px]"}
               alt="logo"
             />
           </Link>
         </div>
         {/* Right */}
+
         <div className={`${styles.navRight}`}>
           <div className="flex gap-2 justify-center items-center ">
             {/* Search input */}

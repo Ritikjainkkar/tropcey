@@ -16,10 +16,18 @@ const config: Config = {
       fontFamily: {
         dDin: ["var(--font-ddin)"],
         brokeline: ["var(--font-brokeline)"],
+        franklin: ["var(--font-franklin)"],
+        franklinHeavy: ["var(--font-franklinHeavy)"],
+        franklinBook: ["var(--font-franklinBook)"],
+        futuraBold: ["var(--font-futuraBold)"],
+        impact: ["var(--font-impact)"],
+        archivo: ["var(--font-archivo)"],
+        berkShire: ["var(--font-berkShire)"],
+        franklinGothic: ["var(--font-franklinGothic)"],
       },
       zIndex: {
-        '100': '100',
-      }
+        "100": "100",
+      },
     },
   },
   plugins: [],
