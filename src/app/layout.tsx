@@ -94,6 +94,15 @@ const berkShire = localfont({
   variable: "--font-berkShire",
 });
 
+const empire = localfont({
+  src: [
+    {
+      path: "../../public/v2-icons/Empire.ttf",
+    },
+  ],
+  variable: "--font-empire",
+});
+
 export const metadata: Metadata = {
   title: "Tropcey Holdings",
   description: "Tropcey Holdings - Premium Coconut Products",
@@ -107,7 +116,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${dDin.variable} ${brokeline.variable} ${franklin.variable} ${franklinHeavy.variable} ${franklinBook.variable} ${futuraBold.variable} ${impact.variable} ${archivo.variable} ${berkShire.variable} ${franklinGothic.variable}`}
+        className={`${inter.className} ${dDin.variable} ${brokeline.variable} ${franklin.variable} ${franklinHeavy.variable} ${franklinBook.variable} ${futuraBold.variable} ${impact.variable} ${archivo.variable} ${berkShire.variable} ${franklinGothic.variable} ${empire.variable}`}
       >
         <header>
           <Navigation />

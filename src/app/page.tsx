@@ -165,6 +165,46 @@ const Home: React.FC = () => {
     window.addEventListener('wheel', handleScroll);
     window.addEventListener('click', handleEvent);
 
+    // ── Mobile: auto-reveal markers & swipe support ──────────────────────────
+    const isMobile = window.innerWidth <= 1024;
+
+    if (isMobile && (!backParam || backParam !== 'true')) {
+      // On mobile the product overlay is hidden via CSS; skip straight to
+      // the markers view by triggering the same transition the scroll uses.
+      setTimeout(() => {
+        handleEvent(null);
+      }, 400);
+    }
+
+    let touchStartY = 0;
+    const handleTouchStart = (e: any) => {
+      touchStartY = e.touches[0].clientY;
+    };
+    const handleTouchMove = throttle((e: any) => {
+      const deltaY = touchStartY - e.touches[0].clientY;
+      if (Math.abs(deltaY) > 50) {
+        handleEvent(null);
+      }
+    }, 2000);
+
+    window.addEventListener('touchstart', handleTouchStart, { passive: true });
+    window.addEventListener('touchmove', handleTouchMove, { passive: true });
+    // ─────────────────────────────────────────────────────────────────────────
+
+    // ── Dynamic tree height ──────────────────────────────────────────────────
+    const applyTreeHeight = () => {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      if (vw <= 1024) {
+        document.documentElement.style.setProperty('--tree-height', calcTreeHeight(vw, vh));
+      } else {
+        document.documentElement.style.removeProperty('--tree-height');
+      }
+    };
+    applyTreeHeight();
+    window.addEventListener('resize', applyTreeHeight);
+    // ─────────────────────────────────────────────────────────────────────────
+
     const currentUrl = new URL(window.location.href);
     const topContainer = document.querySelector('.top-container');
     topContainer.style.display = 'flex';
@@ -176,11 +216,14 @@ const Home: React.FC = () => {
     };
 
     window.addEventListener('popstate', handlePopState);
-    
+
     return () => {
       document.removeEventListener('click', handleMarkerDelegate, true);
       window.removeEventListener('wheel', handleScroll);
       window.removeEventListener('click', handleEvent);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('resize', applyTreeHeight);
     };
   }, [handleEvent, onBackCame]);
 
@@ -191,19 +234,17 @@ const Home: React.FC = () => {
           <div className="flex relative">
             <img loading="lazy" className="treeImg" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
             <div className="image-collection display-none" ref={imageRef}>
-              <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ top: '15%', left: '42%' }}><img loading="lazy" src="/images/land/About us Pages-03.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/images/land/About us Pages-04.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '30%', left: '10%' }}><img loading="lazy" src="/images/land/About us Pages-05.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-coconut-puree" className="marker" style={{ top: '30%', left: '32%' }}><img loading="lazy" src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-coconut-flour" className="marker" style={{ top: '30%', left: '53%' }}><img loading="lazy" src="/images/land/About us Pages-11.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '50%', left: '15%' }}><img loading="lazy" src="/images/land/About us Pages-06.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-desiccated-coconut" className="marker" style={{ top: '50%', left: '40%' }}><img loading="lazy" src="/images/land/About us Pages-08.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-coconut-milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-10.png" width="150px" height="150px" /></div>
-              <div data-url="/organic-virgin-coconut-oil" className="marker" style={{ top: '65%', left: '55%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
-              {/* New: Infused Virgin Coconut Oil */}
-              <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '75%', left: '30%' }}><img loading="lazy" src="/images/land/About us Pages-07.png" width="90px" height="90px" /></div>
-              {/* New: Coconut Chocolate Spread */}
-              <div data-url="/coconut-chocolate-spread" className="marker" style={{ top: '75%', left: '70%' }}><img loading="lazy" src="/images/land/About us Pages-09.png" width="150px" height="150px" /></div>
+              <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ top: '15%', left: '42%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Water Vinegar.png" width="86px" /></div>
+              <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Syrup.png" width="86px" /></div>
+              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '30%', left: '10%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Chips.png" width="86px" /></div>
+              <div data-url="/organic-coconut-puree" className="marker" style={{ top: '30%', left: '32%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Puree.png" width="86px" /></div>
+              <div data-url="/organic-coconut-flour" className="marker" style={{ top: '30%', left: '53%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Flour.png" width="86px" /></div>
+              <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '50%', left: '15%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Sugar.png" width="86px" /></div>
+              <div data-url="/organic-desiccated-coconut" className="marker" style={{ top: '50%', left: '40%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Desiccated Coconut.png" width="86px" /></div>
+              <div data-url="/organic-coconut-milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Milk.png" width="86px" /></div>
+              <div data-url="/organic-virgin-coconut-oil" className="marker" style={{ top: '65%', left: '55%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Virgin Coconut Oil.png" width="86px" /></div>
+              <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '75%', left: '30%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Infused Virgin Coconut Oil.png" width="86px" /></div>
+              <div data-url="/coconut-chocolate-spread" className="marker" style={{ top: '75%', left: '70%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Coconut Chocolate Spread.png" width="86px" /></div>
             </div>
             <div className="product" ref={productRef}>
               <img loading="lazy" className="absolute" style={{ bottom: '-33%', left: '-5%' }} width="100%" src="/images/home1/About us Pages-05.png" alt="Descriptive Alt Text" />
@@ -223,20 +264,73 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="landing-right flex justify-center items-center">
-          <div className="mb-[200px]">
-            <div class="flip-container mb-[200px]">
-              <div class="flipper">
-                <img loading="lazy" src="/images/home1/only compass-01 (1).png" alt="Front Image" class="front" />
-                <img loading="lazy" src="/images/home1/only compass-02 (2).png" alt="Back Image" class="back" />
+          <div className="right-col-inner">
+            {/* Compass + tagline share a row on mobile */}
+            <div className="right-top-row">
+              <div className="flip-container">
+                <div className="flipper">
+                  <img loading="lazy" src="/images/home1/only compass-01 (1).png" alt="Compass" className="front" />
+                  <img loading="lazy" src="/images/home1/only compass-02 (2).png" alt="Compass" className="back" />
+                </div>
               </div>
+              <h2 className="home-tagline">
+                Truly Naturally<br />Tropical Goodness
+              </h2>
             </div>
-            <img loading="lazy" className="mt-[220px]" style={{ top: '50%' }} width="100%" src="/images/home1/About us Pages-09.png" alt="Descriptive Alt Text" />
+            <img loading="lazy" className="all-products-img" src="/v2-icons/All products in one.png" alt="All Tropcey Products" />
           </div>
         </div>
       </div>
     </>
   );
 };
+
+/**
+ * Computes the ideal tree-image height as a vh string from the current
+ * viewport, so it adapts across all screen sizes and aspect ratios.
+ *
+ * Tablet side-by-side layout (769–1024 px wide):
+ *   – More portrait  → more tree height (up to 68 vh)
+ *   – More landscape → less tree height (down to 44 vh)
+ *   Formula: clamp(44, 72 − ar × 24, 68)
+ *
+ * Mobile stacked layout (≤ 768 px wide):
+ *   – Reserve (nav + gap + right-section) in px.
+ *   – Right-section min = compass + tagline + expected products-image height.
+ *   – Products image is width-capped at 520 px; aspect ratio ≈ 3.5 : 1.
+ *   Formula: clamp(36, (vh − reserved) / vh × 100, 62)
+ */
+function calcTreeHeight(vw: number, vh: number): string {
+  // Wide landscape tablets (aspect > 6:5) keep the side-by-side layout.
+  // Narrow / near-square / portrait viewports stack, same as phones.
+  const ar = vw / vh;
+  if (vw > 768 && ar > 1.2) {
+    // Tablet landscape — columns sit side-by-side
+    const pct = Math.round(Math.max(44, Math.min(68, 72 - ar * 24)));
+    return `${pct}vh`;
+  }
+
+  // Stacked layout — columns stack vertically
+  const navPx      = 88;   // top padding that clears the nav bar
+  const gapPx      = 10;   // gap between tree section and right section
+
+  // Products image is capped at 520 px wide (see CSS), aspect ≈ 3.5:1
+  const prodImgW   = Math.min(vw - 24, 520);
+  const prodImgH   = Math.round(prodImgW / 3.5);   // expected rendered height
+
+  // Right section minimum: compass + tagline + gap + products-image + bottom margin
+  const compassH   = vw > 480 ? 90 : 76;           // matches CSS breakpoints
+  const taglineH   = 50;
+  const innerGap   = 12;
+  const bottomPad  = 40;                            // bottom:32px + breathing room
+  const minRightPx = compassH + taglineH + innerGap + prodImgH + bottomPad;
+
+  const treePx = vh - navPx - gapPx - minRightPx;
+  const pct    = (treePx / vh) * 100;
+  // Give narrow phones (< 500 px wide) a 4 vh boost
+  const boost  = vw < 500 ? 4 : 0;
+  return `${Math.round(Math.max(36, Math.min(66, pct + boost)))}vh`;
+}
 
 function throttle(func: any, limit: number) {
   let lastRan: any;

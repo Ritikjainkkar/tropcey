@@ -7,7 +7,15 @@
       "Bash(brew list:*)",
       "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; mirror --reverse --delete --verbose /Users/ritik/Desktop/tropcey/out/ /; quit\")",
       "Bash(git pull:*)",
-      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 3; mirror --reverse --delete --verbose /Users/ritik/Desktop/tropcey/out/ /; quit\")"
+      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 3; mirror --reverse --delete --verbose /Users/ritik/Desktop/tropcey/out/ /; quit\")",
+      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; set net:timeout 30; set net:max-retries 3; mirror --reverse --delete --only-newer --verbose /Users/ritik/Desktop/tropcey/out/ /; quit\")",
+      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; set net:timeout 30; rm -rf _next; quit\")",
+      "Bash(kill 78240 78238)",
+      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; set net:timeout 60; set net:max-retries 5; set net:reconnect-interval-base 5; mirror --reverse --verbose --no-symlinks /Users/ritik/Desktop/tropcey/out/ /; quit\")",
+      "Bash(chmod +x /Users/ritik/Desktop/tropcey/deploy.sh)",
+      "Bash(md5 /Users/ritik/Desktop/tropcey/out/Icons/label-icon.png /Users/ritik/Desktop/tropcey/public/Icons/label-icon.png)",
+      "Bash(lftp -u 'u906108672.ritiktropcey,Y4#$%tAbTne7s' ftp://194.164.64.234 -e \"set ssl:verify-certificate no; rm -f .in.deploy.zip.; rm -f deploy.zip; rm -f _extract.php; quit\")",
+      "Bash(./deploy.sh)"
     ]
   }
 }

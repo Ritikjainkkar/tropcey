@@ -65,9 +65,8 @@ body {
 
 .marker {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
 }
 
@@ -376,10 +375,367 @@ body {
   }
 }
 
+/* ===========================================
+   Home Page — Tagline & all-products image
+   =========================================== */
+.home-tagline {
+  font-family: var(--font-empire);
+  font-size: clamp(28px, 3.2vw, 52px);
+  color: #2d6b1e;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* Right column inner wrapper — flex column, fills landing-right width */
+.right-col-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Compass + tagline row (visible on desktop too) */
+.right-top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.all-products-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===========================================
+   Home Page — Tablet & Mobile Responsiveness
+   =========================================== */
+
+/* ===========================================
+   TABLET (≤ 1024px) — keep side-by-side columns, just scale things down.
+   No layout direction change here — columns stay horizontal.
+   =========================================== */
+@media screen and (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+    .right-top-row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  /* Marker images: scale proportionally inside the marker box */
+  .marker img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: none;
+    object-fit: contain;
+  }
+
+  /* Reduce top padding just enough to clear the nav bar */
+  .top-container {
+    padding-top: 120px;
+  }
+
+  /* Scale down markers slightly */
+  .marker {
+    width: 72px;
+    height: 72px;
+  }
+
+  /* Scale down flip-container on tablet */
+  .flip-container {
+    width: 160px;
+    height: 160px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+
+  /* Tagline size on tablet */
+  .home-tagline {
+    font-size: clamp(24px, 2.8vw, 44px);
+  }
+
+  /* Product overlay hidden */
+  .product {
+    display: none !important;
+  }
+
+  /* Products image on tablet (side-by-side layout): keep it compact */
+  .all-products-img {
+    max-height: 22vh;
+    width: auto;
+    max-width: 100%;
+  }
+
+  /* Tree container: respect JS-computed height (--tree-height) */
+  .landing-left .flex.relative {
+    height: var(--tree-height, 60vh);
+    overflow: hidden;
+  }
+  .landing-left .treeImg {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+/* ===========================================
+   STACKED LAYOUT — phones (≤ 768px) AND narrow/near-square tablets.
+   Right section switches to a 2-column grid so compass + tagline
+   sit side-by-side and the products image spans full width below,
+   keeping everything visible without excessive scrolling.
+   Wide landscape tablets (aspect ratio > 6:5 at 769–1024) keep side-by-side.
+   =========================================== */
+@media screen and (max-width: 768px),
+       screen and (min-width: 769px) and (max-width: 1024px) and (max-aspect-ratio: 6/5) {
+  .right-top-row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+
+  .container,
+  .top-container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 85px 12px 8px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;               /* tight gap between tree and right section */
+  }
+
+  /* Tree hero: capped at 52vh so the right section always shows below */
+  .landing-left {
+    width: 120%;
+    max-width: 120%;
+    margin-left: -10%;
+    margin-right: -10%;
+    justify-content: center;
+    flex-shrink: 0;
+    max-height: var(--tree-height, 52vh);
+    overflow: hidden;        /* clip bottom edge of tree cleanly */
+  }
+  .landing-left > .relative,
+  .landing-left .flex.relative {
+    width: 100%;
+    height: var(--tree-height, 52vh); /* explicit height = positioning context for markers */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .landing-left .treeImg {
+    width: 100% !important;
+    height: 100% !important; /* fills the 52vh container */
+    object-fit: cover;       /* fill & crop — keeps island centred */
+    object-position: center 20%; /* bias slightly toward the top of the image */
+  }
+
+  /* Right column: fills remaining height, position:relative for absolute child */
+  .landing-right {
+    width: 100%;
+    flex: 1 1 0;
+    min-height: 0;
+    padding: 4px 12px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;        /* anchor for the absolutely-placed products image */
+  }
+
+  /* Flex column: only the top-row (compass + tagline) flows normally */
+  .right-col-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Compass + tagline sit side-by-side in a row */
+  .right-top-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+    justify-content: center;
+  }
+  .right-top-row .flip-container {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  .right-top-row .home-tagline {
+    text-align: left;
+    font-size: clamp(16px, 4vw, 24px);
+    line-height: 1.2;
+  }
+
+  /* Products image: pinned 32px from bottom, width-capped & centred */
+  .all-products-img {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    /* Never wider than the right-section, but cap at 520 px so it looks
+       proportional on wide (600-768 px) mobile screens.              */
+    width: min(calc(100% - 24px), 520px);
+    max-height: 28vh;       /* safety cap: image never taller than ~¼ screen */
+    height: auto;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+
+  .marker {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* Narrow/near-square tablet (769–1024, aspect ≤ 6:5): bump sizing up from phone defaults */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-aspect-ratio: 6/5) {
+  .top-container {
+    padding: 90px 24px 12px;
+    gap: 10px;
+  }
+  /* Revert the phone-era 120% tree pull — tablet has enough horizontal room */
+  .landing-left {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* Cap the tree so the right section has enough room for compass + tagline + products */
+  .landing-left,
+  .landing-left > .relative,
+  .landing-left .flex.relative {
+    max-height: 42vh;
+    height: 42vh;
+  }
+  .right-top-row {
+    gap: 20px;
+  }
+  .right-top-row .flip-container {
+    width: 120px;
+    height: 120px;
+  }
+  .right-top-row .home-tagline {
+    font-size: clamp(22px, 3vw, 32px);
+  }
+  .all-products-img {
+    bottom: 24px;
+    width: min(calc(100% - 48px), 620px);
+    max-height: 22vh;
+  }
+  .marker {
+    width: 74px;
+    height: 74px;
+  }
+}
+
+/* Phone (≤ 560px): tighten further */
+@media screen and (max-width: 560px) {
+  .top-container {
+    padding: 78px 10px 6px;
+    gap: 5px;
+  }
+  .right-top-row .flip-container {
+    width: 76px;
+    height: 76px;
+  }
+  .right-top-row .home-tagline {
+    font-size: clamp(15px, 5vw, 21px);
+  }
+  .right-col-inner {
+    gap: 5px;
+  }
+  /* Tighten bottom margin on small phones; centering inherited from ≤768px */
+  .all-products-img {
+    bottom: 20px;
+    width: min(calc(100% - 20px), 420px);
+    max-height: 25vh;
+  }
+  .marker {
+    width: 56px;
+    height: 56px;
+  }
+  .marker:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Small phones (≤ 400px) */
+@media screen and (max-width: 400px) {
+  .right-top-row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  .landing-left,
+  .landing-left .flex.relative,
+  .landing-left > .relative {
+    max-height: var(--tree-height, 50vh);
+    height: var(--tree-height, 50vh);
+  }
+  .right-top-row .flip-container {
+    width: 66px;
+    height: 66px;
+  }
+  .right-top-row .home-tagline {
+    font-size: clamp(15px, 5vw, 20px);
+  }
+  .marker {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+/* Very small phones (≤ 360px) */
+@media screen and (max-width: 360px) {
+  .right-top-row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  .right-top-row .flip-container {
+    width: 58px;
+    height: 58px;
+  }
+  .marker {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* Container for the flipping effect */
 .flip-container {
   perspective: 1000px;
   width: 200px; /* Set as per your image size */
+  height: 200px; /* Explicit height prevents collapse — .front/.back are position:absolute */
   margin: auto;
 }
 
@@ -398,6 +754,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   backface-visibility: hidden;
 }
 
