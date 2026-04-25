@@ -70,7 +70,7 @@ const futuraBold = localfont({
 const impact = localfont({
   src: [
     {
-      path: "../../public/fonts/Impact.ttf",
+      path: "../../public/fonts/impact.ttf",
     },
   ],
   variable: "--font-impact",
