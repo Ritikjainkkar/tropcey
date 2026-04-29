@@ -4,7 +4,7 @@ import React from "react";
 
 const Products = () => {
   return (
-    <div className="bg-[#202020] overflow-hidden bg-[url('/images/all-products-bg.png')] bg-no-repeat bg-cover bg-center">
+    <div className="bg-[#ffffff] overflow-hidden bg-[url('/images/all-products-bg.png')] bg-no-repeat bg-cover bg-center">
       <div className="products-page-wrap max-w-[1440px] mx-auto flex flex-col lg:flex-row min-h-screen">
         {/* Left Sidebar - Categories */}
         <div className="w-full lg:w-[400px] xl:w-[400px] bg-[#0d5c42] rounded-b-[60px] lg:rounded-r-[60px] lg:rounded-b-none p-8 lg:p-5 flex-shrink-0 relative flex flex-col items-start justify-center pt-40 lg:pt-0">
