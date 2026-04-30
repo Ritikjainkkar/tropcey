@@ -234,17 +234,17 @@ const Home: React.FC = () => {
           <div className="flex relative">
             <img loading="lazy" className="treeImg" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
             <div className="image-collection display-none" ref={imageRef}>
-              <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ top: '15%', left: '42%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Water Vinegar.png" width="86px" /></div>
-              <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '15%', left: '64%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Syrup.png" width="86px" /></div>
-              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '30%', left: '10%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Chips.png" width="86px" /></div>
-              <div data-url="/organic-coconut-puree" className="marker" style={{ top: '30%', left: '32%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Puree.png" width="86px" /></div>
-              <div data-url="/organic-coconut-flour" className="marker" style={{ top: '30%', left: '53%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Flour.png" width="86px" /></div>
-              <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '50%', left: '15%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Sugar.png" width="86px" /></div>
-              <div data-url="/organic-desiccated-coconut" className="marker" style={{ top: '50%', left: '40%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Desiccated Coconut.png" width="86px" /></div>
-              <div data-url="/organic-coconut-milk" className="marker" style={{ top: '50%', left: '70%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Milk.png" width="86px" /></div>
-              <div data-url="/organic-virgin-coconut-oil" className="marker" style={{ top: '65%', left: '55%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Virgin Coconut Oil.png" width="86px" /></div>
-              <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '75%', left: '30%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Infused Virgin Coconut Oil.png" width="86px" /></div>
-              <div data-url="/coconut-chocolate-spread" className="marker" style={{ top: '75%', left: '70%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Coconut Chocolate Spread.png" width="86px" /></div>
+              <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ top: '22%', left: '30%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Water Vinegar.png" width="86px" /></div>
+              <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '14%', left: '52%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Syrup.png" width="86px" /></div>
+              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '20%', left: '74%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Infused Virgin Coconut Oil.png" width="86px" /></div>
+              <div data-url="/organic-coconut-puree" className="marker" style={{ top: '40%', left: '45%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Puree.png" width="86px" /></div>
+              <div data-url="/organic-coconut-flour" className="marker" style={{ top: '42%', left: '62%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Flour.png" width="86px" /></div>
+              <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '52%', left: '12%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Sugar.png" width="86px" /></div>
+              <div data-url="/organic-desiccated-coconut" className="marker" style={{ top: '52%', left: '30%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Desiccated Coconut.png" width="86px" /></div>
+              <div data-url="/organic-coconut-milk" className="marker" style={{ top: '55%', left: '78%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Milk.png" width="86px" /></div>
+              <div data-url="/organic-virgin-coconut-oil" className="marker" style={{ top: '60%', left: '52%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Virgin Coconut Oil.png" width="86px" /></div>
+              <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '74%', left: '35%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Chips.png" width="86px" /></div>
+              <div data-url="/coconut-chocolate-spread" className="marker" style={{ top: '72%', left: '70%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Coconut Chocolate Spread.png" width="86px" /></div>
             </div>
             <div className="product" ref={productRef}>
               <img loading="lazy" className="absolute" style={{ bottom: '-33%', left: '-5%' }} width="100%" src="/images/home1/About us Pages-05.png" alt="Descriptive Alt Text" />

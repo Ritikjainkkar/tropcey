@@ -19,8 +19,8 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
       }, 10);
     }
     if (typeof window !== "undefined") {
-      localStorage.setItem("lastUrl", "/organic-coconut-oil");
-      localStorage.setItem("lastPage", "organic-coconut-oil");
+      localStorage.setItem("lastUrl", "/organic-virgin-coconut-oil");
+      localStorage.setItem("lastPage", "organic-virgin-coconut-oil");
     }
   }, []);
 

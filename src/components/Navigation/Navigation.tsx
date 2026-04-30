@@ -81,7 +81,7 @@ const Navigation = () => {
           )}
           <Link href="/">
             <img
-              src="/images/navbar/logo-shadow.png"
+              src="/images/navbar/logo-black.png"
               width={100}
               height={100}
               className={pathname == "/" ? "" : "ml-[110px]"}
@@ -112,7 +112,7 @@ const Navigation = () => {
                     height={40}
                     alt="search"
                     onClick={toggleSearchActive}
-                    className="cursor-pointer "
+                    className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))]"
                   />
                 )}
                 {searchActive && (
@@ -137,7 +137,7 @@ const Navigation = () => {
                   height={70}
                   alt="burger"
                   onClick={toggleActive}
-                  className="cursor-pointer"
+                  className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))]"
                 />
               )}
               {active && (
