@@ -207,7 +207,7 @@ const Contact = () => {
       </section>
 
       {/* ── SECTION 2: Company Info + Products ── */}
-      <section className="relative w-full flex flex-col bg-[#202020] mx-auto">
+      <section className="relative w-full flex flex-col bg-[#ffffff] mx-auto">
         {/* Bottom info strip */}
         <div className="w-full flex flex-col lg:flex-row items-stretch max-w-[1440px] mx-auto">
           {/* Left: Logo + Company details */}
