@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import React from "react";
 
 const OurValues = () => {
@@ -186,6 +187,9 @@ const OurValues = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

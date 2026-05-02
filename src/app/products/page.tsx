@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import { productData } from "@/data/pages";
 import Link from "next/link";
 import React from "react";
@@ -211,6 +212,9 @@ const Products = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

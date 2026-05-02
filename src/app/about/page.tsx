@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import React from "react";
 
@@ -141,6 +142,11 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <hr className="my-5" />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
