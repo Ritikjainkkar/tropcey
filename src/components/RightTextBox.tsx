@@ -58,7 +58,10 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
             className={` font-franklinHeavy flex font-semibold items-center gap-2 text-sm md:text-base mt-2`}
             style={{ color: ingre.color }}
           >
-            <GiCheckMark /> <span>{ingre.text}</span>
+            <GiCheckMark
+              style={{ stroke: "currentColor", strokeWidth: "50" }}
+            />{" "}
+            <span>{ingre.text}</span>
           </p>
         ))}
       </div>
@@ -92,11 +95,11 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
               className={`relative flex items-start ${index < details.itemDetails.length - 1 ? "mb-2" : ""}`}
             >
               <div className="absolute left-4 -translate-x-1/2 mt-1.5 w-5 h-5 bg-white rounded-full z-10"></div>
-              <div className="ml-12">
-                <h3 className="text-2xl font-bold mb-2 font-franklinHeavy">
+              <div className="ml-8">
+                <h3 className="text-2xl font-bold font-franklinHeavy">
                   {item.title}
                 </h3>
-                <p className="text-sm font-franklinBook leading-relaxed opacity-90">
+                <p className="text-sm mt-[-5px] font-franklinBook leading-relaxed opacity-90">
                   : {item.subTitle}
                 </p>
               </div>

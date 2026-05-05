@@ -6,11 +6,11 @@ export const data = {
     title: [
       { text: "Organic", color: "#3B281B", size: "48px", font: "futuraBold" },
       { text: "Coconut", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Sugar", color: "black", size: "72px", font: "archivo" },
+      { text: "Sugar", color: "black", size: "65px", font: "archivo" },
       {
         text: "POUCHES AND SUGAR STICKS",
         color: "black",
-        size: "18px",
+        size: "16px",
         font: "archivo",
       },
     ],
@@ -78,6 +78,9 @@ export const data = {
     brandingSubtitle: {
       text: "Sweetness The Natural Way",
       color: "#3B281B",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
   },
   coil_extravergin: {
@@ -91,9 +94,9 @@ export const data = {
       right: "/images/background/sweet-chips-bg-right.png",
     },
     title: [
-      { text: "Organic", color: "#7F4C28", size: "48px" },
+      { text: "Organic", color: "#7F4C28", size: "36px" },
       { text: "Virgin", color: "black", size: "48px" },
-      { text: "Coconut Oil", color: "black", size: "30px" },
+      { text: "Coconut Oil", color: "black", size: "24px" },
     ],
     verticalLine: {
       color: "#7F4C28",
@@ -159,6 +162,9 @@ export const data = {
     brandingSubtitle: {
       text: "Coconut Goodness In Every Drop.",
       color: "#7F4C28",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-20px",
     },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
@@ -178,10 +184,10 @@ export const data = {
     imgUri: "/images/home/chili-main-img.png",
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
       { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
     ],
     verticalLine: {
       color: "black",
@@ -243,6 +249,9 @@ export const data = {
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -290,9 +299,9 @@ export const data = {
       right: "/images/background/sweet-chips-bg-right.png",
     },
     title: [
-      { text: "Organic", color: "#751F24", size: "30px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Organic", color: "#751F24", size: "36px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "36px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "56px", font: "futuraBold" },
     ],
     verticalLine: {
       color: "#751F24",
@@ -375,6 +384,9 @@ export const data = {
     brandingSubtitle: {
       text: "Snack the Authentic Tropical Way.",
       color: "#751F24",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-5px",
     },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
@@ -404,9 +416,9 @@ export const data = {
       right: "/images/background/sweet-chips-bg-right.png",
     },
     title: [
-      { text: "Organic", color: "#751F24", size: "30px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Organic", color: "#751F24", size: "36px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "36px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "56px", font: "futuraBold" },
     ],
     verticalLine: {
       color: "#751F24",
@@ -467,6 +479,9 @@ export const data = {
     brandingSubtitle: {
       text: "Snack the Authentic Tropical Way.",
       color: "#751F24",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "10px",
     },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
@@ -490,10 +505,10 @@ export const data = {
     imgUri: "/images/home/ginger-main-img.png",
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
       { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
     ],
     verticalLine: {
       color: "black",
@@ -555,6 +570,9 @@ export const data = {
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -596,10 +614,10 @@ export const data = {
     imgUri: "/images/home/pepper-main-img.png",
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
       { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
     ],
     verticalLine: {
       color: "black",
@@ -661,6 +679,9 @@ export const data = {
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -702,10 +723,10 @@ export const data = {
     imgUri: "/images/home/garlic-main-img.png",
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
       { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "72px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
     ],
     verticalLine: {
       color: "black",
@@ -767,6 +788,9 @@ export const data = {
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -810,7 +834,7 @@ export const data = {
     title: [
       { text: "Organic", color: "#AC4E2B", size: "48px", font: "futuraBold" },
       { text: "Coconut", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Puree", color: "black", size: "72px", font: "archivo" },
+      { text: "Puree", color: "black", size: "65px", font: "archivo" },
     ],
     verticalLine: {
       color: "#AC4E2B",
@@ -876,6 +900,9 @@ export const data = {
     brandingSubtitle: {
       text: "Naturally Authentic Coconut Goodness",
       color: "#AC4E2B",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "20px",
     },
   },
   coconut_chocolate_spread: {
@@ -889,8 +916,8 @@ export const data = {
     // brandImg: "/images/puree-brand-img.png",
     title: [
       { text: "COCONUT", color: "#372115", size: "48px", font: "futuraBold" },
-      { text: "CHOCOLATE", color: "black", size: "48px", font: "futuraBold" },
-      { text: "SPREAD", color: "black", size: "72px", font: "archivo" },
+      { text: "CHOCOLATE", color: "black", size: "42px", font: "futuraBold" },
+      { text: "SPREAD", color: "black", size: "56px", font: "archivo" },
     ],
     verticalLine: {
       color: "#372115",
@@ -898,7 +925,7 @@ export const data = {
     titleLabel: {
       text: "Chocolate Flavored Pure \nCoconut Cream",
       color: "#000",
-      size: "48px",
+      size: "36px",
       bgColor: "#372115",
     },
     description: {
@@ -949,6 +976,9 @@ export const data = {
     brandingSubtitle: {
       text: "Refind Taste Magically Made",
       color: "#372115",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
   },
   coconut_chocolate_syrup: {
@@ -959,7 +989,7 @@ export const data = {
     title: [
       { text: "ORGANIC", color: "#372115", size: "48px", font: "futuraBold" },
       { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
-      { text: "SYRUP", color: "black", size: "72px", font: "archivo" },
+      { text: "SYRUP", color: "black", size: "65px", font: "archivo" },
     ],
     verticalLine: {
       color: "#372115",
@@ -967,7 +997,7 @@ export const data = {
     afterTitle: {
       text: "BOTTLES AND TREACLE SACHETS",
       color: "#372115",
-      size: "18px",
+      size: "16px",
       font: "futuraBold",
     },
     titleLabel: {
@@ -1029,6 +1059,9 @@ export const data = {
     brandingSubtitle: {
       text: "Rich and Sweet, Naturally Made",
       color: "#372115",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
   },
   organic_coconut_flour: {
@@ -1038,7 +1071,7 @@ export const data = {
     title: [
       { text: "ORGANIC", color: "#fff", size: "48px", font: "futuraBold" },
       { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
-      { text: "FLOUR", color: "black", size: "72px", font: "archivo" },
+      { text: "FLOUR", color: "black", size: "65px", font: "archivo" },
     ],
     verticalLine: {
       color: "#fff",
@@ -1097,6 +1130,9 @@ export const data = {
     brandingSubtitle: {
       text: "The Authentic Tropical Addition",
       color: "#000",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
   },
   organic_coconut_vinegar: {
@@ -1106,7 +1142,7 @@ export const data = {
     title: [
       { text: "ORGANIC", color: "#284E2A", size: "48px", font: "futuraBold" },
       { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
-      { text: "VINEGAR", color: "black", size: "72px", font: "archivo" },
+      { text: "VINEGAR", color: "black", size: "48px", font: "archivo" },
     ],
     verticalLine: {
       color: "#284E2A",
@@ -1166,6 +1202,9 @@ export const data = {
     brandingSubtitle: {
       text: "Authentic Taste, Naturally Made",
       color: "#284E2A",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-20px",
     },
   },
   organic_desiccated_coconut: {
@@ -1177,7 +1216,7 @@ export const data = {
       {
         text: "DESICCATED  ",
         color: "black",
-        size: "36px",
+        size: "42px",
         font: "futuraBold",
       },
       { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
@@ -1246,6 +1285,9 @@ export const data = {
     brandingSubtitle: {
       text: "Natural Flakes, Premium Taste",
       color: "#2C4523",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
   },
   organic_coconut_milk: {
@@ -1260,7 +1302,7 @@ export const data = {
         size: "48px",
         font: "futuraBold",
       },
-      { text: "MILK", color: "black", size: "72px", font: "archivo" },
+      { text: "MILK", color: "black", size: "86px", font: "archivo" },
     ],
     verticalLine: {
       color: "#1A523E",
@@ -1319,6 +1361,9 @@ export const data = {
     brandingSubtitle: {
       text: "Rich Taste Naturally Made",
       color: "#1A523E",
+      gapTopMobile: "30px",
+      gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
   },
 };
@@ -1482,5 +1527,6 @@ export const productData = [
     id: 11,
     name: "infused Virgin Coconut Oil (Bottles)",
     image: "/images/single-img/Infused-Virgin-Coconut-Oil.png",
+    href: "/infused-virgin-coconut-oil",
   },
 ];
