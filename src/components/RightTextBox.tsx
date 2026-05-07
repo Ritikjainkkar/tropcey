@@ -7,15 +7,39 @@ import { GiCheckMark } from "react-icons/gi";
 
 export default function RightTextBox({ details, isFull, isSpread }: any) {
   return (
-    <div className="mt-8 w-[80%] lg:w-[55%] flex flex-col justify-center pr-4 lg:pr-[128px] relative">
+    <div className="lg:mt-8 w-[80%] lg:w-[55%] flex flex-col justify-center pr-4 lg:pr-[128px] relative">
       {details?.description && (
         <div className="max-w-[100%] lg:max-w-[80%] mx-auto">
           <p
             style={{ whiteSpace: "pre-wrap" }}
-            className={`text-center text-${details.description.color} mb-2 max-w-[100%] lg:max-w-[90%] mx-auto font-franklinGothic`}
+            className={`text-justify text-${details.description.color} mb-2 max-w-[100%]  mx-auto font-franklinGothic `}
           >
             {details.description.text}
           </p>
+          <div className="flex justify-center w-full">
+            <div className="flex flex-col mb-2">
+              {details?.ingrediants2?.map((ingre: any, index: number) => (
+                <div
+                  key={index}
+                  className={`flex items-center gap-2 font-franklinHeavy font-semibold text-sm md:text-base mt-2`}
+                  style={{ color: ingre.color }}
+                >
+                  <GiCheckMark
+                    style={{ stroke: "currentColor", strokeWidth: "50" }}
+                  />
+                  <span>{ingre.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {details.description.text2 && (
+            <p
+              style={{ whiteSpace: "pre-wrap" }}
+              className={`text-justify text-${details.description.color} mb-2 max-w-[100%]  mx-auto font-franklinGothic `}
+            >
+              {details.description.text2}
+            </p>
+          )}
           <p
             className={`text-${details.description.color} mb-2 max-w-[100%] lg:max-w-[90%]  font-franklinGothic`}
           >
@@ -52,18 +76,19 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
         />
       )}
       <div className="md:text-center text-left mx-auto">
-        {details?.ingrediants?.map((ingre: any, index: number) => (
-          <p
-            key={index}
-            className={` font-franklinHeavy flex font-semibold items-center gap-2 text-sm md:text-base mt-2`}
-            style={{ color: ingre.color }}
-          >
-            <GiCheckMark
-              style={{ stroke: "currentColor", strokeWidth: "50" }}
-            />{" "}
-            <span>{ingre.text}</span>
-          </p>
-        ))}
+        {details?.ingrediants &&
+          details?.ingrediants?.map((ingre: any, index: number) => (
+            <p
+              key={index}
+              className={` font-franklinHeavy flex font-semibold items-center gap-2 text-sm md:text-base mt-2`}
+              style={{ color: ingre.color }}
+            >
+              <GiCheckMark
+                style={{ stroke: "currentColor", strokeWidth: "50" }}
+              />{" "}
+              <span>{ingre.text}</span>
+            </p>
+          ))}
       </div>
       {details?.itemDetails && (
         <p
@@ -75,7 +100,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
       )}
       {details?.advice && (
         <p
-          className={`py mx-auto lg:mx-0 px-16 my-4 text-white  rounded-lg text-center text-2xl w-fit font-berkShire`}
+          className={`py mx-auto lg:mx-0 px-16 my-4 text-white  rounded-lg text-center lg:text-2xl md:text-lg text-base w-fit font-berkShire`}
           style={{
             backgroundColor: details.advice.bgColor,
             fontFamily: `var(--font-${details.advice.font})`,
@@ -102,6 +127,11 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
                 <p className="text-sm mt-[-5px] font-franklinBook leading-relaxed opacity-90">
                   : {item.subTitle}
                 </p>
+                {item.subTitle2 && (
+                  <p className="text-sm mt-[-5px] font-franklinBook leading-relaxed opacity-90">
+                    : {item.subTitle2}
+                  </p>
+                )}
               </div>
             </div>
           ))}

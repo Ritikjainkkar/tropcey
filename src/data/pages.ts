@@ -73,14 +73,19 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/sugar-chart.png",
     brandingSubtitle: {
       text: "Sweetness The Natural Way",
       color: "#3B281B",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-10px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "-10px",
     },
   },
   coil_extravergin: {
@@ -151,6 +156,12 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250ml Glass bottle",
+        subTitle2: "300ml Glass squat jar",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/oil-nutrition.png",
 
@@ -162,9 +173,9 @@ export const data = {
     brandingSubtitle: {
       text: "Coconut Goodness In Every Drop.",
       color: "#7F4C28",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-20px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
@@ -244,14 +255,20 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250ml Glass bottle",
+        subTitle2: "15ml × 8 Nos in box",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/nutrition-chart.png",
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "20px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -357,6 +374,11 @@ export const data = {
         subTitle: "12 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/sweet-chips-nutrition-chart.png",
     table: {
@@ -384,9 +406,9 @@ export const data = {
     brandingSubtitle: {
       text: "Snack the Authentic Tropical Way.",
       color: "#751F24",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-5px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      gapTopLg: "-20px",
     },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
@@ -473,15 +495,20 @@ export const data = {
         subTitle: "12 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/sweet-chips-nutrition-chart.png",
     life: "12 Months",
     brandingSubtitle: {
       text: "Snack the Authentic Tropical Way.",
       color: "#751F24",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "10px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      gapTopLg: "-10px",
     },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
@@ -565,14 +592,20 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250ml Glass bottle",
+        subTitle2: "15ml × 8 Nos in box",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/ginger-nutrition-chart.png",
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "20px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -674,14 +707,20 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250ml Glass bottle",
+        subTitle2: "15ml × 8 Nos in box",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/pepper-chart.png",
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "20px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -783,14 +822,20 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250ml Glass bottle",
+        subTitle2: "15ml × 8 Nos in box",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/garlic-chart.png",
     brandingSubtitle: {
       text: "Coconut Goodness, Perfectly Infused",
       color: "black",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "20px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "20px",
     },
     recommendations: [
       {
@@ -895,14 +940,20 @@ export const data = {
         subTitle: "12 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g glass  jar",
+        subTitle2: "35g Sachet Packets",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/puree-chart.png",
     brandingSubtitle: {
       text: "Naturally Authentic Coconut Goodness",
       color: "#AC4E2B",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "20px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "20px",
     },
   },
   coconut_chocolate_spread: {
@@ -929,7 +980,9 @@ export const data = {
       bgColor: "#372115",
     },
     description: {
-      text: "Tropcey Coconut Chocolate Spread is mainly produced by grinding desiccated coconut to a soft, creamy paste which is finally blended with cocoa powder. The unique flavour combination of coconut and cocoa made in to a consistent and spreadable paste can be used to enhance the flavour of various recipes.",
+      text: "Tropcey Coconut Chocolate Spread is mainly produced by grinding desiccated coconut to a soft, creamy paste which is finally blended with cocoa powder.",
+      text2:
+        "The unique flavour combination of coconut and cocoa made in to a consistent and spreadable paste can be used to enhance the flavour of various recipes.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Can be used as a spread on toast, crackers, and waffles.",
@@ -939,7 +992,8 @@ export const data = {
 
       color: "white",
     },
-    ingrediants: [
+
+    ingrediants2: [
       {
         text: "Quality Guaranteed",
         color: "#372115",
@@ -971,14 +1025,19 @@ export const data = {
         subTitle: "12 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "300g Glass squat jar",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/spread-chart.png",
     brandingSubtitle: {
       text: "Refind Taste Magically Made",
       color: "#372115",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-10px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "-10px",
     },
   },
   coconut_chocolate_syrup: {
@@ -1054,14 +1113,20 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250ml glass bottle",
+        subTitle2: "15ml × 50 Nos in box",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/syrup-chart.png",
     brandingSubtitle: {
       text: "Rich and Sweet, Naturally Made",
       color: "#372115",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-10px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "-10px",
     },
   },
   organic_coconut_flour: {
@@ -1130,9 +1195,9 @@ export const data = {
     brandingSubtitle: {
       text: "The Authentic Tropical Addition",
       color: "#000",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-10px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "-10px",
     },
   },
   organic_coconut_vinegar: {
@@ -1197,13 +1262,18 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250ml glass bottle",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/vinegar-chart.png",
     brandingSubtitle: {
       text: "Authentic Taste, Naturally Made",
       color: "#284E2A",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
       gapTopLg: "-20px",
     },
   },
@@ -1231,7 +1301,7 @@ export const data = {
       bgColor: "#2C4523",
     },
     description: {
-      text: "Tropcey Organic Desiccated Coconut is made by 100% natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture. \n It is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
+      text: "Tropcey Organic Desiccated Coconut is made by 100% natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture.\nIt is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Commonly used for various cooking and baking needs.",
@@ -1280,14 +1350,19 @@ export const data = {
         subTitle: "12 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/desiccated-chart.png",
     brandingSubtitle: {
       text: "Natural Flakes, Premium Taste",
       color: "#2C4523",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-10px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "-10px",
     },
   },
   organic_coconut_milk: {
@@ -1308,7 +1383,7 @@ export const data = {
       color: "#1A523E",
     },
     description: {
-      text: "Tropcey Organic Coconut Milk is a 100% natural product made from fresh white kernels of mature coconuts, and it does not contain any artificial ingredients. \n\n Carefully processed to preserve its' natural taste and nutrients; Tropcey Organic Coconut Milk is a key ingredient in curries and soups for rich, creamy flavour and texture; and a popular in vegan recipes as a dairy milk substitute.",
+      text: "Tropcey Organic Coconut Milk is a 100% natural product made from fresh white kernels of mature coconuts, and it does not contain any artificial ingredients.\n\nCarefully processed to preserve its' natural taste and nutrients; Tropcey Organic Coconut Milk is a key ingredient in curries and soups for rich, creamy flavour and texture; and a popular in vegan recipes as a dairy milk substitute.",
       color: "white",
     },
     ingrediants: [
@@ -1356,14 +1431,19 @@ export const data = {
         subTitle: "24 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "400ml Metal can ",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/milk-chart.png",
     brandingSubtitle: {
       text: "Rich Taste Naturally Made",
       color: "#1A523E",
-      gapTopMobile: "30px",
-      gapTopMd: "30px",
-      gapTopLg: "-10px",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      // gapTopLg: "-10px",
     },
   },
 };

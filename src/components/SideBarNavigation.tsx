@@ -20,7 +20,7 @@ export default function SideBarNavigation() {
 
   return (
     <div
-      className={`absolute right-[10px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[100] `}
+      className={`absolute right-[-30px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[100] `}
       onClick={toggleSidebar}
     >
       <div>

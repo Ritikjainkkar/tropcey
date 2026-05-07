@@ -110,10 +110,10 @@ export default function LeftContainer({
         </div>
         {brandingSubtitle ? (
           <div
-            className={`branding-gap mb-2 lg:mb-0 h-[50px] rounded-lg w-[100%] flex justify-center items-center`}
+            className={`branding-gap mb-2 lg:mb-0  rounded-lg w-[100%] flex justify-center items-center`}
           >
             <span
-              className="text-5xl font-impact capitalize text-center"
+              className="lg:text-5xl md:text-4xl text-xl font-impact capitalize text-center"
               style={{ color: brandingSubtitle.color }}
             >
               {brandingSubtitle.text}
