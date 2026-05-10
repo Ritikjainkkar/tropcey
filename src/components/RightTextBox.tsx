@@ -98,7 +98,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
         )}
 
         {/* INGREDIENTS */}
-        <div className="md:text-center text-left lg:max-w-[80%]">
+        <div className="md:text-center text-left lg:max-w-[90%]">
           {details?.ingrediants?.map((ingre: any, index: number) => (
             <p
               key={index}
@@ -182,9 +182,9 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
       </div>
       {/* ============================================================= */}
 
-      <div className="z-100">
+      {/* <div className="z-100">
         <SideBarNavigation />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -19,14 +19,14 @@ const Products = () => {
       {/* Toggle Button - mobile/tablet only */}
       <button
         onClick={() => setSidebarOpen(true)}
-        className={`lg:hidden fixed top-[90px] left-4 z-40 bg-[#0d5c42] text-[#8cc63f] rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-all duration-300 ${
+        className={`lg:hidden fixed top-[90px] left-4 z-40 bg-[#0d5c42] text-[#8cc63f] rounded-full md:w-[60px] md:h-[60px] w-[50px] h-[50px] flex items-center justify-center shadow-lg transition-all duration-300 ${
           sidebarOpen ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
         aria-label="Open categories"
       >
         <svg
-          width="18"
-          height="18"
+          width="22"
+          height="22"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -47,7 +47,7 @@ const Products = () => {
         />
       )}
 
-      <div className="products-page-wrap max-w-[1440px] mx-auto flex flex-col lg:flex-row min-h-screen">
+      <div className="products-page-wrap  mx-auto flex flex-col lg:flex-row min-h-screen">
         {/* Left Sidebar */}
         <div
           className={`
@@ -60,18 +60,18 @@ const Products = () => {
             pt-16 lg:pt-0 pb-5 px-5
             overflow-y-auto
             transition-transform duration-300 ease-in-out
-            ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
+            ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"} overflow-x-hidden
           `}
         >
           {/* Close button - mobile/tablet only */}
           <button
             onClick={() => setSidebarOpen(false)}
-            className="lg:hidden absolute top-4 right-4 text-white w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="lg:hidden absolute top-4 right-4 text-white md:w-[60px] md:h-[60px] w-[50px] h-[50px] flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
             aria-label="Close menu"
           >
             <svg
-              width="16"
-              height="16"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -84,13 +84,25 @@ const Products = () => {
           </button>
 
           {/* Green vertical line */}
-          <div className="w-1 bg-[#8cc63f] absolute left-4 md:left-6 top-10 bottom-10" />
+          <div className="w-3 bg-[#8cc63f] absolute left-4 md:left-6 top-10 bottom-10" />
 
-          <ul className="space-y-4 md:space-y-5 ml-6 md:ml-8 w-full">
+          <div className="w-full flex items-center justify-center mb-5 lg:hidden">
+            <Link href="/">
+              <img
+                src="/images/navbar/logo.png"
+                width={100}
+                height={100}
+                className=""
+                alt="logo"
+              />
+            </Link>
+          </div>
+
+          <ul className="space-y-4 md:space-y-10 ml-6 md:ml-8 w-full">
             <li>
               <button
                 onClick={() => handleNavClick("/organic-virgin-coconut-oil")}
-                className="text-[#8cc63f] hover:text-white font-franklinBook transition-colors text-sm md:text-base lg:text-lg font-medium leading-relaxed text-left"
+                className="text-[#8cc63f] hover:text-white font-franklinBook transition-colors text-sm md:text-base lg:text-xl font-medium leading-relaxed text-left"
               >
                 Organic Virgin Coconut Oil
               </button>

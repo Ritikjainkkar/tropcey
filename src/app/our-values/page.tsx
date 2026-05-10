@@ -7,7 +7,7 @@ const OurValues = () => {
       {/* Section 1 */}
       <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:pt-[200px] md:pb-[100px] pt-[180px] pb-[100px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center  gap-20">
+          <div className="flex  lg:flex-row items-center  gap-20 flex-col-reverse">
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left relative">
               <h2 className="text-[#92C142] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy mt-4 md:mt-0">
@@ -78,7 +78,7 @@ const OurValues = () => {
       {/* Section 3 */}
       <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:py-[100px] py-[50px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center  gap-20">
+          <div className="flex flex-col-reverse lg:flex-row items-center  gap-20">
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left relative">
               <h2 className="text-[#92C142] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy ">
@@ -154,7 +154,7 @@ const OurValues = () => {
       {/* Section 5 */}
       <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:py-[100px] py-[50px] relative z-10">
-          <div className="flex flex-col lg:flex-row items-center  gap-20">
+          <div className="flex flex-col-reverse lg:flex-row items-center  gap-20">
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left relative">
               <h2 className="text-[#92C142] text-4xl lg:text-6xl font-bold mb-6 leading-tight font-franklinHeavy ">

@@ -79,15 +79,27 @@ const Navigation = () => {
               />
             </Link>
           )}
-          <Link href="/">
-            <img
-              src="/images/navbar/logo.png"
-              width={90}
-              height={90}
-              className={pathname == "/" ? "" : "ml-[75px]"}
-              alt="logo"
-            />
-          </Link>
+          {pathname === "/" ? (
+            <Link href="/">
+              <img
+                src="/images/navbar/logo-black.png"
+                width={90}
+                height={90}
+                className={pathname == "/" ? "" : "ml-[75px]"}
+                alt="logo"
+              />
+            </Link>
+          ) : (
+            <Link href="/">
+              <img
+                src="/images/navbar/logo.png"
+                width={90}
+                height={90}
+                className={pathname == "/" ? "" : "ml-[75px]"}
+                alt="logo"
+              />
+            </Link>
+          )}
         </div>
         {/* Right */}
 
@@ -112,7 +124,7 @@ const Navigation = () => {
                     height={40}
                     alt="search"
                     onClick={toggleSearchActive}
-                    className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))]"
+                    className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))] md:w-[40px] w-[30px]"
                   />
                 )}
                 {searchActive && (
@@ -122,7 +134,7 @@ const Navigation = () => {
                     height={40}
                     alt="search"
                     onClick={toggleSearchActive}
-                    className={`${styles.closeIcon}`}
+                    className={`${styles.closeIcon} md:w-[40px] w-[30px]`}
                   />
                 )}
               </div>
@@ -137,7 +149,7 @@ const Navigation = () => {
                   height={70}
                   alt="burger"
                   onClick={toggleActive}
-                  className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))]"
+                  className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))] md:w-[80px] w-[50px]"
                 />
               )}
               {active && (
@@ -147,7 +159,7 @@ const Navigation = () => {
                   height={40}
                   alt="close"
                   onClick={toggleActive}
-                  className={`${styles.closeIcon}`}
+                  className={`${styles.closeIcon} md:w-[40px] w-[30px]`}
                 />
               )}
               {active && (
@@ -157,7 +169,7 @@ const Navigation = () => {
                   height={40}
                   alt="angle-burger"
                   onClick={toggleActive}
-                  className="cursor-pointer"
+                  className="cursor-pointer md:w-[40px] w-[30px]"
                 />
               )}
             </div>
