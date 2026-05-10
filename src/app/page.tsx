@@ -165,12 +165,10 @@ const Home: React.FC = () => {
     window.addEventListener('wheel', handleScroll);
     window.addEventListener('click', handleEvent);
 
-    // ── Mobile: auto-reveal markers & swipe support ──────────────────────────
-    const isMobile = window.innerWidth <= 1024;
-
-    if (isMobile && (!backParam || backParam !== 'true')) {
-      // On mobile the product overlay is hidden via CSS; skip straight to
-      // the markers view by triggering the same transition the scroll uses.
+    // ── Auto-reveal markers on every viewport (desktop intro overlay disabled) ──
+    if (!backParam || backParam !== 'true') {
+      // The product overlay is hidden via CSS; skip straight to the markers
+      // view by triggering the same transition the scroll uses.
       setTimeout(() => {
         handleEvent(null);
       }, 400);
