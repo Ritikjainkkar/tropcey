@@ -24,6 +24,7 @@ const config: Config = {
         archivo: ["var(--font-archivo)"],
         berkShire: ["var(--font-berkShire)"],
         franklinGothic: ["var(--font-franklinGothic)"],
+        auromiya: ["var(--font-auromiya)"],
       },
       zIndex: {
         "100": "100",

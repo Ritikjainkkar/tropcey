@@ -20,7 +20,7 @@ export default function SideBarNavigation() {
 
   return (
     <div
-      className={`absolute right-[-30px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[100] `}
+      className={`absolute right-[10px] top-[50%] transform -translate-y-1/2 cursor-pointer z-[100] `}
       onClick={toggleSidebar}
     >
       <div>
@@ -62,7 +62,7 @@ export default function SideBarNavigation() {
                 <a
                   key={product.name}
                   href={product.href}
-                  className="absolute"
+                  className="absolute text-center"
                   style={{
                     top: `${x - index * 40 + 150}px`, // Adjust so the center of the item is at the calculated position
                     right: `${y - 155 + extray}px`, // Same as above

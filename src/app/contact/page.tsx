@@ -11,7 +11,7 @@ const Contact = () => {
         style={{ backgroundColor: "#0e5c38" }}
       >
         <div className="w-full flex flex-col lg:flex-row items-stretch min-h-screen  max-w-[1440px] mx-auto">
-          <div className="flex-none lg:w-[40%] flex flex-col items-center justify-center py-16 px-8 gap-6">
+          <div className="flex-none lg:w-[40%] flex flex-col items-center justify-center lg:pt-0 md:pt-[150px] pt-[120px] px-8 gap-6">
             <div className="w-28 h-28  flex items-center justify-center ">
               <img
                 src="/images/contact-phone.png"

@@ -74,17 +74,17 @@ const Navigation = () => {
               <img
                 src="/images/back icon-01-01.png"
                 alt="Close"
-                className="absolute top-0"
-                width={120}
+                className="absolute top-0 "
+                width={80}
               />
             </Link>
           )}
           <Link href="/">
             <img
-              src="/images/navbar/logo-black.png"
-              width={100}
-              height={100}
-              className={pathname == "/" ? "" : "ml-[110px]"}
+              src="/images/navbar/logo.png"
+              width={90}
+              height={90}
+              className={pathname == "/" ? "" : "ml-[75px]"}
               alt="logo"
             />
           </Link>
@@ -101,8 +101,8 @@ const Navigation = () => {
                   id="default-search"
                   className={`${styles.defaultSearch} ${
                     searchActive ? "active" : "hidden"
-                  }  block md:w-[50%] w-[60%] fixed top-[40px] md:right-[195px] right-[150px]  p-4 ps-10 text-right  text-xl text-white border border-none  bg-[#AAC887]  outline-none placeholder-white`}
-                  placeholder="Type and Hit Enter"
+                  }  block md:w-[50%] w-[60%] fixed lg:top-[30px] md:top-[120px] top-[120px] md:right-[115px] lg:right-[175px] right-[80px]  p-4 ps-10 text-right  lg:text-xl md:text-[22px] text-[16px] text-white border border-none  bg-[#AAC887]  outline-none placeholder-white rounded-lg placeholder:opacity-30 font-brokeline opacity-70`}
+                  placeholder="Type and Press Enter"
                   required
                 />
                 {!searchActive && (

@@ -36,7 +36,7 @@ const franklin = localfont({
 const franklinGothic = localfont({
   src: [
     {
-      path: "../../public/fonts/FranklinGothic.ttf",
+      path: "../../public/fonts/Franklin Gothic Medium Regular.ttf",
     },
   ],
   variable: "--font-franklinGothic",
@@ -94,6 +94,15 @@ const berkShire = localfont({
   variable: "--font-berkShire",
 });
 
+const auromiya = localfont({
+  src: [
+    {
+      path: "../../public/fonts/Auromiya.ttf",
+    },
+  ],
+  variable: "--font-auromiya",
+});
+
 const empire = localfont({
   src: [
     {
@@ -116,7 +125,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${dDin.variable} ${brokeline.variable} ${franklin.variable} ${franklinHeavy.variable} ${franklinBook.variable} ${futuraBold.variable} ${impact.variable} ${archivo.variable} ${berkShire.variable} ${franklinGothic.variable} ${empire.variable}`}
+        className={`${inter.className} ${dDin.variable} ${brokeline.variable} ${franklin.variable} ${franklinHeavy.variable} ${franklinBook.variable} ${futuraBold.variable} ${impact.variable} ${archivo.variable} ${berkShire.variable} ${franklinGothic.variable} ${empire.variable} ${auromiya.variable}`}
       >
         <header>
           <Navigation />

@@ -1,16 +1,34 @@
 export const data = {
   organic_coconut_sugar: {
     id: "1",
-    imgUri: "/images/home/sugar-main-img.png",
+    imgUri: {
+      link: "/images/home/sugar-main-img.png",
+      width: "650px",
+    },
+    imgUri2: {
+      link: "/images/home/sugar-main-img.png",
+      width: "300px",
+    },
     brandImg: "/images/sugar-brand-img.png",
     title: [
-      { text: "Organic", color: "#3B281B", size: "48px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Sugar", color: "black", size: "65px", font: "archivo" },
+      { text: "Organic", color: "#3B281B", size: "79px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "74px", font: "futuraBold" },
+      { text: "Sugar", color: "black", size: "98px", font: "archivo" },
       {
         text: "POUCHES AND SUGAR STICKS",
         color: "black",
-        size: "16px",
+        size: "22px",
+        font: "archivo",
+      },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#3B281B", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Sugar", color: "black", size: "62px", font: "archivo" },
+      {
+        text: "POUCHES AND SUGAR STICKS",
+        color: "black",
+        size: "14px",
         font: "archivo",
       },
     ],
@@ -90,18 +108,29 @@ export const data = {
   },
   coil_extravergin: {
     id: "2",
-    // name: "Coconut Oil",
     nameBgColor: "#7F4C28",
-    imgUri: "/images/home/virgin-oil.png",
+    imgUri: {
+      link: "/images/home/virgin-oil.png",
+      width: "450px",
+    },
+    imgUri2: {
+      link: "/images/home/virgin-oil.png",
+      width: "300px",
+    },
     brandImg: "/images/oil-brand-img.png",
     background: {
       left: "/images/background/sweet-chips-bg-left.png",
       right: "/images/background/sweet-chips-bg-right.png",
     },
     title: [
-      { text: "Organic", color: "#7F4C28", size: "36px" },
-      { text: "Virgin", color: "black", size: "48px" },
-      { text: "Coconut Oil", color: "black", size: "24px" },
+      { text: "Organic", color: "#7F4C28", size: "81px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "105px", font: "futuraBold" },
+      { text: "Coconut Oil", color: "black", size: "50px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#7F4C28", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "60px", font: "futuraBold" },
+      { text: "Coconut Oil", color: "black", size: "30px", font: "archivo" },
     ],
     verticalLine: {
       color: "#7F4C28",
@@ -171,7 +200,7 @@ export const data = {
     brandingTitle:
       "Healthy snack, as a topping on salads, desserts and cereals",
     brandingSubtitle: {
-      text: "Coconut Goodness In Every Drop.",
+      text: "Coconut Goodness In Every Drop",
       color: "#7F4C28",
       // gapTopMobile: "30px",
       // gapTopMd: "30px",
@@ -192,13 +221,26 @@ export const data = {
   },
   infused_virgin_coconut_oil: {
     id: "3",
-    imgUri: "/images/home/chili-main-img.png",
+    imgUri: {
+      link: "/images/home/chili-main-img.png",
+      width: "400px",
+    },
+    imgUri2: {
+      link: "/images/home/chili-main-img.png",
+      width: "300px",
+    },
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "57px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "40px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "113px", font: "archivo" },
     ],
     verticalLine: {
       color: "black",
@@ -208,6 +250,14 @@ export const data = {
       color: "white",
       size: "48px",
       bgColor: "black",
+      px: "80px",
+    },
+    titleLabel2: {
+      text: "Bottles",
+      color: "white",
+      size: "24px",
+      bgColor: "black",
+      px: "60px",
     },
     description: {
       text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
@@ -309,23 +359,35 @@ export const data = {
     id: "4",
     name: "Sweet Chips",
     nameBgColor: "#751F24",
-    imgUri: "/images/home/sweet-chips-main-img.png",
+    imgUri: {
+      link: "/images/home/sweet-chips-main-img.png",
+      width: 500,
+    },
+    imgUri2: {
+      link: "/images/home/sweet-chips-main-img.png",
+      width: 300,
+    },
     brandImg: "/images/sweet-chips-4-logo.png",
     background: {
       left: "/images/background/sweet-chips-bg-left.png",
       right: "/images/background/sweet-chips-bg-right.png",
     },
     title: [
-      { text: "Organic", color: "#751F24", size: "36px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "36px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "56px", font: "futuraBold" },
+      { text: "Organic", color: "#751F24", size: "76px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "74px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "112px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "74px", font: "archivo" },
     ],
     verticalLine: {
       color: "#751F24",
     },
     subTitle: "Baked Chips",
     description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes. Adding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
@@ -431,22 +493,34 @@ export const data = {
     id: "5",
     name: "Toasted Chips",
     nameBgColor: "#751F24",
-    imgUri: "/images/home/toasted-chips.png",
+    imgUri: {
+      link: "/images/home/toasted-chips.png",
+      width: "450px",
+    },
+    imgUri2: {
+      link: "/images/home/toasted-chips.png",
+      width: "300px",
+    },
     brandImg: "/images/toasted-brand-img.png",
     background: {
       left: "/images/background/sweet-chips-bg-left.png",
       right: "/images/background/sweet-chips-bg-right.png",
     },
     title: [
-      { text: "Organic", color: "#751F24", size: "36px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "36px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "56px", font: "futuraBold" },
+      { text: "Organic", color: "#751F24", size: "76px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "74px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "112px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "74px", font: "archivo" },
     ],
     verticalLine: {
       color: "#751F24",
     },
     description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes. Adding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
@@ -529,13 +603,26 @@ export const data = {
   },
   infused_virgin_coconut_oil_ginger: {
     id: "6",
-    imgUri: "/images/home/ginger-main-img.png",
+    imgUri: {
+      link: "/images/home/ginger-main-img.png",
+      width: "400px",
+    },
+    imgUri2: {
+      link: "/images/home/ginger-main-img.png",
+      width: "300px",
+    },
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "57px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "40px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "113px", font: "archivo" },
     ],
     verticalLine: {
       color: "black",
@@ -544,6 +631,14 @@ export const data = {
       text: "Bottles",
       color: "#000",
       size: "48px",
+      px: "80px",
+      bgColor: "black",
+    },
+    titleLabel2: {
+      text: "Bottles",
+      color: "#000",
+      size: "24px",
+      px: "60px",
       bgColor: "black",
     },
     description: {
@@ -644,13 +739,26 @@ export const data = {
   },
   infused_virgin_coconut_oil_pepper: {
     id: "7",
-    imgUri: "/images/home/pepper-main-img.png",
+    imgUri: {
+      link: "/images/home/pepper-main-img.png",
+      width: "400px",
+    },
+    imgUri2: {
+      link: "/images/home/pepper-main-img.png",
+      width: "300px",
+    },
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "57px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "40px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "113px", font: "archivo" },
     ],
     verticalLine: {
       color: "black",
@@ -659,6 +767,14 @@ export const data = {
       text: "Bottles",
       color: "#000",
       size: "48px",
+      px: "80px",
+      bgColor: "black",
+    },
+    titleLabel2: {
+      text: "Bottles",
+      color: "#000",
+      size: "24px",
+      px: "60px",
       bgColor: "black",
     },
     description: {
@@ -759,13 +875,26 @@ export const data = {
   },
   infused_virgin_coconut_oil_garlic: {
     id: "8",
-    imgUri: "/images/home/garlic-main-img.png",
+    imgUri: {
+      link: "/images/home/garlic-main-img.png",
+      width: "400px",
+    },
+    imgUri2: {
+      link: "/images/home/garlic-main-img.png",
+      width: "300px",
+    },
     brandImg: "/images/infused-virgin-brand-img.png",
     title: [
-      { text: "Infused", color: "black", size: "36px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "42px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "30px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "86px", font: "futuraBold" },
+      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "57px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "40px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "113px", font: "archivo" },
     ],
     verticalLine: {
       color: "black",
@@ -774,6 +903,14 @@ export const data = {
       text: "Bottles",
       color: "#000",
       size: "48px",
+      px: "80px",
+      bgColor: "black",
+    },
+    titleLabel2: {
+      text: "Bottles",
+      color: "#000",
+      size: "24px",
+      px: "60px",
       bgColor: "black",
     },
     description: {
@@ -874,12 +1011,24 @@ export const data = {
   },
   organic_coconut_puree: {
     id: "9",
-    imgUri: "/images/home/puree-main-img.png",
+    imgUri: {
+      link: "/images/home/puree-main-img.png",
+      width: 550,
+    },
+    imgUri2: {
+      link: "/images/home/puree-main-img.png",
+      width: 300,
+    },
     brandImg: "/images/puree-brand-img.png",
     title: [
+      { text: "Organic", color: "#AC4E2B", size: "80px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "75px", font: "futuraBold" },
+      { text: "Puree", color: "black", size: "104px", font: "archivo" },
+    ],
+    titleMb: [
       { text: "Organic", color: "#AC4E2B", size: "48px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "48px", font: "futuraBold" },
-      { text: "Puree", color: "black", size: "65px", font: "archivo" },
+      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
+      { text: "Puree", color: "black", size: "62px", font: "archivo" },
     ],
     verticalLine: {
       color: "#AC4E2B",
@@ -963,11 +1112,23 @@ export const data = {
       bgColor: "#372115",
       font: "franklinHeavy",
     },
-    imgUri: "/images/home/spread-main-img.png",
+    imgUri: {
+      link: "/images/home/spread-main-img.png",
+      width: 550,
+    },
+    imgUri2: {
+      link: "/images/home/spread-main-img.png",
+      width: 300,
+    },
     // brandImg: "/images/puree-brand-img.png",
     title: [
+      { text: "COCONUT", color: "#372115", size: "74px", font: "futuraBold" },
+      { text: "CHOCOLATE", color: "black", size: "63px", font: "futuraBold" },
+      { text: "SPREAD", color: "black", size: "88px", font: "archivo" },
+    ],
+    titleMb: [
       { text: "COCONUT", color: "#372115", size: "48px", font: "futuraBold" },
-      { text: "CHOCOLATE", color: "black", size: "42px", font: "futuraBold" },
+      { text: "CHOCOLATE", color: "black", size: "40px", font: "futuraBold" },
       { text: "SPREAD", color: "black", size: "56px", font: "archivo" },
     ],
     verticalLine: {
@@ -976,8 +1137,16 @@ export const data = {
     titleLabel: {
       text: "Chocolate Flavored Pure \nCoconut Cream",
       color: "#000",
-      size: "36px",
+      size: "24px",
       bgColor: "#372115",
+      px: "30px",
+    },
+    titleLabel2: {
+      text: "Chocolate Flavored Pure \nCoconut Cream",
+      color: "#000",
+      size: "18px",
+      bgColor: "#372115",
+      px: "14px",
     },
     description: {
       text: "Tropcey Coconut Chocolate Spread is mainly produced by grinding desiccated coconut to a soft, creamy paste which is finally blended with cocoa powder.",
@@ -1043,12 +1212,24 @@ export const data = {
   coconut_chocolate_syrup: {
     id: "11",
 
-    imgUri: "/images/home/syrup-main-img.png",
+    imgUri: {
+      link: "/images/home/syrup-main-img.png",
+      width: 600,
+    },
+    imgUri2: {
+      link: "/images/home/syrup-main-img.png",
+      width: 300,
+    },
     brandImg: "/images/syrup-brand-img.png",
     title: [
+      { text: "ORGANIC", color: "#372115", size: "80px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "75px", font: "futuraBold" },
+      { text: "SYRUP", color: "black", size: "102px", font: "archivo" },
+    ],
+    titleMb: [
       { text: "ORGANIC", color: "#372115", size: "48px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
-      { text: "SYRUP", color: "black", size: "65px", font: "archivo" },
+      { text: "COCONUT", color: "black", size: "45px", font: "futuraBold" },
+      { text: "SYRUP", color: "black", size: "62px", font: "archivo" },
     ],
     verticalLine: {
       color: "#372115",
@@ -1056,14 +1237,28 @@ export const data = {
     afterTitle: {
       text: "BOTTLES AND TREACLE SACHETS",
       color: "#372115",
-      size: "16px",
+      size: "23px",
+      font: "futuraBold",
+    },
+    afterTitle2: {
+      text: "BOTTLES AND TREACLE SACHETS",
+      color: "#372115",
+      size: "14px",
       font: "futuraBold",
     },
     titleLabel: {
       text: "Coconut Treacle",
       color: "#000",
-      size: "48px",
+      size: "31px",
       bgColor: "#372115",
+      px: "82px",
+    },
+    titleLabel2: {
+      text: "Coconut Treacle",
+      color: "#000",
+      size: "22px",
+      bgColor: "#372115",
+      px: "24px",
     },
     description: {
       text: "Tropcey Organic Coconut Syrup is produced from 100% natural coconut sap, the sugary fluid extracted from the coconut flower. It is a product with a unique and rich sweet flavour.",
@@ -1131,15 +1326,27 @@ export const data = {
   },
   organic_coconut_flour: {
     id: "12",
-    imgUri: "/images/home/flour-main-img.png",
+    imgUri: {
+      link: "/images/home/flour-main-img.png",
+      width: "700px",
+    },
+    imgUri2: {
+      link: "/images/home/flour-main-img.png",
+      width: "300px",
+    },
     brandImg: "/images/flour-brand-img.png",
     title: [
+      { text: "ORGANIC", color: "#fff", size: "80px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "75px", font: "futuraBold" },
+      { text: "FLOUR", color: "black", size: "104px", font: "archivo" },
+    ],
+    titleMb: [
       { text: "ORGANIC", color: "#fff", size: "48px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
-      { text: "FLOUR", color: "black", size: "65px", font: "archivo" },
+      { text: "COCONUT", color: "black", size: "46px", font: "futuraBold" },
+      { text: "FLOUR", color: "black", size: "64px", font: "archivo" },
     ],
     verticalLine: {
-      color: "#fff",
+      color: "#000",
     },
 
     description: {
@@ -1190,6 +1397,11 @@ export const data = {
         subTitle: "18 Months",
         color: "white",
       },
+      {
+        title: "Available Pack Size",
+        subTitle: "250g nylon stand-up zipper pouch",
+        color: "white",
+      },
     ],
     nutritionChart: "/images/syrup-chart.png",
     brandingSubtitle: {
@@ -1202,11 +1414,23 @@ export const data = {
   },
   organic_coconut_vinegar: {
     id: "13",
-    imgUri: "/images/home/vinegar-main-img.png",
+    imgUri: {
+      link: "/images/home/vinegar-main-img.png",
+      width: 550,
+    },
+    imgUri2: {
+      link: "/images/home/vinegar-main-img.png",
+      width: 300,
+    },
     brandImg: "/images/vinegar-brand-img.png",
     title: [
+      { text: "ORGANIC", color: "#284E2A", size: "80px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "76px", font: "futuraBold" },
+      { text: "VINEGAR", color: "black", size: "77px", font: "archivo" },
+    ],
+    titleMb: [
       { text: "ORGANIC", color: "#284E2A", size: "48px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "46px", font: "futuraBold" },
       { text: "VINEGAR", color: "black", size: "48px", font: "archivo" },
     ],
     verticalLine: {
@@ -1215,14 +1439,22 @@ export const data = {
     titleLabel: {
       text: "Made from Pure \n Coconut Water",
       color: "#000",
-      size: "48px",
+      size: "30px",
       bgColor: "#284E2A",
+      px: "80px",
+    },
+    titleLabel2: {
+      text: "Made from Pure \n Coconut Water",
+      color: "#000",
+      size: "21px",
+      bgColor: "#284E2A",
+      px: "30px",
     },
     description: {
       text: `Tropcey Organic Coconut Vinegar is produced from pure fermented coconut water.`,
       color: "white",
     },
-    ingrediants: [
+    ingrediants2: [
       {
         text: "100% Pure & 100% Natural",
         color: "#284E2A",
@@ -1279,17 +1511,34 @@ export const data = {
   },
   organic_desiccated_coconut: {
     id: "14",
-    imgUri: "/images/home/desiccated-main-img.png",
+    imgUri: {
+      link: "/images/home/desiccated-main-img.png",
+      width: 550,
+    },
+    imgUri2: {
+      link: "/images/home/desiccated-main-img.png",
+      width: 300,
+    },
     brandImg: "/images/desiccated-brand-img.png",
     title: [
-      { text: "ORGANIC", color: "#2C4523", size: "48px", font: "futuraBold" },
+      { text: "ORGANIC", color: "#2C4523", size: "80px", font: "futuraBold" },
+      {
+        text: "DESICCATED  ",
+        color: "black",
+        size: "65px",
+        font: "futuraBold",
+      },
+      { text: "COCONUT", color: "black", size: "76px", font: "futuraBold" },
+    ],
+    titleMb: [
+      { text: "ORGANIC", color: "#2C4523", size: "52px", font: "futuraBold" },
       {
         text: "DESICCATED  ",
         color: "black",
         size: "42px",
         font: "futuraBold",
       },
-      { text: "COCONUT", color: "black", size: "48px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "50px", font: "futuraBold" },
     ],
     verticalLine: {
       color: "#2C4523",
@@ -1299,6 +1548,14 @@ export const data = {
       color: "#000",
       size: "48px",
       bgColor: "#2C4523",
+      px: "120px",
+    },
+    titleLabel2: {
+      text: "Fine Grade",
+      color: "#000",
+      size: "18px",
+      bgColor: "#2C4523",
+      px: "80px",
     },
     description: {
       text: "Tropcey Organic Desiccated Coconut is made by 100% natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture.\nIt is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
@@ -1367,14 +1624,31 @@ export const data = {
   },
   organic_coconut_milk: {
     id: "15",
-    imgUri: "/images/home/milk-main-img.png",
+    imgUri: {
+      link: "/images/home/milk-img-main.png",
+      width: 700,
+    },
+    imgUri2: {
+      link: "/images/home/milk-img-main.png",
+      width: 300,
+    },
     brandImg: "/images/milk-brand-img.png",
     title: [
+      { text: "ORGANIC", color: "#1A523E", size: "70px", font: "futuraBold" },
+      {
+        text: "COCONUT  ",
+        color: "black",
+        size: "66px",
+        font: "futuraBold",
+      },
+      { text: "MILK", color: "black", size: "122px", font: "archivo" },
+    ],
+    titleMb: [
       { text: "ORGANIC", color: "#1A523E", size: "48px", font: "futuraBold" },
       {
         text: "COCONUT  ",
         color: "black",
-        size: "48px",
+        size: "46px",
         font: "futuraBold",
       },
       { text: "MILK", color: "black", size: "86px", font: "archivo" },

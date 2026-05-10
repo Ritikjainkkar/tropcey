@@ -25,11 +25,25 @@ export default function LeftContainer({
       }
     `}</style>
 
-      <div className="h-full w-full md:w-[50%] flex flex-col justify-center items-center p-4 mt-[150px] lg:mt-0 relative">
+      <div className="h-full w-full lg:w-[50%] w-100% flex flex-col mt-[150px] lg:mt-0 relative">
         {title?.map((item: any, index: number) => (
           <h2
             key={index}
-            className={`font-bold  text-center uppercase`}
+            className={`font-bold  text-center uppercase hidden md:block`}
+            style={{
+              color: item.color,
+              fontSize: item.size,
+              lineHeight: 1,
+              fontFamily: `var(--font-${item.font})`,
+            }}
+          >
+            {item.text}
+          </h2>
+        ))}
+        {details.titleMb?.map((item: any, index: number) => (
+          <h2
+            key={index}
+            className={`font-bold  text-center uppercase md:hidden`}
             style={{
               color: item.color,
               fontSize: item.size,
@@ -44,21 +58,42 @@ export default function LeftContainer({
           className="w-[6px] h-64 absolute top-2 right-[10px] transform -translate-x-1/2 hidden lg:block "
           style={{ backgroundColor: details?.verticalLine?.color }}
         />
-        {details?.titleLabel && (
-          <p
-            className={`py mx-auto lg:mx-0 px-10 my-2 text-white   text-center text-large w-fit font-berkShire rounded-md`}
-            style={{
-              backgroundColor: details.titleLabel.bgColor,
-              whiteSpace: "pre-wrap",
-            }}
-          >
-            {details.titleLabel.text}
-          </p>
+        {details?.titleLabel && details?.titleLabel && (
+          <div className="justify-center items-center hidden md:flex">
+            <p
+              className={`py mx-auto lg:mx-0 lg:my-0 text-white text-center text-[26px] w-fit font-auromiya`}
+              style={{
+                backgroundColor: details.titleLabel.bgColor,
+                paddingLeft: details.titleLabel.px,
+                paddingRight: details.titleLabel.px,
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {details.titleLabel.text}
+            </p>
+          </div>
+        )}
+
+        {details?.titleLabel2 && details?.titleLabel2 && (
+          <div className="flex justify-center items-center md:hidden">
+            <p
+              className={`py mx-auto lg:mx-0 lg:my-0 text-white text-center  w-fit font-auromiya`}
+              style={{
+                backgroundColor: details.titleLabel2.bgColor,
+                paddingLeft: details.titleLabel2.px,
+                paddingRight: details.titleLabel2.px,
+                whiteSpace: "pre-wrap",
+                fontSize: details.titleLabel2.size,
+              }}
+            >
+              {details.titleLabel2.text}
+            </p>
+          </div>
         )}
 
         {details?.afterTitle && (
           <h2
-            className={` text-center uppercase`}
+            className={` text-center uppercase mt-2 hidden md:block`}
             style={{
               color: details.afterTitle.color,
               fontSize: details.afterTitle.size,
@@ -69,13 +104,32 @@ export default function LeftContainer({
             {details.afterTitle.text}
           </h2>
         )}
+        {details?.afterTitle2 && (
+          <h2
+            className={` text-center uppercase mt-2 md:hidden`}
+            style={{
+              color: details.afterTitle2.color,
+              fontSize: details.afterTitle2.size,
+              lineHeight: 1,
+              fontFamily: `var(--font-${details.afterTitle2.font})`,
+            }}
+          >
+            {details.afterTitle2.text}
+          </h2>
+        )}
         <div className="flex gap-2 flex-col lg:flex-row justify-center items-center mt-4">
           <div>
             <img
-              src={imgSrc}
+              src={details?.imgUri.link}
               alt="Product image"
-              width={"300px"}
-              className={`h-auto max-w-[100%] w-[100%] chip-img  mb-2  md:max-w-[400px]`}
+              style={{ width: details.imgUri.width }}
+              className="h-auto max-w-full chip-img mb-2 hidden md:block"
+            />
+            <img
+              src={details?.imgUri2.link}
+              alt="Product image"
+              style={{ width: details.imgUri2.width }}
+              className="h-auto max-w-full chip-img mb-2 md:hidden"
             />
           </div>
           {details?.recommendations && (
@@ -110,10 +164,10 @@ export default function LeftContainer({
         </div>
         {brandingSubtitle ? (
           <div
-            className={`branding-gap mb-2 lg:mb-0  rounded-lg w-[100%] flex justify-center items-center`}
+            className={`branding-gap mb-2 lg:mb-0 md:mb-4 rounded-lg w-[100%] flex justify-center items-center`}
           >
             <span
-              className="lg:text-5xl md:text-4xl text-xl font-impact capitalize text-center"
+              className="lg:text-[56px] md:text-[48px] text-2xl font-impact capitalize text-center lg:leading-[55px] md:leading-[45px] leading-[30px] px-[10px]"
               style={{ color: brandingSubtitle.color }}
             >
               {brandingSubtitle.text}

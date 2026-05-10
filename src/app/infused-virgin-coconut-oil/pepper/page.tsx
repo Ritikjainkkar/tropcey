@@ -39,7 +39,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
         leftSrc={chip.background.left}
         RightSrc={chip.background.right}
       /> */}
-      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row justify-between min-h-[100vh] w-[100%] items-center z-10 pb-5 bg-[url('/images/background/infused-virgin-oil-bg.jpg')] bg-cover bg-center">
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row justify-between min-h-[100vh] w-[100%] items-center z-10 pt-[120px] bg-[url('/images/background/infused-virgin-oil-bg.jpg')] bg-cover bg-center">
         <LeftContainer
           imgSrc={oil.imgUri}
           brandingSubtitle={oil.brandingSubtitle}

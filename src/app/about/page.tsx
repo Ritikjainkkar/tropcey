@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about-wrap">
       {/* ========== FIRST SECTION - GREEN BG ========== */}
-      <div className="relative bg-[url('/images/about-bg-img.png')] bg-cover bg-right bg-no-repeat min-h-[300px] overflow-hidden lg:pt-16 pt-40 pb-7">
+      <div className="relative bg-[url('/images/about-bg-img.png')] bg-cover bg-right bg-no-repeat min-h-[300px] overflow-hidden lg:pt-[100px] pt-[180px] pb-7">
         <div className="relative z-10 w-full max-w-[90%] mx-auto px-2 lg:px-2 xl:px-4">
           <div className="flex flex-col lg:flex-row  gap-2 lg:gap-2">
             {/* Title Section with Vertical Line - 4/12 */}
