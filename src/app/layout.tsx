@@ -97,7 +97,7 @@ const berkShire = localfont({
 const auromiya = localfont({
   src: [
     {
-      path: "../../public/fonts/Auromiya.ttf",
+      path: "../../public/fonts/auromiya.ttf",
     },
   ],
   variable: "--font-auromiya",
