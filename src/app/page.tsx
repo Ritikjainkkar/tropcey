@@ -205,14 +205,17 @@ const Home: React.FC = () => {
     window.addEventListener('resize', applyTreeHeight);
     // ─────────────────────────────────────────────────────────────────────────
 
-    const currentUrl = new URL(window.location.href);
     const topContainer = document.querySelector('.top-container');
-    topContainer.style.display = 'flex';
-    currentUrl.searchParams.set('back', 'true');
-    router.replace(currentUrl.toString(), undefined, { shallow: true }); // Use router.replace to update the URL
+    if (topContainer) (topContainer as HTMLElement).style.display = 'flex';
+
+    if (!window.location.search.includes('back=true')) {
+      const currentUrl = new URL(window.location.href);
+      currentUrl.searchParams.set('back', 'true');
+      router.replace(currentUrl.pathname + currentUrl.search);
+    }
 
     const handlePopState = () => {
-      router.replace('/'); // Redirect to home route on back button press
+      router.replace('/');
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -224,8 +227,10 @@ const Home: React.FC = () => {
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchmove', handleTouchMove);
       window.removeEventListener('resize', applyTreeHeight);
+      window.removeEventListener('popstate', handlePopState);
     };
-  }, [handleEvent, onBackCame]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
@@ -235,8 +240,8 @@ const Home: React.FC = () => {
             <img loading="lazy" className="treeImg" width="95%" src="/images/NewChanges/new-landing-image.png" alt="Descriptive Alt Text" />
             <div className="image-collection display-none" ref={imageRef}>
               <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ top: '22%', left: '30%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Water Vinegar.png" width="86px" /></div>
-              <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '14%', left: '52%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Syrup.png" width="86px" /></div>
-              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '20%', left: '74%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Infused Virgin Coconut Oil.png" width="86px" /></div>
+              <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '22%', left: '50%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Syrup.png" width="86px" /></div>
+              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '27%', left: '78%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Infused Virgin Coconut Oil.png" width="86px" /></div>
               <div data-url="/organic-coconut-puree" className="marker" style={{ top: '40%', left: '45%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Puree.png" width="86px" /></div>
               <div data-url="/organic-coconut-flour" className="marker" style={{ top: '42%', left: '62%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Flour.png" width="86px" /></div>
               <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '52%', left: '12%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Sugar.png" width="86px" /></div>
