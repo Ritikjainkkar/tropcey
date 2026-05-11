@@ -2,6 +2,7 @@
 import Background from "@/components/Background";
 import LeftContainer from "@/components/LeftContainer";
 import RightTextBox from "@/components/RightTextBox";
+import SideBarNavigation from "@/components/SideBarNavigation";
 import { data } from "@/data/pages";
 import React, { useEffect, useRef } from "react";
 
@@ -19,12 +20,13 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
       }, 10);
     }
     if (typeof window !== "undefined") {
-      localStorage.setItem("lastUrl", "/infused-virgin-coconut-oil/pepper");
-      localStorage.setItem("lastPage", "infused-virgin-coconut-oil/pepper");
+      localStorage.setItem("lastUrl", "/infused-virgin-coconut-oil");
+      localStorage.setItem("lastPage", "infused-virgin-coconut-oil");
     }
   }, []);
 
   const oil = data?.infused_virgin_coconut_oil_pepper;
+
   return (
     <div
       ref={AnimRef}
@@ -39,7 +41,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
         leftSrc={chip.background.left}
         RightSrc={chip.background.right}
       /> */}
-      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row justify-between min-h-[100vh] w-[100%] items-center z-10 pt-[120px] bg-[url('/images/background/infused-virgin-oil-bg.jpg')] bg-cover bg-center">
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row items-start min-h-[100vh] w-full z-10 pb-5 lg:pt-[120px] pt-[40px] bg-[url('/images/background/infused-virgin-oil-bg.jpg')] bg-cover bg-center">
         <LeftContainer
           imgSrc={oil.imgUri}
           brandingSubtitle={oil.brandingSubtitle}
@@ -48,6 +50,10 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
           details={oil}
         />
         <RightTextBox details={oil} isFull={false} />
+      </div>
+
+      <div className="z-100">
+        <SideBarNavigation />
       </div>
     </div>
   );

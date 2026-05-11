@@ -25,7 +25,7 @@ export default function LeftContainer({
       }
     `}</style>
 
-      <div className="h-full w-full lg:w-[50%] w-100% flex flex-col mt-[150px] lg:mt-0 relative">
+      <div className="h-full w-full lg:w-[50%] w-100% flex flex-col mt-[150px] lg:mt-0 relative lg:pl-[100px]">
         {title?.map((item: any, index: number) => (
           <h2
             key={index}
@@ -61,7 +61,7 @@ export default function LeftContainer({
         {details?.titleLabel && details?.titleLabel && (
           <div className="justify-center items-center hidden md:flex">
             <p
-              className={`py mx-auto lg:mx-0 lg:my-0 text-white text-center text-[26px] w-fit font-auromiya`}
+              className={`py mx-auto lg:mx-0 lg:my-0 text-white text-center text-[21px] w-fit font-auromiya`}
               style={{
                 backgroundColor: details.titleLabel.bgColor,
                 paddingLeft: details.titleLabel.px,
@@ -167,7 +167,7 @@ export default function LeftContainer({
             className={`branding-gap mb-2 lg:mb-0 md:mb-4 rounded-lg w-[100%] flex justify-center items-center`}
           >
             <span
-              className="lg:text-[56px] md:text-[48px] text-2xl font-impact capitalize text-center lg:leading-[55px] md:leading-[45px] leading-[30px] px-[10px]"
+              className="lg:text-[48px] md:text-[45px] text-2xl font-impact capitalize text-center lg:leading-[55px] md:leading-[45px] leading-[30px] px-[10px]"
               style={{ color: brandingSubtitle.color }}
             >
               {brandingSubtitle.text}

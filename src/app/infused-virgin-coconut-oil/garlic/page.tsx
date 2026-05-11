@@ -2,6 +2,7 @@
 import Background from "@/components/Background";
 import LeftContainer from "@/components/LeftContainer";
 import RightTextBox from "@/components/RightTextBox";
+import SideBarNavigation from "@/components/SideBarNavigation";
 import { data } from "@/data/pages";
 import React, { useEffect, useRef } from "react";
 
@@ -48,6 +49,10 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
           details={oil}
         />
         <RightTextBox details={oil} isFull={false} />
+      </div>
+
+      <div className="z-100">
+        <SideBarNavigation />
       </div>
     </div>
   );

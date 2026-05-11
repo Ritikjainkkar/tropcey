@@ -9,15 +9,22 @@ export const data = {
       link: "/images/home/sugar-main-img.png",
       width: "300px",
     },
-    brandImg: "/images/sugar-brand-img.png",
+    marginLeft: {
+      lg: "100px",
+      xl: "200px",
+    },
+    brandImg: {
+      link: "/images/sugar-brand-img.png",
+      width: "420px",
+    },
     title: [
-      { text: "Organic", color: "#3B281B", size: "79px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "74px", font: "futuraBold" },
-      { text: "Sugar", color: "black", size: "98px", font: "archivo" },
+      { text: "Organic", color: "#3B281B", size: "65px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Sugar", color: "black", size: "84px", font: "archivo" },
       {
         text: "POUCHES AND SUGAR STICKS",
         color: "black",
-        size: "22px",
+        size: "19px",
         font: "archivo",
       },
     ],
@@ -77,8 +84,7 @@ export const data = {
       },
       {
         title: "Packaging",
-        subTitle:
-          "Comes in 200g pouches and single serving size (15g) “Sugar Sticks”.",
+        subTitle: `Comes in 200g pouches and single serving size (15g) “Sugar Sticks”.`,
         color: "white",
       },
       {
@@ -117,7 +123,11 @@ export const data = {
       link: "/images/home/virgin-oil.png",
       width: "300px",
     },
-    brandImg: "/images/oil-brand-img.png",
+
+    brandImg: {
+      link: "/images/oil-brand-img.png",
+      width: "430px",
+    },
     background: {
       left: "/images/background/sweet-chips-bg-left.png",
       right: "/images/background/sweet-chips-bg-right.png",
@@ -223,18 +233,22 @@ export const data = {
     id: "3",
     imgUri: {
       link: "/images/home/chili-main-img.png",
-      width: "400px",
+      width: "360px",
     },
     imgUri2: {
       link: "/images/home/chili-main-img.png",
       width: "300px",
     },
-    brandImg: "/images/infused-virgin-brand-img.png",
+
+    brandImg: {
+      link: "/images/infused-virgin-brand-img.png",
+      width: "570px",
+    },
     title: [
-      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+      { text: "Infused", color: "black", size: "54px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "44px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "120px", font: "archivo" },
     ],
     titleMb: [
       { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
@@ -250,7 +264,7 @@ export const data = {
       color: "white",
       size: "48px",
       bgColor: "black",
-      px: "80px",
+      px: "65px",
     },
     titleLabel2: {
       text: "Bottles",
@@ -260,10 +274,10 @@ export const data = {
       px: "60px",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
-    ingrediants: [
+    ingrediants2: [
       {
         text: "With Pepper",
         color: "#000",
@@ -355,268 +369,26 @@ export const data = {
       },
     ],
   },
-  sweetChips: {
-    id: "4",
-    name: "Sweet Chips",
-    nameBgColor: "#751F24",
-    imgUri: {
-      link: "/images/home/sweet-chips-main-img.png",
-      width: 500,
-    },
-    imgUri2: {
-      link: "/images/home/sweet-chips-main-img.png",
-      width: 300,
-    },
-    brandImg: "/images/sweet-chips-4-logo.png",
-    background: {
-      left: "/images/background/sweet-chips-bg-left.png",
-      right: "/images/background/sweet-chips-bg-right.png",
-    },
-    title: [
-      { text: "Organic", color: "#751F24", size: "76px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "74px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "112px", font: "archivo" },
-    ],
-    titleMb: [
-      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "74px", font: "archivo" },
-    ],
-    verticalLine: {
-      color: "#751F24",
-    },
-    subTitle: "Baked Chips",
-    description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
-      color: "white",
-    },
-
-    ingrediants: [
-      {
-        text: "100% Pure & 100% Natural",
-        color: "#751F24",
-      },
-      {
-        text: "Certified Organic - Quality Guaranteed",
-        color: "#751F24",
-      },
-      {
-        text: "Fresh, Crunchy & Delicious",
-        color: "#751F24",
-      },
-      {
-        text: "Gluten-Free",
-        color: "#751F24",
-      },
-      {
-        text: "Vegan & Plant-Based",
-        color: "#751F24",
-      },
-    ],
-    itemDetails: [
-      {
-        title: "Ingredients",
-        subTitle:
-          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
-        color: "white",
-      },
-      {
-        title: "Suitable for",
-        subTitle:
-          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
-        color: "white",
-      },
-      {
-        title: "Storage",
-        subTitle: "In a cool dry place, away from direct sunlight.",
-        color: "white",
-      },
-      {
-        title: "Shelf Life",
-        subTitle: "12 Months",
-        color: "white",
-      },
-      {
-        title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
-        color: "white",
-      },
-    ],
-    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["40g pouch", "24", "72", "17280", "34560"],
-        ["80g pouch", "24", "56", "13440", "26880"],
-        ["100g pouch", "24", "72", "17280", "34560"],
-        ["500g pouch", "12", "72", "8640", "17280"],
-        ["40g pouch", "N/A", "96", "960", "1920"],
-        ["40g pouch", "N/A", "48", "480", "960"],
-      ],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Dried Coconut",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: {
-      text: "Snack the Authentic Tropical Way.",
-      color: "#751F24",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      gapTopLg: "-20px",
-    },
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO"],
-    recommendations: [
-      {
-        url: "/images/recommendations/sweet-chips-img-recommened-1.png",
-        click: "/organic-coconut-chips",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-      {
-        url: "/images/recommendations/sweet-chips-img-recommened-2.png",
-        click: "/organic-coconut-chips/toasted",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-    ],
-  },
-  sweetToastedChips: {
-    id: "5",
-    name: "Toasted Chips",
-    nameBgColor: "#751F24",
-    imgUri: {
-      link: "/images/home/toasted-chips.png",
-      width: "450px",
-    },
-    imgUri2: {
-      link: "/images/home/toasted-chips.png",
-      width: "300px",
-    },
-    brandImg: "/images/toasted-brand-img.png",
-    background: {
-      left: "/images/background/sweet-chips-bg-left.png",
-      right: "/images/background/sweet-chips-bg-right.png",
-    },
-    title: [
-      { text: "Organic", color: "#751F24", size: "76px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "74px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "112px", font: "archivo" },
-    ],
-    titleMb: [
-      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "74px", font: "archivo" },
-    ],
-    verticalLine: {
-      color: "#751F24",
-    },
-    description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
-      color: "white",
-    },
-
-    ingrediants: [
-      {
-        text: "100% Pure & 100% Natural",
-        color: "#751F24",
-      },
-      {
-        text: "Certified Organic - Quality Guaranteed",
-        color: "#751F24",
-      },
-      {
-        text: "Fresh, Crunchy & Delicious",
-        color: "#751F24",
-      },
-      {
-        text: "Gluten-Free",
-        color: "#751F24",
-      },
-      {
-        text: "Vegan & Plant-Based",
-        color: "#751F24",
-      },
-    ],
-    itemDetails: [
-      {
-        title: "Ingredients",
-        subTitle:
-          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
-        color: "white",
-      },
-      {
-        title: "Suitable for",
-        subTitle:
-          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
-        color: "white",
-      },
-      {
-        title: "Storage",
-        subTitle: "In a cool dry place, away from direct sunlight.",
-        color: "white",
-      },
-      {
-        title: "Shelf Life",
-        subTitle: "12 Months",
-        color: "white",
-      },
-      {
-        title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
-        color: "white",
-      },
-    ],
-    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
-    life: "12 Months",
-    brandingSubtitle: {
-      text: "Snack the Authentic Tropical Way.",
-      color: "#751F24",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      gapTopLg: "-10px",
-    },
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO"],
-    recommendations: [
-      {
-        url: "/images/recommendations/toasted-link-1.png",
-        click: "/organic-coconut-chips",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-      {
-        url: "/images/recommendations/toasted-link-2.png",
-        click: "/organic-coconut-chips/toasted",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-    ],
-  },
   infused_virgin_coconut_oil_ginger: {
     id: "6",
     imgUri: {
       link: "/images/home/ginger-main-img.png",
-      width: "400px",
+      width: "360px",
     },
     imgUri2: {
       link: "/images/home/ginger-main-img.png",
       width: "300px",
     },
-    brandImg: "/images/infused-virgin-brand-img.png",
+
+    brandImg: {
+      link: "/images/infused-virgin-brand-img.png",
+      width: "570px",
+    },
     title: [
-      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+      { text: "Infused", color: "black", size: "54px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "44px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "120px", font: "archivo" },
     ],
     titleMb: [
       { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
@@ -631,7 +403,7 @@ export const data = {
       text: "Bottles",
       color: "#000",
       size: "48px",
-      px: "80px",
+      px: "65px",
       bgColor: "black",
     },
     titleLabel2: {
@@ -642,10 +414,10 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
-    ingrediants: [
+    ingrediants2: [
       {
         text: "With Pepper",
         color: "#000",
@@ -741,18 +513,21 @@ export const data = {
     id: "7",
     imgUri: {
       link: "/images/home/pepper-main-img.png",
-      width: "400px",
+      width: "360px",
     },
     imgUri2: {
       link: "/images/home/pepper-main-img.png",
       width: "300px",
     },
-    brandImg: "/images/infused-virgin-brand-img.png",
+    brandImg: {
+      link: "/images/infused-virgin-brand-img.png",
+      width: "570px",
+    },
     title: [
-      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+      { text: "Infused", color: "black", size: "54px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "44px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "120px", font: "archivo" },
     ],
     titleMb: [
       { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
@@ -767,7 +542,7 @@ export const data = {
       text: "Bottles",
       color: "#000",
       size: "48px",
-      px: "80px",
+      px: "65px",
       bgColor: "black",
     },
     titleLabel2: {
@@ -778,10 +553,10 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
-    ingrediants: [
+    ingrediants2: [
       {
         text: "With Pepper",
         color: "#000",
@@ -881,14 +656,17 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/garlic-main-img.png",
-      width: "300px",
+      width: "360px",
     },
-    brandImg: "/images/infused-virgin-brand-img.png",
+    brandImg: {
+      link: "/images/infused-virgin-brand-img.png",
+      width: "570px",
+    },
     title: [
-      { text: "Infused", color: "black", size: "62px", font: "futuraBold" },
-      { text: "Virgin", color: "black", size: "73px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "53px", font: "futuraBold" },
-      { text: "Oil", color: "black", size: "133px", font: "archivo" },
+      { text: "Infused", color: "black", size: "54px", font: "futuraBold" },
+      { text: "Virgin", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "44px", font: "futuraBold" },
+      { text: "Oil", color: "black", size: "120px", font: "archivo" },
     ],
     titleMb: [
       { text: "Infused", color: "black", size: "48px", font: "futuraBold" },
@@ -903,7 +681,7 @@ export const data = {
       text: "Bottles",
       color: "#000",
       size: "48px",
-      px: "80px",
+      px: "65px",
       bgColor: "black",
     },
     titleLabel2: {
@@ -914,10 +692,10 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid. Consists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
-    ingrediants: [
+    ingrediants2: [
       {
         text: "With Pepper",
         color: "#000",
@@ -1009,6 +787,259 @@ export const data = {
       },
     ],
   },
+  sweetChips: {
+    id: "4",
+    name: "Sweet Chips",
+    nameBgColor: "#751F24",
+    imgUri: {
+      link: "/images/home/sweet-chips-main-img.png",
+      width: 500,
+    },
+    imgUri2: {
+      link: "/images/home/sweet-chips-main-img.png",
+      width: 300,
+    },
+    brandImg: {
+      link: "/images/sweet-chips-4-logo.png",
+      width: "420px",
+    },
+    background: {
+      left: "/images/background/sweet-chips-bg-left.png",
+      right: "/images/background/sweet-chips-bg-right.png",
+    },
+    title: [
+      { text: "Organic", color: "#751F24", size: "60px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "56px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "90px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "74px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#751F24",
+    },
+    subTitle: "Baked Chips",
+    description: {
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      color: "white",
+    },
+
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#751F24",
+      },
+      {
+        text: "Certified Organic - Quality Guaranteed",
+        color: "#751F24",
+      },
+      {
+        text: "Fresh, Crunchy & Delicious",
+        color: "#751F24",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#751F24",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#751F24",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [
+        ["40g pouch", "24", "72", "17280", "34560"],
+        ["80g pouch", "24", "56", "13440", "26880"],
+        ["100g pouch", "24", "72", "17280", "34560"],
+        ["500g pouch", "12", "72", "8640", "17280"],
+        ["40g pouch", "N/A", "96", "960", "1920"],
+        ["40g pouch", "N/A", "48", "480", "960"],
+      ],
+    },
+    life: "12 Months",
+    storage: "In a cool dry place, away from direct sunlight.",
+    ingredient: "Dried Coconut",
+    brandingTitle:
+      "Healthy snack, as a topping on salads, desserts and cereals",
+    brandingSubtitle: {
+      text: "Snack the Authentic Tropical Way",
+      color: "#751F24",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      gapTopLg: "-20px",
+    },
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/recommendations/sweet-chips-img-recommened-1.png",
+        click: "/organic-coconut-chips",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+      {
+        url: "/images/recommendations/sweet-chips-img-recommened-2.png",
+        click: "/organic-coconut-chips/toasted",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+    ],
+  },
+  sweetToastedChips: {
+    id: "5",
+    name: "Toasted Chips",
+    nameBgColor: "#751F24",
+    imgUri: {
+      link: "/images/home/toasted-chips.png",
+      width: "450px",
+    },
+    imgUri2: {
+      link: "/images/home/toasted-chips.png",
+      width: "300px",
+    },
+    brandImg: {
+      link: "/images/toasted-brand-img.png",
+      width: "420px",
+    },
+    background: {
+      left: "/images/background/sweet-chips-bg-left.png",
+      right: "/images/background/sweet-chips-bg-right.png",
+    },
+    title: [
+      { text: "Organic", color: "#751F24", size: "60px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "56px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "90px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "74px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#751F24",
+    },
+    description: {
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      color: "white",
+    },
+
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#751F24",
+      },
+      {
+        text: "Certified Organic - Quality Guaranteed",
+        color: "#751F24",
+      },
+      {
+        text: "Fresh, Crunchy & Delicious",
+        color: "#751F24",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#751F24",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#751F24",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
+    life: "12 Months",
+    brandingSubtitle: {
+      text: "Snack the Authentic Tropical Way",
+      color: "#751F24",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      gapTopLg: "-10px",
+    },
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/recommendations/toasted-link-1.png",
+        click: "/organic-coconut-chips",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+      {
+        url: "/images/recommendations/toasted-link-2.png",
+        click: "/organic-coconut-chips/toasted",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+    ],
+  },
+
   organic_coconut_puree: {
     id: "9",
     imgUri: {
@@ -1019,11 +1050,15 @@ export const data = {
       link: "/images/home/puree-main-img.png",
       width: 300,
     },
-    brandImg: "/images/puree-brand-img.png",
+
+    brandImg: {
+      link: "/images/puree-brand-img.png",
+      width: "450px",
+    },
     title: [
-      { text: "Organic", color: "#AC4E2B", size: "80px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "75px", font: "futuraBold" },
-      { text: "Puree", color: "black", size: "104px", font: "archivo" },
+      { text: "Organic", color: "#AC4E2B", size: "66px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "62px", font: "futuraBold" },
+      { text: "Puree", color: "black", size: "88px", font: "archivo" },
     ],
     titleMb: [
       { text: "Organic", color: "#AC4E2B", size: "48px", font: "futuraBold" },
@@ -1108,23 +1143,23 @@ export const data = {
   coconut_chocolate_spread: {
     id: "10",
     advice: {
-      text: "ALLERGY ADVICE : CONTAINS COW MILK AND SOY.",
+      text: "ALLERGY ADVICE : CONTAINS COW MILK AND SOY",
       bgColor: "#372115",
       font: "franklinHeavy",
     },
     imgUri: {
       link: "/images/home/spread-main-img.png",
-      width: 550,
+      width: 500,
     },
     imgUri2: {
       link: "/images/home/spread-main-img.png",
       width: 300,
     },
-    // brandImg: "/images/puree-brand-img.png",
+
     title: [
-      { text: "COCONUT", color: "#372115", size: "74px", font: "futuraBold" },
-      { text: "CHOCOLATE", color: "black", size: "63px", font: "futuraBold" },
-      { text: "SPREAD", color: "black", size: "88px", font: "archivo" },
+      { text: "COCONUT", color: "#372115", size: "62px", font: "futuraBold" },
+      { text: "CHOCOLATE", color: "black", size: "53px", font: "futuraBold" },
+      { text: "SPREAD", color: "black", size: "74px", font: "archivo" },
     ],
     titleMb: [
       { text: "COCONUT", color: "#372115", size: "48px", font: "futuraBold" },
@@ -1220,11 +1255,15 @@ export const data = {
       link: "/images/home/syrup-main-img.png",
       width: 300,
     },
-    brandImg: "/images/syrup-brand-img.png",
+
+    brandImg: {
+      link: "/images/syrup-brand-img.png",
+      width: "420px",
+    },
     title: [
-      { text: "ORGANIC", color: "#372115", size: "80px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "75px", font: "futuraBold" },
-      { text: "SYRUP", color: "black", size: "102px", font: "archivo" },
+      { text: "ORGANIC", color: "#372115", size: "65px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "61px", font: "futuraBold" },
+      { text: "SYRUP", color: "black", size: "86px", font: "archivo" },
     ],
     titleMb: [
       { text: "ORGANIC", color: "#372115", size: "48px", font: "futuraBold" },
@@ -1237,7 +1276,7 @@ export const data = {
     afterTitle: {
       text: "BOTTLES AND TREACLE SACHETS",
       color: "#372115",
-      size: "23px",
+      size: "19px",
       font: "futuraBold",
     },
     afterTitle2: {
@@ -1251,7 +1290,7 @@ export const data = {
       color: "#000",
       size: "31px",
       bgColor: "#372115",
-      px: "82px",
+      px: "72px",
     },
     titleLabel2: {
       text: "Coconut Treacle",
@@ -1328,17 +1367,21 @@ export const data = {
     id: "12",
     imgUri: {
       link: "/images/home/flour-main-img.png",
-      width: "700px",
+      width: "650px",
     },
     imgUri2: {
       link: "/images/home/flour-main-img.png",
       width: "300px",
     },
-    brandImg: "/images/flour-brand-img.png",
+
+    brandImg: {
+      link: "/images/flour-brand-img.png",
+      width: "650px",
+    },
     title: [
-      { text: "ORGANIC", color: "#fff", size: "80px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "75px", font: "futuraBold" },
-      { text: "FLOUR", color: "black", size: "104px", font: "archivo" },
+      { text: "ORGANIC", color: "#fff", size: "65px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "61px", font: "futuraBold" },
+      { text: "FLOUR", color: "black", size: "86px", font: "archivo" },
     ],
     titleMb: [
       { text: "ORGANIC", color: "#fff", size: "48px", font: "futuraBold" },
@@ -1416,17 +1459,20 @@ export const data = {
     id: "13",
     imgUri: {
       link: "/images/home/vinegar-main-img.png",
-      width: 550,
+      width: 480,
     },
     imgUri2: {
       link: "/images/home/vinegar-main-img.png",
       width: 300,
     },
-    brandImg: "/images/vinegar-brand-img.png",
+    brandImg: {
+      link: "/images/vinegar-brand-img.png",
+      width: "450px",
+    },
     title: [
-      { text: "ORGANIC", color: "#284E2A", size: "80px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "76px", font: "futuraBold" },
-      { text: "VINEGAR", color: "black", size: "77px", font: "archivo" },
+      { text: "ORGANIC", color: "#284E2A", size: "65px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "61px", font: "futuraBold" },
+      { text: "VINEGAR", color: "black", size: "62px", font: "archivo" },
     ],
     titleMb: [
       { text: "ORGANIC", color: "#284E2A", size: "48px", font: "futuraBold" },
@@ -1441,7 +1487,7 @@ export const data = {
       color: "#000",
       size: "30px",
       bgColor: "#284E2A",
-      px: "80px",
+      px: "65px",
     },
     titleLabel2: {
       text: "Made from Pure \n Coconut Water",
@@ -1513,22 +1559,26 @@ export const data = {
     id: "14",
     imgUri: {
       link: "/images/home/desiccated-main-img.png",
-      width: 550,
+      width: 480,
     },
     imgUri2: {
       link: "/images/home/desiccated-main-img.png",
       width: 300,
     },
-    brandImg: "/images/desiccated-brand-img.png",
+
+    brandImg: {
+      link: "/images/desiccated-brand-img.png",
+      width: "480px",
+    },
     title: [
-      { text: "ORGANIC", color: "#2C4523", size: "80px", font: "futuraBold" },
+      { text: "ORGANIC", color: "#2C4523", size: "65px", font: "futuraBold" },
       {
         text: "DESICCATED  ",
         color: "black",
-        size: "65px",
+        size: "54px",
         font: "futuraBold",
       },
-      { text: "COCONUT", color: "black", size: "76px", font: "futuraBold" },
+      { text: "COCONUT", color: "black", size: "62px", font: "futuraBold" },
     ],
     titleMb: [
       { text: "ORGANIC", color: "#2C4523", size: "52px", font: "futuraBold" },
@@ -1548,7 +1598,7 @@ export const data = {
       color: "#000",
       size: "48px",
       bgColor: "#2C4523",
-      px: "120px",
+      px: "105px",
     },
     titleLabel2: {
       text: "Fine Grade",
@@ -1632,16 +1682,20 @@ export const data = {
       link: "/images/home/milk-img-main.png",
       width: 300,
     },
-    brandImg: "/images/milk-brand-img.png",
+
+    brandImg: {
+      link: "/images/milk-brand-img.png",
+      width: "550px",
+    },
     title: [
-      { text: "ORGANIC", color: "#1A523E", size: "70px", font: "futuraBold" },
+      { text: "ORGANIC", color: "#1A523E", size: "65px", font: "futuraBold" },
       {
         text: "COCONUT  ",
         color: "black",
-        size: "66px",
+        size: "61px",
         font: "futuraBold",
       },
-      { text: "MILK", color: "black", size: "122px", font: "archivo" },
+      { text: "MILK", color: "black", size: "114px", font: "archivo" },
     ],
     titleMb: [
       { text: "ORGANIC", color: "#1A523E", size: "48px", font: "futuraBold" },

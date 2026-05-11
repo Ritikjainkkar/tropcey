@@ -79,7 +79,6 @@ const Navigation = () => {
               />
             </Link>
           )}
-          {pathname === "/" ? (
             <Link href="/">
               <img
                 src="/images/navbar/logo-black.png"
@@ -89,17 +88,7 @@ const Navigation = () => {
                 alt="logo"
               />
             </Link>
-          ) : (
-            <Link href="/">
-              <img
-                src="/images/navbar/logo.png"
-                width={90}
-                height={90}
-                className={pathname == "/" ? "" : "ml-[75px]"}
-                alt="logo"
-              />
-            </Link>
-          )}
+         
         </div>
         {/* Right */}
 

@@ -17,7 +17,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
                 whiteSpace: "pre-wrap",
                 color: details.description.color,
               }}
-              className={`text-justify mb-2 mx-auto font-franklinGothic text-[18px] leading-[25px]`}
+              className={`text-justify mb-2 mx-auto font-franklinBook font-[500] text-[18px] leading-[25px]`}
             >
               {details.description.text}
             </p>
@@ -49,7 +49,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
                   whiteSpace: "pre-wrap",
                   color: details.description.color,
                 }}
-                className="text-justify mb-2 mx-auto font-franklinGothic text-[18px] leading-[25px]"
+                className="text-justify mb-2 mx-auto font-franklinBook font-[500] text-[18px] leading-[25px]"
               >
                 {details.description.text2}
               </p>
@@ -58,19 +58,19 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
             {/* SECTION TITLE */}
             <p
               style={{ color: details.description.color }}
-              className="mb-2 font-franklinGothic text-[18px] tracking-wide"
+              className="mb-2 font-franklinBook font-[500] text-[18px] tracking-wide"
             >
               {details.description.sectionTitle}
             </p>
 
             {/* BULLETS */}
             {details.description.bulletPoints && (
-              <ul className="space-y-2">
+              <ul className="space-y-2 leading-[22px]">
                 {details.description.bulletPoints.map(
                   (point: string, index: number) => (
                     <li
                       key={index}
-                      className="flex  justify-center gap-2 font-franklinGothic text-[18px]"
+                      className="flex  justify-center gap-2 font-franklinBook font-[500] text-[18px]"
                     >
                       <span className="text-xl leading-none">●</span>
                       <span className="flex-1">{point}</span>
@@ -83,7 +83,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
             {/* FOOTER */}
             <p
               style={{ color: details.description.color }}
-              className="mt-2 font-franklinGothic"
+              className="mt-2 font-franklinBook font-[500]"
             >
               {details.description.footerText}
             </p>
@@ -92,8 +92,13 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
 
         {/* BRAND IMAGE */}
         {details?.brandImg && (
-          <div className="flex justify-center items-center">
-            <img src={details.brandImg} alt="logo" className="my-2" />
+          <div className="flex justify-start items-center">
+            <img
+              src={details.brandImg.link}
+              alt="logo"
+              className="my-2 block w-full"
+              style={{ maxWidth: details.brandImg.width }}
+            />
           </div>
         )}
 
@@ -138,37 +143,49 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
       )}
 
       {/* ================= FIXED TWO-COLUMN SECTION ================= */}
-      <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between gap-10 mt-4 mx-auto lg:mx-0">
+      <div className="flex flex-col lg:flex-row lg:items-start items-center justify-between gap-10 mt-4 mx-auto lg:mx-0 lg:px-[24px]">
         {/* LEFT SIDE - TIMELINE */}
-        <div className="relative flex-1">
-          <div className="absolute left-4 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-white/60"></div>
+        <div className=" flex-1">
+          <div className="relative">
+            <div className="absolute left-4 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-white/60"></div>
 
-          {details?.itemDetails?.map((item: any, index: number) => (
-            <div
-              key={index}
-              className={`relative flex items-start ${
-                index < details.itemDetails.length - 1 ? "mb-2" : ""
-              }`}
-            >
-              <div className="absolute left-4 -translate-x-1/2 mt-1.5 w-5 h-5 bg-white rounded-full z-10"></div>
+            {details?.itemDetails?.map((item: any, index: number) => (
+              <div
+                key={index}
+                className={`relative flex items-start px- ${
+                  index < details.itemDetails.length - 1 ? "mb-2" : ""
+                }`}
+              >
+                <div className="absolute left-4 -translate-x-1/2 mt-1.5 w-5 h-5 bg-white rounded-full z-10"></div>
 
-              <div className="ml-8">
-                <h3 className="text-[22px] font-bold font-franklinHeavy">
-                  {item.title}
-                </h3>
+                <div className="ml-8">
+                  <h3 className="text-[22px] font-bold font-franklinHeavy">
+                    {item.title}
+                  </h3>
 
-                <p className="text-[16px] mt-[-5px] font-franklinBook leading-relaxed opacity-90">
-                  : {item.subTitle}
-                </p>
-
-                {item.subTitle2 && (
-                  <p className="text-[16px] mt-[-5px] font-franklinBook leading-relaxed opacity-90">
-                    : {item.subTitle2}
+                  <p
+                    className="text-[16px] mt-[-5px] font-franklinBook leading-relaxed opacity-90"
+                    style={{
+                      whiteSpace: "pre-wrap",
+                    }}
+                  >
+                    : {item.subTitle}
                   </p>
-                )}
+
+                  {item.subTitle2 && (
+                    <p
+                      className="text-[16px] mt-[-5px] font-franklinBook leading-relaxed opacity-90"
+                      style={{
+                        whiteSpace: "pre-wrap",
+                      }}
+                    >
+                      : {item.subTitle2}
+                    </p>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* RIGHT SIDE - NUTRITION CHART */}
@@ -176,7 +193,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
           <img
             src={details.nutritionChart}
             alt="chart"
-            className="w-full max-w-[400px] h-auto"
+            className="w-full max-w-[350px] lg:h-[300px]"
           />
         </div>
       </div>
