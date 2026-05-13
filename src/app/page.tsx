@@ -239,14 +239,14 @@ const Home: React.FC = () => {
             <div className="image-collection display-none" ref={imageRef}>
               <div data-url="/organic-coconut-water-vinegar" className="marker" style={{ top: '22%', left: '30%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Water Vinegar.png" width="86px" /></div>
               <div data-url="/organic-coconut-syrup" className="marker" style={{ top: '22%', left: '50%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Syrup.png" width="86px" /></div>
-              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '27%', left: '78%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Infused Virgin Coconut Oil.png" width="86px" /></div>
+              <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '27%', left: '78%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Infused Virgin Coconut Oil.png" width="86px" /></div>
               <div data-url="/organic-coconut-puree" className="marker" style={{ top: '40%', left: '45%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Puree.png" width="86px" /></div>
               <div data-url="/organic-coconut-flour" className="marker" style={{ top: '42%', left: '62%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Flour.png" width="86px" /></div>
               <div data-url="/organic-coconut-sugar" className="marker" style={{ top: '52%', left: '12%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Sugar.png" width="86px" /></div>
               <div data-url="/organic-desiccated-coconut" className="marker" style={{ top: '52%', left: '30%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Desiccated Coconut.png" width="86px" /></div>
               <div data-url="/organic-coconut-milk" className="marker" style={{ top: '55%', left: '78%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Milk.png" width="86px" /></div>
               <div data-url="/organic-virgin-coconut-oil" className="marker" style={{ top: '60%', left: '52%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Virgin Coconut Oil.png" width="86px" /></div>
-              <div data-url="/infused-virgin-coconut-oil" className="marker" style={{ top: '74%', left: '35%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Chips.png" width="86px" /></div>
+              <div data-url="/organic-coconut-chips" className="marker" style={{ top: '74%', left: '35%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Organic Coconut Chips.png" width="86px" /></div>
               <div data-url="/coconut-chocolate-spread" className="marker" style={{ top: '72%', left: '70%' }}><img loading="lazy" src="/v2-icons/Cropped Transparent Location Icons/Coconut Chocolate Spread.png" width="86px" /></div>
             </div>
             <div className="product" ref={productRef}>
@@ -277,7 +277,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <h2 className="home-tagline">
-                Truly Naturally<br />Tropical Goodness
+                <span>Truly Naturally</span><br /><span>Tropical Goodness</span>
               </h2>
             </div>
             <img loading="lazy" className="all-products-img" src="/v2-icons/All products in one.png" alt="All Tropcey Products" />
