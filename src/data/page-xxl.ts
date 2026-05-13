@@ -1,4 +1,256 @@
-export const data = {
+export const dataxxl = {
+  sweetChips: {
+    id: "4",
+    name: "Sweet Chips",
+    nameBgColor: "#751F24",
+    imgUri: {
+      link: "/images/home/sweet-chips-main-img.png",
+      width: 350,
+    },
+    imgUri2: {
+      link: "/images/home/sweet-chips-main-img.png",
+      width: 300,
+    },
+    brandImg: {
+      link: "/images/sweet-chips-4-logo.png",
+      width: "420px",
+    },
+    background: {
+      left: "/images/background/sweet-chips-bg-left.png",
+      right: "/images/background/sweet-chips-bg-right.png",
+    },
+    title: [
+      { text: "Organic", color: "#751F24", size: "60px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "56px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "88px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "72px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#751F24",
+    },
+    subTitle: "Baked Chips",
+    description: {
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      color: "white",
+    },
+
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#751F24",
+      },
+      {
+        text: "Certified Organic - Quality Guaranteed",
+        color: "#751F24",
+      },
+      {
+        text: "Fresh, Crunchy & Delicious",
+        color: "#751F24",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#751F24",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#751F24",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
+    table: {
+      header: [
+        "Packaging",
+        "Units per carton",
+        "Cartons per palle",
+        "Units per 20ft container",
+        "Units per 40ft container",
+      ],
+      row: [
+        ["40g pouch", "24", "72", "17280", "34560"],
+        ["80g pouch", "24", "56", "13440", "26880"],
+        ["100g pouch", "24", "72", "17280", "34560"],
+        ["500g pouch", "12", "72", "8640", "17280"],
+        ["40g pouch", "N/A", "96", "960", "1920"],
+        ["40g pouch", "N/A", "48", "480", "960"],
+      ],
+    },
+    life: "12 Months",
+    storage: "In a cool dry place, away from direct sunlight.",
+    ingredient: "Dried Coconut",
+    brandingTitle:
+      "Healthy snack, as a topping on salads, desserts and cereals",
+    brandingSubtitle: {
+      text: "Snack the Authentic Tropical Way",
+      color: "#751F24",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      gapTopLg: "-20px",
+    },
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/recommendations/sweet-chips-img-recommened-1.png",
+        click: "/organic-coconut-chips",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+      {
+        url: "/images/recommendations/sweet-chips-img-recommened-2.png",
+        click: "/organic-coconut-chips/toasted",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+    ],
+  },
+  sweetToastedChips: {
+    id: "5",
+    name: "Toasted Chips",
+    nameBgColor: "#751F24",
+    imgUri: {
+      link: "/images/home/toasted-chips.png",
+      width: "450px",
+    },
+    imgUri2: {
+      link: "/images/home/toasted-chips.png",
+      width: "300px",
+    },
+    brandImg: {
+      link: "/images/toasted-brand-img.png",
+      width: "420px",
+    },
+    background: {
+      left: "/images/background/sweet-chips-bg-left.png",
+      right: "/images/background/sweet-chips-bg-right.png",
+    },
+    title: [
+      { text: "Organic", color: "#751F24", size: "60px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "56px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "90px", font: "archivo" },
+    ],
+    titleMb: [
+      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
+      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
+      { text: "Chips", color: "black", size: "74px", font: "archivo" },
+    ],
+    verticalLine: {
+      color: "#751F24",
+    },
+    description: {
+      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      color: "white",
+    },
+
+    ingrediants: [
+      {
+        text: "100% Pure & 100% Natural",
+        color: "#751F24",
+      },
+      {
+        text: "Certified Organic - Quality Guaranteed",
+        color: "#751F24",
+      },
+      {
+        text: "Fresh, Crunchy & Delicious",
+        color: "#751F24",
+      },
+      {
+        text: "Gluten-Free",
+        color: "#751F24",
+      },
+      {
+        text: "Vegan & Plant-Based",
+        color: "#751F24",
+      },
+    ],
+    itemDetails: [
+      {
+        title: "Ingredients",
+        subTitle:
+          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+        color: "white",
+      },
+      {
+        title: "Suitable for",
+        subTitle:
+          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
+        color: "white",
+      },
+      {
+        title: "Storage",
+        subTitle: "In a cool dry place, away from direct sunlight.",
+        color: "white",
+      },
+      {
+        title: "Shelf Life",
+        subTitle: "12 Months",
+        color: "white",
+      },
+      {
+        title: "Available Pack Size",
+        subTitle: "200g nylon stand-up zipper pouch",
+        color: "white",
+      },
+    ],
+    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
+    life: "12 Months",
+    brandingSubtitle: {
+      text: "Snack the Authentic Tropical Way",
+      color: "#751F24",
+      // gapTopMobile: "30px",
+      // gapTopMd: "30px",
+      gapTopLg: "-10px",
+    },
+    brandingFooter: "Rich source of dietarv fiber",
+    label: ["VEGAN", "NON GMO"],
+    recommendations: [
+      {
+        url: "/images/recommendations/toasted-link-1.png",
+        click: "/organic-coconut-chips",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+      {
+        url: "/images/recommendations/toasted-link-2.png",
+        click: "/organic-coconut-chips/toasted",
+        sizeLg: "120px",
+        sizeMd: "100px",
+      },
+    ],
+  },
   organic_coconut_sugar: {
     id: "1",
     imgUri: {
@@ -787,259 +1039,6 @@ export const data = {
       },
     ],
   },
-  sweetChips: {
-    id: "4",
-    name: "Sweet Chips",
-    nameBgColor: "#751F24",
-    imgUri: {
-      link: "/images/home/sweet-chips-main-img.png",
-      width: 500,
-    },
-    imgUri2: {
-      link: "/images/home/sweet-chips-main-img.png",
-      width: 300,
-    },
-    brandImg: {
-      link: "/images/sweet-chips-4-logo.png",
-      width: "420px",
-    },
-    background: {
-      left: "/images/background/sweet-chips-bg-left.png",
-      right: "/images/background/sweet-chips-bg-right.png",
-    },
-    title: [
-      { text: "Organic", color: "#751F24", size: "60px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "56px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "90px", font: "archivo" },
-    ],
-    titleMb: [
-      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "74px", font: "archivo" },
-    ],
-    verticalLine: {
-      color: "#751F24",
-    },
-    subTitle: "Baked Chips",
-    description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
-      color: "white",
-    },
-
-    ingrediants: [
-      {
-        text: "100% Pure & 100% Natural",
-        color: "#751F24",
-      },
-      {
-        text: "Certified Organic - Quality Guaranteed",
-        color: "#751F24",
-      },
-      {
-        text: "Fresh, Crunchy & Delicious",
-        color: "#751F24",
-      },
-      {
-        text: "Gluten-Free",
-        color: "#751F24",
-      },
-      {
-        text: "Vegan & Plant-Based",
-        color: "#751F24",
-      },
-    ],
-    itemDetails: [
-      {
-        title: "Ingredients",
-        subTitle:
-          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
-        color: "white",
-      },
-      {
-        title: "Suitable for",
-        subTitle:
-          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
-        color: "white",
-      },
-      {
-        title: "Storage",
-        subTitle: "In a cool dry place, away from direct sunlight.",
-        color: "white",
-      },
-      {
-        title: "Shelf Life",
-        subTitle: "12 Months",
-        color: "white",
-      },
-      {
-        title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
-        color: "white",
-      },
-    ],
-    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
-    table: {
-      header: [
-        "Packaging",
-        "Units per carton",
-        "Cartons per palle",
-        "Units per 20ft container",
-        "Units per 40ft container",
-      ],
-      row: [
-        ["40g pouch", "24", "72", "17280", "34560"],
-        ["80g pouch", "24", "56", "13440", "26880"],
-        ["100g pouch", "24", "72", "17280", "34560"],
-        ["500g pouch", "12", "72", "8640", "17280"],
-        ["40g pouch", "N/A", "96", "960", "1920"],
-        ["40g pouch", "N/A", "48", "480", "960"],
-      ],
-    },
-    life: "12 Months",
-    storage: "In a cool dry place, away from direct sunlight.",
-    ingredient: "Dried Coconut",
-    brandingTitle:
-      "Healthy snack, as a topping on salads, desserts and cereals",
-    brandingSubtitle: {
-      text: "Snack the Authentic Tropical Way",
-      color: "#751F24",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      gapTopLg: "-20px",
-    },
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO"],
-    recommendations: [
-      {
-        url: "/images/recommendations/sweet-chips-img-recommened-1.png",
-        click: "/organic-coconut-chips",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-      {
-        url: "/images/recommendations/sweet-chips-img-recommened-2.png",
-        click: "/organic-coconut-chips/toasted",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-    ],
-  },
-  sweetToastedChips: {
-    id: "5",
-    name: "Toasted Chips",
-    nameBgColor: "#751F24",
-    imgUri: {
-      link: "/images/home/toasted-chips.png",
-      width: "450px",
-    },
-    imgUri2: {
-      link: "/images/home/toasted-chips.png",
-      width: "300px",
-    },
-    brandImg: {
-      link: "/images/toasted-brand-img.png",
-      width: "420px",
-    },
-    background: {
-      left: "/images/background/sweet-chips-bg-left.png",
-      right: "/images/background/sweet-chips-bg-right.png",
-    },
-    title: [
-      { text: "Organic", color: "#751F24", size: "60px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "56px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "90px", font: "archivo" },
-    ],
-    titleMb: [
-      { text: "Organic", color: "#751F24", size: "48px", font: "futuraBold" },
-      { text: "Coconut", color: "black", size: "46px", font: "futuraBold" },
-      { text: "Chips", color: "black", size: "74px", font: "archivo" },
-    ],
-    verticalLine: {
-      color: "#751F24",
-    },
-    description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
-      color: "white",
-    },
-
-    ingrediants: [
-      {
-        text: "100% Pure & 100% Natural",
-        color: "#751F24",
-      },
-      {
-        text: "Certified Organic - Quality Guaranteed",
-        color: "#751F24",
-      },
-      {
-        text: "Fresh, Crunchy & Delicious",
-        color: "#751F24",
-      },
-      {
-        text: "Gluten-Free",
-        color: "#751F24",
-      },
-      {
-        text: "Vegan & Plant-Based",
-        color: "#751F24",
-      },
-    ],
-    itemDetails: [
-      {
-        title: "Ingredients",
-        subTitle:
-          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
-        color: "white",
-      },
-      {
-        title: "Suitable for",
-        subTitle:
-          "A crunchy topping for desserts. Enjoyed as a snack or added to cereal, salads or baked goods.",
-        color: "white",
-      },
-      {
-        title: "Storage",
-        subTitle: "In a cool dry place, away from direct sunlight.",
-        color: "white",
-      },
-      {
-        title: "Shelf Life",
-        subTitle: "12 Months",
-        color: "white",
-      },
-      {
-        title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
-        color: "white",
-      },
-    ],
-    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
-    life: "12 Months",
-    brandingSubtitle: {
-      text: "Snack the Authentic Tropical Way",
-      color: "#751F24",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      gapTopLg: "-10px",
-    },
-    brandingFooter: "Rich source of dietarv fiber",
-    label: ["VEGAN", "NON GMO"],
-    recommendations: [
-      {
-        url: "/images/recommendations/toasted-link-1.png",
-        click: "/organic-coconut-chips",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-      {
-        url: "/images/recommendations/toasted-link-2.png",
-        click: "/organic-coconut-chips/toasted",
-        sizeLg: "120px",
-        sizeMd: "100px",
-      },
-    ],
-  },
-
   organic_coconut_puree: {
     id: "9",
     imgUri: {
@@ -1159,7 +1158,7 @@ export const data = {
     title: [
       { text: "COCONUT", color: "#372115", size: "62px", font: "futuraBold" },
       { text: "CHOCOLATE", color: "black", size: "53px", font: "futuraBold" },
-      { text: "SPREAD", color: "black", size: "74px", font: "archivo" },
+      { text: "SPREAD", color: "black", size: "72px", font: "archivo" },
     ],
     titleMb: [
       { text: "COCONUT", color: "#372115", size: "48px", font: "futuraBold" },
@@ -1174,7 +1173,7 @@ export const data = {
       color: "#000",
       size: "24px",
       bgColor: "#372115",
-      px: "30px",
+      px: "44px",
     },
     titleLabel2: {
       text: "Chocolate Flavored Pure \nCoconut Cream",
@@ -1239,9 +1238,6 @@ export const data = {
     brandingSubtitle: {
       text: "Refind Taste Magically Made",
       color: "#372115",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      // gapTopLg: "-10px",
     },
   },
   coconut_chocolate_syrup: {

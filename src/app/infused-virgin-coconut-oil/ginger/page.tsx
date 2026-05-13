@@ -3,7 +3,7 @@ import Background from "@/components/Background";
 import LeftContainer from "@/components/LeftContainer";
 import RightTextBox from "@/components/RightTextBox";
 import SideBarNavigation from "@/components/SideBarNavigation";
-import { data } from "@/data/pages";
+import { data } from "@/data/page";
 import React, { useEffect, useRef } from "react";
 
 const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
@@ -40,7 +40,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
         leftSrc={chip.background.left}
         RightSrc={chip.background.right}
       /> */}
-      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row items-start min-h-[100vh] w-full z-10 pb-5 lg:pt-[120px] pt-[40px] bg-[url('/images/background/infused-virgin-oil-bg.jpg')] bg-cover bg-center">
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row items-start min-h-[100vh] w-full z-10 pb-5 lg:pt-[100px] pt-[40px] bg-[url('/images/background/infused-virgin-oil-bg.jpg')] bg-cover bg-center">
         <LeftContainer
           imgSrc={oil.imgUri}
           brandingSubtitle={oil.brandingSubtitle}

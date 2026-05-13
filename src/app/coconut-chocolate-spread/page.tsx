@@ -3,8 +3,9 @@ import Background from "@/components/Background";
 import LeftContainer from "@/components/LeftContainer";
 import RightTextBox from "@/components/RightTextBox";
 import SideBarNavigation from "@/components/SideBarNavigation";
-import { data } from "@/data/pages";
-import React, { useEffect, useRef } from "react";
+import { data } from "@/data/page";
+import { dataxxl } from "@/data/page-xxl";
+import React, { useEffect, useRef, useState } from "react";
 
 const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
   searchParams,
@@ -12,6 +13,14 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
   const hash = searchParams;
 
   const AnimRef = useRef<any>(null);
+  const [isXxl, setIsXxl] = useState(false);
+
+  useEffect(() => {
+    const checkSize = () => setIsXxl(window.innerWidth > 1500);
+    checkSize();
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
 
   useEffect(() => {
     if (AnimRef.current) {
@@ -26,6 +35,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
   }, []);
 
   const spread = data?.coconut_chocolate_spread;
+  // const spread = isXxl ? dataxxl?.coconut_chocolate_spread : data?.coconut_chocolate_spread;
 
   return (
     <div
@@ -41,7 +51,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
         leftSrc={chip.background.left}
         RightSrc={chip.background.right}
       /> */}
-      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row items-start min-h-[100vh] w-full z-10 pb-5 lg:pt-[120px] pt-[40px] bg-[url('/images/background/spread-bg-img.jpg')] bg-cover bg-center">
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row items-start min-h-[100vh] w-full z-10 pb-5 lg:pt-[100px] pt-[40px] bg-[url('/images/background/spread-bg-img.jpg')] bg-cover bg-center">
         <LeftContainer
           imgSrc={spread.imgUri}
           brandingSubtitle={spread.brandingSubtitle}

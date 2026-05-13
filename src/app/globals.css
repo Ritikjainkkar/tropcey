@@ -358,6 +358,12 @@ body {
 }
 
 /* Responsive CSS */
+@media screen and (min-width: 1500px) {
+  .sidebar-links {
+    margin-top: -250px;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .text-des {
     margin: 10px 0;
@@ -432,18 +438,19 @@ body {
    No layout direction change here — columns stay horizontal.
    =========================================== */
 @media screen and (max-width: 1024px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 
-    .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+  .right-top-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
   /* Marker images: scale proportionally inside the marker box */
   .marker img {
     width: 100% !important;
@@ -507,15 +514,15 @@ body {
    Wide landscape tablets (aspect ratio > 6:5 at 769–1024) keep side-by-side.
    =========================================== */
 @media screen and (max-width: 768px),
-       screen and (min-width: 769px) and (max-width: 1024px) and (max-aspect-ratio: 6/5) {
+  screen and (min-width: 769px) and (max-width: 1024px) and (max-aspect-ratio: 6/5) {
   .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
 
   .container,
   .top-container {
@@ -526,7 +533,7 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: flex-start;
-    gap: 6px;               /* tight gap between tree and right section */
+    gap: 6px; /* tight gap between tree and right section */
   }
 
   /* Tree hero: capped at 52vh so the right section always shows below */
@@ -538,12 +545,15 @@ body {
     justify-content: center;
     flex-shrink: 0;
     max-height: var(--tree-height, 52vh);
-    overflow: hidden;        /* clip bottom edge of tree cleanly */
+    overflow: hidden; /* clip bottom edge of tree cleanly */
   }
   .landing-left > .relative,
   .landing-left .flex.relative {
     width: 100%;
-    height: var(--tree-height, 52vh); /* explicit height = positioning context for markers */
+    height: var(
+      --tree-height,
+      52vh
+    ); /* explicit height = positioning context for markers */
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -552,7 +562,7 @@ body {
   .landing-left .treeImg {
     width: 100% !important;
     height: 100% !important; /* fills the 52vh container */
-    object-fit: cover;       /* fill & crop — keeps island centred */
+    object-fit: cover; /* fill & crop — keeps island centred */
     object-position: center 20%; /* bias slightly toward the top of the image */
   }
 
@@ -691,13 +701,13 @@ body {
 /* Small phones (≤ 400px) */
 @media screen and (max-width: 400px) {
   .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
   .landing-left,
   .landing-left .flex.relative,
   .landing-left > .relative {
@@ -720,13 +730,13 @@ body {
 /* Very small phones (≤ 360px) */
 @media screen and (max-width: 360px) {
   .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
   .right-top-row .flip-container {
     width: 58px;
     height: 58px;

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { products } from "../data/pages";
+import { products } from "../data/page";
 
 export default function SideBarNavigation() {
   const [isExpanded, setIsExpanded] = useState(false);

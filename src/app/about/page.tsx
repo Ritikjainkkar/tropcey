@@ -81,7 +81,7 @@ const About = () => {
             </p>
 
             <ul className="space-y max-w-lg lg:max-w-none font-dDin">
-              <li className="flex items-start gap-2">
+              <li className="flex items-start gap-3">
                 <span className="text-[black] text-xl mt-0.5 flex-shrink-0">
                   ●
                 </span>
