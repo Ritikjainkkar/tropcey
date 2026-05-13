@@ -281,7 +281,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <div
-                data-url="/organic-coconut-chips"
+                data-url="/infused-virgin-coconut-oil"
                 className="marker"
                 style={{ top: "27%", left: "78%" }}
               >
@@ -358,7 +358,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <div
-                data-url="/infused-virgin-coconut-oil"
+                data-url="/organic-coconut-chips"
                 className="marker"
                 style={{ top: "74%", left: "35%" }}
               >
@@ -436,9 +436,9 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <h2 className="home-tagline">
-                Truly Naturally
+                <span>Truly Naturally</span>
                 <br />
-                Tropical Goodness
+                <span>Tropical Goodness</span>
               </h2>
             </div>
             <img

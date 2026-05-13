@@ -403,13 +403,17 @@ body {
   text-align: center;
   margin: 0;
 }
+.home-tagline span {
+  display: inline-block;
+  white-space: nowrap;
+}
 
 /* Right column inner wrapper — flex column, fills landing-right width */
 .right-col-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 12px;
   width: 100%;
 }
 
