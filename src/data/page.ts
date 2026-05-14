@@ -1769,7 +1769,7 @@ export const products = [
     name: "Organic Virgin Coconut Oil",
     image: "/images/single-img/Organic-Virgin-Coconut-Oil.png",
     href: "/organic-virgin-coconut-oil",
-    width: 40,
+    width: 15,
     height: 40,
   },
   {

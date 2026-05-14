@@ -172,7 +172,7 @@ const Navigation = () => {
               height={40}
               alt="search"
               onClick={toggleSearchActive}
-              className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))] md:w-[40px] w-[30px]"
+              className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))] md:w-[35px] w-[30px]"
             />
 
             {/* Burger and Close buttons */}
@@ -184,17 +184,17 @@ const Navigation = () => {
                   height={70}
                   alt="burger"
                   onClick={toggleActive}
-                  className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))] md:w-[80px] w-[50px]"
+                  className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))] md:w-[60px] w-[50px]"
                 />
               )}
               {active && (
                 <img
                   src="/images/navbar/close.png"
-                  width={40}
-                  height={40}
+                  width={35}
+                  height={35}
                   alt="close"
                   onClick={toggleActive}
-                  className={`${styles.closeIcon} md:w-[40px] w-[30px]`}
+                  className={`${styles.closeIcon} md:w-[35px] w-[30px]`}
                 />
               )}
               {active && (

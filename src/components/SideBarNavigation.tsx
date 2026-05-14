@@ -20,7 +20,7 @@ export default function SideBarNavigation() {
 
   return (
     <div
-      className={`fixed right-[10px] top-[500px] transform -translate-y-1/2 cursor-pointer z-[100] `}
+      className={`fixed right-[10px] top-[500px] transform -translate-y-1/2 cursor-pointer z-[100] hidden lg:block`}
       onClick={toggleSidebar}
     >
       <div>

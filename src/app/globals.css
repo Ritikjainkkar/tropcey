@@ -358,7 +358,7 @@ body {
 }
 
 /* Responsive CSS */
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
   .sidebar-links {
     margin-top: -250px;
   }
