@@ -442,7 +442,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "200g nylon stand-up zipper pouch",
         color: "white",
       },
@@ -654,7 +654,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
         subTitle2: "300ml Glass squat jar",
         color: "white",
@@ -872,7 +872,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "200g glass  jar",
         subTitle2: "35g Sachet Packets",
         color: "white",
@@ -1076,7 +1076,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
         subTitle2: "15ml × 8 Nos in box",
         color: "white",
@@ -1213,7 +1213,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
         subTitle2: "15ml × 8 Nos in box",
         color: "white",
@@ -1349,7 +1349,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
         subTitle2: "15ml × 8 Nos in box",
         color: "white",
@@ -1485,7 +1485,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
         subTitle2: "15ml × 8 Nos in box",
         color: "white",
@@ -1733,7 +1733,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "250ml glass bottle",
         subTitle2: "15ml × 50 Nos in box",
         color: "white",
@@ -1846,46 +1846,16 @@ export const products = [
 
 export const productData = [
   {
-    id: 1,
-    name: "Organic Coconut Chips",
-    image: "/images/single-img/Organic-Coconut-Chips.png",
-    href: "/organic-coconut-chips",
-  },
-  {
-    id: 2,
-    name: "Organic Coconut Flour",
-    image: "/images/single-img/Organic-Coconut-Flour.png",
-    href: "/organic-coconut-flour",
-  },
-  {
-    id: 3,
-    name: "Organic Coconut Sugar",
-    image: "/images/single-img/Organic-Coconut-Sugar.png",
-    href: "/organic-coconut-sugar",
-  },
-  {
-    id: 4,
-    name: "Organic Desiccated Coconut",
-    image: "/images/single-img/Organic-Desiccated-Coconut.png",
-    href: "/organic-desiccated-coconut",
-  },
-  {
     id: 5,
     name: "Organic Virgin Coconut Oil",
     image: "/images/single-img/Organic-Virgin-Coconut-Oil.png",
     href: "/organic-virgin-coconut-oil",
   },
   {
-    id: 6,
-    name: "Coconut Chocolate Spread",
-    image: "/images/single-img/Coconut-Chocolate-Spread.png",
-    href: "/coconut-chocolate-spread",
-  },
-  {
-    id: 7,
-    name: "Organic Coconut Puree",
-    image: "/images/single-img/Organic-Coconut-Puree.png",
-    href: "/organic-coconut-puree",
+    id: 11,
+    name: "infused Virgin Coconut Oil (Bottles)",
+    image: "/images/single-img/Infused-Virgin-Coconut-Oil.png",
+    href: "/infused-virgin-coconut-oil",
   },
   {
     id: 8,
@@ -1894,10 +1864,34 @@ export const productData = [
     href: "/organic-coconut-milk",
   },
   {
-    id: 9,
-    name: "Organic Coconut Water Vinegar",
-    image: "/images/single-img/Organic-Coconut-Water-Vinegar.png",
-    href: "/organic-coconut-water-vinegar",
+    id: 7,
+    name: "Organic Coconut Puree",
+    image: "/images/single-img/Organic-Coconut-Puree.png",
+    href: "/organic-coconut-puree",
+  },
+  {
+    id: 4,
+    name: "Organic Desiccated Coconut",
+    image: "/images/single-img/Organic-Desiccated-Coconut.png",
+    href: "/organic-desiccated-coconut",
+  },
+  {
+    id: 1,
+    name: "Organic Coconut Chips",
+    image: "/images/single-img/Organic-Coconut-Chips.png",
+    href: "/organic-coconut-chips",
+  },
+  {
+    id: 6,
+    name: "Coconut Chocolate Spread",
+    image: "/images/single-img/Coconut-Chocolate-Spread.png",
+    href: "/coconut-chocolate-spread",
+  },
+  {
+    id: 2,
+    name: "Organic Coconut Flour",
+    image: "/images/single-img/Organic-Coconut-Flour.png",
+    href: "/organic-coconut-flour",
   },
   {
     id: 10,
@@ -1906,9 +1900,15 @@ export const productData = [
     href: "/organic-coconut-syrup",
   },
   {
-    id: 11,
-    name: "infused Virgin Coconut Oil (Bottles)",
-    image: "/images/single-img/Infused-Virgin-Coconut-Oil.png",
-    href: "/infused-virgin-coconut-oil",
+    id: 3,
+    name: "Organic Coconut Sugar",
+    image: "/images/single-img/Organic-Coconut-Sugar.png",
+    href: "/organic-coconut-sugar",
+  },
+  {
+    id: 9,
+    name: "Organic Coconut Water Vinegar",
+    image: "/images/single-img/Organic-Coconut-Water-Vinegar.png",
+    href: "/organic-coconut-water-vinegar",
   },
 ];
