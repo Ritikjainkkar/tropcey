@@ -34,13 +34,13 @@ export const data = {
     },
     subTitle: "Baked Chips",
     description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
     ingrediants: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#751F24",
       },
       {
@@ -170,13 +170,13 @@ export const data = {
       color: "#751F24",
     },
     description: {
-      text: "Tropcey Organic Coconut Chips are made by 100% natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
     ingrediants: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#751F24",
       },
       {
@@ -290,7 +290,7 @@ export const data = {
         color: "#000",
       },
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#000",
       },
       {
@@ -400,7 +400,7 @@ export const data = {
     },
     ingrediants: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#3B281B",
       },
       {
@@ -509,7 +509,7 @@ export const data = {
       px: "80px",
     },
     description: {
-      text: "Tropcey Organic Desiccated Coconut is made by 100% natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture.\nIt is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
+      text: "Tropcey Organic Desiccated Coconut is made by natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture.\nIt is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Commonly used for various cooking and baking needs.",
@@ -522,7 +522,7 @@ export const data = {
     },
     ingrediants: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#2C4523",
       },
       {
@@ -604,13 +604,13 @@ export const data = {
       color: "#7F4C28",
     },
     description: {
-      text: "Tropcey Organic Virgin Coconut Oil is a 100% natural and an unrefined product made from fresh coconuts using a cold pressed method. Highly regarded as a natural source of Lauric Acid.",
+      text: "Tropcey Organic Virgin Coconut Oil is a natural and an unrefined product made from fresh coconuts using a cold pressed method. Highly regarded as a natural source of Lauric Acid.",
       color: "white",
     },
 
     ingrediants: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#7F4C28",
       },
       {
@@ -633,7 +633,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "100% cold pressed virgin coconut oil.",
+        subTitle: "Cold pressed virgin coconut oil.",
         color: "white",
       },
       {
@@ -816,7 +816,7 @@ export const data = {
       color: "#AC4E2B",
     },
     description: {
-      text: "Tropcey Organic Coconut Puree is made using only 100% natural dried coconut meat. It does not contain any dairy substrate, additives or preservatives. The rich, thick and creamy product containing dietary fiber adds a unique texture and flavour to dishes; thus making it a best fit for everyday cooking.",
+      text: "Tropcey Organic Coconut Puree is made using only natural dried coconut meat. It does not contain any dairy substrate, additives or preservatives. The rich, thick and creamy product containing dietary fiber adds a unique texture and flavour to dishes; thus making it a best fit for everyday cooking.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Perfect for desserts, sauces and baked goods for extra creaminess.",
@@ -828,7 +828,7 @@ export const data = {
     },
     ingrediants: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#AC4E2B",
       },
       {
@@ -851,7 +851,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "100% Natural Dried Coconut.",
+        subTitle: "Natural Dried Coconut.",
         color: "white",
       },
       {
@@ -925,12 +925,12 @@ export const data = {
       color: "#1A523E",
     },
     description: {
-      text: "Tropcey Organic Coconut Milk is a 100% natural product made from fresh white kernels of mature coconuts, and it does not contain any artificial ingredients.\n\nCarefully processed to preserve its' natural taste and nutrients; Tropcey Organic Coconut Milk is a key ingredient in curries and soups for rich, creamy flavour and texture; and a popular in vegan recipes as a dairy milk substitute.",
+      text: "Tropcey Organic Coconut Milk is a natural product made from fresh white kernels of mature coconuts, and it does not contain any artificial ingredients.\n\nCarefully processed to preserve its' natural taste and nutrients; Tropcey Organic Coconut Milk is a key ingredient in curries and soups for rich, creamy flavour and texture; and a popular in vegan recipes as a dairy milk substitute.",
       color: "white",
     },
     ingrediants: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#1A523E",
       },
       {
@@ -1547,13 +1547,23 @@ export const data = {
     },
     title: [
       { text: "ORGANIC", color: "#284E2A", size: "60px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "56px", font: "futuraBold" },
-      { text: "VINEGAR", color: "black", size: "56px", font: "archivo" },
+      {
+        text: "COCONUT WATER",
+        color: "black",
+        size: "32px",
+        font: "futuraBold",
+      },
+      { text: "VINEGAR", color: "black", size: "57px", font: "archivo" },
     ],
     titleMb: [
       { text: "ORGANIC", color: "#284E2A", size: "48px", font: "futuraBold" },
-      { text: "COCONUT", color: "black", size: "46px", font: "futuraBold" },
-      { text: "VINEGAR", color: "black", size: "48px", font: "archivo" },
+      {
+        text: "COCONUT WATER",
+        color: "black",
+        size: "26px",
+        font: "futuraBold",
+      },
+      { text: "VINEGAR", color: "black", size: "46px", font: "archivo" },
     ],
     verticalLine: {
       color: "#284E2A",
@@ -1563,7 +1573,7 @@ export const data = {
       color: "#000",
       size: "30px",
       bgColor: "#284E2A",
-      px: "65px",
+      px: "63px",
     },
     titleLabel2: {
       text: "Made from Pure \n Coconut Water",
@@ -1578,7 +1588,7 @@ export const data = {
     },
     ingrediants2: [
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#284E2A",
       },
       {
@@ -1597,7 +1607,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "100% Natural Coconut Water.",
+        subTitle: "Natural Coconut Water.",
         color: "white",
       },
       {
@@ -1685,7 +1695,7 @@ export const data = {
       px: "24px",
     },
     description: {
-      text: "Tropcey Organic Coconut Syrup is produced from 100% natural coconut sap, the sugary fluid extracted from the coconut flower. It is a product with a unique and rich sweet flavour.",
+      text: "Tropcey Organic Coconut Syrup is produced from natural coconut sap, the sugary fluid extracted from the coconut flower. It is a product with a unique and rich sweet flavour.",
       color: "white",
     },
     ingrediants: [
@@ -1694,7 +1704,7 @@ export const data = {
         color: "#372115",
       },
       {
-        text: "100% Pure & 100% Natural",
+        text: "Pure & Natural",
         color: "#372115",
       },
       {

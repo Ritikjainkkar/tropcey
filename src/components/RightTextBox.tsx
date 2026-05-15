@@ -74,7 +74,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
               {/* SECTION TITLE */}
               <p
                 style={{ color: details.description.color }}
-                className="mb-2 font-franklinBook font-[500] text-[18px] tracking-wide"
+                className="mb-2 font-franklinBook text-[18px] tracking-wide font-bold"
               >
                 {details.description.sectionTitle}
               </p>

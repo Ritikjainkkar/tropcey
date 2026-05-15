@@ -8,9 +8,15 @@ import Link from "next/link";
 export default function SideBarNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+
+    const checkDesktop = () => setIsDesktop(window.innerWidth >= 1024);
+    checkDesktop();
+    window.addEventListener("resize", checkDesktop);
+    return () => window.removeEventListener("resize", checkDesktop);
   }, []);
 
   useEffect(() => {
@@ -24,6 +30,13 @@ export default function SideBarNavigation() {
     };
   }, [isOpen]);
 
+  // Calculate curve offset for each item — arc shape
+  const getCurveOffset = (index: number, total: number) => {
+    const normalized = index / (total - 1); // 0 to 1
+    const curve = Math.sin(normalized * Math.PI); // 0 → 1 → 0
+    return curve * 48; // max 48px shift at center
+  };
+
   const drawer = (
     <>
       <style>{`
@@ -31,8 +44,16 @@ export default function SideBarNavigation() {
           from { opacity: 0; }
           to { opacity: 1; }
         }
+        @keyframes slideItem {
+          from { opacity: 0; transform: translateX(30px); }
+          to { opacity: 1; transform: translateX(0); }
+        }
         .animate-fadeIn {
           animation: fadeIn 0.3s ease-in-out;
+        }
+        .product-item {
+          animation: slideItem 0.3s ease-out forwards;
+          opacity: 0;
         }
         .no-scrollbar::-webkit-scrollbar {
           display: none;
@@ -71,11 +92,11 @@ export default function SideBarNavigation() {
 
           {/* Drawer */}
           <div
-            className="absolute top-0 right-0 h-full w-full  sm:w-[500px] bg-white/10 backdrop-blur-2xl border-l border-white/20 shadow-2xl flex flex-col"
+            className="absolute top-0 right-0 h-full lg:w-[600px] md:w-[500px] bg-white/10 backdrop-blur-2xl border-l border-white/20 shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
-            <div className="flex justify-start p-4 sm:p-6 absolute  left-0">
+            <div className="flex justify-start p-4 sm:p-6 absolute left-0">
               <button
                 onClick={() => setIsOpen(false)}
                 className="group transition-all duration-300 rounded-full p-2 hover:bg-white/20"
@@ -95,21 +116,29 @@ export default function SideBarNavigation() {
                 <img
                   src="/images/navbar/logo-black.png"
                   alt="Logo"
-                  className="h-16 sm:h-24 w-auto object-contain "
+                  className="h-28 w-auto object-contain"
                 />
               </Link>
             </div>
 
             {/* Products List */}
-            <div className="flex flex-col gap-4 sm:gap-6 px-8 sm:px-12 overflow-y-auto pb-10 flex-1 no-scrollbar">
-              {products.map((product) => (
+
+            <div className="flex flex-col gap-3 sm:gap-4 px-6 sm:px-16 overflow-y-auto pb-10 flex-1 no-scrollbar">
+              {products.map((product, index) => (
                 <a
                   key={product.name}
                   href={product.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center gap-4 sm:gap-6 hover:translate-x-2 transition-all duration-300 group"
+                  className="product-item flex items-center gap-4 sm:gap-6 hover:translate-x-2 transition-all duration-300 group"
+                  style={{
+                    // Only apply the arc curve on desktop (≥1024px)
+                    marginLeft: isDesktop
+                      ? `-${getCurveOffset(index, products.length)}px`
+                      : "0px",
+                    animationDelay: `${index * 40}ms`,
+                  }}
                 >
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-xl group-hover:bg-white/30 transition-colors border border-white/10">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-xl group-hover:bg-white/30 transition-colors border border-white/10">
                     <img
                       src={product.image}
                       alt={product.name}
