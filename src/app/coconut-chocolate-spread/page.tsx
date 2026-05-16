@@ -3,6 +3,7 @@ import Background from "@/components/Background";
 import LeftContainer from "@/components/LeftContainer";
 import RightTextBox from "@/components/RightTextBox";
 import SideBarNavigation from "@/components/SideBarNavigation";
+import SideBarNavigationWeb from "@/components/SideBarNavigationWeb";
 import { data } from "@/data/page";
 import { dataxxl } from "@/data/page-xxl";
 import React, { useEffect, useRef, useState } from "react";
@@ -64,6 +65,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
 
       <div className="z-100">
         <SideBarNavigation />
+        <SideBarNavigationWeb />
       </div>
     </div>
   );

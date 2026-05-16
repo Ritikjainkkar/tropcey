@@ -38,7 +38,7 @@ export default function SideBarNavigation() {
   };
 
   const drawer = (
-    <>
+    <div className="lg:hidden">
       <style>{`
         @keyframes fadeIn {
           from { opacity: 0; }
@@ -154,7 +154,7 @@ export default function SideBarNavigation() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 
   return mounted ? createPortal(drawer, document.body) : null;

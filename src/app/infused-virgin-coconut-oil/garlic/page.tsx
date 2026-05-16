@@ -5,6 +5,7 @@ import RightTextBox from "@/components/RightTextBox";
 import SideBarNavigation from "@/components/SideBarNavigation";
 import { data } from "@/data/page";
 import React, { useEffect, useRef } from "react";
+import SideBarNavigationWeb from "@/components/SideBarNavigationWeb";
 
 const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
   searchParams,
@@ -53,6 +54,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
 
       <div className="z-100">
         <SideBarNavigation />
+        <SideBarNavigationWeb />
       </div>
     </div>
   );
