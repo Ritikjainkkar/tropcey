@@ -112,7 +112,7 @@ export default function SideBarNavigation() {
 
             {/* Logo */}
             <div className="flex justify-center items-center mb-10 px-4 mt-20">
-              <Link href="/">
+              <Link href="/?back=true" onClick={() => setIsOpen(false)}>
                 <img
                   src="/images/navbar/logo-black.png"
                   alt="Logo"

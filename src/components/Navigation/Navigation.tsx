@@ -151,7 +151,7 @@ const Navigation = () => {
               />
             </Link>
           )}
-          <Link href="/">
+          <Link href={pathname === "/" ? "/" : "/?back=true"}>
             <img
               src="/images/navbar/logo-black.png"
               width={90}

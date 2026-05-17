@@ -87,7 +87,7 @@ const Products = () => {
           <div className="w-3 bg-[#8cc63f] absolute left-4 md:left-6 top-10 bottom-10" />
 
           <div className="w-full flex items-center justify-center mb-5 lg:hidden">
-            <Link href="/">
+            <Link href="/?back=true">
               <img
                 src="/images/navbar/logo-black.png"
                 width={100}
