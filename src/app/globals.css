@@ -461,9 +461,9 @@ body {
     padding-top: 120px;
   }
 
-  /* Scale down markers slightly */
+  /* Scale down markers (smaller so they read cleanly on the smaller tree image) */
   .marker {
-    width: 72px;
+    width: 52px;
     height: auto;
   }
 
@@ -490,16 +490,22 @@ body {
     max-width: 100%;
   }
 
-  /* Tree container: respect JS-computed height (--tree-height) */
+  /* Tree container: match the image's native aspect ratio so the full
+     image is visible AND markers (positioned by %) stay anchored to it.
+     Width drives the box so height auto-follows aspect-ratio without
+     a conflict if the viewport is narrower than tree-height × ratio. */
   .landing-left .flex.relative {
-    height: var(--tree-height, 60vh);
-    overflow: hidden;
+    aspect-ratio: 4546 / 4352;
+    width: min(100%, calc(var(--tree-height, 60vh) * 4546 / 4352));
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
   }
   .landing-left .treeImg {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover;
-    object-position: center 20%;
+    object-fit: contain;
+    object-position: center;
   }
 }
 
@@ -533,31 +539,35 @@ body {
     gap: 6px;               /* tight gap between tree and right section */
   }
 
-  /* Tree hero: capped at 52vh so the right section always shows below */
+  /* Tree hero: show the full image (no crop). Width is driven by the
+     image's native aspect ratio against the JS-computed tree height. */
   .landing-left {
-    width: 120%;
-    max-width: 120%;
-    margin-left: -10%;
-    margin-right: -10%;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     justify-content: center;
     flex-shrink: 0;
     max-height: var(--tree-height, 52vh);
-    overflow: hidden;        /* clip bottom edge of tree cleanly */
+    overflow: visible;
   }
   .landing-left > .relative,
   .landing-left .flex.relative {
-    width: 100%;
-    height: var(--tree-height, 52vh); /* explicit height = positioning context for markers */
+    aspect-ratio: 4546 / 4352;        /* match the tree image exactly */
+    /* width drives the box: capped at parent width AND at what tree-height
+       would require — whichever is smaller. Height auto-follows aspect. */
+    width: min(100%, calc(var(--tree-height, 52vh) * 4546 / 4352));
+    height: auto;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible;                /* markers may sit at the image edge */
   }
   .landing-left .treeImg {
     width: 100% !important;
-    height: 100% !important; /* fills the 52vh container */
-    object-fit: cover;       /* fill & crop — keeps island centred */
-    object-position: center 20%; /* bias slightly toward the top of the image */
+    height: 100% !important;
+    object-fit: contain;              /* show the whole image — no crop */
+    object-position: center;
   }
 
   /* Right column: fills remaining height, content centred vertically */
@@ -614,7 +624,7 @@ body {
   }
 
   .marker {
-    width: 65px;
+    width: 44px;
     height: auto;
   }
 }
@@ -625,19 +635,20 @@ body {
     padding: 90px 24px 12px;
     gap: 10px;
   }
-  /* Revert the phone-era 120% tree pull — tablet has enough horizontal room */
+  /* Match the tree image's native aspect ratio so the full image shows
+     and markers (% positioned) stay anchored to the image. */
   .landing-left {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    max-height: 42vh;
   }
-  /* Cap the tree so the right section has enough room for compass + tagline + products */
-  .landing-left,
   .landing-left > .relative,
   .landing-left .flex.relative {
-    max-height: 42vh;
-    height: 42vh;
+    aspect-ratio: 4546 / 4352;
+    width: min(100%, calc(42vh * 4546 / 4352));
+    height: auto;
   }
   .right-top-row {
     gap: 20px;
@@ -655,7 +666,7 @@ body {
     max-height: 22vh;
   }
   .marker {
-    width: 74px;
+    width: 50px;
     height: auto;
   }
 }
@@ -683,7 +694,7 @@ body {
     max-height: 25vh;
   }
   .marker {
-    width: 56px;
+    width: 38px;
     height: auto;
   }
   .marker:hover {
@@ -702,11 +713,13 @@ body {
       width: 100%;
       justify-content: center;
     }
-  .landing-left,
+  .landing-left {
+    max-height: var(--tree-height, 50vh);
+  }
   .landing-left .flex.relative,
   .landing-left > .relative {
-    max-height: var(--tree-height, 50vh);
-    height: var(--tree-height, 50vh);
+    /* keep aspect-ratio driving height — only override the width cap */
+    width: min(100%, calc(var(--tree-height, 50vh) * 4546 / 4352));
   }
   .right-top-row .flip-container {
     width: 66px;
@@ -715,10 +728,7 @@ body {
   .right-top-row .home-tagline {
     font-size: clamp(23px, calc(5vw + 8px), 28px);
   }
-  .marker {
-    width: 46px;
-    height: auto;
-  }
+  /* Markers stay at the ≤560px size (38px) — don't shrink further. */
 }
 
 /* Very small phones (≤ 360px) */
@@ -735,10 +745,7 @@ body {
     width: 58px;
     height: 58px;
   }
-  .marker {
-    width: 40px;
-    height: auto;
-  }
+  /* Markers stay at 38px (inherited from ≤560px). */
 }
 
 /* Container for the flipping effect */
