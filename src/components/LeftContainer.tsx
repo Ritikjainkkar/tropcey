@@ -18,6 +18,13 @@ export default function LeftContainer({
           margin-top: ${brandingSubtitle?.gapTopMd};
         }
       }
+      @media (min-width: 1224px) {
+        .pure-img{
+        margin: ${details?.imgUri.margin};
+        }
+        .milk-img{
+        margin: ${details?.imgUri.margin};
+      }
       @media (min-width: 1024px) {
         .branding-gap {
           margin-top: ${brandingSubtitle?.gapTopLg};
@@ -25,11 +32,11 @@ export default function LeftContainer({
       }
     `}</style>
 
-      <div className="h-full w-full lg:w-[50%] w-100% flex flex-col mt-[150px] lg:mt-0 relative lg:pl-[100px]">
+      <div className="h-full w-full lg:w-[50%] w-100% flex flex-col mt-[150px] lg:mt-0 relative">
         {title?.map((item: any, index: number) => (
           <h2
             key={index}
-            className={`font-bold  text-center uppercase hidden md:block`}
+            className={`font-bold  text-center uppercase hidden md:block z-10`}
             style={{
               color: item.color,
               fontSize: item.size,
@@ -61,7 +68,7 @@ export default function LeftContainer({
         {details?.titleLabel && details?.titleLabel && (
           <div className="justify-center items-center hidden md:flex">
             <p
-              className={`py mx-auto lg:mx-0 lg:my-0 text-white text-center text-[21px] w-fit font-auromiya`}
+              className={`py mx-auto lg:mx-0 lg:my-0 text-white text-center text-[18px] w-fit font-auromiya`}
               style={{
                 backgroundColor: details.titleLabel.bgColor,
                 paddingLeft: details.titleLabel.px,
@@ -117,13 +124,13 @@ export default function LeftContainer({
             {details.afterTitle2.text}
           </h2>
         )}
-        <div className="flex gap-2 flex-col lg:flex-row justify-center items-center mt-4">
+        <div className="flex gap-2 flex-col lg:flex-row justify-center items-center mt-2">
           <div>
             <img
               src={details?.imgUri.link}
               alt="Product image"
               style={{ width: details.imgUri.width }}
-              className="h-auto max-w-full chip-img mb-2 hidden md:block"
+              className="h-auto max-w-full chip-img mb-2 hidden md:block pure-img milk-img"
             />
             <img
               src={details?.imgUri2.link}
@@ -133,7 +140,7 @@ export default function LeftContainer({
             />
           </div>
           {details?.recommendations && (
-            <div className="flex lg:flex-col flex-row gap-2 justify-center items-center mb-5 lg:mb-0">
+            <div className="flex lg:flex-col flex-row gap-[5px] justify-center items-center mb-5 lg:mb-0">
               {details.recommendations.map((img: any, index: number) => (
                 <a href={img.click} key={index}>
                   <span className="flex justify-center items-center flex-col lg:flex-row gap-2">
@@ -167,7 +174,7 @@ export default function LeftContainer({
             className={`branding-gap mb-2 lg:mb-0 md:mb-4 rounded-lg w-[100%] flex justify-center items-center`}
           >
             <span
-              className="lg:text-[48px] md:text-[45px] text-2xl font-impact capitalize text-center lg:leading-[55px] md:leading-[45px] leading-[30px] px-[10px]"
+              className="lg:text-[40px] md:text-[45px] text-2xl font-impact capitalize text-center lg:leading-[55px] md:leading-[45px] leading-[30px] px-[10px]"
               style={{ color: brandingSubtitle.color }}
             >
               {brandingSubtitle.text}

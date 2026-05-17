@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/components/Footer/Footer";
-import { productData } from "@/data/pages";
+import { productData } from "@/data/page";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -89,7 +89,7 @@ const Products = () => {
           <div className="w-full flex items-center justify-center mb-5 lg:hidden">
             <Link href="/">
               <img
-                src="/images/navbar/logo.png"
+                src="/images/navbar/logo-black.png"
                 width={100}
                 height={100}
                 className=""
@@ -98,7 +98,7 @@ const Products = () => {
             </Link>
           </div>
 
-          <ul className="space-y-4 md:space-y-10 ml-6 md:ml-8 w-full">
+          <ul className="space-y-4 md:space-y-10 ml-6 md:ml-8 w-full sidebar-links">
             <li>
               <button
                 onClick={() => handleNavClick("/organic-virgin-coconut-oil")}

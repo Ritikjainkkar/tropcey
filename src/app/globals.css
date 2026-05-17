@@ -358,6 +358,12 @@ body {
 }
 
 /* Responsive CSS */
+@media screen and (min-width: 1700px) {
+  .sidebar-links {
+    margin-top: -250px;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .text-des {
     margin: 10px 0;
@@ -436,18 +442,19 @@ body {
    No layout direction change here — columns stay horizontal.
    =========================================== */
 @media screen and (max-width: 1024px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 
-    .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+  .right-top-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
   /* Marker images: scale proportionally inside the marker box */
   .marker img {
     width: 100% !important;
@@ -517,15 +524,15 @@ body {
    Wide landscape tablets (aspect ratio > 6:5 at 769–1024) keep side-by-side.
    =========================================== */
 @media screen and (max-width: 768px),
-       screen and (min-width: 769px) and (max-width: 1024px) and (max-aspect-ratio: 6/5) {
+  screen and (min-width: 769px) and (max-width: 1024px) and (max-aspect-ratio: 6/5) {
   .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
 
   .container,
   .top-container {
@@ -536,7 +543,7 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: flex-start;
-    gap: 6px;               /* tight gap between tree and right section */
+    gap: 6px; /* tight gap between tree and right section */
   }
 
   /* Tree hero: show the full image (no crop). Width is driven by the
@@ -553,7 +560,7 @@ body {
   }
   .landing-left > .relative,
   .landing-left .flex.relative {
-    aspect-ratio: 4546 / 4352;        /* match the tree image exactly */
+    aspect-ratio: 4546 / 4352; /* match the tree image exactly */
     /* width drives the box: capped at parent width AND at what tree-height
        would require — whichever is smaller. Height auto-follows aspect. */
     width: min(100%, calc(var(--tree-height, 52vh) * 4546 / 4352));
@@ -561,12 +568,12 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    overflow: visible;                /* markers may sit at the image edge */
+    overflow: visible; /* markers may sit at the image edge */
   }
   .landing-left .treeImg {
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain;              /* show the whole image — no crop */
+    object-fit: contain; /* show the whole image — no crop */
     object-position: center;
   }
 
@@ -706,13 +713,13 @@ body {
 /* Small phones (≤ 400px) */
 @media screen and (max-width: 400px) {
   .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
   .landing-left {
     max-height: var(--tree-height, 50vh);
   }
@@ -734,13 +741,13 @@ body {
 /* Very small phones (≤ 360px) */
 @media screen and (max-width: 360px) {
   .right-top-row {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
   .right-top-row .flip-container {
     width: 58px;
     height: 58px;

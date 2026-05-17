@@ -81,8 +81,8 @@ const About = () => {
             </p>
 
             <ul className="space-y max-w-lg lg:max-w-none font-dDin">
-              <li className="flex items-start gap-2">
-                <span className="text-[black] text-xl mt-0.5 flex-shrink-0">
+              <li className="flex items-start gap-3">
+                <span className="text-[black] text-xl mt-[-2px] flex-shrink-0">
                   ●
                 </span>
                 <span className="text-gray-700 text-base sm:text-lg leading-relaxed">
@@ -90,7 +90,7 @@ const About = () => {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[black] text-xl mt-0.5 flex-shrink-0">
+                <span className="text-[black] text-xl mt-[-2px] flex-shrink-0">
                   ●
                 </span>
                 <span className="text-gray-700 text-base sm:text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const About = () => {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[black] text-xl mt-0.5 flex-shrink-0">
+                <span className="text-[black] text-xl mt-[-2px] flex-shrink-0">
                   ●
                 </span>
                 <span className="text-gray-700 text-base sm:text-lg leading-relaxed">
@@ -106,7 +106,7 @@ const About = () => {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[black] text-xl mt-0.5 flex-shrink-0">
+                <span className="text-[black] text-xl mt-[-2px] flex-shrink-0">
                   ●
                 </span>
                 <span className="text-gray-700 text-base sm:text-lg leading-relaxed">
@@ -114,7 +114,7 @@ const About = () => {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[black] text-xl mt-0.5 flex-shrink-0">
+                <span className="text-[black] text-xl mt-[-2px] flex-shrink-0">
                   ●
                 </span>
                 <span className="text-gray-700 text-base sm:text-lg leading-relaxed">
@@ -122,7 +122,7 @@ const About = () => {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[black] text-xl mt-0.5 flex-shrink-0">
+                <span className="text-[black] text-xl mt-[-2px] flex-shrink-0">
                   ●
                 </span>
                 <span className="text-gray-700 text-base sm:text-lg leading-relaxed">
