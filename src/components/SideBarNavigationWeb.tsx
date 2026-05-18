@@ -36,7 +36,7 @@ export default function SideBarNavigation() {
       {/* Expanded Sidebar with Elliptical Arc Layout */}
       {isExpanded && (
         <div className="absolute right-[80px] top-1/2 transform -translate-y-1/2 w-[298px] h-[367px] rounded-full flex items-center justify-center mt-5">
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full web-product-wrapper">
             <div
               className="absolute top-[-280px] left-[170px] w-[580px] h-[855px] z-0"
               style={{

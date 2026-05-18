@@ -305,6 +305,10 @@ body {
 }
 
 /* Other CSS */
+.web-product-wrapper a:nth-child(10) {
+  top: -93.6385px!important;
+  right: 57.2805px!important;
+}
 .text-title {
   font-family: "Roboto", sans-serif;
   font-weight: bold;

@@ -442,7 +442,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Sizes",
+        title: "Available Pack Size",
         subTitle: "200g nylon stand-up zipper pouch",
         color: "white",
       },
@@ -608,7 +608,7 @@ export const data = {
       color: "white",
     },
 
-    ingrediants: [
+    ingrediants2: [
       {
         text: "Pure & Natural",
         color: "#7F4C28",
@@ -1035,11 +1035,11 @@ export const data = {
     },
     ingrediants2: [
       {
-        text: "With Pepper",
+        text: "With Black Pepper",
         color: "#000",
       },
       {
-        text: "With Chili",
+        text: "With Red Chili",
         color: "#000",
       },
       {
@@ -1054,8 +1054,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle:
-          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        subTitle: "Cold pressed Virgin Coconut Oil and Oleoresins.",
         color: "white",
       },
       {
@@ -1072,7 +1071,7 @@ export const data = {
       },
       {
         title: "Shelf Life",
-        subTitle: "24 Months",
+        subTitle: "12 Months",
         color: "white",
       },
       {
@@ -1172,11 +1171,11 @@ export const data = {
     },
     ingrediants2: [
       {
-        text: "With Pepper",
+        text: "With Black Pepper",
         color: "#000",
       },
       {
-        text: "With Chili",
+        text: "With Red Chili",
         color: "#000",
       },
       {
@@ -1191,8 +1190,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle:
-          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        subTitle: "Cold pressed Virgin Coconut Oil and Oleoresins.",
         color: "white",
       },
       {
@@ -1209,7 +1207,7 @@ export const data = {
       },
       {
         title: "Shelf Life",
-        subTitle: "24 Months",
+        subTitle: "12 Months",
         color: "white",
       },
       {
@@ -1308,11 +1306,11 @@ export const data = {
     },
     ingrediants2: [
       {
-        text: "With Pepper",
+        text: "With Black Pepper",
         color: "#000",
       },
       {
-        text: "With Chili",
+        text: "With Red Chili",
         color: "#000",
       },
       {
@@ -1327,8 +1325,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle:
-          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        subTitle: "Cold pressed Virgin Coconut Oil and Oleoresins.",
         color: "white",
       },
       {
@@ -1345,7 +1342,7 @@ export const data = {
       },
       {
         title: "Shelf Life",
-        subTitle: "24 Months",
+        subTitle: "12 Months",
         color: "white",
       },
       {
@@ -1444,11 +1441,11 @@ export const data = {
     },
     ingrediants2: [
       {
-        text: "With Pepper",
+        text: "With Black Pepper",
         color: "#000",
       },
       {
-        text: "With Chili",
+        text: "With Red Chili",
         color: "#000",
       },
       {
@@ -1463,8 +1460,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle:
-          "Cold pressed virgin coconut oil and flavours derived from natural extracts.",
+        subTitle: "Cold pressed Virgin Coconut Oil and Oleoresins.",
         color: "white",
       },
       {
@@ -1481,7 +1477,7 @@ export const data = {
       },
       {
         title: "Shelf Life",
-        subTitle: "24 Months",
+        subTitle: "12 Months",
         color: "white",
       },
       {
@@ -1698,7 +1694,7 @@ export const data = {
       text: "Tropcey Organic Coconut Syrup is produced from natural coconut sap, the sugary fluid extracted from the coconut flower. It is a product with a unique and rich sweet flavour.",
       color: "white",
     },
-    ingrediants: [
+    ingrediants2: [
       {
         text: "Low GI",
         color: "#372115",

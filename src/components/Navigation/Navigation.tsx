@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Navigation.module.css";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -7,6 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 const Navigation = () => {
   const [active, setActive] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const route = useRouter();
 
   const toggleActive = () => {
@@ -18,6 +19,15 @@ const Navigation = () => {
   };
 
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div>
@@ -58,7 +68,6 @@ const Navigation = () => {
                 backdropFilter: "blur(20px)",
               }}
             >
-              {/* Search icon inside input */}
               <div className="pl-5 pr-2 flex items-center">
                 <svg
                   width="22"
@@ -137,7 +146,12 @@ const Navigation = () => {
 
       {/* Navigation Wrap */}
       <div
-        className={`${styles.navigationWrap} absolute w-full z-20 top-0 flex justify-between gap-2 items-center py-2 px-4 md:px-14`}
+        className={`
+    ${styles.navigationWrap}
+    fixed w-full z-20 top-0 flex justify-between gap-2 items-center px-4 md:px-14
+    transition-all duration-300 ease-in-out
+    ${scrolled ? "py-1 backdrop-blur-md bg-white/10 shadow-sm border-b border-white/10" : "py-2"}
+  `}
       >
         {/* Left */}
         <div className={`${styles.navLeft} relative`}>
@@ -165,7 +179,6 @@ const Navigation = () => {
         {/* Right */}
         <div className={`${styles.navRight}`}>
           <div className="flex gap-2 justify-center items-center">
-            {/* Search icon button */}
             <img
               src="/images/navbar/search-icon.png"
               width={40}
@@ -175,7 +188,6 @@ const Navigation = () => {
               className="cursor-pointer [filter:drop-shadow(0_3px_4px_rgba(0,0,0,0.35))] md:w-[30px] w-[30px]"
             />
 
-            {/* Burger and Close buttons */}
             <div className="relative flex gap-2">
               {!active && (
                 <img
@@ -211,6 +223,9 @@ const Navigation = () => {
           </div>
         </div>
       </div>
+
+      {/* Spacer to prevent content jump since nav is now fixed */}
+      {/* <div className="h-[74px]" /> */}
     </div>
   );
 };
