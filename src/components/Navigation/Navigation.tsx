@@ -42,7 +42,7 @@ const Navigation = () => {
           onClick={toggleSearchActive}
         >
           <div
-            className="w-[90%] md:w-[60%] lg:w-[45%] relative"
+            className="w-[90%] md:w-[60%] lg:w-[45%] relative top-[-100px] lg:top-0"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
@@ -148,9 +148,9 @@ const Navigation = () => {
       <div
         className={`
     ${styles.navigationWrap}
-    fixed w-full z-20 top-0 flex justify-between gap-2 items-center px-4 md:px-14
-    transition-all duration-300 ease-in-out
-    ${scrolled ? "py-1 backdrop-blur-md bg-white/10 shadow-sm border-b border-white/10" : "py-2"}
+    fixed lg:absolute w-full z-20 top-0 flex justify-between gap-2 items-center px-4 md:px-14
+    transition-all duration-300 ease-in-out lg:backdrop-blur-none lg:bg-transparent lg:shadow-none lg:border-none
+    md:${scrolled ? "py-1 backdrop-blur-md bg-white/10 shadow-sm border-b border-white/10" : "py-2"}
   `}
       >
         {/* Left */}
