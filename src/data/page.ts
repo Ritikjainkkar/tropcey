@@ -225,7 +225,7 @@ export const data = {
         color: "white",
       },
     ],
-    nutritionChart: "/images/sweet-chips-nutrition-chart.png",
+    nutritionChart: "/images/toasted-chips-nutrition-chart.png",
     life: "12 Months",
     brandingSubtitle: {
       text: "Snack the Authentic Tropical Way",
@@ -334,7 +334,7 @@ export const data = {
         color: "white",
       },
     ],
-    nutritionChart: "/images/syrup-chart.png",
+    nutritionChart: "/images/flour-chart.png",
     brandingSubtitle: {
       text: "The Authentic Tropical Addition",
       color: "#000",
@@ -550,7 +550,7 @@ export const data = {
       },
       {
         title: "Storage",
-        subTitle: "In a cool dry place, away from direct sunlight.",
+        subTitle: "In a cool dry place, \naway from direct sunlight.",
         color: "white",
       },
       {
