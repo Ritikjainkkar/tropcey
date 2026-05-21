@@ -64,7 +64,7 @@ export const data = {
       {
         title: "Ingredients",
         subTitle:
-          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+          "Organic Dried Coconut, Organic Coconut Syrup, Organic Coconut Sugar.",
         color: "white",
       },
       {
@@ -85,7 +85,7 @@ export const data = {
       },
       {
         title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
+        subTitle: "100g nylon stand-up zipper pouch",
         color: "white",
       },
     ],
@@ -199,8 +199,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle:
-          "Pure Dried Coconut Sweetened with Coconut Syrup and Coconut Sugar.",
+        subTitle: "Organic Dried Coconut.",
         color: "white",
       },
       {
@@ -221,7 +220,7 @@ export const data = {
       },
       {
         title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
+        subTitle: "150g nylon stand-up zipper pouch",
         color: "white",
       },
     ],
@@ -281,7 +280,7 @@ export const data = {
     },
 
     description: {
-      text: `Coconut flour is an unrefined, gluten-free alternative to wheat flour and is rich in fiber, and plant-based protein. \n\nTropcey Organic Coconut Flour is made from the coconut kernel residue obtained after expelling oil. It contains no added sugar, no added additives and no preservatives. \n\nNaturally gluten-free, this coconut flour is suitable for people with gluten intolerance. The rich fiber content combined with other nutrients make it a good fit for day to day cooking and recipes.`,
+      text: `Coconut flour is an unrefined flour that is rich in fiber and plant-based protein. \n\nTropcey Organic Coconut Flour is made from the coconut kernel residue obtained after expelling oil. It contains no added sugar, no added additives and no preservatives. \n\nNaturally gluten-free, this coconut flour is suitable for people with gluten intolerance. The rich fiber content combined with other nutrients make it a good fit for day to day cooking and recipes.`,
       color: "white",
     },
     ingrediants: [
@@ -309,7 +308,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Coconut Flour.",
+        subTitle: "Organic Coconut Flour.",
         color: "white",
       },
       {
@@ -387,7 +386,7 @@ export const data = {
       color: "#3B281B",
     },
     description: {
-      text: "Tropcey Organic Coconut sugar is an unrefined alternative to conventional sugar, and this natural coconut sweetener is made from pure coconut sap, the sugary fluid extracted from the coconut flower. Coconut sugar is favored for its low Glycemic Index. It provides a rich sweet flavour.The unrefined and organic pedigree add more value to this unique product.",
+      text: "Tropcey Organic Coconut sugar is an unrefined alternative to conventional sugar, and this natural coconut sweetener is made from pure coconut sap. The sugary fluid extracted from the coconut flower. Coconut sugar is favored for its low Glycemic Index. It provides a rich sweet flavour.The unrefined and organic pedigree add more value to this unique product.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Dissolves easily in hot and cold drinks; coffee, tea, smoothies, and cocktails.",
@@ -423,12 +422,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Coconut Sugar.",
-        color: "white",
-      },
-      {
-        title: "Packaging",
-        subTitle: `Comes in 200g pouches and single serving size (15g) “Sugar Sticks”.`,
+        subTitle: "Organic Coconut Sugar.",
         color: "white",
       },
       {
@@ -438,12 +432,12 @@ export const data = {
       },
       {
         title: "Shelf Life",
-        subTitle: "24 Months",
+        subTitle: "18 Months",
         color: "white",
       },
       {
         title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
+        subTitle: "200g nylon stand-up zipper pouch\n4.5g × 200 Nos in box",
         color: "white",
       },
     ],
@@ -545,7 +539,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Coconut Kernel.",
+        subTitle: "Organic Coconut Kernel.",
         color: "white",
       },
       {
@@ -560,7 +554,7 @@ export const data = {
       },
       {
         title: "Available Pack Size",
-        subTitle: "200g nylon stand-up zipper pouch",
+        subTitle: "150g nylon stand-up zipper pouch",
         color: "white",
       },
     ],
@@ -633,7 +627,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Cold pressed virgin coconut oil.",
+        subTitle: "Organic Virgin Coconut Oil.",
         color: "white",
       },
       {
@@ -687,11 +681,11 @@ export const data = {
   },
   coconut_chocolate_spread: {
     id: "10",
-    advice: {
-      text: "ALLERGY ADVICE : CONTAINS COW MILK AND SOY",
-      bgColor: "#372115",
-      font: "franklinHeavy",
-    },
+    // advice: {
+    //   text: "ALLERGY ADVICE : CONTAINS COW MILK AND SOY",
+    //   bgColor: "#372115",
+    //   font: "franklinHeavy",
+    // },
     imgUri: {
       link: "/images/home/spread-main-img.png",
       width: 450,
@@ -756,8 +750,10 @@ export const data = {
       {
         title: "Ingredients",
         subTitle:
-          "Coconut Puree (Creamed Coconut), Cocoa Powder, Sugar, Palm Fat, Salt, Milk Flavour, Soyalecithin (E322).",
+          "Coconut Puree (Creamed Coconut),\nCocoa Powder, Sugar, Palm Fat, Salt,\nMilk Flavour.",
         color: "white",
+        subTitle2: "‘‘Contains : Cow Milk’’",
+        fontWeight: "bold",
       },
       {
         title: "Suitable for",
@@ -851,7 +847,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Natural Dried Coconut.",
+        subTitle: "Organic Natural Dried Coconut.",
         color: "white",
       },
       {
@@ -925,7 +921,7 @@ export const data = {
       color: "#1A523E",
     },
     description: {
-      text: "Tropcey Organic Coconut Milk is a natural product made from fresh white kernels of mature coconuts, and it does not contain any artificial ingredients.\n\nCarefully processed to preserve its' natural taste and nutrients; Tropcey Organic Coconut Milk is a key ingredient in curries and soups for rich, creamy flavour and texture; and a popular in vegan recipes as a dairy milk substitute.",
+      text: "Tropcey Organic Coconut Milk is a natural product made from fresh white kernels of mature coconuts and it does not contain any artificial ingredients.\n\nCarefully processed to preserve its' natural taste and nutrients; Tropcey Organic Coconut Milk is a key ingredient in curries and soups for rich, creamy flavour and texture; and a popular in vegan recipes as a dairy milk substitute.",
       color: "white",
     },
     ingrediants: [
@@ -953,7 +949,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Coconut Kernel Extract, Water, Guar Gum.",
+        subTitle: "Organic Coconut Kernel Extract, Water, Guar Gum.",
         color: "white",
       },
       {
@@ -975,7 +971,7 @@ export const data = {
       },
       {
         title: "Available Pack Size",
-        subTitle: "400ml Metal can ",
+        subTitle: "400ml Metal can (7% fat, 17% fat, 22% fat)",
         color: "white",
       },
     ],
@@ -1030,12 +1026,12 @@ export const data = {
       px: "10px",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
       {
-        text: "With Black Pepper",
+        text: "With Pepper",
         color: "#000",
       },
       {
@@ -1060,7 +1056,7 @@ export const data = {
       {
         title: "Suitable for",
         subTitle:
-          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+          "Cooking and baking needs. Can be used as a salad dressing, pizza topping, etc.",
         color: "white",
       },
       {
@@ -1077,7 +1073,7 @@ export const data = {
       {
         title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
-        subTitle2: "15ml × 8 Nos in box",
+        subTitle2: "15ml Sachets × 8 Nos in box",
         color: "white",
       },
     ],
@@ -1166,12 +1162,12 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
       {
-        text: "With Black Pepper",
+        text: "With Pepper",
         color: "#000",
       },
       {
@@ -1196,7 +1192,7 @@ export const data = {
       {
         title: "Suitable for",
         subTitle:
-          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+          "Cooking and baking needs. Can be used as a salad dressing, pizza topping, etc.",
         color: "white",
       },
       {
@@ -1213,7 +1209,7 @@ export const data = {
       {
         title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
-        subTitle2: "15ml × 8 Nos in box",
+        subTitle2: "15ml Sachets × 8 Nos in box",
         color: "white",
       },
     ],
@@ -1301,12 +1297,12 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
       {
-        text: "With Black Pepper",
+        text: "With Pepper",
         color: "#000",
       },
       {
@@ -1331,7 +1327,7 @@ export const data = {
       {
         title: "Suitable for",
         subTitle:
-          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+          "Cooking and baking needs. Can be used as a salad dressing, pizza topping, etc.",
         color: "white",
       },
       {
@@ -1348,7 +1344,7 @@ export const data = {
       {
         title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
-        subTitle2: "15ml × 8 Nos in box",
+        subTitle2: "15ml Sachets × 8 Nos in box",
         color: "white",
       },
     ],
@@ -1436,12 +1432,12 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with other ingredients to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
       {
-        text: "With Black Pepper",
+        text: "With Pepper",
         color: "#000",
       },
       {
@@ -1466,7 +1462,7 @@ export const data = {
       {
         title: "Suitable for",
         subTitle:
-          "Cooking and baking needs. Can be used as a salad dressing, pizza, topping, etc.",
+          "Cooking and baking needs. Can be used as a salad dressing, pizza topping, etc.",
         color: "white",
       },
       {
@@ -1483,7 +1479,7 @@ export const data = {
       {
         title: "Available Pack Sizes",
         subTitle: "250ml Glass bottle",
-        subTitle2: "15ml × 8 Nos in box",
+        subTitle2: "15ml Sachets × 8 Nos in box",
         color: "white",
       },
     ],
@@ -1603,13 +1599,13 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Natural Coconut Water.",
+        subTitle: "Organic Coconut Water Vinegar.",
         color: "white",
       },
       {
         title: "Suitable for",
         subTitle:
-          "Used in various curries and dishes for a unique flavour. Also suitable for salad dressings, marinades, and pickles.",
+          "Used in various curries and dishes for a unique flavour. Also suitable for salad dressings, marinades and pickles.",
         color: "white",
       },
       {
@@ -1637,7 +1633,6 @@ export const data = {
   },
   coconut_chocolate_syrup: {
     id: "11",
-
     imgUri: {
       link: "/images/home/syrup-main-img.png",
       width: 580,
@@ -1719,7 +1714,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredients",
-        subTitle: "Coconut Syrup.",
+        subTitle: "Organic Coconut Syrup.",
         color: "white",
       },
       {
@@ -1735,7 +1730,7 @@ export const data = {
       },
       {
         title: "Shelf Life",
-        subTitle: "24 Months",
+        subTitle: "18 Months",
         color: "white",
       },
       {

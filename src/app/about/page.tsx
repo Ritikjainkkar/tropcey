@@ -36,8 +36,7 @@ const About = () => {
                 allowing them to be used in various recipes used around the
                 world. The uniqueness of flavour and the customer convenience
                 make them a perfect fit to the global market. Adding more value
-                to our customers, most of our products are certified as 100%
-                organic.
+                to our customers, most of our products are certified as organic.
               </p>
               <p>
                 In order to ensure that our products are safe and hygienic while
@@ -126,7 +125,7 @@ const About = () => {
                   ●
                 </span>
                 <span className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                  Vegan certification
+                  Vegan Certification
                 </span>
               </li>
             </ul>
