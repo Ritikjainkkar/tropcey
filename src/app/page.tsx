@@ -431,7 +431,13 @@ const Home: React.FC = () => {
                     loading="lazy"
                     src="/images/home1/only compass-02 (2).png"
                     alt="Compass"
-                    className="back"
+                    className="back back-desktop"
+                  />
+                  <img
+                    loading="lazy"
+                    src="/images/home1/only compass-03-mobile.png"
+                    alt="Compass"
+                    className="back back-mobile"
                   />
                 </div>
               </div>

@@ -787,6 +787,16 @@ body {
   transform: rotateY(180deg);
 }
 
+/* Default (desktop): show original back, hide mobile back */
+.back-mobile { display: none; }
+.back-desktop { display: block; }
+
+/* Mobile & Tablet (≤ 1024px): swap to mobile back */
+@media screen and (max-width: 1024px) {
+  .back-desktop { display: none; }
+  .back-mobile { display: block; }
+}
+
 /* Keyframes for continuous rotation */
 @keyframes rotateCoin {
   0% {

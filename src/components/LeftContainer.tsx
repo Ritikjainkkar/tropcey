@@ -32,7 +32,7 @@ export default function LeftContainer({
       }
     `}</style>
 
-      <div className="h-full w-full lg:w-[50%] w-100% flex flex-col mt-[150px] lg:mt-0 relative">
+      <div className="h-full w-full lg:w-[50%] w-100% flex flex-col mt-[65px] md:mt-[75px] lg:mt-0 relative">
         {title?.map((item: any, index: number) => (
           <h2
             key={index}
