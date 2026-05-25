@@ -194,6 +194,9 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
                         className="text-[16px] mt-[-5px] font-franklinBook leading-relaxed opacity-90"
                         style={{
                           whiteSpace: "pre-wrap",
+                          fontWeight: item.fontWeight
+                            ? item.fontWeight
+                            : "normal",
                         }}
                       >
                         {item.subTitle2}
