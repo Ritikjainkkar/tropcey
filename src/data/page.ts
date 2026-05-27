@@ -436,7 +436,7 @@ export const data = {
         color: "white",
       },
       {
-        title: "Available Pack Size",
+        title: "Available Pack Sizes",
         subTitle: "200g nylon stand-up zipper pouch\n4.5g × 200 Nos in box",
         color: "white",
       },
@@ -445,9 +445,6 @@ export const data = {
     brandingSubtitle: {
       text: "Sweetness The Natural Way",
       color: "#3B281B",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      // gapTopLg: "-10px",
     },
   },
   organic_desiccated_coconut: {
