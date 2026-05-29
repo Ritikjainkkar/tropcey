@@ -34,7 +34,7 @@ export const data = {
     },
     subTitle: "Baked Chips",
     description: {
-      text: "Tropcey Organic Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Sweet Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
@@ -62,7 +62,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle:
           "Organic Dried Coconut, Organic Coconut Syrup, Organic Coconut Sugar.",
         color: "white",
@@ -170,7 +170,7 @@ export const data = {
       color: "#751F24",
     },
     description: {
-      text: "Tropcey Organic Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Toasted Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
@@ -198,7 +198,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle: "Organic Dried Coconut.",
         color: "white",
       },
@@ -220,7 +220,7 @@ export const data = {
       },
       {
         title: "Available Pack Size",
-        subTitle: "150g nylon stand-up zipper pouch",
+        subTitle: "100g nylon stand-up zipper pouch",
         color: "white",
       },
     ],
@@ -329,7 +329,7 @@ export const data = {
       },
       {
         title: "Available Pack Size",
-        subTitle: "250g nylon stand-up zipper pouch",
+        subTitle: "200g nylon stand-up zipper pouch",
         color: "white",
       },
     ],
@@ -337,9 +337,6 @@ export const data = {
     brandingSubtitle: {
       text: "The Authentic Tropical Addition",
       color: "#000",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      // gapTopLg: "-10px",
     },
   },
   organic_coconut_sugar: {
@@ -421,7 +418,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle: "Organic Coconut Sugar.",
         color: "white",
       },
@@ -535,8 +532,8 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
-        subTitle: "Organic Coconut Kernel.",
+        title: "Ingredient",
+        subTitle: "Organic Dried Coconut.",
         color: "white",
       },
       {
@@ -623,7 +620,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle: "Organic Virgin Coconut Oil.",
         color: "white",
       },
@@ -665,24 +662,9 @@ export const data = {
     },
     brandingFooter: "Rich source of dietarv fiber",
     label: ["VEGAN", "NON GMO"],
-    // recommendations: [
-    //   {
-    //     url: "/images/recommendations/sweet-chips-img-recommened-1.png",
-    //     click: "/organic-coconut-chips",
-    //   },
-    //   {
-    //     url: "/images/recommendations/sweet-chips-img-recommened-2.png",
-    //     click: "/organic-coconut-chips/toasted",
-    //   },
-    // ],
   },
   coconut_chocolate_spread: {
     id: "10",
-    // advice: {
-    //   text: "ALLERGY ADVICE : CONTAINS COW MILK AND SOY",
-    //   bgColor: "#372115",
-    //   font: "franklinHeavy",
-    // },
     imgUri: {
       link: "/images/home/spread-main-img.png",
       width: 450,
@@ -856,7 +838,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          " In a cool dry place, away from direct sunlight. Once opened recommend to refrigerate. Starts to solidify at temperatures below 24°C (77°F).",
+          " In a cool dry place, away from direct sunlight. Once opened recommend to refrigerate. Starts to solidify at temperature below 24°C (77°F).",
         color: "white",
       },
       {
@@ -1059,7 +1041,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
         color: "white",
       },
       {
@@ -1195,7 +1177,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
         color: "white",
       },
       {
@@ -1330,7 +1312,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
         color: "white",
       },
       {
@@ -1465,7 +1447,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
         color: "white",
       },
       {
@@ -1595,7 +1577,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle: "Organic Coconut Water Vinegar.",
         color: "white",
       },
@@ -1710,7 +1692,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle: "Organic Coconut Syrup.",
         color: "white",
       },
@@ -1741,9 +1723,6 @@ export const data = {
     brandingSubtitle: {
       text: "Rich and Sweet, Naturally Made",
       color: "#372115",
-      // gapTopMobile: "30px",
-      // gapTopMd: "30px",
-      // gapTopLg: "-10px",
     },
   },
 };
