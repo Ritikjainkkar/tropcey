@@ -163,11 +163,32 @@ const Footer = () => {
         {/* Right: Products image placeholder */}
         <div className="flex-1 flex items-center justify-center py-8 px-6 lg:px-10">
           {/* Replace with your products image */}
-          <img
-            src="/images/contact-product.png"
-            alt="Tropcey Products"
-            className="max-w-full max-h-72 object-contain"
-          />
+          <div>
+            <img
+              src="/images/contact-product.png"
+              alt="Tropcey Products"
+              className="max-w-full max-h-72 object-contain"
+            />
+
+            {/* Privacy Policy Links */}
+            <div className="flex md:gap-6 gap-2 md:flex-row justify-center items-center flex-col mt-6">
+              <a
+                href="/privacy-policy"
+                className="flex items-center gap-2 text-xl"
+                style={{ color: "#0e5c38" }}
+              >
+                <p className="text-[#0e5c38] font-bold">Privacy Policy</p>
+              </a>
+
+              <a
+                href="/terms-conditions"
+                className="flex items-center gap-2 text-xl"
+                style={{ color: "#0e5c38" }}
+              >
+                <p className="text-[#0e5c38] font-bold">Terms and Conditions</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -8,8 +8,6 @@ const TermsAndConditions = () => {
       <div style={styles.content}>
         <h1 style={styles.heading}>Terms and Conditions</h1>
 
-        <p style={styles.subtitle}>Tropcey Holdings (Pvt) Ltd</p>
-
         <p style={styles.lastUpdated}>Last Updated: {currentDate}</p>
 
         <p style={styles.paragraph}>
