@@ -480,8 +480,8 @@ body {
 
   /* Scale down flip-container on tablet */
   .flip-container {
-    width: 160px;
-    height: 160px;
+    width: 168px;
+    height: 168px;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     flex-shrink: 0;
@@ -593,14 +593,20 @@ body {
     position: relative;
   }
 
-  /* Flex column: compass+tagline above the products image, kept tight together */
+  /* Flex column: compass+tagline above the products image, kept tight together.
+     Hug the top of the right section (flex-start) so the compass + tagline sit
+     just below the tree hero instead of floating in the middle of the leftover
+     space — this kills the large gap under the tree. Overflow-safe: any excess
+     height spills off the bottom, never clipping the tree or nav. A small
+     padding-top keeps a deliberate, breathing gap rather than gluing them. */
   .right-col-inner {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     width: 100%;
     height: 100%;
+    padding-top: clamp(12px, 4vh, 48px);
   }
 
   /* Compass + tagline sit side-by-side in a row */
@@ -612,8 +618,8 @@ body {
     justify-content: center;
   }
   .right-top-row .flip-container {
-    width: 90px;
-    height: 90px;
+    width: 98px;
+    height: 98px;
     margin: 0;
     flex-shrink: 0;
   }
@@ -665,8 +671,8 @@ body {
     gap: 20px;
   }
   .right-top-row .flip-container {
-    width: 120px;
-    height: 120px;
+    width: 128px;
+    height: 128px;
   }
   .right-top-row .home-tagline {
     font-size: clamp(30px, calc(3vw + 8px), 40px);
@@ -689,8 +695,8 @@ body {
     gap: 5px;
   }
   .right-top-row .flip-container {
-    width: 76px;
-    height: 76px;
+    width: 84px;
+    height: 84px;
   }
   .right-top-row .home-tagline {
     font-size: clamp(23px, calc(5vw + 8px), 29px);
@@ -733,8 +739,8 @@ body {
     width: min(100%, calc(var(--tree-height, 50vh) * 4546 / 4352));
   }
   .right-top-row .flip-container {
-    width: 66px;
-    height: 66px;
+    width: 74px;
+    height: 74px;
   }
   .right-top-row .home-tagline {
     font-size: clamp(23px, calc(5vw + 8px), 28px);
@@ -753,8 +759,8 @@ body {
     justify-content: center;
   }
   .right-top-row .flip-container {
-    width: 58px;
-    height: 58px;
+    width: 66px;
+    height: 66px;
   }
   /* Markers stay at 38px (inherited from ≤560px). */
 }
@@ -762,8 +768,8 @@ body {
 /* Container for the flipping effect */
 .flip-container {
   perspective: 1000px;
-  width: 200px; /* Set as per your image size */
-  height: 200px; /* Explicit height prevents collapse — .front/.back are position:absolute */
+  width: 208px; /* Set as per your image size */
+  height: 208px; /* Explicit height prevents collapse — .front/.back are position:absolute */
   margin: auto;
 }
 
@@ -808,5 +814,53 @@ body {
   }
   100% {
     transform: rotateY(0deg);
+  }
+}
+
+/* ===========================================
+   TALL PHONES (portrait, aspect ≤ 1:2 — modern phones sit ~0.45-0.46)
+   ---------------------------------------------------------------------------
+   On very tall screens the tree hero leaves a lot of vertical room below it.
+   Hugging the compass + tagline + products under the tree (flex-start) then
+   left a large empty void at the bottom. Here we instead:
+     1. Stack the compass ABOVE the "Truly Naturally Tropical Goodness" tagline
+        (vertical column) so the upper block is taller and reads like a poster.
+     2. Distribute the lower section with space-evenly, turning the dead void
+        into balanced breathing room above, between, and below the elements.
+   Gated to tall aspect ratios where the leftover height is guaranteed, so
+   space-evenly can never clip the hero or the products. Appended last so it
+   wins the cascade over the row-format rules in the width-based queries above.
+   =========================================== */
+@media screen and (max-width: 768px) and (max-aspect-ratio: 1/2) {
+  /* Spread compass-block and products evenly across the leftover height */
+  .right-col-inner {
+    justify-content: space-evenly;
+    padding-top: 0;
+  }
+
+  /* Compass on top, tagline beneath it */
+  .right-top-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Centered tagline sits cleanly under the centered compass */
+  .right-top-row .home-tagline {
+    text-align: center;
+  }
+}
+
+/* ===========================================
+   PORTRAIT TABLETS (769–1024px, aspect ≤ 4:5, e.g. iPad portrait ≈ 0.69)
+   ---------------------------------------------------------------------------
+   Same bottom-void problem as tall phones, but the wider screen has room to
+   keep the compass + tagline in a ROW. So we keep the row and only distribute
+   the lower section with space-evenly to absorb the void into balanced
+   spacing. Gated to portrait aspect ratios so space-evenly never clips.
+   =========================================== */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-aspect-ratio: 4/5) {
+  .right-col-inner {
+    justify-content: space-evenly;
+    padding-top: 0;
   }
 }
