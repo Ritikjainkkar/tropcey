@@ -306,8 +306,8 @@ body {
 
 /* Other CSS */
 .web-product-wrapper a:nth-child(10) {
-  top: -93.6385px!important;
-  right: 57.2805px!important;
+  top: -93.6385px !important;
+  right: 57.2805px !important;
 }
 .text-title {
   font-family: "Roboto", sans-serif;
@@ -365,6 +365,11 @@ body {
 @media screen and (min-width: 1700px) {
   .sidebar-links {
     margin-top: -250px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1224px) {
+  .bg-ipad-pro {
+    background-size: none !important;
   }
 }
 
@@ -798,13 +803,21 @@ body {
 }
 
 /* Default (desktop): show original back, hide mobile back */
-.back-mobile { display: none; }
-.back-desktop { display: block; }
+.back-mobile {
+  display: none;
+}
+.back-desktop {
+  display: block;
+}
 
 /* Mobile & Tablet (≤ 1024px): swap to mobile back */
 @media screen and (max-width: 1024px) {
-  .back-desktop { display: none; }
-  .back-mobile { display: block; }
+  .back-desktop {
+    display: none;
+  }
+  .back-mobile {
+    display: block;
+  }
 }
 
 /* Keyframes for continuous rotation */
