@@ -42,7 +42,7 @@ const Page: React.FC<{ searchParams: { [key: string]: string } }> = ({
         leftSrc={chip.background.left}
         RightSrc={chip.background.right}
       /> */}
-      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row items-start min-h-[100vh] w-full z-10 pb-5 lg:pt-[100px] pt-[40px] lg:bg-[url('/images/background/sugar-bg.jpg')] bg-[url('/images/background/sugar-mb-bg.png')] bg-[length:100%_100%] bg-center">
+      <div className="relative bg-baked-chips-bg-left bg-baked-chips-bg-right text-white flex flex-col lg:flex-row items-start min-h-[100vh] w-full z-10 pb-5 lg:pt-[100px] pt-[40px] lg:bg-[url('/images/background/sugar-bg.jpg')] bg-[url('/images/background/sugar-mb-bg.png')] lg:bg-[length:100%_100%] bg-center  bg-cover">
         <LeftContainer
           imgSrc={sugar.imgUri}
           brandingSubtitle={sugar.brandingSubtitle}
