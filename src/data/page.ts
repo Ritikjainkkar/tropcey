@@ -34,7 +34,7 @@ export const data = {
     },
     subTitle: "Baked Chips",
     description: {
-      text: "Tropcey Organic Sweet Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Sweet Coconut Chips are made from natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
@@ -64,7 +64,7 @@ export const data = {
       {
         title: "Ingredient",
         subTitle:
-          "Organic Dried Coconut, Organic Coconut Syrup, Organic Coconut Sugar.",
+          "Organic Dried Coconut Kernel, Organic Coconut Syrup, Organic Coconut Sugar.",
         color: "white",
       },
       {
@@ -113,7 +113,7 @@ export const data = {
     brandingTitle:
       "Healthy snack, as a topping on salads, desserts and cereals",
     brandingSubtitle: {
-      text: "Snack the Authentic Tropical Way",
+      text: "Snack The Authentic Tropical Way",
       color: "#751F24",
       // gapTopMobile: "30px",
       // gapTopMd: "30px",
@@ -170,7 +170,7 @@ export const data = {
       color: "#751F24",
     },
     description: {
-      text: "Tropcey Organic Toasted Coconut Chips are made by natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
+      text: "Tropcey Organic Toasted Coconut Chips are made from natural coconut meat with absolutely no additives or preservatives. These chips taste great and add a delightful crunchy coconut texture and flavour to everyday recipes.\n\nAdding to the vibrant tastes, comes in two different flavours.",
       color: "white",
     },
 
@@ -199,7 +199,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredient",
-        subTitle: "Organic Dried Coconut.",
+        subTitle: "Organic Dried Coconut Kernel.",
         color: "white",
       },
       {
@@ -227,7 +227,7 @@ export const data = {
     nutritionChart: "/images/toasted-chips-nutrition-chart.png",
     life: "12 Months",
     brandingSubtitle: {
-      text: "Snack the Authentic Tropical Way",
+      text: "Snack The Authentic Tropical Way",
       color: "#751F24",
       // gapTopMobile: "30px",
       // gapTopMd: "30px",
@@ -404,7 +404,7 @@ export const data = {
         color: "#3B281B",
       },
       {
-        text: "Low GI",
+        text: "Low GI (Glycemic Index)",
         color: "#3B281B",
       },
       {
@@ -497,7 +497,7 @@ export const data = {
       px: "80px",
     },
     description: {
-      text: "Tropcey Organic Desiccated Coconut is made by natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture.\nIt is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
+      text: "Tropcey Organic Desiccated Coconut is made from natural coconut meat with no additives or preservatives. It is a natural source of dietary fiber and will give your recipes a unique flavour and texture.\nIt is one of the best available natural sources of dietary fiber. Versatile applicability and the organic and natural pedigree, makes it a perfect selection for everyday cooking.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Commonly used for various cooking and baking needs.",
@@ -533,7 +533,7 @@ export const data = {
     itemDetails: [
       {
         title: "Ingredient",
-        subTitle: "Organic Dried Coconut.",
+        subTitle: "Organic Dried Coconut Kernel.",
         color: "white",
       },
       {
@@ -731,7 +731,7 @@ export const data = {
         subTitle:
           "Coconut Puree (Creamed Coconut),\nCocoa Powder, Sugar, Palm Fat, Salt,\nMilk Flavour.",
         color: "white",
-        subTitle2: "‘‘Contains : Cow Milk’’",
+        subTitle2: "‘‘Contain : Cow Milk’’",
         fontWeight: "bold",
       },
       {
@@ -1554,7 +1554,7 @@ export const data = {
       px: "30px",
     },
     description: {
-      text: `Tropcey Organic Coconut Vinegar is produced from pure fermented coconut water.`,
+      text: `Tropcey Organic Coconut water Vinegar is produced from pure fermented coconut water.`,
       color: "white",
     },
     ingrediants2: [
@@ -1564,10 +1564,6 @@ export const data = {
       },
       {
         text: "Certified Organic – Quality Guaranteed",
-        color: "#284E2A",
-      },
-      {
-        text: "Fresh & Pure",
         color: "#284E2A",
       },
       {
@@ -1670,7 +1666,7 @@ export const data = {
     },
     ingrediants2: [
       {
-        text: "Low GI",
+        text: "Low GI (Glycemic Index)",
         color: "#372115",
       },
       {
