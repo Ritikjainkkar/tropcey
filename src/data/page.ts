@@ -627,7 +627,7 @@ export const data = {
       {
         title: "Suitable for",
         subTitle:
-          "Cooking and baking needs. Can be used as a salad dress-ing, pizza topping, etc.",
+          "Cooking and baking needs. Can be used as a salad dressing, pizza topping, etc.",
         color: "white",
       },
       {
