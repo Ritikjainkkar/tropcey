@@ -373,6 +373,18 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: landscape) {
+  .para-sec-about {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .para-sec-about {
+    margin-left: 50px;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .text-des {
     margin: 10px 0;

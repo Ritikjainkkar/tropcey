@@ -25,7 +25,7 @@ const About = () => {
             </div>
 
             {/* Paragraphs - 6/12 */}
-            <div className="w-full lg:w-6/12 space-y-6 font-franklinBook text-white/90 text-base lg:text-lg leading-relaxed text-justify">
+            <div className="w-full para-sec-about lg:w-6/12 space-y-6 font-franklinBook text-white/90 text-base lg:text-lg leading-relaxed text-justify">
               <p>
                 Promoting the natural richness of Sri Lankan coconut heritage to
                 the global market, Tropcey offers a diverse range of edible
