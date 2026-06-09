@@ -120,7 +120,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
           )}
 
           {/* INGREDIENTS */}
-          <div className="md:text-center text-left lg:max-w-[90%]">
+          <div className="text-left lg:max-w-[90%]">
             {details?.ingrediants?.map((ingre: any, index: number) => (
               <p
                 key={index}

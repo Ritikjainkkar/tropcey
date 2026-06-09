@@ -62,7 +62,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredient",
+        title: "Ingredients",
         subTitle:
           "Organic Dried Coconut Kernel, Organic Coconut Syrup, Organic Coconut Sugar.",
         color: "white",
@@ -307,7 +307,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle: "Organic Coconut Flour.",
         color: "white",
       },
@@ -731,7 +731,7 @@ export const data = {
         subTitle:
           "Coconut Puree (Creamed Coconut),\nCocoa Powder, Sugar, Palm Fat, Salt,\nMilk Flavour.",
         color: "white",
-        subTitle2: "‘‘Contain : Cow Milk’’",
+        subTitle2: "‘‘Contains : Cow Milk’’",
         fontWeight: "bold",
       },
       {
@@ -837,7 +837,7 @@ export const data = {
     ],
     itemDetails: [
       {
-        title: "Ingredients",
+        title: "Ingredient",
         subTitle: "Organic Natural Dried Coconut.",
         color: "white",
       },
