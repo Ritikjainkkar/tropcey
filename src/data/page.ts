@@ -383,7 +383,7 @@ export const data = {
       color: "#3B281B",
     },
     description: {
-      text: "Tropcey Organic Coconut sugar is an unrefined alternative to conventional sugar, and this natural coconut sweetener is made from pure coconut sap. The sugary fluid extracted from the coconut flower. Coconut sugar is favored for its low Glycemic Index. It provides a rich sweet flavour.The unrefined and organic pedigree add more value to this unique product.",
+      text: "Tropcey Organic Coconut sugar is an unrefined alternative to conventional sugar, and this natural coconut sweetener is made from pure coconut sap. The sugary fluid extracted from the coconut flower. Coconut sugar is flavour for its low Glycemic Index. It provides a rich sweet flavour.The unrefined and organic pedigree add more value to this unique product.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Dissolves easily in hot and cold drinks; coffee, tea, smoothies, and cocktails.",
@@ -501,7 +501,7 @@ export const data = {
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Commonly used for various cooking and baking needs.",
-        "Added to curries, granola, smoothies, and desserts for flavor and texture.",
+        "Added to curries, granola, smoothies, and desserts for flavour and texture.",
         "Used as a topping for yogurt, ice cream, and confectionery items.",
         "Adding to salads will give a unique flavor and a texture.",
       ],
@@ -633,7 +633,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperatures below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
         color: "white",
       },
       {
@@ -819,7 +819,7 @@ export const data = {
         color: "#AC4E2B",
       },
       {
-        text: "Natural Certified Organic – Quality Guaranteed",
+        text: "Certified Organic – Quality Guaranteed",
         color: "#AC4E2B",
       },
       {
