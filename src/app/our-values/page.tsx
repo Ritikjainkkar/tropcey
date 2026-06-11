@@ -21,9 +21,9 @@ const OurValues = () => {
                 process. The organically cultivated and processed coconut
                 essence with its&rsquo; unique flavours is the trademark
                 identity of Tropcey products. Non-addition of preservatives
-                during the production process, allows the customers in the
-                global market to indulge the &lsquo;Truly Naturally&rsquo;
-                coconut goodness in their day to day recipes.
+                during the production process allows the customers in the global
+                market to indulge the &lsquo;Truly Naturally&rsquo; coconut
+                goodness in their day to day recipes.
               </p>
               {/* Vertical Line */}
               <div className="hidden lg:block absolute right-[-50px] top-1/2 transform -translate-y-1/2">

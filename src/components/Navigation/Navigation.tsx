@@ -111,7 +111,7 @@ const Navigation = () => {
         <ul className="flex flex-col gap-4 justify-center items-center">
           <li onClick={toggleActive}>
             <Link
-              className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] focus:text-[#FFFFFF] active:text-[#FFFFFF] font-bold text-6xl"
               href="/about"
             >
               ABOUT US
@@ -119,7 +119,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/products"
             >
               PRODUCTS
@@ -127,7 +127,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/our-values"
             >
               OUR VALUES
@@ -135,7 +135,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#215519] tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
               href="/contact"
             >
               CONTACT US

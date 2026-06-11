@@ -1,3 +1,14 @@
+/* Hover white for all including tablet */
+.nav-link:hover {
+  color: rgb(255, 0, 0) !important;
+}
+
+/* Reset on active/focus so it doesn't get stuck */
+.nav-link:active,
+.nav-link:focus {
+  color: inherit !important;
+}
+
 .navLink {
   background: rgba(255, 255, 255, 0.33);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
