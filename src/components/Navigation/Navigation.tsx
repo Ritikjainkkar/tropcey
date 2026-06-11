@@ -119,7 +119,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl focus:text-[#215519] active:text-[#215519]"
               href="/products"
             >
               PRODUCTS
@@ -127,7 +127,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl focus:text-[#215519] active:text-[#215519]"
               href="/our-values"
             >
               OUR VALUES
@@ -135,7 +135,7 @@ const Navigation = () => {
           </li>
           <li onClick={toggleActive}>
             <Link
-              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl"
+              className="text-[#215519] nav-link tracking-wider font-brokeline hover:text-[#FFFFFF] font-bold text-6xl focus:text-[#215519] active:text-[#215519]"
               href="/contact"
             >
               CONTACT US
