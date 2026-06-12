@@ -19,6 +19,16 @@
   }
 }
 
+.nav-link:hover {
+  color: white !important;
+}
+
+/* Touch devices → no stuck hover */
+.nav-link:active,
+.nav-link:focus {
+  color: #215519 !important;
+}
+
 html,
 body {
   color: "black";
