@@ -258,7 +258,7 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/flour-main-img.png",
-      width: "300px",
+      width: "500px",
     },
 
     brandImg: {
@@ -347,7 +347,7 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/sugar-main-img.png",
-      width: "300px",
+      width: "500px",
     },
     marginLeft: {
       lg: "100px",
@@ -452,7 +452,7 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/desiccated-main-img.png",
-      width: 300,
+      width: 400,
     },
 
     brandImg: {
@@ -770,7 +770,7 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/puree-main-img.png",
-      width: 300,
+      width: 400,
     },
 
     brandImg: {
@@ -881,7 +881,7 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/milk-img-main.png",
-      width: 300,
+      width: 500,
     },
 
     brandImg: {
