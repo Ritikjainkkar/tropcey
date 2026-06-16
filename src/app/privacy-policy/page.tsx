@@ -16,9 +16,9 @@ const PrivacyPolicy = () => {
         </p>
 
         <p style={styles.paragraph}>
-          Tropcey Holdings (Pvt) Ltd, which operates out of Sri Lanka, values
-          your privacy and is dedicated to safeguarding any personal information
-          provided by you.
+          Tropcey Holdings (Private) Limited, which operates out of Sri Lanka,
+          values your privacy and is dedicated to safeguarding any personal
+          information provided by you.
         </p>
 
         <p style={styles.paragraph}>

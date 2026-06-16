@@ -343,11 +343,11 @@ export const data = {
     id: "1",
     imgUri: {
       link: "/images/home/sugar-main-img.png",
-      width: "600px",
+      width: "700px",
     },
     imgUri2: {
       link: "/images/home/sugar-main-img.png",
-      width: "500px",
+      width: "700px",
     },
     marginLeft: {
       lg: "100px",
@@ -383,7 +383,7 @@ export const data = {
       color: "#3B281B",
     },
     description: {
-      text: "Tropcey Organic Coconut sugar is an unrefined alternative to conventional sugar, and this natural coconut sweetener is made from pure coconut sap. The sugary fluid extracted from the coconut flower. Coconut sugar is flavour for its low Glycemic Index. It provides a rich sweet flavour.The unrefined and organic pedigree add more value to this unique product.",
+      text: "Tropcey Organic Coconut sugar is an unrefined alternative to conventional sugar, and this natural coconut sweetener is made from pure coconut sap. The sugary fluid extracted from the coconut flower. Coconut sugar is flavoured for its low Glycemic Index. It provides a rich sweet flavour.The unrefined and organic pedigree add more value to this unique product.",
       sectionTitle: "Versatile & Multi-Purpose Use",
       bulletPoints: [
         "Dissolves easily in hot and cold drinks; coffee, tea, smoothies, and cocktails.",
@@ -503,7 +503,7 @@ export const data = {
         "Commonly used for various cooking and baking needs.",
         "Added to curries, granola, smoothies, and desserts for flavour and texture.",
         "Used as a topping for yogurt, ice cream, and confectionery items.",
-        "Adding to salads will give a unique flavor and a texture.",
+        "Adding to salads will give a unique flavour and a texture.",
       ],
 
       color: "white",
@@ -633,7 +633,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (75.2°F).",
         color: "white",
       },
       {
@@ -688,14 +688,14 @@ export const data = {
       color: "#372115",
     },
     titleLabel: {
-      text: "Chocolate Flavored Pure \nCoconut Cream",
+      text: "Chocolate Flavour Pure \nCoconut Cream",
       color: "#000",
       size: "24px",
       bgColor: "#372115",
       px: "34px",
     },
     titleLabel2: {
-      text: "Chocolate Flavored Pure \nCoconut Cream",
+      text: "Chocolate Flavour Pure \nCoconut Cream",
       color: "#000",
       size: "18px",
       bgColor: "#372115",
@@ -757,7 +757,7 @@ export const data = {
     ],
     nutritionChart: "/images/spread-chart.png",
     brandingSubtitle: {
-      text: "Refind Taste Magically Made",
+      text: "Refined Taste Magically Made",
       color: "#372115",
     },
   },
@@ -808,7 +808,7 @@ export const data = {
       bulletPoints: [
         "Perfect for desserts, sauces and baked goods for extra creaminess.",
         "A base for coconut-based ice creams/ smoothies/ shakes and soups.",
-        "Often added to curries and marinades for rich flavor and smooth texture.",
+        "Often added to curries and marinades for rich flavour and smooth texture.",
       ],
 
       color: "white",
@@ -850,7 +850,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          " In a cool dry place, away from direct sunlight. Once opened recommend to refrigerate. Starts to solidify at temperature below 24°C (77°F).",
+          " In a cool dry place, away from direct sunlight. Once opened recommend to refrigerate. Starts to solidify at temperature below 24°C (75.2°F).",
         color: "white",
       },
       {
@@ -1017,7 +1017,7 @@ export const data = {
       px: "10px",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
@@ -1077,7 +1077,7 @@ export const data = {
       {
         url: "/images/recommendations/chili-flavour.png",
         click: "/infused-virgin-coconut-oil",
-        name: "Chili",
+        name: "chilli",
         color: "black",
         sizeLg: "60px",
         sizeMd: "80px",
@@ -1153,7 +1153,7 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
@@ -1189,7 +1189,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (75.2°F).",
         color: "white",
       },
       {
@@ -1213,7 +1213,7 @@ export const data = {
       {
         url: "/images/recommendations/chili.png",
         click: "/infused-virgin-coconut-oil",
-        name: "Chili",
+        name: "chilli",
         color: "black",
         sizeLg: "60px",
         sizeMd: "80px",
@@ -1288,7 +1288,7 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
@@ -1348,7 +1348,7 @@ export const data = {
       {
         url: "/images/recommendations/chili.png",
         click: "/infused-virgin-coconut-oil",
-        name: "Chili",
+        name: "chilli",
         color: "black",
         sizeLg: "60px",
         sizeMd: "80px",
@@ -1423,7 +1423,7 @@ export const data = {
       bgColor: "black",
     },
     description: {
-      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with Oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
+      text: "Tropcey Infused Virgin Coconut Oil is an unrefined product made from fresh coconuts using a cold pressed method and value added by infusing with oleoresins to provide convenience and a diverse taste for cooking. It is a natural source of Lauric Acid.\n\nConsists of four different infusions.",
       color: "white",
     },
     ingrediants2: [
@@ -1483,7 +1483,7 @@ export const data = {
       {
         url: "/images/recommendations/chili.png",
         click: "/infused-virgin-coconut-oil",
-        name: "Chili",
+        name: "chilli",
         color: "black",
         sizeLg: "60px",
         sizeMd: "80px",
@@ -1765,17 +1765,10 @@ export const products = [
     height: 40,
   },
   {
-    name: "Organic Coconut Chips",
-    image: "/images/single-img/Organic-Coconut-Chips.png",
-    href: "/organic-coconut-chips",
+    name: "Organic Coconut Milk",
+    image: "/images/single-img/Organic-Coconut-Milk.png",
+    href: "/organic-coconut-milk",
     width: 30,
-    height: 40,
-  },
-  {
-    name: "Organic Coconut Sugar",
-    image: "/images/single-img/Organic-Coconut-Sugar.png",
-    href: "/organic-coconut-sugar",
-    width: 40,
     height: 40,
   },
   {
@@ -1786,18 +1779,25 @@ export const products = [
     height: 20,
   },
   {
+    name: "Organic Desiccated Coconut",
+    image: "/images/single-img/Organic-Desiccated-Coconut.png",
+    href: "/organic-desiccated-coconut",
+    width: 30,
+    height: 40,
+  },
+  {
+    name: "Organic Coconut Chips",
+    image: "/images/single-img/Organic-Coconut-Chips.png",
+    href: "/organic-coconut-chips",
+    width: 30,
+    height: 40,
+  },
+  {
     name: "Coconut Chocolate Spread",
     image: "/images/single-img/Coconut-Chocolate-Spread.png",
     href: "/coconut-chocolate-spread",
     width: 40,
     height: 20,
-  },
-  {
-    name: "Organic Coconut Syrup",
-    image: "/images/single-img/Organic-Coconut-Syrup.png",
-    href: "/organic-coconut-syrup",
-    width: 25,
-    height: 30,
   },
   {
     name: "Organic Coconut Flour",
@@ -1806,26 +1806,28 @@ export const products = [
     width: 30,
     height: 40,
   },
+
+  {
+    name: "Organic Coconut Syrup",
+    image: "/images/single-img/Organic-Coconut-Syrup.png",
+    href: "/organic-coconut-syrup",
+    width: 25,
+    height: 30,
+  },
+  {
+    name: "Organic Coconut Sugar",
+    image: "/images/single-img/Organic-Coconut-Sugar.png",
+    href: "/organic-coconut-sugar",
+    width: 40,
+    height: 40,
+  },
+
   {
     name: "Organic Coconut Water Vinegar",
     image: "/images//single-img/Organic-Coconut-Water-Vinegar.png",
     href: "/organic-coconut-water-vinegar",
     width: 15,
     height: 30,
-  },
-  {
-    name: "Organic Desiccated Coconut",
-    image: "/images/single-img/Organic-Desiccated-Coconut.png",
-    href: "/organic-desiccated-coconut",
-    width: 30,
-    height: 40,
-  },
-  {
-    name: "Organic Coconut Milk",
-    image: "/images/single-img/Organic-Coconut-Milk.png",
-    href: "/organic-coconut-milk",
-    width: 30,
-    height: 40,
   },
 ];
 
