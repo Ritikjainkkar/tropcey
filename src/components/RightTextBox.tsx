@@ -100,7 +100,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
               {/* FOOTER */}
               <p
                 style={{ color: details.description.color }}
-                className="mt-2 text-[20px] font-franklinBook font-[700]"
+                className="mt-2 text-[22px] font-franklinGothic font-[700]"
               >
                 {details.description.footerText}
               </p>

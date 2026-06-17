@@ -103,7 +103,7 @@ const PrivacyPolicy = () => {
 
         <p style={styles.paragraph}>
           Personal data can be collected, used, and processed by Tropcey
-          Holdings (Pvt) Ltd in Sri Lanka.
+          Holdings (Private) Limited in Sri Lanka.
         </p>
 
         <p style={styles.paragraph}>

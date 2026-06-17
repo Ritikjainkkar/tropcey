@@ -1053,7 +1053,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (75.2°F).",
         color: "white",
       },
       {
@@ -1324,7 +1324,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (75.2°F).",
         color: "white",
       },
       {
@@ -1459,7 +1459,7 @@ export const data = {
       {
         title: "Storage",
         subTitle:
-          "Store in a cool dry place. Starts to solidify at temperature below 24°C (77°F).",
+          "Store in a cool dry place. Starts to solidify at temperature below 24°C (75.2°F).",
         color: "white",
       },
       {
