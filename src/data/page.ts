@@ -9,7 +9,11 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/sweet-chips-main-img.png",
-      width: 300,
+      width: 400,
+    },
+    imgUri3: {
+      link: "/images/home/sweet-chips-main-img.png",
+      width: 350,
     },
     brandImg: {
       link: "/images/sweet-chips-4-logo.png",
@@ -146,7 +150,11 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/toasted-chips.png",
-      width: "300px",
+      width: "400px",
+    },
+    imgUri3: {
+      link: "/images/home/toasted-chips.png",
+      width: "350px",
     },
     brandImg: {
       link: "/images/toasted-brand-img.png",
@@ -258,6 +266,10 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/flour-main-img.png",
+      width: "600px",
+    },
+    imgUri3: {
+      link: "/images/home/flour-main-img.png",
       width: "500px",
     },
 
@@ -346,8 +358,12 @@ export const data = {
       width: "700px",
     },
     imgUri2: {
-      link: "/images/home/sugar-main-img.png",
-      width: "700px",
+      link: "/images/home/sugar-main-img-new.png",
+      width: "500px",
+    },
+    imgUri3: {
+      link: "/images/home/sugar-main-img-new.png",
+      width: "400px",
     },
     marginLeft: {
       lg: "100px",
@@ -452,7 +468,11 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/desiccated-main-img.png",
-      width: 400,
+      width: 480,
+    },
+    imgUri3: {
+      link: "/images/home/desiccated-main-img.png",
+      width: 350,
     },
 
     brandImg: {
@@ -567,6 +587,10 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/virgin-oil.png",
+      width: "400px",
+    },
+    imgUri3: {
+      link: "/images/home/virgin-oil.png",
       width: "300px",
     },
 
@@ -671,7 +695,11 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/spread-main-img.png",
-      width: 300,
+      width: 400,
+    },
+    imgUri3: {
+      link: "/images/home/spread-main-img.png",
+      width: 350,
     },
 
     title: [
@@ -770,7 +798,11 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/puree-main-img.png",
-      width: 400,
+      width: 500,
+    },
+    imgUri3: {
+      link: "/images/home/puree-main-img.png",
+      width: 350,
     },
 
     brandImg: {
@@ -881,6 +913,10 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/milk-img-main.png",
+      width: 700,
+    },
+    imgUri3: {
+      link: "/images/home/milk-img-main.png",
       width: 500,
     },
 
@@ -979,6 +1015,10 @@ export const data = {
       width: "400px",
     },
     imgUri2: {
+      link: "/images/home/chili-main-img.png",
+      width: "400px",
+    },
+    imgUri3: {
       link: "/images/home/chili-main-img.png",
       width: "300px",
     },
@@ -1116,6 +1156,10 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/ginger-main-img.png",
+      width: "400px",
+    },
+    imgUri3: {
+      link: "/images/home/ginger-main-img.png",
       width: "300px",
     },
 
@@ -1252,6 +1296,10 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/pepper-main-img.png",
+      width: "400px",
+    },
+    imgUri3: {
+      link: "/images/home/pepper-main-img.png",
       width: "300px",
     },
     brandImg: {
@@ -1386,6 +1434,10 @@ export const data = {
       width: "400px",
     },
     imgUri2: {
+      link: "/images/home/garlic-main-img.png",
+      width: "400px",
+    },
+    imgUri3: {
       link: "/images/home/garlic-main-img.png",
       width: "300px",
     },
@@ -1522,7 +1574,11 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/vinegar-main-img.png",
-      width: 300,
+      width: 400,
+    },
+    imgUri3: {
+      link: "/images/home/vinegar-main-img.png",
+      width: 350,
     },
     brandImg: {
       link: "/images/vinegar-brand-img.png",
@@ -1626,7 +1682,11 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/syrup-main-img.png",
-      width: 300,
+      width: 400,
+    },
+    imgUri3: {
+      link: "/images/home/syrup-main-img.png",
+      width: 350,
     },
 
     brandImg: {

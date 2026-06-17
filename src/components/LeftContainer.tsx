@@ -1,9 +1,7 @@
 import React from "react";
 
 export default function LeftContainer({
-  imgSrc,
   brandingSubtitle,
-  width,
   title,
   details,
 }: any) {
@@ -130,12 +128,18 @@ export default function LeftContainer({
               src={details?.imgUri.link}
               alt="Product image"
               style={{ width: details.imgUri.width }}
-              className="h-auto max-w-full chip-img mb-2 hidden md:block pure-img milk-img"
+              className="h-auto max-w-full chip-img mb-2 hidden lg:block pure-img milk-img"
             />
             <img
               src={details?.imgUri2.link}
               alt="Product image"
               style={{ width: details.imgUri2.width }}
+              className="h-auto max-w-full chip-img mb-2 lg:hidden md:block hidden"
+            />
+            <img
+              src={details?.imgUri3.link}
+              alt="Product image"
+              style={{ width: details.imgUri3.width }}
               className="h-auto max-w-full chip-img mb-2 md:hidden"
             />
           </div>
@@ -171,7 +175,7 @@ export default function LeftContainer({
         </div>
         {brandingSubtitle ? (
           <div
-            className={`branding-gap md:mb-10 mb-16 lg:mb-0  rounded-lg w-[100%] flex justify-center items-center`}
+            className={`branding-gap lg:pt-0 pt-[50px] md:mb-7 mb-7 lg:mb-0  rounded-lg w-[100%] flex justify-center items-center`}
           >
             <span
               className="lg:text-[40px] md:text-[45px] text-2xl font-impact capitalize text-center lg:leading-[55px] md:leading-[45px] leading-[30px] px-[10px]"
