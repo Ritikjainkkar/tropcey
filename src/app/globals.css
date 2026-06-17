@@ -899,3 +899,49 @@ body {
     padding-top: 0;
   }
 }
+
+/* ===========================================
+   LANDSCAPE TABLETS (769–1024px, aspect ≥ 6:5, e.g. iPad Mini landscape 1024×768)
+   ---------------------------------------------------------------------------
+   These keep the side-by-side layout (tree | right column), but the generic
+   ≤1024 rules forced the compass + tagline into a ROW inside the narrow 35%
+   column — pushing "Tropical Goodness" off the right edge — and the 120px top
+   padding left a large empty band above an undersized hero.
+
+   Here we mirror the desktop design at a smaller scale: compass stacked ABOVE
+   the centered tagline (so it can never overflow horizontally), tighter top
+   padding, and the whole hero vertically centered. Every size is height/width
+   aware (vh + vw clamps) so it also degrades cleanly on shorter and wider
+   landscape screens. Appended last so it wins the cascade over the row rules.
+   =========================================== */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (min-aspect-ratio: 6/5) {
+  /* Clear the nav, keep top/bottom breathing room balanced on short screens */
+  .top-container {
+    padding: clamp(80px, 12.5vh, 100px) 48px 20px;
+  }
+
+  /* Compass above the tagline, centered — matches the desktop layout */
+  .right-top-row {
+    flex-direction: column;
+    gap: clamp(8px, 1.6vh, 16px);
+  }
+  .right-top-row .flip-container {
+    width: clamp(80px, 17vh, 150px);
+    height: clamp(80px, 17vh, 150px);
+  }
+  /* Width-driven font (the Empire face is very wide) keeps the tagline from
+     colliding with the tree or the screen edge across the whole width range,
+     including the narrow ar≈1.2 floor. */
+  .right-top-row .home-tagline {
+    text-align: center;
+    font-size: clamp(18px, 2.7vw, 32px);
+    line-height: 1.15;
+  }
+
+  /* Products lineup sits below the tagline, height-capped so it never crowds */
+  .all-products-img {
+    max-height: 24vh;
+    width: auto;
+    max-width: 100%;
+  }
+}

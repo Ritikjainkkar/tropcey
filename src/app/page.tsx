@@ -480,8 +480,12 @@ function calcTreeHeight(vw: number, vh: number): string {
   // Narrow / near-square / portrait viewports stack, same as phones.
   const ar = vw / vh;
   if (vw > 768 && ar > 1.2) {
-    // Tablet landscape — columns sit side-by-side
-    const pct = Math.round(Math.max(44, Math.min(68, 72 - ar * 24)));
+    // Landscape tablet (e.g. iPad Mini landscape 1024×768) — columns sit
+    // side-by-side. Fill more of the viewport height so the hero feels
+    // balanced like the desktop layout, while the width cap (see CSS) keeps the
+    // tree inside its 60% column. Wider / shorter screens taper down a little.
+    // Clamped 50–64vh.
+    const pct = Math.round(Math.max(50, Math.min(64, 96 - ar * 26)));
     return `${pct}vh`;
   }
 
