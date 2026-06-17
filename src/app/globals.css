@@ -19,11 +19,21 @@
   }
 }
 
+.nav-link:hover {
+  color: white !important;
+}
+
+/* Touch devices → no stuck hover */
+.nav-link:active,
+.nav-link:focus {
+  color: #215519 !important;
+}
+
 html,
 body {
   color: "black";
   background: "white";
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   max-width: 100%;
 }
 @layer utilities {
@@ -370,6 +380,18 @@ body {
 @media screen and (min-width: 1024px) and (max-width: 1224px) {
   .bg-ipad-pro {
     background-size: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: landscape) {
+  .para-sec-about {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .para-sec-about {
+    margin-left: 50px;
   }
 }
 

@@ -171,7 +171,7 @@ export default function LeftContainer({
         </div>
         {brandingSubtitle ? (
           <div
-            className={`branding-gap mb-2 lg:mb-0 md:mb-4 rounded-lg w-[100%] flex justify-center items-center`}
+            className={`branding-gap md:mb-10 mb-16 lg:mb-0  rounded-lg w-[100%] flex justify-center items-center`}
           >
             <span
               className="lg:text-[40px] md:text-[45px] text-2xl font-impact capitalize text-center lg:leading-[55px] md:leading-[45px] leading-[30px] px-[10px]"

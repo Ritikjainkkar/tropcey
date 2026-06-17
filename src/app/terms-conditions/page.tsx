@@ -21,10 +21,10 @@ const TermsAndConditions = () => {
         <h2 style={styles.subheading}>1. Purpose of the Website</h2>
 
         <p style={styles.paragraph}>
-          This website provides information about Tropcey Holdings (Pvt) Ltd, a
-          Sri Lankan producer and exporter of coconut-related goods. The content
-          is for general informational and corporate communication purposes only
-          and does not constitute a contractual offer.
+          This website provides information about Tropcey Holdings (Private)
+          Limited, a Sri Lankan producer and exporter of coconut-related goods.
+          The content is for general informational and corporate communication
+          purposes only and does not constitute a contractual offer.
         </p>
 
         <h2 style={styles.subheading}>2. Website Usage</h2>
@@ -67,8 +67,8 @@ const TermsAndConditions = () => {
 
         <p style={styles.paragraph}>
           All content including text, images, logos, and product information is
-          the property of Tropcey Holdings (Pvt) Ltd and is protected under
-          applicable intellectual property laws. No content may be used or
+          the property of Tropcey Holdings (Private) Limited and is protected
+          under applicable intellectual property laws. No content may be used or
           reproduced without prior written permission.
         </p>
 
@@ -76,7 +76,7 @@ const TermsAndConditions = () => {
 
         <ul style={styles.list}>
           <li style={styles.listItem}>
-            Tropcey Holdings (Pvt) Ltd shall not be liable for errors or
+            Tropcey Holdings (Private) Limited shall not be liable for errors or
             omissions in website content.
           </li>
           <li style={styles.listItem}>
@@ -97,8 +97,8 @@ const TermsAndConditions = () => {
 
         <p style={styles.paragraph}>
           The website may not currently include third-party links. If
-          introduced, Tropcey Holdings (Pvt) Ltd is not responsible for external
-          content or practices.
+          introduced, Tropcey Holdings (Private) Limited is not responsible for
+          external content or practices.
         </p>
 
         <h2 style={styles.subheading}>8. Amendments</h2>
@@ -119,7 +119,7 @@ const TermsAndConditions = () => {
         <h2 style={styles.subheading}>10. Contact Information</h2>
 
         <p style={styles.paragraph}>
-          <strong>Tropcey Holdings (Pvt) Ltd</strong>
+          <strong>Tropcey Holdings (Private) Limited</strong>
         </p>
 
         <p style={styles.paragraph}>

@@ -100,7 +100,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
               {/* FOOTER */}
               <p
                 style={{ color: details.description.color }}
-                className="mt-2 font-franklinBook font-[500]"
+                className="mt-2 text-[20px] font-franklinBook font-[700]"
               >
                 {details.description.footerText}
               </p>
@@ -120,7 +120,7 @@ export default function RightTextBox({ details, isFull, isSpread }: any) {
           )}
 
           {/* INGREDIENTS */}
-          <div className="md:text-center text-left lg:max-w-[90%]">
+          <div className="text-left lg:max-w-[90%]">
             {details?.ingrediants?.map((ingre: any, index: number) => (
               <p
                 key={index}

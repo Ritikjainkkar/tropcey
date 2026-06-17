@@ -57,7 +57,7 @@ const Products = () => {
             lg:rounded-r-[60px]
             flex-shrink-0
             flex flex-col items-start justify-center
-            pt-16 lg:pt-0 pb-5 px-5
+            pt-16 lg:pt-0 2xl:pt-64 pb-5 px-5
             overflow-y-auto
             transition-transform duration-300 ease-in-out
             ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"} overflow-x-hidden
@@ -280,15 +280,17 @@ const Products = () => {
                 >
                   <Link
                     href={product.href}
-                    className="flex flex-col items-center w-full"
+                    className="flex flex-col items-center w-full h-full"
                   >
-                    <div className="w-full aspect-square flex items-center justify-center mb-4">
+                    {/* Image area: fixed height, image sticks to bottom */}
+                    <div className="w-full h-[180px] md:h-[200px] flex items-end justify-center mb-4">
                       <img
                         src={product.image}
                         alt={product.name}
                         className="max-w-full max-h-[180px] md:max-h-[200px] object-contain group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
+                    {/* Green line — always at same vertical position */}
                     <div className="w-full max-w-[160px] md:max-w-[200px] h-[10px] bg-[#156b54]" />
                     <h3 className="text-[#156b54] text-xs md:text-sm lg:text-base text-center mt-3 font-franklin">
                       {product.name}
