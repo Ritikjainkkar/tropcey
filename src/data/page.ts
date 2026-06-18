@@ -358,12 +358,12 @@ export const data = {
       width: "700px",
     },
     imgUri2: {
-      link: "/images/home/sugar-main-img-new.png",
-      width: "500px",
+      link: "/images/home/sugar-main-img.png",
+      width: "700px",
     },
     imgUri3: {
-      link: "/images/home/sugar-main-img-new.png",
-      width: "400px",
+      link: "/images/home/sugar-main-img.png",
+      width: "500px",
     },
     marginLeft: {
       lg: "100px",

@@ -122,7 +122,7 @@ export default function LeftContainer({
             {details.afterTitle2.text}
           </h2>
         )}
-        <div className="flex gap-2 flex-col lg:flex-row justify-center items-center mt-2">
+        <div className="flex gap-2 flex-col lg:flex-row justify-center items-center lg:mt-2 md:mt-14 mt-14">
           <div>
             <img
               src={details?.imgUri.link}
