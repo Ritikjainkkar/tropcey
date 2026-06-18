@@ -5,7 +5,7 @@ const OurValues = () => {
   return (
     <div className="values-page-wrap">
       {/* Section 1 */}
-      <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
+      <section className="relative xl:min-h-screen min-h-[800px] flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:pt-[200px] md:pb-[100px] pt-[180px] pb-[100px] relative z-10">
           <div className="flex  lg:flex-row items-center  gap-20 flex-col-reverse">
             {/* Left Content */}
@@ -42,7 +42,7 @@ const OurValues = () => {
       </section>
 
       {/* Section 2 */}
-      <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-second-sec-bg.png')] bg-cover bg-center overflow-hidden">
+      <section className="relative xl:min-h-screen min-h-[800px] flex items-center bg-[url('/images/values-second-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:py-[100px] py-[50px] relative z-10">
           <div className="flex flex-col lg:flex-row items-center  gap-20">
             {/* Left Content */}
@@ -76,7 +76,7 @@ const OurValues = () => {
       </section>
 
       {/* Section 3 */}
-      <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
+      <section className="relative xl:min-h-screen min-h-[800px] flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:py-[100px] py-[50px] relative z-10">
           <div className="flex flex-col-reverse lg:flex-row items-center  gap-20">
             {/* Left Content */}
@@ -115,7 +115,7 @@ const OurValues = () => {
       </section>
 
       {/* Section 4 */}
-      <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-second-sec-bg.png')] bg-cover bg-center overflow-hidden">
+      <section className="relative xl:min-h-screen min-h-[800px] flex items-center bg-[url('/images/values-second-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:py-[100px] py-[50px] relative z-10">
           <div className="flex flex-col lg:flex-row items-center  gap-20">
             {/* Left Content */}
@@ -152,7 +152,7 @@ const OurValues = () => {
       </section>
 
       {/* Section 5 */}
-      <section className="relative lg:min-h-screen flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
+      <section className="relative xl:min-h-screen min-h-[800px] flex items-center bg-[url('/images/values-first-sec-bg.png')] bg-cover bg-center overflow-hidden">
         <div className="mx-auto px-5 lg:py-16 md:py-[100px] py-[50px] relative z-10">
           <div className="flex flex-col-reverse lg:flex-row items-center  gap-20">
             {/* Left Content */}
