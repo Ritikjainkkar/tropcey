@@ -802,7 +802,7 @@ export const data = {
     },
     imgUri3: {
       link: "/images/home/puree-main-img.png",
-      width: 350,
+      width: 300,
     },
 
     brandImg: {
@@ -1574,7 +1574,7 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/vinegar-main-img.png",
-      width: 400,
+      width: 450,
     },
     imgUri3: {
       link: "/images/home/vinegar-main-img.png",
@@ -1682,7 +1682,7 @@ export const data = {
     },
     imgUri2: {
       link: "/images/home/syrup-main-img.png",
-      width: 400,
+      width: 500,
     },
     imgUri3: {
       link: "/images/home/syrup-main-img.png",
