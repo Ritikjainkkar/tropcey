@@ -825,14 +825,16 @@ export const data = {
     afterTitle: {
       text: "Creamed Coconut",
       color: "#AC4E2B",
-      size: "18px",
-      font: "futuraBold",
+      size: "28px",
+      font: "bebasNeue",
+      weight: "bold",
     },
     afterTitle2: {
       text: "Creamed Coconut",
       color: "#AC4E2B",
-      size: "18px",
-      font: "futuraBold",
+      size: "22px",
+      font: "bebasNeue",
+      weight: "bold",
     },
     description: {
       text: "Tropcey Organic Coconut Puree is made using only natural dried coconut meat. It does not contain any dairy substrate, additives or preservatives. The rich, thick and creamy product containing dietary fiber adds a unique texture and flavour to dishes; thus making it a best fit for everyday cooking.",

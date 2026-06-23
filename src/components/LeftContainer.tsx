@@ -104,6 +104,7 @@ export default function LeftContainer({
               fontSize: details.afterTitle.size,
               lineHeight: 1,
               fontFamily: `var(--font-${details.afterTitle.font})`,
+              fontWeight: details.afterTitle.weight,
             }}
           >
             {details.afterTitle.text}
@@ -117,6 +118,7 @@ export default function LeftContainer({
               fontSize: details.afterTitle2.size,
               lineHeight: 1,
               fontFamily: `var(--font-${details.afterTitle2.font})`,
+              fontWeight: details.afterTitle2.weight,
             }}
           >
             {details.afterTitle2.text}

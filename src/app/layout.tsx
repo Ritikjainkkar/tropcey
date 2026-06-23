@@ -111,6 +111,15 @@ const empire = localfont({
   variable: "--font-empire",
 });
 
+const bebasNeue = localfont({
+  src: [
+    {
+      path: "../../public/fonts/BebasNeue Bold.ttf",
+    },
+  ],
+  variable: "--font-bebasNeue",
+});
+
 export const metadata: Metadata = {
   title: "Tropcey Holdings",
   description: "Tropcey Holdings - Premium Coconut Products",
