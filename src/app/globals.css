@@ -842,6 +842,22 @@ body {
   }
 }
 
+/* Touch devices (phones + tablets) always use the mobile back, regardless of
+   width/orientation. Real tablets in landscape ("horizontal view") have a CSS
+   width > 1024px — iPad 10.2" 1080, Air 1180, Pro 11" 1194, Pro 12.9" 1366,
+   plus most Android tabs — so they escaped the max-width:1024 rule above and
+   wrongly showed the desktop rear text. `any-pointer: coarse` stays true even
+   on a keyboarded iPad (Magic Keyboard trackpad reports pointer:fine), so the
+   rear wording is consistent across portrait/landscape on every real tablet. */
+@media (any-pointer: coarse) {
+  .back-desktop {
+    display: none;
+  }
+  .back-mobile {
+    display: block;
+  }
+}
+
 /* Keyframes for continuous rotation */
 @keyframes rotateCoin {
   0% {
